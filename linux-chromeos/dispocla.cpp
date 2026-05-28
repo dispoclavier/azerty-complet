@@ -1282,26 +1282,26 @@ xkb_symbols "kbfrFRs" {
 
 	key <AC07> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   j,                   J,          underscore,                   1,               UEFD2,               U02B2,               U203E,              U1F602 ],
-		[                   j,                   J,          underscore,                   1,               UEFD2,               U02B2,               U203E,              U1F602 ]
+		[                   j,                   J,                 bar,                   1,         dead_macron,               U02B2,               U203E,              U1F602 ],
+		[                   j,                   J,                 bar,                   1,         dead_macron,               U02B2,               U203E,              U1F602 ]
 	}; // U02B2 ʲ MODIFIER LETTER SMALL J; UEFD2 *dead_subscript; U203E ‾ OVERLINE; U1F602 😂 FACE WITH TEARS OF JOY worldwide most used emoji, second-most used in France after ❤ U2764
 
 	key <AC08> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   k,                   K,         bracketleft,                   2,         dead_ogonek,               U1D4F,               UEF7B,              U1F605 ],
-		[                   k,                   K,         bracketleft,                   2,         dead_ogonek,               U1D4F,               UEF7B,              U1F605 ]
+		[                   k,                   K,          underscore,                   2,               UEFD2,               U1D4F,               UEF7B,              U1F605 ],
+		[                   k,                   K,          underscore,                   2,               UEFD2,               U1D4F,               UEF7B,              U1F605 ]
 	}; // U1D4F ᵏ MODIFIER LETTER SMALL K; UEF7B '&#x'; U1F605 😅 SMILING FACE WITH OPEN MOUTH AND COLD SWEAT worldwide eleventh-most used emoji
 
 	key <AC09> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   l,                   L,        bracketright,                   3,               UEFD3,               U02E1,            sterling,              U1F923 ],
-		[                   l,                   L,        bracketright,                   3,               UEFD3,               U02E1,            sterling,              U1F923 ]
-	}; // U02E1 ˡ MODIFIER LETTER SMALL L; UEFD3 *dead_abovehook; U1F923 🤣 ROLLING ON THE FLOOR LAUGHING fourth-most used emoji
+		[                   l,                   L,         bracketleft,                   3,         dead_ogonek,               U02E1,            sterling,              U1F923 ],
+		[                   l,                   L,         bracketleft,                   3,         dead_ogonek,               U02E1,            sterling,              U1F923 ]
+	}; // U02E1 ˡ MODIFIER LETTER SMALL L; UEFD3 *dead_abovehook; 🤣 ROLLING ON THE FLOOR LAUGHING fourth-most used emoji
 
 	key <AC10> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   m,                   M,                 bar,               comma,         dead_macron,               U1D50,                  mu,              U1F637 ],
-		[                   m,                   M,                 bar,               comma,         dead_macron,               U1D50,                  mu,              U1F637 ]
+		[                   m,                   M,        bracketright,               comma,               UEFD3,               U1D50,                  mu,              U1F637 ],
+		[                   m,                   M,        bracketright,               comma,               UEFD3,               U1D50,                  mu,              U1F637 ]
 	}; // U1D50 ᵐ MODIFIER LETTER SMALL M; U1F637 😷 FACE WITH MEDICAL MASK emoji
 
 	key.type[Group1] = "EIGHT_LEVELS_CAPITAL_LEVEL8_CONTROL";
