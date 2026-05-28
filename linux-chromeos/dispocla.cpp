@@ -1207,26 +1207,26 @@ xkb_symbols "kbfrFRs" {
 
 	key <AD07> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   u,                   U,          apostrophe,                   4,          dead_acute,               U1D58,               UEF9F,               UEF8C ],
-		[                   u,                   U,          apostrophe,                   4,          dead_acute,               U1D58,               UEF9F,               UEF8C ]
+		[                   u,                   U,           ampersand,                   4,       dead_abovedot,               U1D58,               UEF9F,               UEF8C ],
+		[                   u,                   U,           ampersand,                   4,       dead_abovedot,               U1D58,               UEF9F,               UEF8C ]
 	}; // U1D58 ᵘ MODIFIER LETTER SMALL U; UEF9F Unicode prefix 'U+'; UEF8C '&apos;'
 
 	key <AD08> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   i,                   I,           braceleft,                   5,           dead_hook,               U2071,               UEF7E,              U1F64F ],
-		[                   i,                   I,           braceleft,                   5,           dead_hook,               U2071,               UEF7E,              U1F64F ]
+		[                   i,                   I,          apostrophe,                   5,          dead_acute,               U2071,               UEF7E,              U1F64F ],
+		[                   i,                   I,          apostrophe,                   5,          dead_acute,               U2071,               UEF7E,              U1F64F ]
 	}; // U2071 ⁱ SUPERSCRIPT LATIN SMALL LETTER I; UEF7E '\\u{'; 🙏 U1F64F PERSON WITH FOLDED HANDS worldwide sixth-most used emoji
 
 	key <AD09> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   o,                   O,          braceright,                   6,               UEFD4,               U1D52,         Greek_OMEGA,              U1F601 ],
-		[                   o,                   O,          braceright,                   6,               UEFD4,               U1D52,         Greek_OMEGA,              U1F601 ]
+		[                   o,                   O,           braceleft,                   6,           dead_hook,               U1D52,         Greek_OMEGA,              U1F601 ],
+		[                   o,                   O,           braceleft,                   6,           dead_hook,               U1D52,         Greek_OMEGA,              U1F601 ]
 	}; // U1D52 ᵒ MODIFIER LETTER SMALL O; UEFD4 *dead_retroflexhook; Greek_OMEGA is preferred over U2126 Ω OHM SIGN; 😁 U1F601 GRINNING FACE WITH SMILING EYES 13th-ranking emoji
 
 	key <AD10> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   p,                   P,           ampersand,              period,       dead_abovedot,               U1D56,           paragraph,               UEF8B ],
-		[                   p,                   P,           ampersand,              period,       dead_abovedot,               U1D56,           paragraph,               UEF8B ]
+		[                   p,                   P,          braceright,              period,               UEFD4,               U1D56,           paragraph,               UEF8B ],
+		[                   p,                   P,          braceright,              period,               UEFD4,               U1D56,           paragraph,               UEF8B ]
 	}; // U1D56 ᵖ MODIFIER LETTER SMALL P; UEF8B '&amp;'
 
 	key.type[Group1] = "EIGHT_LEVELS_LEVEL8_CONTROL";
