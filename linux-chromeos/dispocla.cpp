@@ -1309,7 +1309,7 @@ xkb_symbols "kbfrFRs" {
 	key <AC11> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[              ugrave,               UEF64,            ellipsis,       guillemotleft,               UEF6C,             percent,                   A,          apostrophe ],
-		[          apostrophe,             percent,               grave,                   A,               U208D,               U207D,               U208D,          apostrophe ]
+		[          apostrophe,         bracketleft,               grave,                   A,               U208D,               U207D,               U208D,          apostrophe ]
 	}; // UEF64 '« ' spaced out with NNBSP; UEF6C '[…]' See ## Sequences; U207D ⁽ SUPERSCRIPT LEFT PARENTHESIS; U208D ₍ SUBSCRIPT LEFT PARENTHESIS; APOSTROPHE for application shortcut mapping
 
 	key.type[Group1] = "EIGHT_LEVELS_LEVEL8_CONTROL";
@@ -1317,8 +1317,8 @@ xkb_symbols "kbfrFRs" {
 	key <BKSL> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[               UEFD0,               UEF65,               UEFD0,      guillemotright,            asterisk,                  mu,                   B,           semicolon ],
-		[               minus,            asterisk,               UEFD0,                   B,               U208E,               U207E,               U208E,           semicolon ]
-	}; // UEFD0 *dead_group; UEF65 ' »' spaced out with NNBSP; U207E ⁾ SUPERSCRIPT RIGHT PARENTHESIS; U208E ₎ SUBSCRIPT RIGHT PARENTHESIS; SEMICOLON for application shortcut mapping
+		[               minus,        bracketright,               UEFD0,                   B,               U208E,               U207E,               U208E,           semicolon ]
+	}; // UEFD0 *dead_group; UEF65 ' »' spaced out wpith NNBSP; U207E ⁾ SUPERSCRIPT RIGHT PARENTHESIS; U208E ₎ SUBSCRIPT RIGHT PARENTHESIS; SEMICOLON for application shortcut mapping
 
 	key.type[Group1] = "EIGHT_LEVELS_FIRSTALPHABETIC";
 	key.type[Group2] = "EIGHT_LEVELS_FIRSTALPHABETIC";
