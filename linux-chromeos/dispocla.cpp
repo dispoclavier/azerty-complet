@@ -1365,7 +1365,7 @@ xkb_symbols "kbfrFRs" {
 	key <AB07> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[               comma,               UEF63,            question,            question,        dead_cedilla,            question,               U2063,              U1F499 ],
-		[               comma,            question,            question,            question,        dead_cedilla,               UEF7B,          digitspace,              U1F49A ]
+		[               comma,               grave,            question,            question,        dead_cedilla,               UEF7B,          digitspace,              U1F49A ]
 	}; // UEF63 ' ?' spaced out with NNBSP; UEF7B '&#x'; U2063 INVISIBLE SEPARATOR; U1F499 💙 BLUE HEART 18th-ranking emoji; U1F49A 💚 GREEN HEART emoji
 
 	key <AB08> {
@@ -1385,7 +1385,7 @@ xkb_symbols "kbfrFRs" {
 	key <AB10> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[      periodcentered,               UEF60,             section,              exclam,       dead_belowdot,             section,              U1F494,           backslash ],
-		[           semicolon,              exclam,              exclam,              exclam,       dead_belowdot,             section,              U1F609,           backslash ]
+		[           semicolon,                 bar,              exclam,              exclam,       dead_belowdot,             section,              U1F609,           backslash ]
 	}; // UEF60 ' !' spaced out with NNBSP; U1F494 💔 BROKEN HEART 16th-ranking emoji; U1F609 😉 WINKING FACE 24th-ranking emoji
 
 	key.type[Group1] = "EIGHT_LEVELS_LEVEL1_CONTROL";
