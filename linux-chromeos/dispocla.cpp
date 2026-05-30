@@ -1786,8 +1786,8 @@ xkb_symbols "kbbrFRsr" {
 		[            NoSymbol ]
 	};
 
-	key.type[Group1] = "EIGHT_LEVELS_PLUS_GROUP1";
-	key.type[Group2] = "EIGHT_LEVELS_PLUS_GROUP2";
+	key.type[Group1] = "EIGHT_LEVELS_LEVEL8_CONTROL";
+	key.type[Group2] = "EIGHT_LEVELS_LEVEL8_CONTROL";
 	key <AE12> {
 		[          apostrophe ],
 		[            NoSymbol ]
@@ -1877,8 +1877,8 @@ xkb_symbols "kbfrPFsr" {
 		[            NoSymbol ]
 	};// Tārava, tāumi
 
-	key.type[Group1] = "EIGHT_LEVELS_PLUS_GROUP1";
-	key.type[Group2] = "EIGHT_LEVELS_PLUS_GROUP2";
+	key.type[Group1] = "EIGHT_LEVELS_LEVEL8_CONTROL";
+	key.type[Group2] = "EIGHT_LEVELS_LEVEL8_CONTROL";
 	key <AE12> {
 		[          apostrophe ],
 		[            NoSymbol ]
@@ -1963,8 +1963,8 @@ xkb_symbols "kbfrAFsr" {
 		[            NoSymbol ]
 	}; // ɔ, Ɔ
 
-	key.type[Group1] = "EIGHT_LEVELS_PLUS_GROUP1";
-	key.type[Group2] = "EIGHT_LEVELS_PLUS_GROUP2";
+	key.type[Group1] = "EIGHT_LEVELS_LEVEL8_CONTROL";
+	key.type[Group2] = "EIGHT_LEVELS_LEVEL8_CONTROL";
 	key <AE12> {
 		[          apostrophe ],
 		[            NoSymbol ]
@@ -2108,8 +2108,8 @@ xkb_symbols "kbfrFRsr" {
 		[            NoSymbol ]
 	};
 
-	key.type[Group1] = "EIGHT_LEVELS_PLUS_GROUP1";
-	key.type[Group2] = "EIGHT_LEVELS_PLUS_GROUP2";
+	key.type[Group1] = "EIGHT_LEVELS_LEVEL8_CONTROL";
+	key.type[Group2] = "EIGHT_LEVELS_LEVEL8_CONTROL";
 	key <AE12> {
 		[          underscore ],
 		[            NoSymbol ]
