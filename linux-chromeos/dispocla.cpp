@@ -593,7 +593,7 @@
 // cope with the limitation to 8 indices in XKB allocation tables. The number
 // of keyboard levels in user experience may be up to 8 using three modifiers
 // (Shift, AltGr, AltFr). Since the ModLock toggle is a group toggle, it does
-// not require any additional indices, but Caps Lock and Control may do so.
+// not requir doe any additional indices, but Caps Lock and Control may do so.
 //
 // The keysyms enclosed in brackets inside the braces define a group as used
 // in XKB. In this file, each key has 2 groups. The first group is the default
@@ -1095,7 +1095,7 @@ xkb_symbols "kbfrFRs" {
 	key.type[Group2] = "EIGHT_LEVELS_LEVEL3_CONTROL";
 	key <AE03> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[            quotedbl,              endash,                   3,          numbersign,                   3,       threesuperior,               UEFC3,               UEFC3 ],
+		[            quotedbl,      Greek_horizbar,                   3,          numbersign,                   3,       threesuperior,               UEFC3,               UEFC3 ],
 		[                   3,                   3,                   3,               U2083,                   3,       threesuperior,               U2083,               UEFC3 ]
 	}; // U2083 ₃ SUBSCRIPT THREE; UEFC3 3️⃣ keycap 3 emoji
 
@@ -1107,7 +1107,7 @@ xkb_symbols "kbfrFRs" {
 
 	key <AE05> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[      dead_diaeresis,              hyphen,                   5,         bracketleft,                   5,               U2075,               UEFC5,               UEFC5 ],
+		[      dead_diaeresis,              endash,                   5,         bracketleft,                   5,               U2075,               UEFC5,               UEFC5 ],
 		[                   5,                   5,                   5,               U2085,                   5,               U2075,               U2085,               UEFC5 ]
 	}; // hyphen U00AD SOFT HYPHEN; U2075 ⁵ SUPERSCRIPT FIVE; U2085 ₅ SUBSCRIPT FIVE; UEFC5 5️⃣ keycap 5 emoji
 
@@ -1129,7 +1129,7 @@ xkb_symbols "kbfrFRs" {
 	key.type[Group2] = "EIGHT_LEVELS_LEVEL3_CONTROL";
 	key <AE08> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[          underscore,      Greek_horizbar,                   8,           backslash,                   8,               U2078,               UEFC8,               UEFC8 ],
+		[          underscore,              hyphen,                   8,           backslash,                   8,               U2078,               UEFC8,               UEFC8 ],
 		[                   8,                   8,                   8,               U2088,                   8,               U2078,               U2088,               UEFC8 ]
 	}; // Greek_horizbar ― U2015 HORIZONTAL BAR; U2078 ⁸ SUPERSCRIPT EIGHT; U2088 ₈ SUBSCRIPT EIGHT; UEFC8 8️⃣ keycap 8 emoji
 
@@ -1149,12 +1149,12 @@ xkb_symbols "kbfrFRs" {
 		[                   0,                   0,                   0,               U2080,                   0,               U2070,               U2080,               UEFC0 ]
 	}; // U2070 ⁰ SUPERSCRIPT ZERO; U2080 ₀ SUBSCRIPT ZERO; UEFC0 0️⃣ keycap 0 emoji; U1F51F 🔟 KEYCAP TEN emoji
 
-	key.type[Group1] = "EIGHT_LEVELS_MINUS_GROUP1";
-	key.type[Group2] = "EIGHT_LEVELS_MINUS_GROUP2";
+	key.type[Group1] = "EIGHT_LEVELS_LEVEL8_CONTROL";
+	key.type[Group2] = "EIGHT_LEVELS_LEVEL8_CONTROL";
 	key <AE11> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                  at,              degree,               U1D49,        bracketright,               U207B,                   E,               UEFCA,               minus ],
-		[                  at,              degree,               minus,               U208B,                   E,               U207B,               UEFCA,               minus ]
+		[                  at,           ampersand,               U1D49,        bracketright,              degree,               U207B,                   E,               minus ],
+		[                  at,           ampersand,              degree,               U208B,                   E,               U207B,              degree,               minus ]
 	}; // U1D49 ᵉ MODIFIER LETTER SMALL E; U207B ⁻ SUPERSCRIPT MINUS; U208B ₋ SUBSCRIPT MINUS; UEFCA *️⃣ keycap star emoji
 
 	key.type[Group1] = "EIGHT_LEVELS_PLUS_GROUP1";
