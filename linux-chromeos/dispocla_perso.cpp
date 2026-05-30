@@ -196,16 +196,14 @@ xkb_symbols "perso" {
 		[            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol ]
 	};
 
-	key.type[Group1] = "EIGHT_LEVELS_MINUS_GROUP1";
-	key.type[Group2] = "EIGHT_LEVELS_MINUS_GROUP2";
+	key.type[Group1] = "EIGHT_LEVELS_LEVEL3_CONTROL";
+	key.type[Group2] = "EIGHT_LEVELS_LEVEL3_CONTROL";
 	key <AE11> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol ],
 		[            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol ]
 	};
 
-	key.type[Group1] = "EIGHT_LEVELS_PLUS_GROUP1";
-	key.type[Group2] = "EIGHT_LEVELS_PLUS_GROUP2";
 	key <AE12> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol,            NoSymbol ],
