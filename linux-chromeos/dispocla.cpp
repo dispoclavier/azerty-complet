@@ -1157,12 +1157,10 @@ xkb_symbols "kbfrFRs" {
 		[                  at,           ampersand,              degree,               U208B,                   E,               U207B,              degree,               minus ]
 	}; // U1D49 ᵉ MODIFIER LETTER SMALL E; U207B ⁻ SUPERSCRIPT MINUS; U208B ₋ SUBSCRIPT MINUS; UEFCA *️⃣ keycap star emoji
 
-	key.type[Group1] = "EIGHT_LEVELS_PLUS_GROUP1";
-	key.type[Group2] = "EIGHT_LEVELS_PLUS_GROUP2";
 	key <AE12> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[          apostrophe,                plus,           Multi_key,          braceright,               equal,               U207A,                   F,               UEFCB ],
-		[               equal,                plus,           Multi_key,               U208A,                   F,               U207A,               UEFCB,               equal ]
+		[          apostrophe,                plus,           Multi_key,          braceright,               equal,               U207A,                   F,               equal ],
+		[               equal,                plus,           Multi_key,               U208A,                   F,               U207A,               equal,               equal ]
 	}; // apostrophe: see ## Apostrophes; U207A ⁺ SUPERSCRIPT PLUS; U208A ₊ SUBSCRIPT PLUS; UEFCB #️⃣ keycap hash emoji
 
 	key.type[Group1] = "EIGHT_LEVELS_FIRSTALPHABETIC_LASTALPHABETIC_TITLECASE";
@@ -2092,7 +2090,7 @@ xkb_symbols "kbfrFRsr" {
 	key.type[Group1] = "EIGHT_LEVELS_LEVEL3_CONTROL";
 	key.type[Group2] = "EIGHT_LEVELS_LEVEL3_CONTROL";
 	key <AE07> {
-		[          apostrophe,      Greek_horizbar ],
+		[          apostrophe,              hyphen ],
 		[            NoSymbol ]
 	};
 
