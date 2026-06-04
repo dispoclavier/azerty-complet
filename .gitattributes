@@ -1,10 +1,7 @@
-## Releases
+## Çode
 
-# Do not package resources nor tools in released source code.
+# Do not package in source code.
 # By courtesy of https://stackoverflow.com/a/50062746
-/ressource/ export-ignore
-/linux-chromeos/outils/ export-ignore
-/windows/outils/ export-ignore
 /.gitattributes export-ignore
 /.gitconfig export-ignore
 
@@ -14,14 +11,9 @@
 # See /linux-chromeos/readme.md.
 /linux-chromeos/** -linguist-detectable
 
-# Do not include undistributed files.
-/ressource/** linguist-vendored
-/linux-chromeos/outils/** linguist-vendored
-/windows/outils/** linguist-vendored
-
 ## False positives
 
-This is meant to prevent GitHub from claiming text files are binary.
-By courtesy of https://stackoverflow.com/questions/777949/can-i-make-git-recognize-a-utf-16-file-as-text
+# This is meant to prevent GitHub from claiming text files are binary.
+# By courtesy of https://stackoverflow.com/questions/777949/can-i-make-git-recognize-a-utf-16-file-as-text
 *.reg diff
 *.reg diff=localizablestrings
