@@ -1316,7 +1316,7 @@ xkb_symbols "kbfrFRs" {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[               UEFD0,               UEF65,               UEFD0,      guillemotright,            asterisk,                  mu,                   B,           semicolon ],
 		[               minus,        bracketright,               UEFD0,                   B,               U208E,               U207E,               U208E,           semicolon ]
-	}; // UEFD0 *dead_group; UEF65 ' »' spaced out wpith NNBSP; U207E ⁾ SUPERSCRIPT RIGHT PARENTHESIS; U208E ₎ SUBSCRIPT RIGHT PARENTHESIS; SEMICOLON for application shortcut mapping
+	}; // UEFD0 *dead_group; UEF65 ' »' spaced out with NNBSP; U207E ⁾ SUPERSCRIPT RIGHT PARENTHESIS; U208E ₎ SUBSCRIPT RIGHT PARENTHESIS; SEMICOLON for application shortcut mapping
 
 	key.type[Group1] = "EIGHT_LEVELS_FIRSTALPHABETIC";
 	key.type[Group2] = "EIGHT_LEVELS_FIRSTALPHABETIC";
