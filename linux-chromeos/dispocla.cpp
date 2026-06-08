@@ -593,7 +593,7 @@
 // cope with the limitation to 8 indices in XKB allocation tables. The number
 // of keyboard levels in user experience may be up to 8 using three modifiers
 // (Shift, AltGr, AltFr). Since the ModLock toggle is a group toggle, it does
-// not requir doe any additional indices, but Caps Lock and Control may do so.
+// not require any additional indices, but Caps Lock and Control may do so.
 //
 // The keysyms enclosed in brackets inside the braces define a group as used
 // in XKB. In this file, each key has 2 groups. The first group is the default
