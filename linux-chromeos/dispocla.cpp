@@ -1280,14 +1280,14 @@ xkb_symbols "kbfrFRs" {
 
 	key <AC07> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   j,                   J,                 bar,                   1,         dead_macron,               U02B2,               U203E,              U1F602 ],
-		[                   j,                   J,                 bar,                   1,         dead_macron,               U02B2,               U203E,              U1F602 ]
+		[                   j,                   J,          underscore,                   1,               UEFD2,               U02B2,               U203E,              U1F602 ],
+		[                   j,                   J,          underscore,                   1,               UEFD2,               U02B2,               U203E,              U1F602 ]
 	}; // U02B2 ʲ MODIFIER LETTER SMALL J; UEFD2 *dead_subscript; U203E ‾ OVERLINE; U1F602 😂 FACE WITH TEARS OF JOY worldwide most used emoji, second-most used in France after ❤ U2764
 
 	key <AC08> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
-		[                   k,                   K,          underscore,                   2,               UEFD2,               U1D4F,               UEF7B,              U1F605 ],
-		[                   k,                   K,          underscore,                   2,               UEFD2,               U1D4F,               UEF7B,              U1F605 ]
+		[                   k,                   K,                 bar,                   2,         dead_macron,               U1D4F,               UEF7B,              U1F605 ],
+		[                   k,                   K,                 bar,                   2,         dead_macron,               U1D4F,               UEF7B,              U1F605 ]
 	}; // U1D4F ᵏ MODIFIER LETTER SMALL K; UEF7B '&#x'; U1F605 😅 SMILING FACE WITH OPEN MOUTH AND COLD SWEAT worldwide eleventh-most used emoji
 
 	key <AC09> {
