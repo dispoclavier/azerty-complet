@@ -1,13 +1,15 @@
 /*****************************************************************************\
 * Module Name: kbcomazerty.c
 *
-* Rows A..D of AZERTY keyboard layout
+* Rows A..D of AZERTY keyboard layouts
 *
 * Copyright:
 * 1985..2001 Microsoft Corporation (pro parte)
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Invert '_' and '|' and their dead keys   7.0.0.0.0 Mon 2026-06-08T0719+0200
+* Correct ASCII symbols map                7.0.0.0.0 Fri 2026-05-29T0722+0200
 * Permutate on B08-B10 in sync with Shift  6.2.0.0.0 Mon 2026-01-26T0412+0100
 * Add 6 spare modification numbers         6.0.5.0.0 Sat 2025-08-30T2006+0200
 * Add mod# 33 in main allocation table     6.0.4.1.0 Wed 2025-08-27T1834+0200
