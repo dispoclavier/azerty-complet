@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Correct dashes and ampersand             7.0.0.0.0 Sat 2026-05-30T0734+0200
 * Rename kbfrFRsr-allo.c to kbfrFRr-allo.c 6.0.9.8.0 Thu 2025-10-02T1439+0200
 * Move main allocation table here          6.0.8.0.2 Thu 2025-09-25T1216+0200
 * Add partial file kbfrFRsr-allo.c         6.0.8.0.0 Thu 2025-09-25T0548+0200
