@@ -2,22 +2,49 @@
 
 ## Notes
 
-1. Pour faire afficher un maximum de glyphes des caractères cités, il est nécessaire d’avoir [installé des polices complètes](https://support.microsoft.com/fr-fr/office/ajouter-une-police-b7c5f17c-4426-4b53-967f-455339c564c1) : [BabelStone Han](https://www.babelstone.co.uk/Fonts/Han.html), [DejaVu](https://en.wikipedia.org/wiki/DejaVu_fonts) ([Font Squirrel](https://www.fontsquirrel.com/fonts/dejavu-sans)), Kelvinch (mise à jour 2017 ; [1001 Fonts](https://www.1001fonts.com/kelvinch-font.html)), Nishiki-teki (mise à jour 2022 ; [Fontspace](https://www.fontspace.com/nishiki-teki-font-f86893)). Ces polices sont gratuites pour les usages aussi bien personnels que professionnels.
+1. Pour faire afficher un maximum de glyphes des caractères cités, il est nécessaire d’avoir [installé des polices complètes](https://support.microsoft.com/fr-fr/office/ajouter-une-police-b7c5f17c-4426-4b53-967f-455339c564c1) : [BabelStone Han](https://www.babelstone.co.uk/Fonts/Han.html), [DejaVu](https://en.wikipedia.org/wiki/DejaVu_fonts) ([Font Squirrel](https://www.fontsquirrel.com/fonts/dejavu-sans)), Kelvinch (mise à jour 2017 ; [1001 Fonts](https://www.1001fonts.com/kelvinch-font.html)), Nishiki-teki (misaaaaaaae à jour 2022 ; [Fontspace](https://www.fontspace.com/nishiki-teki-font-f86893)). Ces polices sont gratuites pour les usages aussi bien personnels que professionnels.
 
 2. Le deux-barrettes "¦" U+00A6 (barre brisée, barre discontinue, barre déjointe, barre à trou) représente la touche de composition "⎄" U+2384. Les séquences de composition sont entre guillemets français pour la lisibilité : « ¦!^ », « ¦:\ », « ¦mul », « ¦Mul », « ¦MUL », « ¦#1: », « ¦¦ ».
 
-## 6.4.0 (projet)
+## 7.2.0 (projet)
 
 Disposition de plus d’émojis sur les touches vives prévues sous Windows.
 
 Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels pris en charge sur touches vives sous Windows.
 
-## 6.3.0 (projet)
+## 7.1.0 (projet)
 
 Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux.
 
-## 6.2.9 (projet)
+## 7.0.0 (projet)
 
+Correction de la disposition des symboles et ponctuations ASCII.
+
+Prise en charge de ponctuations chinoises, japonaises et coréennes (CJC).
+
+Suspension de la prise en charge de Linux suite aux disruptions d’XKB post-2016.
+
+* Disposition :
+	* Niveau Majuscule :
+		* Mode français :
+			* Mettre "―" U+2015 de E08 sur E03 à la place de "–" U+2013, qui prend la place de "­" U+00AD sur E05, qui prend la place laissée par "―" U+2015 sur E08. dispocla.cpp [e28b00a](https://github.com/dispoclavier/azerty-complet/commit/e28b00a9aab67e821397481c24dc583bf235b535), [1bb50f0](https://github.com/dispoclavier/azerty-complet/commit/1bb50f00383a58beb7afee3419009b007b36fc4d), [6689afc](https://github.com/dispoclavier/azerty-complet/commit/6689afcdd78e4c38f3f5627753461a3aa6e228d7), [e289bcd](https://github.com/dispoclavier/azerty-complet/commit/e289bcd43c3e77be8b7a93ac37e692de34d9ca51), dispocla_perso.cpp [8dab92e](https://github.com/dispoclavier/azerty-complet/commit/8dab92e088acfb13d83c8d6d9b807a50e508054e), dispotypes.c [3cbce28](https://github.com/dispoclavier/azerty-complet/commit/3cbce281ec7fd328a2ca8a5707c72c85fdc80814), kbfrFRs-allo.c [4a188a0](https://github.com/dispoclavier/azerty-complet/commit/4a188a08329b9ab98911e5f6c13526af959b6727), [29feaa1](https://github.com/dispoclavier/azerty-complet/commit/29feaa157bddf827be786db346e327f461d57c8d)
+			* Redonder "&" sur E11 à la place de "°" U+00B0, qui est au niveau AltFr. ibidem
+			* Variante pour la Polynésie française : idem. kbfrPFs-allo.c [0ba0672](https://github.com/dispoclavier/azerty-complet/commit/0ba0672c4a30d449ee6fbaa4ffbc66d602995a46)
+			* Variante pour le breton :
+				* Permuter "–" U+2013, qui va sur E05, et "­" U+00AD, qui va sur E03. kbbrFRs-allo.c [dc78d14](https://github.com/dispoclavier/azerty-complet/commit/dc78d149cbc291df20137bdb6b4b58b93b98f882)
+				* Redonder "&" sur E11 à la place de "°" U+00B0, qui est au niveau AltFr. ibidem
+			* Variante pour l’Afrique francophone : idem. frAFs-allo.c [b80bc73](https://github.com/dispoclavier/azerty-complet/commit/b80bc738cf0e4352d251ddcc86e89c9a0baf8833)
+			* Variante redisposée de base :
+				* Mettre "―" U+2015 de E07 sur E03 à la place de "–" U+2013, qui prend la place de "­" U+00AD sur E05, qui prend la place laissée par "―" U+2015 sur E07. kbfrFRr-allo.c [d908c27](https://github.com/dispoclavier/azerty-complet/commit/d908c27942f8be8aac4f54c122b5814a6ee886e4)
+				* Redonder "&" sur E11 à la place de "°" U+00B0, qui est au niveau AltFr. ibidem
+		* Mode ASCII :
+			* B07 : Redonder "`" à la place de "?", qui est au niveau AltFr. dispocla.cpp [6a1a2b0](https://github.com/dispoclavier/azerty-complet/commit/6a1a2b0f4f36fd627503b3459d05d5bca32bee12), kbcomazerty.c [1d28821](https://github.com/dispoclavier/azerty-complet/commit/1d28821f93095e874f739ffb2d1445be128e6ed3), kbcomredispo.c [6df9fb9](https://github.com/dispoclavier/azerty-complet/commit/6df9fb9d4811739e1dc9bebc9d8bd552f20c9bbb)
+			* B10 : Redonder "|" à la place de "!", qui est au niveau AltFr. ibidem
+			* C11 : Redonder "[" à la place de "%", qui est sur D02, niveau 3. dispocla.cpp [e48e4f9](https://github.com/dispoclavier/azerty-complet/commit/e48e4f977111385f610e3fc376fa0fd4067be226), [9c53526](https://github.com/dispoclavier/azerty-complet/commit/9c53526c39b3b46767a252276a178db133bc65f4), ibidem
+			* C12 : Redonder "]" à la place de "*", qui est sur B02. ibidem 
+	* Niveau 3 :
+		* Mettre "|" et la touche morte macron de C10 sur C08 à la place de "[" et de la touche morte ogonek, qui vont sur C09 à la place de "]" et de la touche morte crochet en chef, qui prennent la place de "|" et de la touche morte macron sur C10. dispocla.cpp [659fa37](https://github.com/dispoclavier/azerty-complet/commit/659fa378fb7cc1fc6e0fb14cd6d3752f24779620), [abd9f16](https://github.com/dispoclavier/azerty-complet/commit/abd9f163bcb3d20430a3f5a9db29abf3e43d1c26), kbcomazerty.c [dc6e511](https://github.com/dispoclavier/azerty-complet/commit/dc6e5112d6023397d83e17c4e39eb1ed862fdd7d), [708d865](https://github.com/dispoclavier/azerty-complet/commit/708d865bc3c88d25ca17ecd4ca9a62cf976acd83), kbcomredispo.c [f9e9028](https://github.com/dispoclavier/azerty-complet/commit/f9e902828ee0b4670f78af7ad213643e227a895d), [c09cf2d](https://github.com/dispoclavier/azerty-complet/commit/c09cf2dd7bec20ca17fe80862579052d6177cab1)
+		* Mettre "&" et la touche morte point en chef de D10 sur D07 à la place de "'" et de la touche morte accent aigu, qui vont sur D08 à la place de "{" et de la touche morte crosse, qui vont sur D09 à la place de "}" et de la touche morte crochet rétroflexe, qui prennent la place de "&" et de la touche morte point en chef sur D10. dispocla.cpp [40a50fc](https://github.com/dispoclavier/azerty-complet/commit/40a50fcce1c48c39a2e494a3cec9e8be382638e2), ibidem
 * Transformations :
 	* Crosse :
 		* Ajouter "〃" U+3003, "〈" U+3008, "〉" U+3009, "「" U+300C, "」" U+300D, "【" U+3010, "】" U+3011, "〔" U+3014, "〕" U+3015, "〜" U+301C, "〝" U+301D, "〞" U+301E, "〟" U+301F, "〷" U+3037, "〽" U+303D, "〿" U+303F. compose-2.yml [8660a75](https://github.com/dispoclavier/nouvel-azerty/commit/8660a7560a67c84df765a25748ce4e11fd51b20d)
@@ -688,8 +715,8 @@ Amélioration des touches mortes tréma, tilde et rond en chef.
 * Transformations :
 	* Lettres composées pour langues du Togo : Simplifier la saisie de "Ʋ̀" U+01B2 U+0300, "Ʋ́" U+01B2 U+0301, "Ʋ̂" U+01B2 U+0302, "Ʋ̄" U+01B2 U+0304, "Ʋ̌" U+01B2 U+030C, "ʋ̀" U+028B U+0300, "ʋ́" U+028B U+0301, "ʋ̂" U+028B U+0302, "ʋ̄" U+028B U+0304, "ʋ̌" U+028B U+030C pour Linux. compose-2.yml [05856c6](https://github.com/dispoclavier/nouvel-azerty/commit/05856c6f49d3da10d5a3bf6341cefbc1a61b2d28)
 	* Tilde :
-		* Redonder "❰" U+2770 par "[" à la place de "⟦" U+27E6, qui est dans accent grave. compose-2.yml [1e96ebd](https://github.com/dispoclavier/nouvel-azerty/commit/1e96ebd7992e6c2b75db00ca0827efc9d4468d9a)
-		* Redonder "❱" U+2771 par "]" à la place de "⟧" U+27E7, qui est dans accent grave. ibidem
+		* Redonder "❰" U+2770 par "[" à la place de "⟦" U+27E6, qui est dans accent aigu. compose-2.yml [1e96ebd](https://github.com/dispoclavier/nouvel-azerty/commit/1e96ebd7992e6c2b75db00ca0827efc9d4468d9a)
+		* Redonder "❱" U+2771 par "]" à la place de "⟧" U+27E7, qui est dans accent aigu. ibidem
 	* Groupes des symboles : Rajouter "⚯" U+26AF dans le groupe 7 de "{" à la place de "⚬" U+26AC, qui va dans le groupe 7 de "@" à la place de "❂" U+2742, qui va dans le groupe 7 de "}" à la place de "⚘" U+2698, qui va dans le groupe 10 de "=" sur "B" à la place de "♮" U+266E, qui est dans le groupe 11 de "`" sur "N". compose-3.yml  [1e96ebd](https://github.com/dispoclavier/nouvel-azerty/commit/1e96ebd7992e6c2b75db00ca0827efc9d4468d9a)
 	* Rond en chef : Redonder "⩮" U+2A6E. compose-2.yml [98f8f89](https://github.com/dispoclavier/nouvel-azerty/commit/98f8f8962aad5397f8e7f215a9b70283bcc25b26)
 	* Accent circonflexe et grec-ou-cerclé : Ajouter pour "⨶" U+2A36. compose-2.yml [9008f6a](https://github.com/dispoclavier/nouvel-azerty/commit/9008f6ae7ecc8cef04bd7d3d340d1a36a0fba01e)
