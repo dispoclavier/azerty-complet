@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.0.0.4" # See #   End of line comments
+<UEFA0>                     : "version 7.0.0.5" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -4667,8 +4667,7 @@
 #   The broken bar "¦" U00A6 repurposed as multikey symbol is consistently the
 #   dead character of Multi_key. Given that Multi_key double press is not used,
 #   this is supported as an alternative means to input "¦" U00A6.
-#
-<Multi_key><Multi_key>                                                                             : "¦" U00A6 # BROKEN BAR repurposed as multikey symbol
+#   See #^# COMPOSE_DK_ID
 #
 #   Another option is case insensitive « ¦mul ». Titlecase is also supported,
 #   with respect to the XKB keysym "Multi_key".
@@ -5403,60 +5402,60 @@
 <Multi_key><plus>                                                          <1><2><6><nobreakspace> : "~" U007E #
 <Multi_key><plus>                                                          <1><2><7>       <space> : "⌂" U2302 #
 <Multi_key><plus>                                                          <1><2><7><nobreakspace> : "⌂" U2302 #
-<Multi_key><plus>                                                          <1><2><8>       <space> : "Ç" # U00C7 Latin capital letter C wi cedi #
-<Multi_key><plus>                                                          <1><2><8><nobreakspace> : "Ç" # U00C7 Latin capital letter C wi cedi #
-<Multi_key><plus>                                                          <1><2><9>       <space> : "ü" # U00FC Latin small letter u withiaere #
-<Multi_key><plus>                                                          <1><2><9><nobreakspace> : "ü" # U00FC Latin small letter u withiaere #
-<Multi_key><plus>                                                          <1><3><0>       <space> : "é" # U00E9 Latin small letter e th ac #
-<Multi_key><plus>                                                          <1><3><0><nobreakspace> : "é" # U00E9 Latin small letter e th ac #
-<Multi_key><plus>                                                          <1><3><1>       <space> : "â" # U00E2 Latin small letter a with rcumf #
-<Multi_key><plus>                                                          <1><3><1><nobreakspace> : "â" # U00E2 Latin small letter a with rcumf #
-<Multi_key><plus>                                                          <1><3><2>       <space> : "ä" # U00E4 Latin small letter a withiaere #
-<Multi_key><plus>                                                          <1><3><2><nobreakspace> : "ä" # U00E4 Latin small letter a withiaere #
-<Multi_key><plus>                                                          <1><3><3>       <space> : "à" # U00E0 Latin small letter a th gr #
-<Multi_key><plus>                                                          <1><3><3><nobreakspace> : "à" # U00E0 Latin small letter a th gr #
-<Multi_key><plus>                                                          <1><3><4>       <space> : "å" # U00E5 Latin small letter a with ng ab #
-<Multi_key><plus>                                                          <1><3><4><nobreakspace> : "å" # U00E5 Latin small letter a with ng ab #
-<Multi_key><plus>                                                          <1><3><5>       <space> : "ç" # U00E7 Latin small letter c wi cedi #
-<Multi_key><plus>                                                          <1><3><5><nobreakspace> : "ç" # U00E7 Latin small letter c wi cedi #
-<Multi_key><plus>                                                          <1><3><6>       <space> : "ê" # U00EA Latin small letter e with rcumf #
-<Multi_key><plus>                                                          <1><3><6><nobreakspace> : "ê" # U00EA Latin small letter e with rcumf #
-<Multi_key><plus>                                                          <1><3><7>       <space> : "ë" # U00EB Latin small letter e withiaere #
-<Multi_key><plus>                                                          <1><3><7><nobreakspace> : "ë" # U00EB Latin small letter e withiaere #
-<Multi_key><plus>                                                          <1><3><8>       <space> : "è" # U00E8 Latin small letter e th gr #
-<Multi_key><plus>                                                          <1><3><8><nobreakspace> : "è" # U00E8 Latin small letter e th gr #
-<Multi_key><plus>                                                          <1><3><9>       <space> : "ï" # U00EF Latin small letter i withiaere #
-<Multi_key><plus>                                                          <1><3><9><nobreakspace> : "ï" # U00EF Latin small letter i withiaere #
-<Multi_key><plus>                                                          <1><4><0>       <space> : "î" # U00EE Latin small letter i with rcumf #
-<Multi_key><plus>                                                          <1><4><0><nobreakspace> : "î" # U00EE Latin small letter i with rcumf #
-<Multi_key><plus>                                                          <1><4><1>       <space> : "ì" # U00EC Latin small letter i th gr #
-<Multi_key><plus>                                                          <1><4><1><nobreakspace> : "ì" # U00EC Latin small letter i th gr #
-<Multi_key><plus>                                                          <1><4><2>       <space> : "Ä" # U00C4 Latin capital letter A withiaere #
-<Multi_key><plus>                                                          <1><4><2><nobreakspace> : "Ä" # U00C4 Latin capital letter A withiaere #
-<Multi_key><plus>                                                          <1><4><3>       <space> : "Å" # U00C5 Latin capital letter A with ng ab #
-<Multi_key><plus>                                                          <1><4><3><nobreakspace> : "Å" # U00C5 Latin capital letter A with ng ab #
-<Multi_key><plus>                                                          <1><4><4>       <space> : "É" # U00C9 Latin capital letter E th ac #
-<Multi_key><plus>                                                          <1><4><4><nobreakspace> : "É" # U00C9 Latin capital letter E th ac #
-<Multi_key><plus>                                                          <1><4><5>       <space> : "æ" # U00E6 Latin smalletter #
-<Multi_key><plus>                                                          <1><4><5><nobreakspace> : "æ" # U00E6 Latin smalletter #
-<Multi_key><plus>                                                          <1><4><6>       <space> : "Æ" # U00C6 Latin capitaletter #
-<Multi_key><plus>                                                          <1><4><6><nobreakspace> : "Æ" # U00C6 Latin capitaletter #
-<Multi_key><plus>                                                          <1><4><7>       <space> : "ô" # U00F4 Latin small letter o with rcumf #
-<Multi_key><plus>                                                          <1><4><7><nobreakspace> : "ô" # U00F4 Latin small letter o with rcumf #
-<Multi_key><plus>                                                          <1><4><8>       <space> : "ö" # U00F6 Latin small letter o withiaere #
-<Multi_key><plus>                                                          <1><4><8><nobreakspace> : "ö" # U00F6 Latin small letter o withiaere #
-<Multi_key><plus>                                                          <1><4><9>       <space> : "ò" # U00F2 Latin small letter o th gr #
-<Multi_key><plus>                                                          <1><4><9><nobreakspace> : "ò" # U00F2 Latin small letter o th gr #
-<Multi_key><plus>                                                          <1><5><0>       <space> : "û" # U00FB Latin small letter u with rcumf #
-<Multi_key><plus>                                                          <1><5><0><nobreakspace> : "û" # U00FB Latin small letter u with rcumf #
-<Multi_key><plus>                                                          <1><5><1>       <space> : "ù" # U00F9 Latin small letter u th gr #
-<Multi_key><plus>                                                          <1><5><1><nobreakspace> : "ù" # U00F9 Latin small letter u th gr #
-<Multi_key><plus>                                                          <1><5><2>       <space> : "ÿ" # U00FF Latin small letter y withiaere #
-<Multi_key><plus>                                                          <1><5><2><nobreakspace> : "ÿ" # U00FF Latin small letter y withiaere #
-<Multi_key><plus>                                                          <1><5><3>       <space> : "Ö" # U00D6 Latin capital letter O withiaere #
-<Multi_key><plus>                                                          <1><5><3><nobreakspace> : "Ö" # U00D6 Latin capital letter O withiaere #
-<Multi_key><plus>                                                          <1><5><4>       <space> : "Ü" # U00DC Latin capital letter U withiaere #
-<Multi_key><plus>                                                          <1><5><4><nobreakspace> : "Ü" # U00DC Latin capital letter U withiaere #
+<Multi_key><plus>                                                          <1><2><8>       <space> : "Ç" U00C7 #
+<Multi_key><plus>                                                          <1><2><8><nobreakspace> : "Ç" U00C7 #
+<Multi_key><plus>                                                          <1><2><9>       <space> : "ü" U00FC #
+<Multi_key><plus>                                                          <1><2><9><nobreakspace> : "ü" U00FC #
+<Multi_key><plus>                                                          <1><3><0>       <space> : "é" U00E9 #
+<Multi_key><plus>                                                          <1><3><0><nobreakspace> : "é" U00E9 #
+<Multi_key><plus>                                                          <1><3><1>       <space> : "â" U00E2 #
+<Multi_key><plus>                                                          <1><3><1><nobreakspace> : "â" U00E2 #
+<Multi_key><plus>                                                          <1><3><2>       <space> : "ä" U00E4 #
+<Multi_key><plus>                                                          <1><3><2><nobreakspace> : "ä" U00E4 #
+<Multi_key><plus>                                                          <1><3><3>       <space> : "à" U00E0 #
+<Multi_key><plus>                                                          <1><3><3><nobreakspace> : "à" U00E0 #
+<Multi_key><plus>                                                          <1><3><4>       <space> : "å" U00E5 #
+<Multi_key><plus>                                                          <1><3><4><nobreakspace> : "å" U00E5 #
+<Multi_key><plus>                                                          <1><3><5>       <space> : "ç" U00E7 #
+<Multi_key><plus>                                                          <1><3><5><nobreakspace> : "ç" U00E7 #
+<Multi_key><plus>                                                          <1><3><6>       <space> : "ê" U00EA #
+<Multi_key><plus>                                                          <1><3><6><nobreakspace> : "ê" U00EA #
+<Multi_key><plus>                                                          <1><3><7>       <space> : "ë" U00EB #
+<Multi_key><plus>                                                          <1><3><7><nobreakspace> : "ë" U00EB #
+<Multi_key><plus>                                                          <1><3><8>       <space> : "è" U00E8 #
+<Multi_key><plus>                                                          <1><3><8><nobreakspace> : "è" U00E8 #
+<Multi_key><plus>                                                          <1><3><9>       <space> : "ï" U00EF #
+<Multi_key><plus>                                                          <1><3><9><nobreakspace> : "ï" U00EF #
+<Multi_key><plus>                                                          <1><4><0>       <space> : "î" U00EE #
+<Multi_key><plus>                                                          <1><4><0><nobreakspace> : "î" U00EE #
+<Multi_key><plus>                                                          <1><4><1>       <space> : "ì" U00EC #
+<Multi_key><plus>                                                          <1><4><1><nobreakspace> : "ì" U00EC #
+<Multi_key><plus>                                                          <1><4><2>       <space> : "Ä" U00C4 #
+<Multi_key><plus>                                                          <1><4><2><nobreakspace> : "Ä" U00C4 #
+<Multi_key><plus>                                                          <1><4><3>       <space> : "Å" U00C5 #
+<Multi_key><plus>                                                          <1><4><3><nobreakspace> : "Å" U00C5 #
+<Multi_key><plus>                                                          <1><4><4>       <space> : "É" U00C9 #
+<Multi_key><plus>                                                          <1><4><4><nobreakspace> : "É" U00C9 #
+<Multi_key><plus>                                                          <1><4><5>       <space> : "æ" U00E6 #
+<Multi_key><plus>                                                          <1><4><5><nobreakspace> : "æ" U00E6 #
+<Multi_key><plus>                                                          <1><4><6>       <space> : "Æ" U00C6 #
+<Multi_key><plus>                                                          <1><4><6><nobreakspace> : "Æ" U00C6 #
+<Multi_key><plus>                                                          <1><4><7>       <space> : "ô" U00F4 #
+<Multi_key><plus>                                                          <1><4><7><nobreakspace> : "ô" U00F4 #
+<Multi_key><plus>                                                          <1><4><8>       <space> : "ö" U00F6 #
+<Multi_key><plus>                                                          <1><4><8><nobreakspace> : "ö" U00F6 #
+<Multi_key><plus>                                                          <1><4><9>       <space> : "ò" U00F2 #
+<Multi_key><plus>                                                          <1><4><9><nobreakspace> : "ò" U00F2 #
+<Multi_key><plus>                                                          <1><5><0>       <space> : "û" U00FB #
+<Multi_key><plus>                                                          <1><5><0><nobreakspace> : "û" U00FB #
+<Multi_key><plus>                                                          <1><5><1>       <space> : "ù" U00F9 #
+<Multi_key><plus>                                                          <1><5><1><nobreakspace> : "ù" U00F9 #
+<Multi_key><plus>                                                          <1><5><2>       <space> : "ÿ" U00FF #
+<Multi_key><plus>                                                          <1><5><2><nobreakspace> : "ÿ" U00FF #
+<Multi_key><plus>                                                          <1><5><3>       <space> : "Ö" U00D6 #
+<Multi_key><plus>                                                          <1><5><3><nobreakspace> : "Ö" U00D6 #
+<Multi_key><plus>                                                          <1><5><4>       <space> : "Ü" U00DC #
+<Multi_key><plus>                                                          <1><5><4><nobreakspace> : "Ü" U00DC #
 <Multi_key><plus>                                                          <1><5><5>       <space> : "¢" U00A2 #
 <Multi_key><plus>                                                          <1><5><5><nobreakspace> : "¢" U00A2 #
 <Multi_key><plus>                                                          <1><5><6>       <space> : "£" U00A3 #
@@ -5745,6 +5744,23 @@
 <Multi_key><plus>                                                       <0><2><5><3>               : "ý" U00FD #
 <Multi_key><plus>                                                       <0><2><5><4>               : "þ" U00FE #
 <Multi_key><plus>                                                       <0><2><5><5>               : "ÿ" U00FF #
+#
+#
+#^# COMPOSE_DK_ID
+#   Multi_key double press
+#   Multikey: ¦¦
+#
+#   For consistency with all other dead keys except the group dead key,
+#   featuring the dead key identifier output as the very longest multiple press
+#   virtual dead key, the multikey double press is configured in its own
+#   subsection (not the last of the COMPOSE section, though).
+#   See # # Dead characters
+#
+#   This was initially and still is one of the various input methods for the
+#   simple multikey symbol "¦".
+#   See # # Symbols for multikey
+#
+<Multi_key><Multi_key>                                                                             : "¦" U00A6 # BROKEN BAR repurposed as multikey symbol
 #
 #
 #   START_MATH

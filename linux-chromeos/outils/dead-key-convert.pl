@@ -10,7 +10,7 @@
 # 2026-01-26T0514+0100
 # 2026-03-04T1042+0100
 # 2026-03-16T1433+0100
-# 2026-09-06T1635+0200
+# 2026-09-11T0708+0200
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows. As it
@@ -101,7 +101,7 @@
 # layout driver file size below the Windows-specific bug threshold. Otherwise,
 # the 6400 code points of the BMP private use area E000..F8FF are enough to
 # support both dedicated multikey sequences and dead key multikey equivalents.
-# On 2026-09-06, a set of 2827 intermediate multikey chains used E200..ED0A.
+# On 2026-09-11, a set of 2831 intermediate multikey chains used E200..ED0E.
 #
 # For test purposes, this can be toggled here by replacing false (!1) with
 # true (!0):
@@ -361,7 +361,7 @@ sub dekeysym {
 
 my @dead_key_characters = (
 
-	# Intermediate dead key chain links (575).
+	# Intermediate dead key chain links (586).
 	'<!abovedot><!abovedot>➔02C8',#<dead_abovedot><dead_abovedot>
 	'<!abovedot><!abovedot><!acute>➔02C7',#<dead_abovedot><dead_abovedot><dead_acute>
 	'<!abovedot><!abovedot><!acute><!grave>➔02B7',#<dead_abovedot><dead_abovedot><dead_acute><dead_grave>
@@ -402,6 +402,7 @@ my @dead_key_characters = (
 	'<!acute><!abovedot><!abovedot>➔02BF',#<dead_acute><dead_abovedot><dead_abovedot>
 	'<!acute><!abovering>➔01FA',#<dead_acute><dead_abovering>
 	'<!acute><!acute>➔0171',#<dead_acute><dead_acute>
+	'<!acute><!acute><!acute>➔2536',#<dead_acute><dead_acute><dead_acute>
 	'<!acute><!breve>➔1EAE',#<dead_acute><dead_breve>
 	'<!acute><!cedilla>➔1E09',#<dead_acute><dead_cedilla>
 	'<!acute><!circumflex>➔1EA5',#<dead_acute><dead_circumflex>
@@ -491,6 +492,7 @@ my @dead_key_characters = (
 	'<!circumflex><!acute>➔1EA4',#<dead_circumflex><dead_acute>
 	'<!circumflex><!belowdot>➔1EAC',#<dead_circumflex><dead_belowdot>
 	'<!circumflex><!circumflex>➔01CD',#<dead_circumflex><dead_circumflex>
+	'<!circumflex><!circumflex><!group>➔01EF',
 	'<!circumflex><!circumflex><!circumflex>➔1E19',#<dead_circumflex><dead_circumflex><dead_circumflex>
 	'<!circumflex><!grave>➔1EA7',#<dead_circumflex><dead_grave>
 	'<!circumflex><!group>➔2A6F',#<dead_circumflex><UEFD0>
@@ -508,6 +510,10 @@ my @dead_key_characters = (
 	'<!diaeresis><!acute>➔1E2F',#<dead_diaeresis><dead_acute>
 	'<!diaeresis><!caron>➔01DA',#<dead_diaeresis><dead_caron>
 	'<!diaeresis><!diaeresis>➔010E',#<dead_diaeresis><dead_diaeresis>
+	'<!diaeresis><!diaeresis><!group>➔01E3',
+	'<!diaeresis><!diaeresis><!group><!group>➔0297',
+	'<!diaeresis><!diaeresis><!group><!group><!group>➔01EE',
+	'<!diaeresis><!diaeresis><!group><3>➔01EE',
 	'<!diaeresis><!diaeresis><!diaeresis>➔1E73',#<dead_diaeresis><dead_diaeresis><dead_diaeresis>
 	'<!diaeresis><!grave>➔01DC',#<dead_diaeresis><dead_grave>
 	'<!diaeresis><!group>➔275F',#<dead_diaeresis><UEFD0>
@@ -672,6 +678,8 @@ my @dead_key_characters = (
 	'<!macron><!grave><!acute>➔02CD',#<dead_macron><dead_grave><dead_acute>
 	'<!macron><!group>➔01E3',#<dead_macron><UEFD0>
 	'<!macron><!group><!group>➔0297',#<dead_macron><UEFD0><UEFD0>
+	'<!macron><!group><!group><!group>➔01EE',
+	'<!macron><!group><3>➔01EE',
 	'<!macron><!macron>➔1E07',#<dead_macron><dead_macron>
 	'<!macron><!macron><!macron>➔2A60',#<dead_macron><dead_macron><dead_macron>
 	'<!macron><!ogonek>➔01EC',#<dead_macron><dead_ogonek>
@@ -1254,15 +1262,6 @@ my @dead_key_characters = (
 	'<!invertedbreve><!circumflex>➔2533',
 	'<!invertedbreve><!grave><!belowdot>➔2534',
 	'<!invertedbreve><!grave>➔2535',
-
-	# Additional dead key chains (7).
-	'<!circumflex><!circumflex><!group>➔01EF',
-	'<!diaeresis><!diaeresis><!group><!group><!group>➔01EE',
-	'<!diaeresis><!diaeresis><!group><3>➔01EE',
-	'<!macron><!group><!group><!group>➔01EE',
-	'<!macron><!group><3>➔01EE',
-	'<!diaeresis><!diaeresis><!group>➔01E3',
-	'<!diaeresis><!diaeresis><!group><!group>➔0297',
 
 );
 
