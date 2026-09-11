@@ -53,7 +53,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 		* Mouvoir "&" et la touche morte point en chef de D10 sur D08 à la place de "{" et de la touche morte crosse, qui vont sur D09 à la place de "}" et de la touche morte crochet rétroflexe, qui prennent la place de "&" et de la touche morte point en chef sur D10. dispocla.cpp [40a50fc](https://github.com/dispoclavier/azerty-complet/commit/40a50fcce1c48c39a2e494a3cec9e8be382638e2), ibidem, kbcomazerty.c, kbcomredispo.c [501cd06](https://github.com/dispoclavier/azerty-complet/commit/501cd0622106987df00b56478ba140f36d771763), [f762093](https://github.com/dispoclavier/azerty-complet/commit/f7620936cd7123bf5e6a668fc80b5c51838b7a12), compose-1.yml, compose-2.yml, compose-3.yml [8026430](https://github.com/dispoclavier/azerty-complet/commit/8026430e22cee6ed650616e75a7316803ca2ce05)
 	* Niveau 5 : Redonder "~" sur D05 à la place de "−" U+2212, qui va sur D06 à la place de "µ" U+00B5, qui est au niveau 7 sur C10 "M". dispocla.cpp [e41c128](https://github.com/dispoclavier/azerty-complet/commit/e41c12807c97f48b0c43bd64f1f3e72a1c9d128b), kbcomazerty.c, kbcomredispo.c [3aaaefe](https://github.com/dispoclavier/azerty-complet/commit/3aaaefe576eed158f28deee124015d829fa979c2), [3679c6b](https://github.com/dispoclavier/azerty-complet/commit/3679c6b4fee112c3e6d8e27bfd451c96f4803782)
 	* Niveaux 7 et 8 :
-		* Mouvoir "–" U+2013 de C04 sur C02 à la place de "🙂" U+1F642, qui y monte au niveau 8 à la place de "😔" U+1F614, qui va sur C05 à la place de "⇒" U+21D2, qui y descend au niveau 7 à la place de "→" U+2193, qui va sur C04 à la place laissée par "–" U+2013. dispocla.cpp, kbcomazerty.c, kbcomredispo.c, kbligatures.c, kbligazerty.c, kbligredispo.c [a9d9109](https://github.com/dispoclavier/azerty-complet/commit/a9d910980b58405d47c93e7be2ae0f5b03b44888)
+		* Mouvoir "–" U+2013 de C04 sur C02 à la place de "🙂" U+1F642, qui y monte au niveau 8 à la place de "😔" U+1F614, qui va sur C05 à la place de "⇒" U+21D2, qui y descend au niveau 7 à la place de "→" U+2193, qui va sur C04 à la place laissée par "–" U+2013. dispocla.cpp, kbcomazerty.c, kbcomredispo.c, kbligatures.c, kbligazerty.c, kbligredispo.c [a9d9109](https://github.com/dispoclavier/azerty-complet/commit/a9d910980b58405d47c93e7be2ae0f5b03b44888), [b51be9a](https://github.com/dispoclavier/azerty-complet/commit/b51be9a228505402519787d309efda280d3b92fb)
 		* Mouvoir "🙏" U+1F64F du niveau 8 de D08 "I" sur D10 "P" à la place de "&amp;amp;", qui descend au niveau 7 de D08 "&" à la place de "\u{", qui monte au niveau 8 de D07 "U" à la place de "&amp;apos;", qui va sur C08 "'" et "K" à la place de "😅" U+1F605, qui va sur D08 à la place laissée par "🙏" U+1F64F. dispocla.cpp, kbcomazerty.c, kbcomredispo.c, kbligatures.c, kbligazerty.c, kbligredispo.c [501cd06](https://github.com/dispoclavier/azerty-complet/commit/501cd0622106987df00b56478ba140f36d771763), [e0f0057](https://github.com/dispoclavier/azerty-complet/commit/e0f0057c479c51fe6209faadf4a0f31573376fc1)
 		* Redonder le sélecteur de variante émoji "️️" U+FE0F au niveau 8 de D03 "E" à la place de "&amp;quot;", qui descend au niveau 7 à la place de "″" U+2033, qui va sur C08 "K" à la place de "&#x", qui va sur D02 "Z" à la place de "′" U+2032, qui va sur C07 "J" à la place de "‾" U+203E, qui va sur D09 "O" à la place de "Ω" U+03A9, qui est dans le groupe 1 de "{" et dans la touche morte grec ou cerclé. ibidem
 * Composition :
@@ -62,6 +62,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* Adapter les séquences de "⨧" U+2A27 en « ¦+2_ ». compose-1.yml [6b74ee1](https://github.com/dispoclavier/azerty-complet/commit/6b74ee1c346428e4781a8c1ed44df6c7457eb0fc)
 	* Caractère de remplacement "�" U+FFFD par « ¦<? ». compose-1.yml [90ead6e](https://github.com/dispoclavier/azerty-complet/commit/90ead6e5168b73f859607eacbbe00f3ce0ee4fd9)
 * Transformations :
+	* Expérience utilisateur : Sortir le caractère mort par un appui répété sur la touche morte (sauf la touche morte groupe). compose-2.ym [b0e9be5](https://github.com/dispoclavier/azerty-complet/commit/b0e9be51d2294a0bbb125569a82dc2844b406dbe)
 	* Groupes des symboles :
 		* Suite à la redisposition des touches C08 à C10 et D07 à D10 :
 			* Remplacer "☼" U+263C par "☀" U+2600 pour annuler la substitution (4.24.0). compose-3.yml [d52c0f2](https://github.com/dispoclavier/azerty-complet/commit/d52c0f231dfa385578b9791c173e9056b98e712e)
@@ -109,7 +110,8 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* 7.0.0.1 [0243d21](https://github.com/dispoclavier/azerty-complet/commit/0243d219e59e28d55989032d11ddb21eaa95d830)
 	* 7.0.0.2 [e75719e](https://github.com/dispoclavier/azerty-complet/commit/e75719e314bfe0d115a6839986df89d5ba348abe)
 	* 7.0.0.3 [6b74ee1](https://github.com/dispoclavier/azerty-complet/commit/6b74ee1c346428e4781a8c1ed44df6c7457eb0fc)
-	* 7.0.0.4
+	* 7.0.0.4 [b51be9a](https://github.com/dispoclavier/azerty-complet/commit/b51be9a228505402519787d309efda280d3b92fb)
+	* 7.0.0.5 [b0e9be5](https://github.com/dispoclavier/azerty-complet/commit/b0e9be51d2294a0bbb125569a82dc2844b406dbe)
 
 ## 6.2.8 (2026-03-24)
 
