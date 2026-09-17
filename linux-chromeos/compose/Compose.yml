@@ -1,7 +1,7 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-09-17T1938+0200
+#                       Date: 2026-09-17T2126+0200
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.0.0.8" # See #   End of line comments
+<UEFA0>                     : "version 7.0.0.9" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -38268,8 +38268,8 @@
 #   See C08 bracketleft
 #   See C09 bracketright
 #
-<UEFD0>                                                                                    <minus> : "⁃" U2043 # HYPHEN BULLET
-<Multi_key><numbersign>                                                                    <minus> : "⁃" U2043 # HYPHEN BULLET
+<UEFD0>                                                                                    <minus> : "∓" U2213 # MINUS-OR-PLUS SIGN math
+<Multi_key><numbersign>                                                                    <minus> : "∓" U2213 # MINUS-OR-PLUS SIGN math
 <UEFD0><UEFD0>                                                                             <minus> : "➖" U2796 # HEAVY MINUS SIGN emoji
 <Multi_key><numbersign><numbersign>                                                        <minus> : "➖" U2796 # HEAVY MINUS SIGN emoji
 <UEFD0><3>                                                                                 <minus> : "☻" U263B # BLACK SMILING FACE
@@ -38300,10 +38300,10 @@
 <Multi_key><numbersign><8>                                                                 <minus> : "⛼" U26FC # HEADSTONE GRAVEYARD SYMBOL
 <UEFD0><KP_8>                                                                        <KP_Subtract> : "⛼" U26FC # HEADSTONE GRAVEYARD SYMBOL
 <Multi_key><numbersign><KP_8>                                                        <KP_Subtract> : "⛼" U26FC # HEADSTONE GRAVEYARD SYMBOL
-<UEFD0><9>                                                                                 <minus> : "➟" U279F # DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
-<Multi_key><numbersign><9>                                                                 <minus> : "➟" U279F # DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
-<UEFD0><KP_9>                                                                        <KP_Subtract> : "➟" U279F # DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
-<Multi_key><numbersign><KP_9>                                                        <KP_Subtract> : "➟" U279F # DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
+<UEFD0><9>                                                                                 <minus> : "⁃" U2043 # HYPHEN BULLET
+<Multi_key><numbersign><9>                                                                 <minus> : "⁃" U2043 # HYPHEN BULLET
+<UEFD0><KP_9>                                                                        <KP_Subtract> : "⁃" U2043 # HYPHEN BULLET
+<Multi_key><numbersign><KP_9>                                                        <KP_Subtract> : "⁃" U2043 # HYPHEN BULLET
 <UEFD0><0>                                                                                 <minus> : "‐" U2010 # HYPHEN
 <Multi_key><numbersign><0>                                                                 <minus> : "‐" U2010 # HYPHEN
 <UEFD0><KP_0>                                                                        <KP_Subtract> : "‐" U2010 # HYPHEN
@@ -38327,12 +38327,12 @@
 <Multi_key><numbersign>                                                                     <plus> : "±" U00B1 # PLUS-MINUS SIGN math
 <UEFD0><UEFD0>                                                                              <plus> : "➕" U2795 # HEAVY PLUS SIGN emoji
 <Multi_key><numbersign><numbersign>                                                         <plus> : "➕" U2795 # HEAVY PLUS SIGN emoji
-<UEFD0><3>                                                                                  <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN math
-<Multi_key><numbersign><3>                                                                  <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN math
-<UEFD0><KP_3>                                                                             <KP_Add> : "∓" U2213 # MINUS-OR-PLUS SIGN math
-<Multi_key><numbersign><KP_3>                                                             <KP_Add> : "∓" U2213 # MINUS-OR-PLUS SIGN math
-<UEFD0><UEFD0><UEFD0>                                                                       <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN math
-<Multi_key><numbersign><numbersign><numbersign>                                             <plus> : "∓" U2213 # MINUS-OR-PLUS SIGN math
+<UEFD0><3>                                                                                  <plus> : "✚" U271A # HEAVY GREEK CROSS
+<Multi_key><numbersign><3>                                                                  <plus> : "✚" U271A # HEAVY GREEK CROSS
+<UEFD0><KP_3>                                                                             <KP_Add> : "✚" U271A # HEAVY GREEK CROSS
+<Multi_key><numbersign><KP_3>                                                             <KP_Add> : "✚" U271A # HEAVY GREEK CROSS
+<UEFD0><UEFD0><UEFD0>                                                                       <plus> : "✚" U271A # HEAVY GREEK CROSS
+<Multi_key><numbersign><numbersign><numbersign>                                             <plus> : "✚" U271A # HEAVY GREEK CROSS
 <UEFD0><4>                                                                                  <plus> : "⊎" U228E # MULTISET UNION math
 <Multi_key><numbersign><4>                                                                  <plus> : "⊎" U228E # MULTISET UNION math
 <UEFD0><KP_4>                                                                             <KP_Add> : "⊎" U228E # MULTISET UNION math
@@ -38355,10 +38355,10 @@
 <Multi_key><numbersign><8>                                                                  <plus> : "⛬" U26EC # HISTORIC SITE
 <UEFD0><KP_8>                                                                             <KP_Add> : "⛬" U26EC # HISTORIC SITE
 <Multi_key><numbersign><KP_8>                                                             <KP_Add> : "⛬" U26EC # HISTORIC SITE
-<UEFD0><9>                                                                                  <plus> : "✚" U271A # HEAVY GREEK CROSS
-<Multi_key><numbersign><9>                                                                  <plus> : "✚" U271A # HEAVY GREEK CROSS
-<UEFD0><KP_9>                                                                             <KP_Add> : "✚" U271A # HEAVY GREEK CROSS
-<Multi_key><numbersign><KP_9>                                                             <KP_Add> : "✚" U271A # HEAVY GREEK CROSS
+<UEFD0><9>                                                                                  <plus> : "➟" U279F # DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
+<Multi_key><numbersign><9>                                                                  <plus> : "➟" U279F # DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
+<UEFD0><KP_9>                                                                             <KP_Add> : "➟" U279F # DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
+<Multi_key><numbersign><KP_9>                                                             <KP_Add> : "➟" U279F # DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
 <UEFD0><0>                                                                                  <plus> : "⁜" U205C # DOTTED CROSS, highlighter mark
 <Multi_key><numbersign><0>                                                                  <plus> : "⁜" U205C # DOTTED CROSS, highlighter mark
 <UEFD0><KP_0>                                                                             <KP_Add> : "⁜" U205C # DOTTED CROSS, highlighter mark

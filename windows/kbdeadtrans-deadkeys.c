@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Update                                   7.0.0.9.0 Thu 2026-09-17T2135+0200
 * Update                                   7.0.0.8.0 Thu 2026-09-17T1948+0200
 * Update                                   7.0.0.7.0 Thu 2026-09-17T1642+0200
 * Update                                   7.0.0.6.0 Thu 2026-09-17T0737+0200
@@ -4971,7 +4972,7 @@
 /*<!group><!group><!group>                                         */ DEADTRANS( L')'	,0x2462	,0x263A	,0x0000), // ')' ➔ "☺" U+263A WHITE SMILING FACE emoji with skin tone support, 25th-ranking
 /*<!group><!group><!group>                                         */ DEADTRANS( L'%'	,0x2462	,0x21AF	,0x0000), // '%' ➔ "↯" U+21AF DOWNWARDS ZIGZAG ARROW math
 /*<!group><!group><!group>                                         */ DEADTRANS( L'.'	,0x2462	,0xA78F	,0x0000), // '.' ➔ "ꞏ" U+A78F LATIN LETTER SINOLOGICAL DOT
-/*<!group><!group><!group>                                         */ DEADTRANS( L'+'	,0x2462	,0x2213	,0x0000), // '+' ➔ "∓" U+2213 MINUS-OR-PLUS SIGN math
+/*<!group><!group><!group>                                         */ DEADTRANS( L'+'	,0x2462	,0x271A	,0x0000), // '+' ➔ "✚" U+271A HEAVY GREEK CROSS
 /*<!group><!group><!group>                                         */ DEADTRANS( L'?'	,0x2462	,0x2754	,0x0000), // '?' ➔ "❔" U+2754 WHITE QUESTION MARK ORNAMENT emoji
 /*<!group><!group><!group>                                         */ DEADTRANS( L'"'	,0x2462	,0x220B	,0x0000), // '"' ➔ "∋" U+220B CONTAINS AS MEMBER math
 /*<!group><!group><!group>                                         */ DEADTRANS( 0x20AC	,0x2462	,0x220B	,0x0000), // '€' ➔ "∋" U+220B CONTAINS AS MEMBER math
@@ -5175,7 +5176,7 @@
 /*<!group>                                                         */ DEADTRANS( L'>'	,0x2460	,0x2714	,0x0000), // '>' ➔ "✔" U+2714 HEAVY CHECK MARK emoji
 /*<!group>                                                         */ DEADTRANS( L'#'	,0x2460	,0x2610	,0x0000), // '#' ➔ "☐" U+2610 BALLOT BOX
 /*<!group>                                                         */ DEADTRANS( L'<'	,0x2460	,0x2713	,0x0000), // '<' ➔ "✓" U+2713 CHECK MARK
-/*<!group>                                                         */ DEADTRANS( L'-'	,0x2460	,0x2043	,0x0000), // '-' ➔ "⁃" U+2043 HYPHEN BULLET
+/*<!group>                                                         */ DEADTRANS( L'-'	,0x2460	,0x2213	,0x0000), // '-' ➔ "∓" U+2213 MINUS-OR-PLUS SIGN math
 /*<!group>                                                         */ DEADTRANS( L'('	,0x2460	,0x2300	,0x0000), // '(' ➔ "⌀" U+2300 DIAMETER SIGN math
 /*<!group>                                                         */ DEADTRANS( L')'	,0x2460	,0x2794	,0x0000), // ')' ➔ "➔" U+2794 HEAVY WIDE-HEADED RIGHTWARDS ARROW
 /*<!group>                                                         */ DEADTRANS( L'%'	,0x2460	,0x2606	,0x0000), // '%' ➔ "☆" U+2606 WHITE STAR math
@@ -5728,7 +5729,7 @@
 /*<!group><3>                                                      */ DEADTRANS( L')'	,0x2462	,0x263A	,0x0000), // ')' ➔ "☺" U+263A WHITE SMILING FACE emoji with skin tone support, 25th-ranking
 /*<!group><3>                                                      */ DEADTRANS( L'%'	,0x2462	,0x21AF	,0x0000), // '%' ➔ "↯" U+21AF DOWNWARDS ZIGZAG ARROW math
 /*<!group><3>                                                      */ DEADTRANS( L'.'	,0x2462	,0xA78F	,0x0000), // '.' ➔ "ꞏ" U+A78F LATIN LETTER SINOLOGICAL DOT
-/*<!group><3>                                                      */ DEADTRANS( L'+'	,0x2462	,0x2213	,0x0000), // '+' ➔ "∓" U+2213 MINUS-OR-PLUS SIGN math
+/*<!group><3>                                                      */ DEADTRANS( L'+'	,0x2462	,0x271A	,0x0000), // '+' ➔ "✚" U+271A HEAVY GREEK CROSS
 /*<!group><3>                                                      */ DEADTRANS( L'?'	,0x2462	,0x2754	,0x0000), // '?' ➔ "❔" U+2754 WHITE QUESTION MARK ORNAMENT emoji
 /*<!group><3>                                                      */ DEADTRANS( L'"'	,0x2462	,0x220B	,0x0000), // '"' ➔ "∋" U+220B CONTAINS AS MEMBER math
 /*<!group><3>                                                      */ DEADTRANS( 0x20AC	,0x2462	,0x220B	,0x0000), // '€' ➔ "∋" U+220B CONTAINS AS MEMBER math
@@ -7110,7 +7111,7 @@
 /*<!group><9>                                                      */ DEADTRANS( L'>'	,0x2468	,0x27B8	,0x0000), // '>' ➔ "➸" U+27B8 HEAVY BLACK-FEATHERED RIGHTWARDS ARROW
 /*<!group><9>                                                      */ DEADTRANS( L'#'	,0x2468	,0x2652	,0x0000), // '#' ➔ "♒" U+2652 AQUARIUS emoji
 /*<!group><9>                                                      */ DEADTRANS( L'<'	,0x2468	,0x2604	,0x0000), // '<' ➔ "☄" U+2604 COMET emoji
-/*<!group><9>                                                      */ DEADTRANS( L'-'	,0x2468	,0x279F	,0x0000), // '-' ➔ "➟" U+279F DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
+/*<!group><9>                                                      */ DEADTRANS( L'-'	,0x2468	,0x2043	,0x0000), // '-' ➔ "⁃" U+2043 HYPHEN BULLET
 /*<!group><9>                                                      */ DEADTRANS( L'('	,0x2468	,0x21AA	,0x0000), // '(' ➔ "↪" U+21AA RIGHTWARDS ARROW WITH HOOK emoji
 /*<!group><9>                                                      */ DEADTRANS( L')'	,0x2468	,0x21A9	,0x0000), // ')' ➔ "↩" U+21A9 LEFTWARDS ARROW WITH HOOK emoji
 /*<!group><9>                                                      */ DEADTRANS( L'%'	,0x2468	,0x2649	,0x0000), // '%' ➔ "♉" U+2649 TAURUS emoji
@@ -7177,7 +7178,7 @@
 /*<!group><9><%period>                                             */ DEADTRANS( L'Z'	,0x2102	,0xDE89	,0x0000), // High surrogate: D835; 'Z' ➔ "𝚉" U+1D689 MATHEMATICAL MONOSPACE CAPITAL Z
 /*<!group><9><%period>                                             */ DEADTRANS( L'z'	,0x2102	,0xDEA3	,0x0000), // High surrogate: D835; 'z' ➔ "𝚣" U+1D6A3 MATHEMATICAL MONOSPACE SMALL Z
 /*<!group><9><%period>                                             */ DEADTRANS( L' '	,0x2102	,0x2007	,0x0000), // ' ' ➔ " " U+2007 FIGURE SPACE
-/*<!group><9>                                                      */ DEADTRANS( L'+'	,0x2468	,0x271A	,0x0000), // '+' ➔ "✚" U+271A HEAVY GREEK CROSS
+/*<!group><9>                                                      */ DEADTRANS( L'+'	,0x2468	,0x279F	,0x0000), // '+' ➔ "➟" U+279F DASHED TRIANGLE-HEADED RIGHTWARDS ARROW
 /*<!group><9>                                                      */ DEADTRANS( L'?'	,0x2468	,0x2644	,0x0000), // '?' ➔ "♄" U+2644 SATURN
 /*<!group><9>                                                      */ DEADTRANS( L'"'	,0x2468	,0x264A	,0x0000), // '"' ➔ "♊" U+264A GEMINI emoji
 /*<!group><9>                                                      */ DEADTRANS( 0x20AC	,0x2468	,0x264A	,0x0000), // '€' ➔ "♊" U+264A GEMINI emoji
