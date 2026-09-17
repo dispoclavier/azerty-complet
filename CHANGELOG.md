@@ -63,7 +63,9 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* Adapter les séquences de "⨧" U+2A27 en « ¦+2_ ». compose-1.yml [6b74ee1](https://github.com/dispoclavier/azerty-complet/commit/6b74ee1c346428e4781a8c1ed44df6c7457eb0fc)
 	* Caractère de remplacement "�" U+FFFD par « ¦<? »l. compose-1.yml [90ead6e](https://github.com/dispoclavier/azerty-complet/commit/90ead6e5168b73f859607eacbbe00f3ce0ee4fd9)
 * Transformations :
-	* Expérience utilisateur : Sortir le caractère mort par un appui répété sur la touche morte (sauf la touche morte groupe). compose-2.ym [b0e9be5](https://github.com/dispoclavier/azerty-complet/commit/b0e9be51d2294a0bbb125569a82dc2844b406dbe)
+	* Expérience utilisateur :
+		* Sortir le caractère mort par un appui répété sur la touche morte (sauf la touche morte groupe). compose-2.yml [b0e9be5](https://github.com/dispoclavier/azerty-complet/commit/b0e9be51d2294a0bbb125569a82dc2844b406dbe)
+		* Identifier les caractères invisibles et les trois points à mi-hauteur disposés sur le clavier. compose-2.yml 
 	* Groupes des symboles :
 		* Suite à la redisposition des touches C08 à C10 et D07 à D10 :
 			* Remplacer "☼" U+263C par "☀" U+2600 pour annuler la substitution (4.24.0). compose-3.yml [d52c0f2](https://github.com/dispoclavier/azerty-complet/commit/d52c0f231dfa385578b9791c173e9056b98e712e)
@@ -120,6 +122,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* 7.0.0.5 [b0e9be5](https://github.com/dispoclavier/azerty-complet/commit/b0e9be51d2294a0bbb125569a82dc2844b406dbe)
 	* 7.0.0.6 [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* 7.0.0.7 [8f8b6ed](https://github.com/dispoclavier/azerty-complet/commit/8f8b6ed656153ccb22c7fe546aebbe39d433c5bf)
+	* 7.0.0.8 []()
 
 ## 6.2.8 (2026-03-24)
 

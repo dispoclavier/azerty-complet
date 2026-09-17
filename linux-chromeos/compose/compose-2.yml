@@ -14688,12 +14688,18 @@
 #   Making invisible characters visible
 #
 #   For a smoother user experience, invisible characters mapped on live keys
-#   have a visible alias that displays when the circumflex dead key is pressed
-#   before, because this is the most outstanding and easiest accessible dead
-#   key on all French keyboard layouts.
+#   except U200B have a visible alias that displays when the circumflex dead
+#   key is pressed before, because this is the most outstanding and easiest
+#   accessible dead key on all French keyboard layouts.
 #
-#   This feature can be extended to include confusable characters such as the
-#   three mid-height dots "·" U00B7, "‧" U2027 and "⋅" U22C5.
+#   This feature is extended to include the three confusable mid-height dots
+#   "·" U00B7, "‧" U2027 and "⋅" U22C5.
+#
+#   On Windows however, limited to a single UTF-16 code unit output, this can
+#   only be about hinting the semantics. For this purpose, minus the hyphen
+#   hints the soft hyphen for an invisible, and the hyphenation point for a
+#   mid-height dot. Likewise, a pipe stands both for the middle dot and for
+#   the cursive non-joiner, depending on the visibility of the direct output.
 #
 <dead_circumflex>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
 <Multi_key><less>                                                                          <space> : "̂" U0302 # COMBINING CIRCUMFLEX ACCENT
@@ -14945,10 +14951,10 @@
 <Multi_key><less>                                                                          <U00AD> : "trait_d’union_conditionnel_(césure_conditionnelle_avec_trait_d’union)" #
 #@<dead_circumflex>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
 #@<Multi_key><less>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
-<dead_circumflex>                                                                          <U200B> : "espace_nulle_(césure_conditionnelle_sans_trait_d’union)" #
-#   Multikey conflicts with "̂" U0302.                                                     <U200B> : "espace_nulle_(césure_conditionnelle_sans_trait_d’union)" #
-#@<dead_circumflex>                                                                        <U200B> : "␣" U2423 # OPEN BOX
-#   Multikey conflicts with "̂" U0302.                                                      <U200B> : "␣" U2423 # OPEN BOX
+<dead_circumflex>                                                                          <U00B7> : "point médian \"·\""
+<Multi_key><less>                                                                          <U00B7> : "point médian \"·\""
+#@<dead_circumflex>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
+#@<Multi_key><less>                                                                        <U00B7> : "|" U007C # VERTICAL LINE
 <dead_circumflex>                                                                          <U200C> : "antiliant" #
 <Multi_key><less>                                                                          <U200C> : "antiliant" #
 #@<dead_circumflex>                                                                        <U200C> : "|" U007C # VERTICAL LINE
@@ -14957,6 +14963,10 @@
 <Multi_key><less>                                                                          <U200D> : "liant" #
 #@<dead_circumflex>                                                                        <U200D> : "&" U0026 # AMPERSAND
 #@<Multi_key><less>                                                                        <U200D> : "&" U0026 # AMPERSAND
+<dead_circumflex>                                                                          <U2027> : "point d’hyphénation \"‧\""
+<Multi_key><less>                                                                          <U2027> : "point d’hyphénation \"‧\""
+#@<dead_circumflex>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
+#@<Multi_key><less>                                                                        <U2027> : "-" U002D # HYPHEN-MINUS
 <dead_circumflex>                                                                          <U2063> : "séparateur_invisible" #
 <Multi_key><less>                                                                          <U2063> : "séparateur_invisible" #
 #@<dead_circumflex>                                                                        <U2063> : "," U002C # COMMA
@@ -14965,11 +14975,14 @@
 <Multi_key><less>                                                                          <U2064> : "“signe_plus”_invisible" #
 #@<dead_circumflex>                                                                        <U2064> : "+" U002B # PLUS SIGN
 #@<Multi_key><less>                                                                        <U2064> : "+" U002B # PLUS SIGN
+<dead_circumflex>                                                                          <U22C5> : "opérateur point \"⋅\""
+<Multi_key><less>                                                                          <U22C5> : "opérateur point \"⋅\""
+#@<dead_circumflex>                                                                        <U22C5> : "×" U00D7 # MULTIPLICATION SIGN
+#@<Multi_key><less>                                                                        <U22C5> : "×" U00D7 # MULTIPLICATION SIGN
 <dead_circumflex>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" #
 <Multi_key><less>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" #
 #@<dead_circumflex>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
 #@<Multi_key><less>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
-#
 #
 # # CIRCUMFLEX&GROUP_1
 #

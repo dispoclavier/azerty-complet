@@ -2872,8 +2872,10 @@
 #
 #   A number of Supplemental Multilingual Plane emoji are mapped on live keys.
 #
-#   The two emoji-related variation selectors are in group 10 on key E, D03,
-#   for emoji style, VS16 UFE0F, and on key T, D05, for text style, VS15 UFE0E.
+#   The two emoji-related variation selectors are in the tilde-and-braceright
+#   dead key by quotedbl or EuroSign on key E, D03 for emoji style, VS16 UFE0F,
+#   and by asciitilde on key T, D05 for text style, VS15 UFE0E.
+#   See # # TILDE&BRACERIGHT
 #
 #   The five emoji skin tone modifiers based on the 6-shades Fitzpatrick scale
 #   "🏻" U1F3FB, "🏼" U1F3FC, "🏽" U1F3FD, "🏾" U1F3FE, "🏿" U1F3FF are discontinued

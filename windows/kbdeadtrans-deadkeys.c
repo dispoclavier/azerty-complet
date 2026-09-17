@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Update                                   7.0.0.8.0 Thu 2026-09-17T1948+0200
 * Update                                   7.0.0.7.0 Thu 2026-09-17T1642+0200
 * Update                                   7.0.0.6.0 Thu 2026-09-17T0737+0200
 * Update                                   7.0.0.5.0 Fri 2026-09-11T0719+0200
@@ -2967,10 +2968,13 @@
 /*<!circumflex>                                                    */ DEADTRANS( 0x00B3	,0x00EA	,0x2033	,0x0000), // '³' ➔ "″" U+2033 DOUBLE PRIME
 /*<!circumflex>                                                    */ DEADTRANS( 0x00B2	,0x00EA	,0x2032	,0x0000), // '²' ➔ "′" U+2032 PRIME
 /*<!circumflex>                                                    */ DEADTRANS( 0x00AD	,0x00EA	,0x002D	,0x0000), // '­' ➔ "-" U+002D HYPHEN-MINUS
+/*<!circumflex>                                                    */ DEADTRANS( 0x00B7	,0x00EA	,0x007C	,0x0000), // '·' ➔ "|" U+007C VERTICAL LINE
 /*<!circumflex>                                                    */ DEADTRANS( 0x200C	,0x00EA	,0x007C	,0x0000), // '‌' ➔ "|" U+007C VERTICAL LINE
 /*<!circumflex>                                                    */ DEADTRANS( 0x200D	,0x00EA	,0x0026	,0x0000), // '‍' ➔ "&" U+0026 AMPERSAND
+/*<!circumflex>                                                    */ DEADTRANS( 0x2027	,0x00EA	,0x002D	,0x0000), // '‧' ➔ "-" U+002D HYPHEN-MINUS
 /*<!circumflex>                                                    */ DEADTRANS( 0x2063	,0x00EA	,0x002C	,0x0000), // '⁣' ➔ "," U+002C COMMA
 /*<!circumflex>                                                    */ DEADTRANS( 0x2064	,0x00EA	,0x002B	,0x0000), // '⁤' ➔ "+" U+002B PLUS SIGN
+/*<!circumflex>                                                    */ DEADTRANS( 0x22C5	,0x00EA	,0x00D7	,0x0000), // '⋅' ➔ "×" U+00D7 MULTIPLICATION SIGN
 /*<!circumflex>                                                    */ DEADTRANS( L'U'	,0x00EA	,0x00DB	,0x0000), // 'U' ➔ "Û" U+00DB LATIN CAPITAL LETTER U WITH CIRCUMFLEX
 /*<!circumflex>                                                    */ DEADTRANS( L'u'	,0x00EA	,0x00FB	,0x0000), // 'u' ➔ "û" U+00FB LATIN SMALL LETTER U WITH CIRCUMFLEX
 /*<!circumflex>                                                    */ DEADTRANS( 0xFE0F	,0x00EA	,0x263A	,0x0000), // '️' ➔ "☺" U+263A WHITE SMILING FACE
@@ -2986,7 +2990,6 @@
 /*<!circumflex>                                                    */ DEADTRANS( 0x202F	,0x00EA	,0x02C6	,0x0000), // ' ' ➔ "ˆ" U+02C6 MODIFIER LETTER CIRCUMFLEX ACCENT
 /*<!circumflex>                                                    */ DEADTRANS( L' '	,0x00EA	,0x0302	,0x0000), // ' ' ➔ "̂" U+0302 COMBINING CIRCUMFLEX ACCENT
 /*<!circumflex>                                                    */ DEADTRANS( 0x200B	,0x00EA	,0x0302	,0x0000), // '​' ➔ "̂" U+0302 COMBINING CIRCUMFLEX ACCENT
-/*<!circumflex>                                                    */ DEADTRANS( 0x200B	,0x00EA	,0x2423	,0x0000), // '​' ➔ "␣" U+2423 OPEN BOX
 /*<!currency><!abovering>                                          */ DEADTRANS( L'1'	,0x2232	,0x222E	,0x0000), // '1' ➔ "∮" U+222E CONTOUR INTEGRAL
 /*<!currency><!abovering>                                          */ DEADTRANS( L'2'	,0x2232	,0x222F	,0x0000), // '2' ➔ "∯" U+222F SURFACE INTEGRAL
 /*<!currency><!abovering>                                          */ DEADTRANS( L'3'	,0x2232	,0x2230	,0x0000), // '3' ➔ "∰" U+2230 VOLUME INTEGRAL

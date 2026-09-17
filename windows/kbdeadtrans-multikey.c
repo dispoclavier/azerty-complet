@@ -8,7 +8,8 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
-* Update                                   7.0.0.7.0 Thu 2026-09-17T1640+0200
+* Update                                   7.0.0.8.0 Thu 2026-09-17T1946+0200
+* Update                                   7.0.0.7.0 Thu 2026-09-17T1642+0200
 * Update                                   7.0.0.6.0 Thu 2026-09-17T0737+0200
 * Update                                   7.0.0.5.0 Fri 2026-09-11T0716+0200
 * Update                                   7.0.0.3.0 Mon 2026-09-07T1707+0200
@@ -17,6 +18,7 @@
 * Update                                   6.2.6.0.0 Sun 2026-03-15T2141+0100
 * Update                                   6.2.5.0.0 Sun 2026-03-08T0834+0100
 * Update                                   6.2.4.3.0 Thu 2026-03-05T0307+0100
+* Update                                   6.2.4.2.0 Wed 2026-03-04T2223+0100
 * Update                                   6.2.4.2.0 Wed 2026-03-04T2223+0100
 * Shrink-remove all multikey equivalents   6.2.4.1.0 Tue 2026-03-03T1429+0100
 * Move here debugged multikey equivalents  6.2.4.0.0 Tue 2026-03-03T0958+0100
