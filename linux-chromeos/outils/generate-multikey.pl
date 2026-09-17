@@ -4,7 +4,7 @@
 # 2024-05-13T1842+0200
 # 2024-07-26T1942+0200
 # 2026-01-26T0431+0100
-# 2026-09-06T1645+0200
+# 2026-09-17T0505+0200
 # = last modified
 # 
 # Adds the Multi_key equivalent below the dead key
@@ -12,10 +12,10 @@
 #
 # Removes already existing Multi_key lines if they
 # are prefixed with an '@' sign, in order to avoid
-# adding duplicate Multi_key lines.
+# duplicate Multi_key lines.
 #
-# Lines prefixed with an '!' are stripped of any
-# Multi_key lines.
+# Lines prefixed with an '!' are just stripped of
+# any Multi_key lines.
 #
 # Adds the sequence with keypad aliases instead of
 # digits below lines prefixed with a '['.
@@ -28,14 +28,15 @@
 #
 # # Multi_key equivalents
 #
-# The ASCII symbols used as equivalents follow the
-# new-school input composition.
+# The ASCII symbols used as equivalents are
+# consistent with new-school input composition.
+# See Compose.yml # # Introducing new-school input composition
 #
 # Supports also section sign in lieu of exclam,
 # and EuroSign in lieu of quotedbl.
 #
 #
-# # Format
+# # Input format
 #
 # Dead keys are supposed to align to the left, and
 # not to be space padded, from streamlined input.
@@ -121,13 +122,13 @@ while ( my $line = <BACKUP> ) {
 		}
 		print OUTPUT $line;
 	} elsif ( $line =~ /^!/ ) {
-		unless ( $line =~ /^!<Multi_key>/ ) {
+		unless ( $line =~ /^!(#@)?<Multi_key>/ ) {
 			$line =~ s/^!//;
 			print OUTPUT $line;
 		}
 	} elsif ( $line =~ /^@/ ) {
 		$line =~ s/^@//;
-		unless ( $line =~ /^<Multi_key>/ ) {
+		unless ( $line =~ /^(#@)?<Multi_key>/ ) {
 			print OUTPUT $line;
 			if ( $line =~ /<UEFD0>/
 				|| $line =~ /<UEFD1>/
@@ -192,58 +193,58 @@ while ( my $line = <BACKUP> ) {
 					$line =~ s/^([^ ]*?)<dead_stroke>([^ ]*)/$1<slash>$2      /;
 					$line =~ s/^([^ ]*?)<dead_tilde>([^ ]*)/$1<asciitilde>$2/;
 				} while (
-					$line =~    /^([^ ]*?)<UEFD0>/
-					|| $line =~ /^([^ ]*?)<UEFD1>/
-					|| $line =~ /^([^ ]*?)<UEFD2>/
-					|| $line =~ /^([^ ]*?)<UEFD3>/
-					|| $line =~ /^([^ ]*?)<UEFD4>/
-					|| $line =~ /^([^ ]*?)<UEFD5>/
-					|| $line =~ /^([^ ]*?)<UEFD6>/
-					|| $line =~ /^([^ ]*?)<UEFD7>/
-					|| $line =~ /^([^ ]*?)<UEFD8>/
-					|| $line =~ /^([^ ]*?)<dead_abovedot>/
-					|| $line =~ /^([^ ]*?)<dead_abovering>/
-					|| $line =~ /^([^ ]*?)<dead_acute>/
-					|| $line =~ /^([^ ]*?)<dead_belowcomma>/
-					|| $line =~ /^([^ ]*?)<dead_belowdot>/
-					|| $line =~ /^([^ ]*?)<dead_breve>/
-					|| $line =~ /^([^ ]*?)<dead_caron>/
-					|| $line =~ /^([^ ]*?)<dead_cedilla>/
-					|| $line =~ /^([^ ]*?)<dead_circumflex>/
-					|| $line =~ /^([^ ]*?)<dead_currency>/
-					|| $line =~ /^([^ ]*?)<dead_diaeresis>/
-					|| $line =~ /^([^ ]*?)<dead_doubleacute>/
-					|| $line =~ /^([^ ]*?)<dead_grave>/
-					|| $line =~ /^([^ ]*?)<dead_greek>/
-					|| $line =~ /^([^ ]*?)<dead_hook>/
-					|| $line =~ /^([^ ]*?)<dead_horn>/
-					|| $line =~ /^([^ ]*?)<dead_invertedbreve>/
-					|| $line =~ /^([^ ]*?)<dead_macron>/
-					|| $line =~ /^([^ ]*?)<dead_ogonek>/
-					|| $line =~ /^([^ ]*?)<dead_stroke>/
-					|| $line =~ /^([^ ]*?)<dead_tilde>/
+					$line =~    /^[^ ]*?<UEFD0>/
+					|| $line =~ /^[^ ]*?<UEFD1>/
+					|| $line =~ /^[^ ]*?<UEFD2>/
+					|| $line =~ /^[^ ]*?<UEFD3>/
+					|| $line =~ /^[^ ]*?<UEFD4>/
+					|| $line =~ /^[^ ]*?<UEFD5>/
+					|| $line =~ /^[^ ]*?<UEFD6>/
+					|| $line =~ /^[^ ]*?<UEFD7>/
+					|| $line =~ /^[^ ]*?<UEFD8>/
+					|| $line =~ /^[^ ]*?<dead_abovedot>/
+					|| $line =~ /^[^ ]*?<dead_abovering>/
+					|| $line =~ /^[^ ]*?<dead_acute>/
+					|| $line =~ /^[^ ]*?<dead_belowcomma>/
+					|| $line =~ /^[^ ]*?<dead_belowdot>/
+					|| $line =~ /^[^ ]*?<dead_breve>/
+					|| $line =~ /^[^ ]*?<dead_caron>/
+					|| $line =~ /^[^ ]*?<dead_cedilla>/
+					|| $line =~ /^[^ ]*?<dead_circumflex>/
+					|| $line =~ /^[^ ]*?<dead_currency>/
+					|| $line =~ /^[^ ]*?<dead_diaeresis>/
+					|| $line =~ /^[^ ]*?<dead_doubleacute>/
+					|| $line =~ /^[^ ]*?<dead_grave>/
+					|| $line =~ /^[^ ]*?<dead_greek>/
+					|| $line =~ /^[^ ]*?<dead_hook>/
+					|| $line =~ /^[^ ]*?<dead_horn>/
+					|| $line =~ /^[^ ]*?<dead_invertedbreve>/
+					|| $line =~ /^[^ ]*?<dead_macron>/
+					|| $line =~ /^[^ ]*?<dead_ogonek>/
+					|| $line =~ /^[^ ]*?<dead_stroke>/
+					|| $line =~ /^[^ ]*?<dead_tilde>/
 				);
 				$line =~ s/<dead_breve>/<parenright>/;
 				
 				do {
 					$line =~ s/     ([^ ]*?)<UEFD0>([^ ]*)/$1<numbersign>$2/;
 				} while (
-					$line =~ /([^ ]*?)<UEFD0>/
+					$line =~ /[^ ]*?<UEFD0>/
 				);
 				
-				$line =~ s/^(?!#)(?!<Multi_key>)(.+) {11}/<Multi_key>$1/;
-				$line =~ s/^(?!#)(?!<Multi_key>)(.+)/<Multi_key>$1/;
+				$line =~ s/^(?!#)([^ ]+) {11}/<Multi_key>$1/;
+				$line =~ s/^(#@)([^ ]+) {11}/$1<Multi_key>$2/;
 				print OUTPUT $line;
-				if ( $line =~ /^<Multi_key>.*<exclam>/ ) {
+				if ( $line =~ /^(#@)?<Multi_key>.*<exclam>/ ) {
 					do {
 						$line =~ s/^([^ ]*?)<exclam>([^ ]*) /$1<section>$2/;
-					} while ( $line =~ /^([^ ]*?)<exclam>/ );
+					} while ( $line =~ /^[^ ]*?<exclam>/ );
 					print OUTPUT $line;
 				}
-				if ( $line =~ /^<Multi_key>.*<quotedbl>/ ) {
+				if ( $line =~ /^(#@)?<Multi_key>.*<quotedbl>/ ) {
 					do {
 						$line =~ s/^([^ ]*?)<quotedbl>([^ ]*)/$1<EuroSign>$2/;
-					} while ( $line =~ /^([^ ]*?)<quotedbl>/ );
+					} while ( $line =~ /^[^ ]*?<quotedbl>/ );
 					print OUTPUT $line;
 				}
 			}

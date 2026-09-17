@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.0.0.5" # See #   End of line comments
+<UEFA0>                     : "version 7.0.0.6" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -117,7 +117,7 @@
 #                             Windows, and it is not derived from en_US.UTF-8/Compose, nor
 #                             from any of the Compose files shipped with Linux. As a result,
 #                             it can be released under the Apache 2.0 license, and it can be
-#                             transpiled back to C and used as source code for layout drivers
+#                             compiled back to C and used as source code for layout drivers
 #                             shipped with Windows, without running into legal issues related
 #                             to the GNU General Public Licenses.
 #
@@ -428,14 +428,18 @@
 #   https://www.unicode.org/mail-arch/unicode-ml/y2015-m06/0220.html
 #
 #   In mainstream high-quality publishing, referred to as new school, no-break
-#   thin space is used throughout. This new school is implicitly represented by
-#   Éditions Le Robert, recommending thin space to space out the colon, the
-#   most outstanding punctuation that old school spaces out using a justifying
-#   space. Le Robert states: “Le deux-points est précédé d'une espace fine et
-#   suivi d'une espace normale” (the colon is preceded by a thin space and
-#   followed by a normal space). And on the MacGeneration forum, claude72 has
-#   contributed an explicit documentation of French new school.
+#   thin space is used throughout.
+#
+#   This new school is implicitly represented by Éditions Le Robert,
+#   recommending thin space to space out even the colon, the most outstanding
+#   punctuation that old school spaces out using a justifying space. Le Robert
+#   states: “Le deux-points est précédé d'une espace fine et suivi d'une espace
+#   normale” (the colon is preceded by a thin space and followed by a normal
+#   space).
 #   https://dictionnaire.lerobert.com/guide/ponctuation-et-espace
+#
+#   On the MacGeneration forum, claude72 has explicitly documented French new
+#   school.
 #   https://forums.macg.co/threads/typo-caracteres-capitales-accentues.25739/page-5#post-3151119
 #
 #   Imprimerie nationale, France does not formally categorize punctuation marks
@@ -454,35 +458,42 @@
 #   no-break justifying space. The double angle quotation marks are ruled like
 #   colon but typeset like semicolon.
 #
-#   The no-break thin space seems to be the “espace fine insécable” mentioned
-#   in the Unicode Standard, a no-break clone of Unicode’s thin space TSP U2009
-#   designed to be no-break but ultimately released as breaking.
+#   The no-break thin space is the “espace fine insécable” mentioned in the
+#   Unicode Standard, a no-break clone of Unicode’s thin space TSP U2009. The
+#   latter was designed to be no-break but was ultimately released as breaking.
 #
 #
 #   No-break thin space in the Unicode Standard
 #
-#   Indeed, U202F NNBSP, also known as no-break thin space, is a character that
-#   despite being encoded for Mongolian with specific handling intended, was
-#   readily adopted for use in French, Philippe Verdy reported, to that
-#   extent that it was ultimately a special requirement for Mongolian that
+#   Indeed, U202F NARROW NO-BREAK SPACE (NNBSP), also known as "no-break thin
+#   space", is a character that despite being initially encoded for Mongolian
+#   with specific handling intended, was moved out of the projected Mongolian
+#   block starting at U1800, into the General Punctuation block, with the
+#   rationale that it is useful to other scripts as well. Those scripts that
+#   require a no-break thin space but were deprived thereof since Unicode 1.0.0
+#   (1991) until Unicode 3.0.0 (1999). Consistently, no-break thin space was
+#   readily adopted for use in French, Philippe Verdy reported.
+#   https://www.unicode.org/mail-arch/unicode-ml/y2019-m01/0146.html
+#
+#   Ultimately, it was a special requirement of the Mongolian script that
 #   brought the long-missing no-break thin space into the UCS, in the block
 #   that it actually belongs to, and where it had been available since the
 #   beginning if there had been no desire to keep the working-as-intended U2009
 #   proprietary.
-#   https://www.unicode.org/mail-arch/unicode-ml/y2019-m01/0146.html
 #
 #   That is the hidden — almost occult — fact where stances like “The NNBSP can
 #   be used to represent the narrow space occurring around punctuation
 #   characters in French typography, which is called an ‘espace fine
 #   insécable.’” (TUS) and “When NARROW NO-BREAK SPACE occurs in French text,
 #   it should be interpreted as an ‘espace fine insécable’.” (UAX #14) are
-#   stemming from. The underlying meaning is like: “The no-break thin space is
-#   usually a vendor-specific layout control in DTP applications; it’s also
-#   available via a TeX command. However, if you are interested in an
-#   interoperable representation, here’s a Unicode character you can use
-#   instead.”
+#   stemming from.
 #   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G26915
 #   https://www.unicode.org/reports/tr14/tr14-51.html#NNBSPdoc
+#
+#   The underlying meaning is like: “The no-break thin space is usually a
+#   vendor-specific layout control in DTP applications; it’s also available via
+#   a TeX command. However, if you are interested in an interoperable
+#   representation, here’s a Unicode character you can use instead.”
 #
 #   Unicode was supposed to encode SI/BIPM number typesetting as well as French
 #   punctuation typesetting, and for that purpose encoded THIN SPACE along with
@@ -499,15 +510,20 @@
 #   But that design goal was ultimately compromised. To cover up the vandalism,
 #   U2007 FIGURE SPACE was left no-break with the allegation that this space is
 #   used “in” numbers, and even stating that it is digit-wide, defeating the
-#   point in advertising U2007 for use as a group separator. Indeed, U2007 was
-#   encoded as the tabular space, to be used before numbers when typesetting
-#   tables the old way, alongside indentation by the width of a decimal dot or
-#   comma, using U2008 PUNCTUATION SPACE.
-#   https://www.unicode.org/reports/tr14/tr14-51.html
+#   point in advertising U2007 for use as a group separator, that is required
+#   to be narrower than a digit. Indeed, U2007 was encoded as the tabular space
+#   to be used before numbers when typesetting tables the old way, alongside
+#   indentation by the width of a decimal dot or comma, using U2008 PUNCTUATION
+#   SPACE. The misleading statement still reads in 2025 (Unicode 17.0.0):
 #
 #       This is the preferred space to use in numbers. It has the same width as
 #       a digit and keeps the number together for the purpose of line breaking.
 #
+#   https://www.unicode.org/reports/tr14/tr14-51.html
+#
+#   Unlike FIGURE SPACE, that currently can be safely ignored as useless if it
+#   were not for completeness (in the space group 7), the no-break thin space
+#   is actively maintained and benefits from some substantial improvements.
 #   The corrected Unicode position is found in UAX #14 since 2008, in TUS
 #   since 2014: The Unicode Standard, version 7.0.0, 2014, p. 265, section 6.2,
 #   heading “Space Characters” (see subheading “Narrow No-Break Space”).
@@ -522,8 +538,8 @@
 #      narrow space occurring around punctuation characters in French
 #      typography, which is called an “espace fine insécable.”
 #
-#   This text is unchanged in version 16.0.0, available in HTML as cited above.
-#   https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-6/#G26915
+#   This text is unchanged in version 17.0.0, available in HTML as cited above.
+#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-6/#G26915
 #
 #   In UAX #14, it started with the “Proposed Update Unicode Standard Annex #14
 #   Unicode Line Breaking Algorithm”, Unicode 5.1 Draft 3, 2008-03-07.
@@ -938,7 +954,7 @@
 #   The version number is a period-separated concatenation of 4 numbers. The
 #   third does not number patches only, and the build number is part of the
 #   string because this file is also the source code of the dead key content as
-#   it is transpiled to the sources of the layout drivers for the Windows OS.
+#   it is compiled to the sources of keyboard layout drivers for Windows.
 #   https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/readme.md
 #   See Legal note
 #
@@ -1003,21 +1019,20 @@
 #
 #   In this file, the reference for XCompose sequences is en_US.UTF-8/Compose,
 #   as it is used — and has been designed — in France.
+#   https://xorg.freedesktop.org/releases/current/doc/libX11/i18n/compose/en_US.UTF-8.html
 #
-#   The maximum number of keysyms is nine. Any longer sequences are going to be
-#   ignored by the compiler.
+#   The undocumented maximum number of keysyms as stated in VSCode is nine. Any
+#   longer sequences are going to be ignored by the compiler.
 #
 #
 # # Design of multikey sequences
 #
 #   Anyway, brevity is key, to that extent that non-critical elements are cut
-#   off, resulting in truncated sequences that may be counter-intuitive but are
-#   better for a streamlined user experience.
+#   off, resulting in truncated sequences for the sake of streamlining the user
+#   experience, even if they are formally counter-intuitive.
 #   See #^# Western Zodiacal Signs
 #   See # # Design of math sequences
 #   See #   Streamlining
-#
-#   To achieve this goal, this list is processed and sorted as documented.
 #   See #   Conflictlessness check
 #
 #
@@ -1038,15 +1053,16 @@
 #   See "𐞫" U107AB
 #
 #   For maintainability, there is no space between the leading keysyms, but
-#   part of the keysyms may be aligned to the end for readability.
+#   part of the keysyms may be aligned to the end for readability, and there
+#   may also be gaps.
 #
 #   Empty slots in letter groups are filled with the group number, and skipped
 #   in documentation.
 #   See # # Maintenance of letter groups
 #
-#   Lines starting with "#@" are Windows-specific alternative input sequences
-#   instead of multicharacter output sequences. They need to be configured in
-#   the same place with respect to dead key tables.
+#   Lines starting with "#@" provide Windows-specific alternative output, as
+#   this file is mainly the source code for the XCompose-to-C compiler and for
+#   HTML dead key tables.
 #   See # # Notes about documentation
 #
 #
@@ -1262,8 +1278,8 @@
 #   See ### Group dead key introduction
 #   https://github.com/dispoclavier/nouvel-azerty/tree/main/linux-chromeos/outils
 #
-#   Polytonic Greek is documented in an extra table since its transpilation
-#   starting with version 6.1.1.
+#   Polytonic Greek is documented in an extra table since version 6.1.1 when it
+#   was included in the compilation.
 #   See ### Greek with diacritics
 #   See # # End note about polytonic Greek
 #
@@ -1331,12 +1347,12 @@
 #   on Window due to its inability to support complete layout drivers.
 #   See #*# SUPERSCRIPT
 #   See # # Multikey equivalents
-#   See dead-key-convert.pl # Multikey
+#   See linux-chromeos/outils/dead-key-convert.pl # Multikey
 #
 #   The two legacy ordinal indicators are supported with alphabetic mnemonics
 #   in group 12 of "^" on key "A", and in group 12 of "{" on key "O".
 #   See # # D01 asciicircum
-#   See # # D10 braceright
+#   See # # D09 braceleft
 #
 #   The following intuitive, case sensitive, underscore-terminated multikey
 #   sequences add to this support in the symbol groups. Underscore termination
@@ -2233,7 +2249,7 @@
 #
 #   As diacritical marks, the combining digraphs "᷐" U1DD0.."ᷖ" U1DD6 and
 #   "᷏" U1DCF have sequences starting with ampersand consistently with the
-#   “combining” semantics of ampersand in this context, and thanks to
+#   "combining" semantics of ampersand in this context, and thanks to
 #   ampersand not being any dead key multikey equivalent.
 #   See # # Combining Diacritical Marks for Symbols used in mathematics
 #
@@ -2884,7 +2900,7 @@
 #   https://web.archive.org/web/20221019184912/http://www.unicode.org/reports/tr14/
 #
 #   This happened the month after the Unicode Consortium moved its headquarters
-#   from Mountain View to South San Francisco.
+#   from Mountain View to South San Francisco, leaving the type foundry’s city.
 #   https://web.archive.org/web/20220927085408/https://home.unicode.org/
 #   https://web.archive.org/web/20220928085512/https://home.unicode.org/
 #
@@ -2897,22 +2913,22 @@
 #   locale mode and ASCII mode, so as to keep coding out of harm’s way.
 #
 #   The keyboard layouts configured in these files require such a toggle, but
-#   for the purpose of getting digits on unshifted keys in an “ASCII mode” that
-#   contrasts with “French mode”. Featuring the Unicode HYPHEN in locale mode
+#   for the purpose of getting digits on unshifted keys in an "ASCII mode" that
+#   contrasts with "French mode". Featuring the Unicode HYPHEN in locale mode
 #   would be prone to raising issues and triggering angry feedback about that
-#   “fake hyphen” looking like an ASCII hyphen in almost all fonts, but not
-#   working as expected.
+#   “fake hyphen” looking like an ASCII hyphen in nearly all fonts, but not
+#   handled as expected.
 #
 #   As a consequence, keyboard layout design should not take this extra hyphen
-#   U2010 seriously, in order to prevent adverse effects while attempting to
+#   U2010 seriously, in order to prevent adverse effects when attempting to
 #   support it on live key or by a premium dead key such as group 1 of minus.
-#   There, "⁃" U2043 HYPHEN BULLET is supported instead, while HYPHEN is in
-#   group 12, like the outdated legacy ordinal indicators "ª" U00AA, "º" U00BA
-#   are in group 12 of asciicircum and braceright, respectively.
+#   There, "∓" U2213 MINUS-OR-PLUS SIGN is supported instead, while HYPHEN is
+#   in group 10, almost like the outdated legacy ordinal indicators "ª" U00AA,
+#   "º" U00BA are in group 12 of asciicircum and braceleft, respectively.
 #   See #^# Legacy ordinal indicators
 #   See # # C05 minus
 #   See # # D01 asciicircum
-#   See # # D10 braceright
+#   See # # D09 braceleft
 #   See # # Fallback input methods for HORIZONTAL BAR
 #
 #   In any event, as a matter of leaving nobody stranded, HYPHEN has an easy,
@@ -2963,13 +2979,13 @@
 #
 #   #                NAME UCODE description
 #
-#            HYPHEN-MINUS U002D quarter dash (French “tiret quart-de-cadratin”)
+#            HYPHEN-MINUS U002D quarter dash (French "tiret quart-de-cadratin")
 #
-#   4              HYPHEN U2010 quarter dash (French “tiret quart-de-cadratin”)
-#   6 NON-BREAKING HYPHEN U2011 quarter dash (French “tiret quart-de-cadratin”)
-#   5             EN DASH U2013 half dash (French “tiret demi-cadratin”)
-#   7      HORIZONTAL BAR U2015 three-quarter dash (or conjoining em dash)
-#   1             EM DASH U2014 full dash (French “tiret cadratin”)
+#   4              HYPHEN U2010 quarter dash (French "tiret quart-de-cadratin")
+#   6 NON-BREAKING HYPHEN U2011 quarter dash (French "tiret quart-de-cadratin")
+#   5             EN DASH U2013 half dash (French "tiret demi-cadratin")
+#   7      HORIZONTAL BAR U2015 three-quarter dash (or conjoining full dash)
+#   1             EM DASH U2014 full dash (French "tiret cadratin")
 #   2         TWO-EM DASH U2E3A double dash: missing letters; missing word
 #   3       THREE-EM DASH U2E3B triple dash: missing word; author name repetition
 #
@@ -3447,29 +3463,27 @@
 <Multi_key><I><R><M><P><D>                                                                         : "👉" U1F449 # WHITE RIGHT POINTING BACKHAND INDEX
 #
 #
-#   “Pilcrow bullets”
+#   Directional bullets
 #
-#   "⁌" U204C and "⁍" U204D match "¶" U00B6 and "⁋" U204B. These bullets are
-#   part of the signature marks and are considered general punctuation.
+#   "⁌" U204C and "⁍" U204D (superficially matching "¶" U00B6 and "⁋" U204B)
+#   are part of the signature marks and are considered general punctuation.
 #   https://www.unicode.org/L2/L1998/98215-n1748.pdf
 #   https://www.unicode.org/L2/L1998/98292.htm
 #   https://github.com/psb1558/Junicode-font/discussions/93
 #   https://en.wikipedia.org/wiki/Signature_mark
 #
-#   Filled leftwards “pilcrow bullet”
-#Multi_key><f><l><p><b>                                                                            : "⁌" U204C # BLACK LEFTWARDS BULLET
-<Multi_key><f><l><p>                                                                               : "⁌" U204C # BLACK LEFTWARDS BULLET
-<Multi_key><F><L><P>                                                                               : "⁌" U204C # BLACK LEFTWARDS BULLET
-#   “Puce pied-de-mouche” gauche
-<Multi_key><p><p><m><g>                                                                            : "⁌" U204C # BLACK LEFTWARDS BULLET
-<Multi_key><P><P><M><G>                                                                            : "⁌" U204C # BLACK LEFTWARDS BULLET
-#   Filled rightwards “pilcrow bullet”
-#Multi_key><f><r><p><b>                                                                            : "⁍" U204D # BLACK RIGHTWARDS BULLET
-<Multi_key><f><r><p>                                                                               : "⁍" U204D # BLACK RIGHTWARDS BULLET
-<Multi_key><F><R><P>                                                                               : "⁍" U204D # BLACK RIGHTWARDS BULLET
-#   “Puce pied-de-mouche” droite
-<Multi_key><p><p><m><d>                                                                            : "⁍" U204D # BLACK RIGHTWARDS BULLET
-<Multi_key><P><P><M><D>                                                                            : "⁍" U204D # BLACK RIGHTWARDS BULLET
+#   Leftwards bullet
+<Multi_key><l><w><b>                                                                               : "⁌" U204C # BLACK LEFTWARDS BULLET
+<Multi_key><L><w><B>                                                                               : "⁌" U204C # BLACK LEFTWARDS BULLET
+#   Puce vers la gauche
+<Multi_key><p><v><g>                                                                               : "⁌" U204C # BLACK LEFTWARDS BULLET
+<Multi_key><P><V><G>                                                                               : "⁌" U204C # BLACK LEFTWARDS BULLET
+#   Rightwards bullet
+<Multi_key><r><w><b>                                                                               : "⁍" U204D # BLACK RIGHTWARDS BULLET
+<Multi_key><R><w><B>                                                                               : "⁍" U204D # BLACK RIGHTWARDS BULLET
+#   Puce vers la droite
+<Multi_key><p><v><d>                                                                               : "⁍" U204D # BLACK RIGHTWARDS BULLET
+<Multi_key><P><V><D>                                                                               : "⁍" U204D # BLACK RIGHTWARDS BULLET
 #
 #
 #^# Currency symbols
@@ -5133,7 +5147,7 @@
 #
 #   Initially targeted at Windows users, this Alt + numpad input method
 #   emulation is also available to Linux users and macOS users, so far as
-#   the dead key and multikey configuration in this file is transpiled to C
+#   the dead key and multikey configuration in this file is compiled to C
 #   and XML.
 #
 #   The purpose of the leading plus is to prevent conflicts with the vulgar
@@ -5834,9 +5848,9 @@
 #   Some symbols also have easy access in groups or by other dead keys.
 #   Alternative input methods are hinted in comment lines.
 #
-#   In the headings, the preposition “of” is used if the block is entirely
+#   In the headings, the preposition "of" is used if the block is entirely
 #   dedicated to mathematics. If the mathematical symbols are a subset only,
-#   the preposition is “in”.
+#   the preposition is "in".
 #
 #
 # # Overview of math symbols
@@ -6008,7 +6022,7 @@
 #   and "⋘" U22D8. More extensively ruling out dead key multikey equivalents
 #   helps since v6.2.5 make some of these math sequences more streamlined again.
 #   Windows is unable to support the multikey equivalents anyway.
-#   See dead-key-convert.pl # Multikey
+#   See linux-chromeos/outils/dead-key-convert.pl # Multikey
 #
 #
 #   Negation
@@ -6587,10 +6601,10 @@
 #
 # # Combining Diacritical Marks for Symbols used in mathematics
 #
-#   Here, ampersand is in leading position consistently with the “combining”
+#   Here, ampersand is in leading position consistently with the "combining"
 #   semantics of ampersand in this context, and thanks to ampersand not being
 #   a multikey equivalent of any dead key.
-#   See # # TILDE&AMPERSAND
+#   See # # TILDE&BRACERIGHT
 #
 #   https://en.wikipedia.org/wiki/Mathematical_operators_and_symbols_in_Unicode#Combining_Diacritical_Marks_for_Symbols_block
 #   https://en.wikipedia.org/wiki/Combining_Diacritical_Marks_for_Symbols
@@ -10835,7 +10849,7 @@
 ### Greek with diacritics
 #
 #   Polytonic Greek is supported alongside to meet eventual user expectations,
-#   despite its exclusion from the French NF Z71-300:2019 standard.
+#   despite its exclusion from the French NF Z71-300:2026 standard.
 #
 #   To achieve this, precomposed polytonic Greek letters are supported, as the
 #   only cross-platform compatible way, so as to avoid composed dead key output

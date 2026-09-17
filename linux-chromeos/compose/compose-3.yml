@@ -2962,7 +2962,7 @@
 #   here in symbol group 12 consistently with "a" and "o" and are additionally
 #   supported by multikey.
 #   See #^# Legacy ordinal indicators
-#   See # # D10 braceright
+#   See # # D09 braceleft
 #
 <UEFD0>                                                                              <asciicircum> : "⚠" U26A0 # WARNING SIGN emoji, ergonomic mapping
 <Multi_key><numbersign>                                                              <asciicircum> : "⚠" U26A0 # WARNING SIGN emoji, ergonomic mapping
@@ -6379,7 +6379,7 @@
 #
 #   Click letters have extensive, case insensitive support here in group 5, as
 #   well as in the tilde-and-ampersand dead key as a more specific alternative.
-#   See # # TILDE&AMPERSAND
+#   See # # TILDE&BRACERIGHT
 #
 <UEFD0><5>                                                                                     <A> : "Ꜣ" UA722 # LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF
 <Multi_key><numbersign><5>                                                                     <A> : "Ꜣ" UA722 # LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF

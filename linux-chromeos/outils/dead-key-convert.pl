@@ -10,7 +10,7 @@
 # 2026-01-26T0514+0100
 # 2026-03-04T1042+0100
 # 2026-03-16T1433+0100
-# 2026-09-11T0708+0200
+# 2026-09-17T0733+0200
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows. As it
@@ -888,7 +888,7 @@ my @dead_key_characters = (
 	'<!tilde><!tilde><!turned>➔223F',#<dead_tilde><dead_tilde><UEFD5>
 	'<!tilde><!turned>➔223D',#<dead_tilde><UEFD5>
 	'<!tilde><!turned><!tilde>➔223C',#<dead_tilde><UEFD5><dead_tilde>
-	'<!tilde><%ampersand>➔25B3',#<dead_tilde><ampersand>
+	'<!tilde><%braceright>➔25B3',#<dead_tilde><braceright>
 	'<!turned><!bar>➔AB42',#<UEFD5><UEFD8>
 	'<!turned><!bar><!group>➔AB43',#<UEFD5><UEFD8><UEFD0>
 	'<!turned><!breve>➔AB45',#<UEFD5><dead_breve>
@@ -1287,7 +1287,7 @@ sub get_dead_character {
 	$deadkey =~ s/^<!doubleacute>$/0151/;
 	$deadkey =~ s/^<!reversed>$/1D19/;
 	$deadkey =~ s/^<!tilde>$/00F5/;
-	$deadkey =~ s/^<!greek>$/03B5/;
+	$deadkey =~ s/^<!greek>$/26AA/;
 	$deadkey =~ s/^<!acute>$/00E1/;
 	$deadkey =~ s/^<!hook>$/0192/;
 	$deadkey =~ s/^<!retroflexhook>$/0273/;
