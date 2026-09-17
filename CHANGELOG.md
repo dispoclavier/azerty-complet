@@ -92,7 +92,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 			* Mouvoir "•" U+2022, "◦" U+25E6, "‣" U+2023 des groupes 1 à 3 de "_" aux mêmes de "&". ibidem
 			* Mouvoir "∩" U+2229, "∫" U+222B, "∬" U+222C, "∭" U+222D, "ℹ" U+2139, "♏" U+264F, "⛔" U+26D4, "∞" U+221E, "♾" U+267E des groupes 4 à 12 de "'" aux mêmes de "&". ibidem
 			* Ajouter "⁎" U+204E dans le groupe 4 de "'" à la place de "⬝" U+2B1D, qui va dans le groupe 4 de "&" à la place de "∩" U+2229, qui va dans le groupe 5 de "_" à la place de "⤵" U+2935, qui va dans le groupe 6 de "(" à la place de "✡" U+2721, qui va dans le groupe 7 de "(" à la place de "〽" U+303D, qui va dans le groupe 10 de "%" à la place de "�" U+FFFD, qui va en composition. ibidem
-		* Mouvoir "⁃" U+2043 du groupe 1 dans le groupe 9 de "-" à la place de "➟" U+279F, qui va dans le groupe 9 de "+" à la place de "✚" U+271A, qui va dans le groupe 3 de "+" à la place de "∓" U+2213, qui va dans le groupe 1 de "-" à la place laissée par "⁃" U+2043. compose-3.yml []()
+		* Mouvoir "⁃" U+2043 du groupe 1 dans le groupe 9 de "-" à la place de "➟" U+279F, qui va dans le groupe 9 de "+" à la place de "✚" U+271A, qui va dans le groupe 3 de "+" à la place de "∓" U+2213, qui va dans le groupe 1 de "-" à la place laissée par "⁃" U+2043. compose-3.yml [837d9b1](https://github.com/dispoclavier/azerty-complet/commit/837d9b16cae18a1e5ec36c75834df6e48c423f14)
 	* Tilde et perluète : Changer en "Tilde et accolade fermante" (Tilde&braceright). compose-2.yml [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* Grec ou cerclé : Changer le caractère mort de "ε" U+03B5 en "⚪" U+26AA. compose-2.yml [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* Crosse :
@@ -124,7 +124,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* 7.0.0.6 [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* 7.0.0.7 [8f8b6ed](https://github.com/dispoclavier/azerty-complet/commit/8f8b6ed656153ccb22c7fe546aebbe39d433c5bf)
 	* 7.0.0.8 [64d3efe](https://github.com/dispoclavier/azerty-complet/commit/64d3efe759787f9798bcefe4ef7989ea132ae4b6)
-	* 7.0.0.9 []()
+	* 7.0.0.9 [837d9b1](https://github.com/dispoclavier/azerty-complet/commit/837d9b16cae18a1e5ec36c75834df6e48c423f14)
 
 ## 6.2.8 (2026-03-24)
 
