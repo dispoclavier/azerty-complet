@@ -1,7 +1,7 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-09-17T0721+0200
+#                       Date: 2026-09-17T1620+0200
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.0.0.6" # See #   End of line comments
+<UEFA0>                     : "version 7.0.0.7" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -30864,34 +30864,34 @@
 <Multi_key><less>                                                                          <U0186> : "Ɔ̂" # U0186 U0302 LATIN CAPITAL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <dead_circumflex>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
 <Multi_key><less>                                                                          <U0254> : "ɔ̂" # U0254 U0302 LATIN SMALL LETTER OPEN O WITH CIRCUMFLEX: Languages in Togo
-<dead_circumflex>                                                                          <U00AD> : "trait_d’union_conditionnel_(césure_conditionnelle_avec_trait_d’union)"
-<Multi_key><less>                                                                          <U00AD> : "trait_d’union_conditionnel_(césure_conditionnelle_avec_trait_d’union)"
-#@<dead_circumflex>                                                                        <U00AD> : "-"
-#@<Multi_key><less>                                                                        <U00AD> : "-"
-<dead_circumflex>                                                                          <U200B> : "espace_nulle_(césure_conditionnelle_sans_trait_d’union)"
-#   Multikey conflicts with "̂" U0302.                                                     <U200B> : "espace_nulle_(césure_conditionnelle_sans_trait_d’union)"
-#@<dead_circumflex>                                                                        <U200B> : "␣"
-#   Multikey conflicts with "̂" U0302.                                                     <U200B> : "␣"
-<dead_circumflex>                                                                          <U200C> : "antiliant"
-<Multi_key><less>                                                                          <U200C> : "antiliant"
-#@<dead_circumflex>                                                                        <U200C> : "|"
-#@<Multi_key><less>                                                                        <U200C> : "|"
-<dead_circumflex>                                                                          <U200D> : "liant"
-<Multi_key><less>                                                                          <U200D> : "liant"
-#@<dead_circumflex>                                                                        <U200D> : "&"
-#@<Multi_key><less>                                                                        <U200D> : "&"
-<dead_circumflex>                                                                          <U2063> : "séparateur_invisible"
-<Multi_key><less>                                                                          <U2063> : "séparateur_invisible"
-#@<dead_circumflex>                                                                        <U2063> : ","
-#@<Multi_key><less>                                                                        <U2063> : ","
-<dead_circumflex>                                                                          <U2064> : "“signe_plus”_invisible"
-<Multi_key><less>                                                                          <U2064> : "“signe_plus”_invisible"
-#@<dead_circumflex>                                                                        <U2064> : "+"
-#@<Multi_key><less>                                                                        <U2064> : "+"
-<dead_circumflex>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)"
-<Multi_key><less>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)"
-#@<dead_circumflex>                                                                        <UFE0F> : "☺"
-#@<Multi_key><less>                                                                        <UFE0F> : "☺"
+<dead_circumflex>                                                                          <U00AD> : "trait_d’union_conditionnel_(césure_conditionnelle_avec_trait_d’union)" #
+<Multi_key><less>                                                                          <U00AD> : "trait_d’union_conditionnel_(césure_conditionnelle_avec_trait_d’union)" #
+#@<dead_circumflex>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
+#@<Multi_key><less>                                                                        <U00AD> : "-" U002D # HYPHEN-MINUS
+<dead_circumflex>                                                                          <U200B> : "espace_nulle_(césure_conditionnelle_sans_trait_d’union)" #
+#   Multikey conflicts with "̂" U0302.                                                     <U200B> : "espace_nulle_(césure_conditionnelle_sans_trait_d’union)" #
+#@<dead_circumflex>                                                                        <U200B> : "␣" U2423 # OPEN BOX
+#   Multikey conflicts with "̂" U0302.                                                      <U200B> : "␣" U2423 # OPEN BOX
+<dead_circumflex>                                                                          <U200C> : "antiliant" #
+<Multi_key><less>                                                                          <U200C> : "antiliant" #
+#@<dead_circumflex>                                                                        <U200C> : "|" U007C # VERTICAL LINE
+#@<Multi_key><less>                                                                        <U200C> : "|" U007C # VERTICAL LINE
+<dead_circumflex>                                                                          <U200D> : "liant" #
+<Multi_key><less>                                                                          <U200D> : "liant" #
+#@<dead_circumflex>                                                                        <U200D> : "&" U0026 # AMPERSAND
+#@<Multi_key><less>                                                                        <U200D> : "&" U0026 # AMPERSAND
+<dead_circumflex>                                                                          <U2063> : "séparateur_invisible" #
+<Multi_key><less>                                                                          <U2063> : "séparateur_invisible" #
+#@<dead_circumflex>                                                                        <U2063> : "," U002C # COMMA
+#@<Multi_key><less>                                                                        <U2063> : "," U002C # COMMA
+<dead_circumflex>                                                                          <U2064> : "“signe_plus”_invisible" #
+<Multi_key><less>                                                                          <U2064> : "“signe_plus”_invisible" #
+#@<dead_circumflex>                                                                        <U2064> : "+" U002B # PLUS SIGN
+#@<Multi_key><less>                                                                        <U2064> : "+" U002B # PLUS SIGN
+<dead_circumflex>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" #
+<Multi_key><less>                                                                          <UFE0F> : "style_émoji_(sélecteur_de_variante)" #
+#@<dead_circumflex>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
+#@<Multi_key><less>                                                                        <UFE0F> : "☺" U263A # WHITE SMILING FACE
 #
 #
 # # CIRCUMFLEX&GROUP_1
