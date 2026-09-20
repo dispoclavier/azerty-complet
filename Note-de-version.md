@@ -1,5 +1,4 @@
-# 7.0.0 (2026-09-18)
-**préversion**
+# 7.0.0 (2026-09-18) préversion
 
 ## AZERTY DCS
 
