@@ -2,7 +2,7 @@
 
 ## AZERTY DCS
 
-L’AZERTY zéro prise de tête est maintenant disponible en préversion, car au niveau logiciel tout est pleinement fonctionnel, mais tout n’est pas complet depuis la sortie d’Unicode 18.0 l’avant-veille, avec 160 nouvelles lettres latines, et 19 autres caractères à prendre en charge. Manque aussi la documentation à jour et complète.
+L’AZERTY zéro prise de tête est maintenant disponible en préversion, car au niveau logiciel tout est pleinement fonctionnel, mais tout n’est pas complet depuis la sortie d’Unicode 18.0 l’avant-veille, avec 160 nouvelles lettres latines (et 19 autres caractères) à prendre en charge. Manque aussi une documentation à jour et complète.
 
 DCS, c’est "débogué, complété, semi-automatique". Ce qui est débogué, c’est le verrouillage Majuscule, qui ne met plus en accès direct ni le point d’interrogation, ni le symbole livre, ni le symbole micro, ni la touche morte tréma, mais qui met en Majuscule les capitales des minuscules accentuées de notre clavier, et l’espace fine insécable qui sert de séparateur des milliers. "Complété" par la prise en charge de l’écriture latine au niveau d’Unicode 17.0, de 1 125 symboles mathématiques et de quelques autres dont 155 émojis (codés sur moins de 4 octets). Les 26 lettres émojis (pour les sites et navigateurs qui affichent les drapeaux) sont en AltEm, la touche modificatrice ajoutée sur la touche de verrouillage Majuscule. "Semi‑automatique" au sens où les grandes ponctuations "?;:!" sont déjà espacées (par la fine insécable) en AltGr sur leurs touches, les guillemets "«»‹›" aussi (ou pas) en AltGr ou Maj + AltGr sur les six touches qui restent à droite. 
 
