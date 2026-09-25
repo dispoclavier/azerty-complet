@@ -24,18 +24,18 @@ Correction de la disposition des symboles et ponctuations ASCII au niveau 3.
 
 Inclusion du tilde ASCII au pavé numérique graphique du niveau 5.
 
-Correction de la disposition du tiret et des flèches au niveau 7.
+Correction de la disposition du tiret demi-cadratin et des flèches au niveau 7.
 
 Mise à jour des groupes des symboles suite aux redispositions au niveau 3.
 
-*Mise à niveau vers Unicode 18.0 (+179 caractères dont 160 lettres latines).
+En cours : Mise à niveau vers Unicode 18.0 par l’ajout de 179 caractères dont 160 lettres latines.
 
-Émulation des codes Alt + pavé numérique pour claviers compacts sans pavé numérique intégré.
+Émulation de codes Alt + pavé numérique (pour claviers compacts sans pavé numérique intégré).
 
 Suspension de la prise en charge de Linux suite aux régressions d’XKB post-2016.
 
 * Disposition :
-	* Ajouter une variante d’entrée de gamme limitant les disruptions au débogage du verrouillage Majuscule : windows/kbfrdcs.h, kbfrdcs-allo.c, kbfrdcs-common.c, kbfrdcs-ligatures.c, kbfrdcs1.klc, kbfrdcs1.C, kbfrdcs1.RC, kbfrdcs2.klc, kbfrdcs2.C, kbfrdcs2.RC [56c079c](https://github.com/dispoclavier/azerty-complet/commit/56c079c13700a0ee8bee7e0df0cefcd76c783a50), [34b961a](https://github.com/dispoclavier/azerty-complet/commit/34b961a80173301c281c39c310f8f3c740a56fb0), [e55d081](https://github.com/dispoclavier/azerty-complet/commit/e55d081b736573ccf98dbcd2a0b9dd7ea61ce30e), [0b5c8fa](https://github.com/dispoclavier/azerty-complet/commit/0b5c8fac83214766e44d5c34b003f28439070366), [f762093](https://github.com/dispoclavier/azerty-complet/commit/f7620936cd7123bf5e6a668fc80b5c51838b7a12), [e0f0057](https://github.com/dispoclavier/azerty-complet/commit/e0f0057c479c51fe6209faadf4a0f31573376fc1), [0243d21](https://github.com/dispoclavier/azerty-complet/commit/0243d219e59e28d55989032d11ddb21eaa95d830), [7fd387a](https://github.com/dispoclavier/azerty-complet/commit/7fd387a8c1ded37c61261fdd275b2ca632f27625), [e75719e](https://github.com/dispoclavier/azerty-complet/commit/e75719e314bfe0d115a6839986df89d5ba348abe)
+	* Ajouter une variante rétrocompatible limitant les disruptions au débogage du verrouillage Majuscule : windows/kbfrdcs.h, kbfrdcs-allo.c, kbfrdcs-common.c, kbfrdcs-ligatures.c, kbfrdcs1.klc, kbfrdcs1.C, kbfrdcs1.RC, kbfrdcs2.klc, kbfrdcs2.C, kbfrdcs2.RC [56c079c](https://github.com/dispoclavier/azerty-complet/commit/56c079c13700a0ee8bee7e0df0cefcd76c783a50), [34b961a](https://github.com/dispoclavier/azerty-complet/commit/34b961a80173301c281c39c310f8f3c740a56fb0), [e55d081](https://github.com/dispoclavier/azerty-complet/commit/e55d081b736573ccf98dbcd2a0b9dd7ea61ce30e), [0b5c8fa](https://github.com/dispoclavier/azerty-complet/commit/0b5c8fac83214766e44d5c34b003f28439070366), [f762093](https://github.com/dispoclavier/azerty-complet/commit/f7620936cd7123bf5e6a668fc80b5c51838b7a12), [e0f0057](https://github.com/dispoclavier/azerty-complet/commit/e0f0057c479c51fe6209faadf4a0f31573376fc1), [0243d21](https://github.com/dispoclavier/azerty-complet/commit/0243d219e59e28d55989032d11ddb21eaa95d830), [7fd387a](https://github.com/dispoclavier/azerty-complet/commit/7fd387a8c1ded37c61261fdd275b2ca632f27625), [e75719e](https://github.com/dispoclavier/azerty-complet/commit/e75719e314bfe0d115a6839986df89d5ba348abe)
 	* Niveau Majuscule :
 		* Mode français :
 			* Redonder "&" sur E11 à la place de "°" U+00B0, qui est au niveau AltFr. dispocla.cpp [e28b00a](https://github.com/dispoclavier/azerty-complet/commit/e28b00a9aab67e821397481c24dc583bf235b535), [1bb50f0](https://github.com/dispoclavier/azerty-complet/commit/1bb50f00383a58beb7afee3419009b007b36fc4d), [6689afc](https://github.com/dispoclavier/azerty-complet/commit/6689afcdd78e4c38f3f5627753461a3aa6e228d7), [e289bcd](https://github.com/dispoclavier/azerty-complet/commit/e289bcd43c3e77be8b7a93ac37e692de34d9ca51), dispocla_perso.cpp [8dab92e](https://github.com/dispoclavier/azerty-complet/commit/8dab92e088acfb13d83c8d6d9b807a50e508054e), dispotypes.c [3cbce28](https://github.com/dispoclavier/azerty-complet/commit/3cbce281ec7fd328a2ca8a5707c72c85fdc80814), kbfrFRs-allo.c [4a188a0](https://github.com/dispoclavier/azerty-complet/commit/4a188a08329b9ab98911e5f6c13526af959b6727), [29feaa1](https://github.com/dispoclavier/azerty-complet/commit/29feaa157bddf827be786db346e327f461d57c8d), [29b2977](https://github.com/dispoclavier/azerty-complet/commit/29b29776f13aa23e84f828a846cccceb021bf240), [e55d081](https://github.com/dispoclavier/azerty-complet/commit/e55d081b736573ccf98dbcd2a0b9dd7ea61ce30e)
