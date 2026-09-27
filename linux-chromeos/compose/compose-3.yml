@@ -1868,11 +1868,16 @@
 #
 #   The group activated by a single dead key press is group 1, not group 2 nor
 #   “secondary group”, as the base layout is numbered group 0, not “primary
-#   group” like in ISO/IEC 9995.
+#   group” like in ISO/IEC 9995. This change is required for consistency, as
+#   skipping it for the sake of standards conformance would screw up the
+#   documentation
 #
 #   A group dead key double press activates group 2, not group 3, consistently
 #   with the number of group dead key presses. Triple press is also supported,
-#   and so is quadruple press as the upper limit of a sustainable UX.
+#   and so is quadruple press as the upper limit of a sustainable UX. The group
+#   dead key cycling through the 12 groups indefinitely is a Windows and macOS
+#   feature thanks to technical feasibility and to foster an intuitive user
+#   experience meeting eventual user expectations.
 #
 #   Group 1 of every digit activates the corresponding group from 3 through 12.
 #   As a consequence, group 1 of digits is not available for mapping.

@@ -10,9 +10,11 @@ Chained dead keys may be symmetrized using the "bhughes339.replacerules"
 extension for VSCode with a replaceruleset based on the observation that
 at this point, chaining does not encompass more than four dead key strokes
 other than group selection, that always trails and is thus not symmetrized.
-The JSONsymmetrizeChainedDeadKeys" goes into user settings and has the "@"
-prefix for subsequent multikey equivalent generation built in, for a number
-of likely use cases.
+
+The "JSONsymmetrizeChainedDeadKeys" goes into user settings and has the "@"
+prefix for subsequent multikey equivalent generation built in. It covers a
+number of likely use cases.
+See linux-chromeos/outils/generate-multikey.pl
 
 ## Conflictlessness check
 
@@ -23,7 +25,7 @@ extension for VSCode with the "prepareXComposeForCheck" replaceruleset.
  2  Case sensitive sorting, using "Tyriar.sort-lines" > F9.
 
  3  Checking for conflicts and duplicates:
- ^([^\s]+)\s.+\n\1(<|\s)
+    ^([^\s]+)\s.+\n\1(<|\s)
 
 Sortability and readability may then be further improved using the
 follow-up replaceruleset "improveXComposeSortability", where dead

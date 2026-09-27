@@ -514,7 +514,7 @@
 #   to be narrower than a digit. Indeed, U2007 was encoded as the tabular space
 #   to be used before numbers when typesetting tables the old way, alongside
 #   indentation by the width of a decimal dot or comma, using U2008 PUNCTUATION
-#   SPACE. The misleading statement still reads in 2026 (Unicode 18.0.0):
+#   SPACE. The misleading statement still reads in Unicode 18.0.0 (2026):
 #
 #       This is the preferred space to use in numbers. It has the same width as
 #       a digit and keeps the number together for the purpose of line breaking.
