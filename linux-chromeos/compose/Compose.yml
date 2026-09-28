@@ -1,5 +1,5 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-09-27T1516+0200
+#                       Date: 2026-09-28T0708+0200
 #                    Version: See # # Output of keyboard layout version number
 <UEFA0>                     : "version 7.0.0.10" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
@@ -23608,20 +23608,30 @@
 # # SUBSCRIPT&RETROFLEX_HOOK
 #   Lenient dead key press
 #
-@<UEFD2><UEFD4>                                                                                 <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
-@<UEFD4><UEFD2>                                                                                 <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
-@<UEFD2><UEFD4>                                                                                 <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
-@<UEFD4><UEFD2>                                                                                 <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<UEFD2><UEFD4>                                                                                 <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<Multi_key><underscore><braceright>                                                            <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<UEFD4><UEFD2>                                                                                 <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<Multi_key><braceright><underscore>                                                            <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<UEFD2><UEFD4>                                                                                 <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<Multi_key><underscore><braceright>                                                            <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<UEFD4><UEFD2>                                                                                 <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<Multi_key><braceright><underscore>                                                            <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
 #
 #
 # # SUBSCRIPT&PALATAL_HOOK
 #
-@<UEFD2><UEFD4><UEFD4>                                                                          <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
-@<UEFD4><UEFD2><UEFD4>                                                                          <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
-@<UEFD4><UEFD4><UEFD2>                                                                          <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
-@<UEFD2><UEFD4><UEFD4>                                                                          <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
-@<UEFD4><UEFD2><UEFD4>                                                                          <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
-@<UEFD4><UEFD4><UEFD2>                                                                          <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<UEFD2><UEFD4><UEFD4>                                                                          <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<Multi_key><underscore><braceright><braceright>                                                <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<UEFD4><UEFD2><UEFD4>                                                                          <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<Multi_key><braceright><underscore><braceright>                                                <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD2>                                                                          <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<Multi_key><braceright><braceright><underscore>                                                <G> : "𝼰" U1DF30 # LATIN LETTER SMALL CAPITAL G WITH PALATAL HOOK
+<UEFD2><UEFD4><UEFD4>                                                                          <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<Multi_key><underscore><braceright><braceright>                                                <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<UEFD4><UEFD2><UEFD4>                                                                          <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<Multi_key><braceright><underscore><braceright>                                                <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD2>                                                                          <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
+<Multi_key><braceright><braceright><underscore>                                                <R> : "𝼵" U1DF35 # LATIN LETTER SMALL CAPITAL R WITH PALATAL HOOK
 #
 #
 # # SUBSCRIPT&BREVE
