@@ -127,12 +127,12 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 		* Ajouter "𝼯" U+1DF2F, "𝼱" U+1DF31, "𝼳" U+1DF33, "𝼴" U+1DF34, "𝼵" U+1DF35, "𝼻" U+1DF3B, "𝼼" U+1DF3C, "𝼽" U+1DF3D. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f), [faf42af](https://github.com/dispoclavier/azerty-complet/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f)
 		* Supprimer "ꭒ" U+AB52, qui va dans crosse. ibidem
 		* Supprimer "ʄ" U+0284, qui est dans crosse. ibidem
-	* Macron : Ajouter "꟢" U+A7E2 à la place de "ꭆ" U+AB46, qui va dans indice et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Rayé :
 		* Ajouter "𝽀" U+1DF40, "𝽁" U+1DF41 à la place de "Ꜻ", "ꜻ", qui sont en composition. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
 		* Ajouter "𝼿" U+1DF3F, "𝽂" U+1DF42, "𝽄" U+1DF44, "𝽊" U+1DF4A, "𝽋" U+1DF4B, "𝽍" U+1DF4D, "𝽎" U+1DF4E, "𝽏" U+1DF4F, "𝽑" U+1DF51, "𝽒" U+1DF52, "𝽓" U+1DF53, "𝽔" U+1DF54. ibidem
 		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. ibidem
-	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
+	* Macron : Ajouter "꟢" U+A7E2 à la place de "ꭆ" U+AB46, qui va dans indice et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
+	* Rond en chef : Ajouter "꭭" U+AB6D. ibidem
 	* Accent circonflexe :
 		* Redonder "ʻ" U+02BB par "," à la place de "ʼ" U+02BC, qui est dans le groupe 1 de "'". compose-2.yml [5927c6c](https://github.com/dispoclavier/azerty-complet/commit/5927c6c3d77a929763506ff53cde44b94ebce8ef)
 		* Visibiliser les caractères invisibles disposés sur touche vive. compose-2.yml [8f8b6ed](https://github.com/dispoclavier/azerty-complet/commit/8f8b6ed656153ccb22c7fe546aebbe39d433c5bf), [64d3efe](https://github.com/dispoclavier/azerty-complet/commit/64d3efe759787f9798bcefe4ef7989ea132ae4b6)
