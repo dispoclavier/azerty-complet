@@ -10,13 +10,12 @@
 # 2026-01-26T0514+0100
 # 2026-03-04T1042+0100
 # 2026-03-16T1433+0100
-# 2026-09-30T1344+0200
+# 2026-09-30T1731+0200
 # = last modified
 #
-# This “dead key converter” generates DEADTRANS macro calls for Windows. As it
-# takes in the dead key configuration file for Linux, Compose.yml, it is part
-# of the toolset for Linux that also encompasses the HTML table generators for
-# the documentation.
+# This “dead key converter” generates DEADTRANS macro calls for Windows and is
+# therefore part of the toolset for Windows, despite it takes in the dead key
+# configuration file for Linux, Compose.yml, like a couple of other scripts.
 #
 # Lines parsed for single character dead key or multikey content must contain
 # the output as a literal followed by a code point and a "#" (not necessarily
@@ -1756,6 +1755,6 @@ print( "  This terminal output is logged in $console_log_path.\n" );
 print CONSOLE ( "  This terminal output is logged in $console_log_path.\n" );
 print( "\nDone processing.\n" );
 print CONSOLE ( "\nDone processing.\n" );
-print( "Closing file $console_log_path.\n" );
+print( "Closing file $console_log_path.\n\n" );
 print CONSOLE ( "Closing file $console_log_path.\n\n" );
 close( CONSOLE );
