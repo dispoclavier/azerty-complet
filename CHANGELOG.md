@@ -129,9 +129,9 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 		* Supprimer "ʄ" U+0284, qui est dans crosse. ibidem
 	* Macron : Ajouter "꟢" U+A7E2 à la place de "ꭆ" U+AB46, qui va dans indice et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Rayé :
-@		* Ajouter "𝽀" U+1DF40, "𝽁" U+1DF41 à la place de "Ꜻ", "ꜻ", qui sont en composition.
-@		* Ajouter "𝼿" U+1DF3F, "𝽂" U+1DF42, "𝽄" U+1DF44, "𝽊" U+1DF4A, "𝽋" U+1DF4B, "𝽍" U+1DF4D, "𝽎" U+1DF4E, "𝽏" U+1DF4F, "𝽑" U+1DF51, "𝽒" U+1DF52, "𝽓" U+1DF53, "𝽔" U+1DF54.
-@		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56.
+		* Ajouter "𝽀" U+1DF40, "𝽁" U+1DF41 à la place de "Ꜻ", "ꜻ", qui sont en composition. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
+		* Ajouter "𝼿" U+1DF3F, "𝽂" U+1DF42, "𝽄" U+1DF44, "𝽊" U+1DF4A, "𝽋" U+1DF4B, "𝽍" U+1DF4D, "𝽎" U+1DF4E, "𝽏" U+1DF4F, "𝽑" U+1DF51, "𝽒" U+1DF52, "𝽓" U+1DF53, "𝽔" U+1DF54. ibidem
+		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. ibidem
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Accent circonflexe :
 		* Redonder "ʻ" U+02BB par "," à la place de "ʼ" U+02BC, qui est dans le groupe 1 de "'". compose-2.yml [5927c6c](https://github.com/dispoclavier/azerty-complet/commit/5927c6c3d77a929763506ff53cde44b94ebce8ef)
@@ -140,7 +140,9 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* Tréma :
 		* Redonder "Ç" U+00C7, "ç" U+00E7. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Corriger le caractère de base de "᫜" U+1ADC de "^" en "`". ibidem
-@	* Sous Windows : Déboguer le transpilateur. dead-key-convert.pl []()
+	* Sous Windows :
+		* Déboguer le transpilateur. dead-key-convert.pl [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
+		* Mouvoir le transpilateur de linux-chromeos/outils/ à windows/outils/. dead-key-convert.pl [d6924ec](https://github.com/dispoclavier/azerty-complet/commit/d6924ecc352f0f935ea22d57afd3c63a45dcabeb)
 * Documentation :
 	* Raccourcir les descripteurs des dispositions de clavier sous Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Corriger ou mettre à jour des annotations ou l’alignement. kbligatures.c [afda6b6](https://github.com/dispoclavier/nouvel-azerty/commit/afda6b6e1b9eaeea4402d8757ec6f4781e3b41a9), kbcommon.h, kbcommon-3.c [a207474](https://github.com/dispoclavier/nouvel-azerty/commit/a2074745a66f7b74328c5c1bbd027fdc1bc62388), kbcommon-1.c [2ad66fb](https://github.com/dispoclavier/azerty-complet/commit/2ad66fbac312504fdf5d6f1c0ffdb5a5f6a9e9df), compose-1.yml, compose-2.yml, compose-3.yml [64f11fb](https://github.com/dispoclavier/nouvel-azerty/commit/64f11fb514d3dac30cdac699fc8de23c9dfce71b), [ddbafac](https://github.com/dispoclavier/nouvel-azerty/commit/ddbafaca68a4fa65227ac5d96ed0ec9843e37bbe), [3679c6b](https://github.com/dispoclavier/azerty-complet/commit/3679c6b4fee112c3e6d8e27bfd451c96f4803782),  [ccf0702](https://github.com/dispoclavier/azerty-complet/commit/ccf0702be4c856881c38745f07774b7ddf155dd1), [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5), [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), dispocla.cpp [b219e8b](https://github.com/dispoclavier/nouvel-azerty/commit/b219e8bd22cd1585be239bda66c4174a425d79e8), [8660a75](https://github.com/dispoclavier/nouvel-azerty/commit/8660a7560a67c84df765a25748ce4e11fd51b20d)
