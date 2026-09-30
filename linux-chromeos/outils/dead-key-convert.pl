@@ -10,7 +10,7 @@
 # 2026-01-26T0514+0100
 # 2026-03-04T1042+0100
 # 2026-03-16T1433+0100
-# 2026-09-17T0733+0200
+# 2026-09-30T1344+0200
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows. As it
@@ -361,7 +361,7 @@ sub dekeysym {
 
 my @dead_key_characters = (
 
-	# Intermediate dead key chain links (586).
+	# Intermediate dead key chain links (608).
 	'<!abovedot><!abovedot>➔02C8',#<dead_abovedot><dead_abovedot>
 	'<!abovedot><!abovedot><!acute>➔02C7',#<dead_abovedot><dead_abovedot><dead_acute>
 	'<!abovedot><!abovedot><!acute><!grave>➔02B7',#<dead_abovedot><dead_abovedot><dead_acute><dead_grave>
@@ -392,12 +392,12 @@ my @dead_key_characters = (
 	'<!abovering><!group>➔AB4C',#<dead_abovering><UEFD0>
 	'<!abovering><!group><!group>➔222F',#<dead_abovering><UEFD0><UEFD0>
 	'<!abovering><!group><!group><!group>➔2230',#<dead_abovering><UEFD0><UEFD0><UEFD0>
-	'<!abovering><!group><!group><!group><!group>➔AB4d',#<dead_abovering><UEFD0><UEFD0><UEFD0><UEFD0>
+	'<!abovering><!group><!group><!group><!group>➔AB44',#<dead_abovering><UEFD0><UEFD0><UEFD0><UEFD0>
 	'<!abovering><!group><1>➔AB4f',#<dead_abovering><UEFD0><1>
-	'<!abovering><!group><2>➔AB4b',#<dead_abovering><UEFD0><2>
+	'<!abovering><!group><2>➔AB47',#<dead_abovering><UEFD0><2>
 	'<!abovering><!group><3>➔2230',#<dead_abovering><UEFD0><3>
-	'<!abovering><!group><4>➔AB4d',#<dead_abovering><UEFD0><4>
-	'<!abovering><!group><5>➔AB4e',#<dead_abovering><UEFD0><5>
+	'<!abovering><!group><4>➔AB44',#<dead_abovering><UEFD0><4>
+	'<!abovering><!group><5>➔AB3E',#<dead_abovering><UEFD0><5>
 	'<!acute><!abovedot>➔1E65',#<dead_acute><dead_abovedot>
 	'<!acute><!abovedot><!abovedot>➔02BF',#<dead_acute><dead_abovedot><dead_abovedot>
 	'<!acute><!abovering>➔01FA',#<dead_acute><dead_abovering>
@@ -661,11 +661,12 @@ my @dead_key_characters = (
 	'<!invertedbreve><!group>➔02A9',#<dead_invertedbreve><UEFD0>
 	'<!invertedbreve><!group><!group>➔0238',#<dead_invertedbreve><UEFD0><UEFD0>
 	'<!invertedbreve><!group><!group><!group>➔0239',#<dead_invertedbreve><UEFD0><UEFD0><UEFD0>
-	'<!invertedbreve><!group><!group><!group><!group>➔023A',#<dead_invertedbreve><UEFD0><UEFD0><UEFD0><UEFD0>
-	'<!invertedbreve><!group><1>➔023C',#<dead_invertedbreve><UEFD0><1>
 	'<!invertedbreve><!group><3>➔0239',#<dead_invertedbreve><UEFD0><3>
+	'<!invertedbreve><!group><!group><!group><!group>➔023A',#<dead_invertedbreve><UEFD0><UEFD0><UEFD0><UEFD0>
 	'<!invertedbreve><!group><4>➔023A',#<dead_invertedbreve><UEFD0><4>
 	'<!invertedbreve><!group><5>➔023B',#<dead_invertedbreve><UEFD0><5>
+	'<!invertedbreve><!group><0>➔023C',#<dead_invertedbreve><UEFD0><0>
+	'<!invertedbreve><!group><1>➔023D',#<dead_invertedbreve><UEFD0><1>
 	'<!invertedbreve><!invertedbreve>➔1D16',#<dead_invertedbreve><dead_invertedbreve>
 	'<!macron><!abovedot>➔01E0',#<dead_macron><dead_abovedot>
 	'<!macron><!abovedot><!abovedot>➔02D4',#<dead_macron><dead_abovedot><dead_abovedot>
@@ -948,6 +949,27 @@ my @dead_key_characters = (
 	'<!turned><!turned><!stroke>➔1D13',#<UEFD5><UEFD5><dead_stroke>
 	'<!turned><!turned><!subscript>➔0298',#<UEFD5><UEFD5><UEFD2>
 	'<!turned><!turned><!superscript>➔1D59',#<UEFD5><UEFD5><UEFD1>
+	'<!bar><!bar><!superscript>➔AB32',#
+	'<!bar><!bar><!superscript><!group>➔AB33',#
+	'<!bar><!bar><!superscript><!group><!group>➔AB3C',#
+	'<!bar><!group><!group><!group><!group>➔AB53',#
+	'<!bar><!group><4>➔AB54',#
+	'<!bar><!superscript><!bar>➔AB55',#
+	'<!bar><!superscript><!bar><!group>➔AB56',#
+	'<!bar><!superscript><!bar><!group><!group>➔AB57',#
+  	'<!macron><!subscript>➔AB59',#
+	'<!retroflexhook><!retroflexhook><!subscript>➔AB5B',#
+	'<!retroflexhook><!subscript>➔AB6C',#
+	'<!retroflexhook><!subscript><!retroflexhook>➔AB6D',#
+	'<!subscript><!macron>➔A719',#
+	'<!subscript><!retroflexhook>➔A71B',#
+	'<!subscript><!retroflexhook><!retroflexhook>➔A71C',#
+	'<!superscript><!bar><!bar>➔A71D',#
+	'<!superscript><!bar><!bar><!group>➔A726',#
+	'<!superscript><!bar><!bar><!group><!group>➔A727',#
+	'<!superscript><!turned><!turned><!group>➔A728',#
+	'<!turned><!superscript><!turned><!group>➔A729',#
+	'<!turned><!turned><!superscript><!group>➔A72A',#
 
 	# Polytonic and monotonic Greek (256).
 	'<!abovehook><!greek>➔1FBD',#<UEFD3><dead_greek>
@@ -1502,7 +1524,7 @@ foreach my $line ( @dead_key_out ) {
 
 			# Register unsupported keysym.
 			if ( $deadchar =~ /^<.+>$/ ) {
-				unless ( grep( /^\Q$deadchar$/, @unsupported ) ) {
+				unless ( grep { $_ eq $deadchar } @unsupported ) {
 					push( @unsupported, $deadchar );
 				}
 				$deadchar = 'dead';
@@ -1528,7 +1550,7 @@ foreach my $line ( @dead_key_out ) {
 			# Convert SMP characters to surrogate pairs.
 			if ( $output_code =~ /[0-9A-F]{5}/ ) {
 				$high_su = sprintf( "%X", ( 55232 + int( hex( $output_code ) / 1024 ) ) );
-				unless ( grep( /^$high_su$/, @high_surrogates ) ) {
+				unless ( grep { $_ eq $high_su } @high_surrogates ) {
 					push( @high_surrogates, $high_su );
 				}
 				$high_out     = 'High surrogate: ' . $high_su . '; ';
@@ -1595,7 +1617,7 @@ foreach my $line ( @multikey_out ) {
 			# Convert SMP characters to surrogate pairs.
 			if ( $output_code =~ /[0-9A-F]{5}/ ) {
 				$high_su = sprintf( "%X", ( 55232 + int( hex( $output_code ) / 1024 ) ) );
-				unless ( grep( /^$high_su$/, @high_surrogates ) ) {
+				unless ( grep { $_ eq $high_su } @high_surrogates ) {
 					push( @high_surrogates, $high_su );
 				}
 				$high_out     = 'High surrogate: ' . $high_su . '; ';

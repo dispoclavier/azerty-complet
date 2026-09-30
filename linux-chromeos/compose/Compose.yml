@@ -1,5 +1,5 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-09-28T0708+0200
+#                       Date: 2026-09-29T1814+0200
 #                    Version: See # # Output of keyboard layout version number
 <UEFA0>                     : "version 7.0.0.10" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
@@ -116,7 +116,7 @@
 #                             Windows, and it is not derived from en_US.UTF-8/Compose, nor
 #                             from any of the Compose files shipped with Linux. As a result,
 #                             it can be released under the Apache 2.0 license, and it can be
-#                             compiled back to C and used as source code for layout drivers
+#                             transpiled back to C and used as source code for layout drivers
 #                             shipped with Windows, without running into legal issues related
 #                             to the GNU General Public Licenses.
 #
@@ -956,7 +956,7 @@
 #   The version number is a period-separated concatenation of 4 numbers. The
 #   third does not number patches only, and the build number is part of the
 #   string because this file is also the source code of the dead key content as
-#   it is compiled to the sources of keyboard layout drivers for Windows.
+#   it is transpiled to the sources of keyboard layout drivers for Windows.
 #   https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/readme.md
 #   See Legal note
 #
@@ -1071,7 +1071,7 @@
 #   See # # Maintenance of letter groups
 #
 #   Lines starting with "#@" provide Windows-specific alternative output, as
-#   this file is mainly the source code for the XCompose-to-C compiler and for
+#   this file is mainly the source code for the XCompose-to-C transpiler and for
 #   HTML dead key tables.
 #   See # # Notes about documentation
 #
@@ -1119,7 +1119,7 @@
 #   https://github.com/dispoclavier/nouvel-azerty/tree/main/linux-chromeos/outils
 #
 #   Polytonic Greek is documented in an extra table since version 6.1.1 when it
-#   was included in the compilation.
+#   was included in the transpilation.
 #   See ### Greek with diacritics
 #   See # # End note about polytonic Greek
 #
@@ -4989,7 +4989,7 @@
 #
 #   Initially targeted at Windows users, this Alt + numpad input method
 #   emulation is also available to Linux users and macOS users, so far as
-#   the dead key and multikey configuration in this file is compiled to C
+#   the dead key and multikey configuration in this file is transpiled to C
 #   and XML.
 #
 #   The purpose of the leading plus is to prevent conflicts with the vulgar
@@ -15916,7 +15916,7 @@
 #   wide adoption motivated by the observation of usability and adequacy.
 #
 #   The resulting inconsistencies due to dead key sequences without a supported
-#   multikey equivalent require compiling multikey sequences separately, as
+#   multikey equivalent require transpiling multikey sequences separately, as
 #   opposed to connecting the dead keys to a similar number of multikey entry
 #   points, as it is straightforward when manually configuring the dead keys
 #   on Windows.
@@ -16748,7 +16748,7 @@
 #   <UEFDA>                  <*dead_legacygrave>        "`" U0060 GRAVE ACCENT
 #
 #   Chained dead keys require as many dead characters as dead keys involved.
-#   These are set in the compiler only.
+#   These are set in the transpiler only.
 #   See linux-chromeos/outils/dead-key-convert.pl
 #
 #   The multikey sequences by contrast are built using generic dead characters
@@ -21048,7 +21048,7 @@
 #   The level-3 tilde dead key was the straightforward pick to jump in when the
 #   format controls in symbol group 10 were replaced with visible symbols for a
 #   consistent user experience across the symbol groups (not sooner than v6.1.0
-#   when the dead key data started being compiled).
+#   when the dead key data started being transpiled).
 #
 #   EuroSign and quotedbl yield the emoji style variation selector UFE0F, and
 #   so does asciitilde for text style UFE0E, with alphabetic mnemonics, while
@@ -26566,9 +26566,12 @@
 #   https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/commit/cb44799b72f611eb4c9d7cc185bc3b09e070be08
 #   https://web.archive.org/web/20250202064605/https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/commit/cb44799b72f611eb4c9d7cc185bc3b09e070be08
 #
-#   The identifier is BAR rather than BARRED, consistently with STROKE, despite
-#   most character names use BARRED instead of WITH BAR that is consistent with
-#   most other diacritics, and despite the confusability with the bar keysym.
+#   The identifier is BAR rather than BARRED, despite the confusability with
+#   the bar keysym. BAR is consistent with STROKE, and WITH BAR is consistent
+#   with most other diacritics. Still, most character names use BARRED instead
+#   of WITH BAR, and the trend persists in Unicode 18.0. There are only two
+#   casing pairs WITH BAR, plus the Unicode 18.0 modifier letter "𝿖" U1DFD6,
+#   a superscript "ƚ" U019A:
 #   See "ƚ" U019A # LATIN SMALL LETTER L WITH BAR
 #   See "Ƚ" U023D # LATIN CAPITAL LETTER L WITH BAR
 #   See "Ꞓ" UA792 # LATIN CAPITAL LETTER C WITH BAR
@@ -26580,6 +26583,7 @@
 #   All barred letters occurring in orthographies have their precomposed form
 #   encoded in Unicode, due to the rendering challenge of overlay diacritics.
 #   https://www.frathwiki.com/Bar
+#   https://www.unicode.org/versions/Unicode17.0.0/core-spec/chapter-2/#G27986
 #
 #   The unicase glottal stop with stroke, meaning with bar, is supported in its
 #   upright form "ʡ" U02A1 by "7", by "?", by "q", and by apostrophe and
@@ -26599,9 +26603,8 @@
 #   Arrows in *dead_bar
 #
 #   Simple arrows "←" U2190 and "→" U2192 have shortcuts by less and greater;
-#   the wide-headed arrow "➔" U2794 is by equal given that its tip is sharp,
-#   and braceleft is used for "⦵", so only the stem remains for the mnemonic;
-#   and the round-tipped arrow "➜" U279C is based on parenright.
+#   the wide-headed arrow with a sharp tip "➔" U2794 is by equal, and the
+#   wide-headed round-tipped arrow "➜" U279C is by parenright.
 #
 #
 #   Math symbols in *dead_bar
@@ -26619,9 +26622,9 @@
 #
 #   Diacritic in *dead_bar
 #
-#   As a spacing counterpart of the short bar diacritic "̵" U0335, "˗" U02D7
-#   MODIFIER LETTER MINUS SIGN is convenient, because despite being named a
-#   modifier letter it is no superscript.
+#   As a spacing counterpart of the short bar diacritic "̵" U0335, the
+#   MODIFIER LETTER MINUS SIGN "˗" U02D7 is convenient, because despite
+#   it is named a modifier letter, it is no superscript.
 #   See #*# SUPERSCRIPT
 #
 <UEFD8>                                                                                    <space> : "̵" U0335 # COMBINING SHORT STROKE OVERLAY
@@ -26676,10 +26679,10 @@
 #   Multikey conflicts with "―" U2015.                                                         <7> : "ʡ" U02A1 # LATIN LETTER GLOTTAL STOP WITH STROKE
 <UEFD8>                                                                                     <KP_7> : "ʡ" U02A1 # LATIN LETTER GLOTTAL STOP WITH STROKE
 #   Multikey conflicts with "―" U2015.                                                      <KP_7> : "ʡ" U02A1 # LATIN LETTER GLOTTAL STOP WITH STROKE
-<UEFD8>                                                                                        <A> : "Ꜻ" UA73A # LATIN CAPITAL LETTER AV WITH HORIZONTAL BAR
-<Multi_key><minus>                                                                             <A> : "Ꜻ" UA73A # LATIN CAPITAL LETTER AV WITH HORIZONTAL BAR
-<UEFD8>                                                                                        <a> : "ꜻ" UA73B # LATIN SMALL LETTER AV WITH HORIZONTAL BAR
-<Multi_key><minus>                                                                             <a> : "ꜻ" UA73B # LATIN SMALL LETTER AV WITH HORIZONTAL BAR
+<UEFD8>                                                                                        <A> : "𝽀" U1DF40 # LATIN CAPITAL LETTER BARRED A
+<Multi_key><minus>                                                                             <A> : "𝽀" U1DF40 # LATIN CAPITAL LETTER BARRED A
+<UEFD8>                                                                                        <a> : "𝽁" U1DF41 # LATIN SMALL LETTER BARRED A
+<Multi_key><minus>                                                                             <a> : "𝽁" U1DF41 # LATIN SMALL LETTER BARRED A
 <UEFD8>                                                                                        <B> : "Ƀ" U0243 # LATIN CAPITAL LETTER B WITH STROKE
 <Multi_key><minus>                                                                             <B> : "Ƀ" U0243 # LATIN CAPITAL LETTER B WITH STROKE
 <UEFD8>                                                                                        <b> : "ƀ" U0180 # LATIN SMALL LETTER B WITH STROKE
@@ -26722,6 +26725,14 @@
 <Multi_key><minus>                                                                             <L> : "Ƚ" U023D # LATIN CAPITAL LETTER L WITH BAR
 <UEFD8>                                                                                        <l> : "ƚ" U019A # LATIN SMALL LETTER L WITH BAR
 <Multi_key><minus>                                                                             <l> : "ƚ" U019A # LATIN SMALL LETTER L WITH BAR
+<UEFD8>                                                                                        <M> : "𝽊" U1DF4A # LATIN CAPITAL LETTER BARRED M
+<Multi_key><minus>                                                                             <M> : "𝽊" U1DF4A # LATIN CAPITAL LETTER BARRED M
+<UEFD8>                                                                                        <m> : "𝽋" U1DF4B # LATIN SMALL LETTER BARRED M
+<Multi_key><minus>                                                                             <m> : "𝽋" U1DF4B # LATIN SMALL LETTER BARRED M
+<UEFD8>                                                                                        <N> : "𝽍" U1DF4D # LATIN CAPITAL LETTER BARRED N
+<Multi_key><minus>                                                                             <N> : "𝽍" U1DF4D # LATIN CAPITAL LETTER BARRED N
+<UEFD8>                                                                                        <n> : "𝽎" U1DF4E # LATIN SMALL LETTER BARRED N
+<Multi_key><minus>                                                                             <n> : "𝽎" U1DF4E # LATIN SMALL LETTER BARRED N
 <UEFD8>                                                                                        <O> : "Ɵ" U019F # LATIN CAPITAL LETTER O WITH MIDDLE TILDE
 <Multi_key><minus>                                                                             <O> : "Ɵ" U019F # LATIN CAPITAL LETTER O WITH MIDDLE TILDE
 <UEFD8>                                                                                        <o> : "ɵ" U0275 # LATIN SMALL LETTER BARRED O
@@ -26750,6 +26761,14 @@
 <Multi_key><minus>                                                                             <U> : "Ʉ" U0244 # LATIN CAPITAL LETTER U BAR
 <UEFD8>                                                                                        <u> : "ʉ" U0289 # LATIN SMALL LETTER U BAR
 <Multi_key><minus>                                                                             <u> : "ʉ" U0289 # LATIN SMALL LETTER U BAR
+<UEFD8>                                                                                        <V> : "𝽑" U1DF51 # LATIN CAPITAL LETTER BARRED V
+<Multi_key><minus>                                                                             <V> : "𝽑" U1DF51 # LATIN CAPITAL LETTER BARRED V
+<UEFD8>                                                                                        <v> : "𝽒" U1DF52 # LATIN SMALL LETTER BARRED V
+<Multi_key><minus>                                                                             <v> : "𝽒" U1DF52 # LATIN SMALL LETTER BARRED V
+<UEFD8>                                                                                        <w> : "𝼿" U1DF3F # LATIN SMALL LETTER BARRED W
+<Multi_key><minus>                                                                             <w> : "𝼿" U1DF3F # LATIN SMALL LETTER BARRED W
+<UEFD8>                                                                                        <x> : "𝽔" U1DF54 # LATIN SMALL LETTER BARRED CHI
+<Multi_key><minus>                                                                             <x> : "𝽔" U1DF54 # LATIN SMALL LETTER BARRED CHI
 <UEFD8>                                                                                        <Y> : "Ɏ" U024E # LATIN CAPITAL LETTER Y WITH STROKE
 #   Multikey conflicts with "⥽" U297D.                                                         <Y> : "Ɏ" U024E # LATIN CAPITAL LETTER Y WITH STROKE
 <UEFD8>                                                                                        <y> : "ɏ" U024F # LATIN SMALL LETTER Y WITH STROKE
@@ -26761,17 +26780,28 @@
 #
 #
 # # BAR&GROUP_1
+#   Lenient group selection
 #
 <UEFD8>                                                                             <UEFD0><grave> : "⊻" U22BB # XOR
 <Multi_key><minus>                                                             <numbersign><grave> : "⊻" U22BB # XOR
 <UEFD8>                                                                                 <UEFD0><a> : "ꬰ" UAB30 # LATIN SMALL LETTER BARRED ALPHA
 <Multi_key><minus>                                                                 <numbersign><a> : "ꬰ" UAB30 # LATIN SMALL LETTER BARRED ALPHA
+<UEFD8>                                                                                 <UEFD0><c> : "𝽂" U1DF42 # LATIN SMALL LETTER BARRED OPEN O
+<Multi_key><minus>                                                                 <numbersign><c> : "𝽂" U1DF42 # LATIN SMALL LETTER BARRED OPEN O
+<UEFD8>                                                                                 <UEFD0><e> : "𝽄" U1DF44 # LATIN SMALL LETTER BARRED OPEN E
+<Multi_key><minus>                                                                 <numbersign><e> : "𝽄" U1DF44 # LATIN SMALL LETTER BARRED OPEN E
+<UEFD8>                                                                                 <UEFD0><g> : "𝽏" U1DF4F # LATIN SMALL LETTER BARRED ENG
+<Multi_key><minus>                                                                 <numbersign><g> : "𝽏" U1DF4F # LATIN SMALL LETTER BARRED ENG
 <UEFD8>                                                                                 <UEFD0><i> : "ᵼ" U1D7C # LATIN SMALL LETTER IOTA WITH STROKE
 <Multi_key><minus>                                                                 <numbersign><i> : "ᵼ" U1D7C # LATIN SMALL LETTER IOTA WITH STROKE
 <UEFD8>                                                                                 <UEFD0><j> : "ʄ" U0284 # LATIN SMALL LETTER DOTLESS J WITH STROKE AND HOOK
 <Multi_key><minus>                                                                 <numbersign><j> : "ʄ" U0284 # LATIN SMALL LETTER DOTLESS J WITH STROKE AND HOOK
 <UEFD8>                                                                                 <UEFD0><l> : "ƛ" U019B # LATIN SMALL LETTER LAMBDA WITH STROKE
 <Multi_key><minus>                                                                 <numbersign><l> : "ƛ" U019B # LATIN SMALL LETTER LAMBDA WITH STROKE
+<UEFD8>                                                                                 <UEFD0><n> : "𝽏" U1DF4F # LATIN SMALL LETTER BARRED ENG
+<Multi_key><minus>                                                                 <numbersign><n> : "𝽏" U1DF4F # LATIN SMALL LETTER BARRED ENG
+<UEFD8>                                                                                 <UEFD0><o> : "𝽂" U1DF42 # LATIN SMALL LETTER BARRED OPEN O
+<Multi_key><minus>                                                                 <numbersign><o> : "𝽂" U1DF42 # LATIN SMALL LETTER BARRED OPEN O
 <UEFD8>                                                                                 <UEFD0><s> : "ẝ" U1E9D # LATIN SMALL LETTER LONG S WITH HIGH STROKE
 <Multi_key><minus>                                                                 <numbersign><s> : "ẝ" U1E9D # LATIN SMALL LETTER LONG S WITH HIGH STROKE
 <UEFD8>                                                                                 <UEFD0><T> : "Ꝥ" UA764 # LATIN CAPITAL LETTER THORN WITH STROKE
@@ -26780,6 +26810,10 @@
 <Multi_key><minus>                                                                 <numbersign><t> : "ꝥ" UA765 # LATIN SMALL LETTER THORN WITH STROKE
 <UEFD8>                                                                                 <UEFD0><u> : "ꭏ" UAB4F # LATIN SMALL LETTER U BAR WITH SHORT RIGHT LEG
 <Multi_key><minus>                                                                 <numbersign><u> : "ꭏ" UAB4F # LATIN SMALL LETTER U BAR WITH SHORT RIGHT LEG
+<UEFD8>                                                                                 <UEFD0><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<Multi_key><minus>                                                                 <numbersign><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<UEFD8>                                                                                 <UEFD0><x> : "𝽄" U1DF44 # LATIN SMALL LETTER BARRED OPEN E
+<Multi_key><minus>                                                                 <numbersign><x> : "𝽄" U1DF44 # LATIN SMALL LETTER BARRED OPEN E
 <UEFD8>                                                                                 <UEFD0><y> : "ᵿ" U1D7F # LATIN SMALL LETTER UPSILON WITH STROKE
 <Multi_key><minus>                                                                 <numbersign><y> : "ᵿ" U1D7F # LATIN SMALL LETTER UPSILON WITH STROKE
 #
@@ -26790,14 +26824,24 @@
 <Multi_key><minus>                                                 <numbersign><numbersign><grave> : "⊼" U22BC # NAND
 <UEFD8>                                                                          <UEFD0><UEFD0><a> : "ꬰ" UAB30 # LATIN SMALL LETTER BARRED ALPHA
 <Multi_key><minus>                                                     <numbersign><numbersign><a> : "ꬰ" UAB30 # LATIN SMALL LETTER BARRED ALPHA
+<UEFD8>                                                                          <UEFD0><UEFD0><e> : "𝽄" U1DF44 # LATIN SMALL LETTER BARRED OPEN E
+<Multi_key><minus>                                                     <numbersign><numbersign><e> : "𝽄" U1DF44 # LATIN SMALL LETTER BARRED OPEN E
 <UEFD8>                                                                          <UEFD0><UEFD0><i> : "ᵼ" U1D7C # LATIN SMALL LETTER IOTA WITH STROKE
 <Multi_key><minus>                                                     <numbersign><numbersign><i> : "ᵼ" U1D7C # LATIN SMALL LETTER IOTA WITH STROKE
 <UEFD8>                                                                          <UEFD0><UEFD0><j> : "ʄ" U0284 # LATIN SMALL LETTER DOTLESS J WITH STROKE AND HOOK
 <Multi_key><minus>                                                     <numbersign><numbersign><j> : "ʄ" U0284 # LATIN SMALL LETTER DOTLESS J WITH STROKE AND HOOK
 <UEFD8>                                                                          <UEFD0><UEFD0><l> : "ƛ" U019B # LATIN SMALL LETTER LAMBDA WITH STROKE
 <Multi_key><minus>                                                     <numbersign><numbersign><l> : "ƛ" U019B # LATIN SMALL LETTER LAMBDA WITH STROKE
+<UEFD8>                                                                          <UEFD0><UEFD0><n> : "𝽏" U1DF4F # LATIN SMALL LETTER BARRED ENG
+<Multi_key><minus>                                                     <numbersign><numbersign><n> : "𝽏" U1DF4F # LATIN SMALL LETTER BARRED ENG
+<UEFD8>                                                                          <UEFD0><UEFD0><o> : "𝽂" U1DF42 # LATIN SMALL LETTER BARRED OPEN O
+<Multi_key><minus>                                                     <numbersign><numbersign><o> : "𝽂" U1DF42 # LATIN SMALL LETTER BARRED OPEN O
 <UEFD8>                                                                          <UEFD0><UEFD0><s> : "𝼋" U1DF0B # LATIN SMALL LETTER ESH WITH DOUBLE BAR
 <Multi_key><minus>                                                     <numbersign><numbersign><s> : "𝼋" U1DF0B # LATIN SMALL LETTER ESH WITH DOUBLE BAR
+<UEFD8>                                                                          <UEFD0><UEFD0><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<Multi_key><minus>                                                     <numbersign><numbersign><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<UEFD8>                                                                          <UEFD0><UEFD0><x> : "𝽔" U1DF54 # LATIN SMALL LETTER BARRED CHI
+<Multi_key><minus>                                                     <numbersign><numbersign><x> : "𝽔" U1DF54 # LATIN SMALL LETTER BARRED CHI
 #
 #
 # # BAR&GROUP_3
@@ -26814,6 +26858,22 @@
 <Multi_key><minus>                                                           <numbersign><KP_3><s> : "ẝ" U1E9D # LATIN SMALL LETTER LONG S WITH HIGH STROKE
 <UEFD8>                                                                   <UEFD0><UEFD0><UEFD0><s> : "ẝ" U1E9D # LATIN SMALL LETTER LONG S WITH HIGH STROKE
 <Multi_key><minus>                                         <numbersign><numbersign><numbersign><s> : "ẝ" U1E9D # LATIN SMALL LETTER LONG S WITH HIGH STROKE
+<UEFD8>                                                                              <UEFD0><3><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<Multi_key><minus>                                                              <numbersign><3><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<UEFD8>                                                                           <UEFD0><KP_3><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<Multi_key><minus>                                                           <numbersign><KP_3><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<UEFD8>                                                                   <UEFD0><UEFD0><UEFD0><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<Multi_key><minus>                                         <numbersign><numbersign><numbersign><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+#
+#
+# # BAR&GROUP_4
+#
+<UEFD8>                                                                              <UEFD0><4><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<Multi_key><minus>                                                              <numbersign><4><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<UEFD8>                                                                           <UEFD0><KP_4><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<Multi_key><minus>                                                           <numbersign><KP_4><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<UEFD8>                                                            <UEFD0><UEFD0><UEFD0><UEFD0><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
+<Multi_key><minus>                             <numbersign><numbersign><numbersign><numbersign><v> : "𝽓" U1DF53 # LATIN SMALL LETTER BARRED CLOSED OMEGA
 #
 #
 # # BAR&HOOK
@@ -26859,7 +26919,7 @@
 #
 #
 #^# DOUBLE_BAR
-#   double bar, long bar, barred descender, short bar overlay
+#   double bar, long bar, barred, barred descender, low stroke, short bar overlay
 #   *dead_bar UEFD8 double press
 #   Multikey: ¦--
 #
@@ -26871,9 +26931,21 @@
 #   WITH STROKE, and so makes a good point for support in this double press bar
 #   virtual dead key.
 #
+#   The middle bar in "𝽆" U1DF46 LATIN SMALL LETTER BARRED H is new to Unicode
+#   since version 18.0 and contrasts with the high bar in the more common and
+#   uppercase-supporting "ħ" U0127 LATIN SMALL LETTER H WITH STROKE. Therefore,
+#   "𝽆" U1DF46 is here in *dead_bar double press.
+#
+#   So are "𝽈" U1DF48, "𝽉" U1DF49 here due to "Ꝁ" UA740, "ꝁ" UA741 in single
+#   press.
+#
+#   Conversely, "𝽕" U1DF55 LATIN SMALL LETTER Y WITH LOW STROKE is a low-bar
+#   alternative to single-press "ɏ" U024F.
+#
 #   "–" U2013 EN DASH is supported in this double bar virtual dead key, with
-#   period as a base character, for sideways compatibility with the sequence in
-#   en_US.UTF-8/Compose: <Multi_key><minus><minus><period>.
+#   period as a base character, for sideways compatibility of its multikey
+#   equivalent with the <Multi_key><minus><minus><period> sequence in
+#   en_US.UTF-8/Compose.
 #   See #^# HIGH_BAR
 #   See #   Input method for hyphens and dashes
 #
@@ -26901,10 +26973,16 @@
 <Multi_key><minus><minus>                                                                      <D> : "Ꟈ" UA7C7 # LATIN CAPITAL LETTER D WITH SHORT STROKE OVERLAY
 <UEFD8><UEFD8>                                                                                 <d> : "ꟈ" UA7C8 # LATIN SMALL LETTER D WITH SHORT STROKE OVERLAY
 <Multi_key><minus><minus>                                                                      <d> : "ꟈ" UA7C8 # LATIN SMALL LETTER D WITH SHORT STROKE OVERLAY
+<UEFD8><UEFD8>                                                                                 <h> : "𝽆" U1DF46 # LATIN SMALL LETTER BARRED H
+<Multi_key><minus><minus>                                                                      <h> : "𝽆" U1DF46 # LATIN SMALL LETTER BARRED H
 <UEFD8><UEFD8>                                                                                 <L> : "Ⱡ" U2C60 # LATIN CAPITAL LETTER L WITH DOUBLE BAR
 <Multi_key><minus><minus>                                                                      <L> : "Ⱡ" U2C60 # LATIN CAPITAL LETTER L WITH DOUBLE BAR
 <UEFD8><UEFD8>                                                                                 <l> : "ⱡ" U2C61 # LATIN SMALL LETTER L WITH DOUBLE BAR
 <Multi_key><minus><minus>                                                                      <l> : "ⱡ" U2C61 # LATIN SMALL LETTER L WITH DOUBLE BAR
+<UEFD8><UEFD8>                                                                                 <K> : "𝽈" U1DF48 # LATIN CAPITAL LETTER BARRED K
+<Multi_key><minus><minus>                                                                      <K> : "𝽈" U1DF48 # LATIN CAPITAL LETTER BARRED K
+<UEFD8><UEFD8>                                                                                 <k> : "𝽉" U1DF49 # LATIN SMALL LETTER BARRED K
+<Multi_key><minus><minus>                                                                      <k> : "𝽉" U1DF49 # LATIN SMALL LETTER BARRED K
 <UEFD8><UEFD8>                                                                                 <O> : "Ꝋ" UA74A # LATIN CAPITAL LETTER O WITH LONG STROKE OVERLAY
 <Multi_key><minus><minus>                                                                      <O> : "Ꝋ" UA74A # LATIN CAPITAL LETTER O WITH LONG STROKE OVERLAY
 <UEFD8><UEFD8>                                                                                 <o> : "ꝋ" UA74B # LATIN SMALL LETTER O WITH LONG STROKE OVERLAY
@@ -26925,10 +27003,14 @@
 <Multi_key><minus><minus>                                                                      <T> : "Ꝧ" UA766 # LATIN CAPITAL LETTER THORN WITH STROKE THROUGH DESCENDER
 <UEFD8><UEFD8>                                                                                 <t> : "ꝧ" UA767 # LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER
 <Multi_key><minus><minus>                                                                      <t> : "ꝧ" UA767 # LATIN SMALL LETTER THORN WITH STROKE THROUGH DESCENDER
+<UEFD8><UEFD8>                                                                                 <y> : "𝽕" U1DF55 # LATIN SMALL LETTER Y WITH LOW STROKE
+<Multi_key><minus><minus>                                                                      <y> : "𝽕" U1DF55 # LATIN SMALL LETTER Y WITH LOW STROKE
 #
 #
 # # DOUBLE_BAR&GROUP_1
 #
+<UEFD8><UEFD8>                                                                          <UEFD0><q> : "𝽖" U1DF56 # LATIN LETTER GLOTTAL STOP WITH DOUBLE STROKE
+<Multi_key><minus><minus>                                                          <numbersign><q> : "𝽖" U1DF56 # LATIN LETTER GLOTTAL STOP WITH DOUBLE STROKE
 <UEFD8><UEFD8>                                                                          <UEFD0><s> : "𝼋" U1DF0B # LATIN SMALL LETTER ESH WITH DOUBLE BAR
 <Multi_key><minus><minus>                                                          <numbersign><s> : "𝼋" U1DF0B # LATIN SMALL LETTER ESH WITH DOUBLE BAR
 <UEFD8><UEFD8>                                                                          <UEFD0><T> : "Ꝧ" UA766 # LATIN CAPITAL LETTER THORN WITH STROKE THROUGH DESCENDER
