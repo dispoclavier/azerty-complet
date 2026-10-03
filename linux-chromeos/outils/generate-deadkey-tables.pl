@@ -5,7 +5,7 @@
 # 2025-05-26T2331+0200
 # 2025-11-30T2107+0100
 # 2026-01-12T1834+0100
-# 2026-04-09T1106+0200
+# 2026-10-03T1552+0200
 # = last modified.
 #
 # Generates HTML tables of dead keys from dead key sequences in Compose.yml.
@@ -16,13 +16,12 @@
 # Section headings with a leading "#*#" and the following headings switch files
 # of partial tables:
 #
-#     # # COUNTRY_FLAGS
 #     ### Space and symbol groups
 #     ### Letter groups
 #     ### Greek with diacritics
 #     #.# DEAD_LEGACYTILDE
 #     #.# DEAD_LEGACYGRAVE
-#     # # EMOJI_READY
+#     #   EMOJI_READY
 #
 # As the keyboard input may end with a dead key, this needs to be marked up
 # with a bold label and a bold border, so as to not raise questions about
@@ -147,13 +146,12 @@ while ( my $line = <INPUT> ) {
 	}
 	if ( $parse_on ) {
 		if ( $line =~ /^#\*# /
-			|| $line =~ /^# # COUNTRY_FLAGS/
 			|| $line =~ /^### Space and symbol groups/
 			|| $line =~ /^### Letter groups/
 			|| $line =~ /^### Greek with diacritics/
 			|| $line =~ /^#\.# DEAD_LEGACYTILDE/
 			|| $line =~ /^#\.# DEAD_LEGACYGRAVE/
-			|| $line =~ /^# # EMOJI_READY/
+			|| $line =~ /^#   EMOJI_READY/
 		) {
 			print OUTPUT $end_tags;
 			close( OUTPUT );
