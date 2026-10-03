@@ -108,7 +108,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* Tilde et perluète : Changer en "Tilde et accolade fermante" (Tilde&braceright). compose-2.yml [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* Grec ou cerclé : Changer le caractère mort de "ε" U+03B5 en "⚪" U+26AA. compose-2.yml [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* Indice :
-		* Indice et inversé et crochet palatal : Ajouter "𝼶" U+1DF36. compose-2.yml [0dc2d32](https://github.com/dispoclavier/azerty-complet/commit/0dc2d3214afd7c30a0a059926351260a6522646b)
+		* Indice et inversé et crochet palatal : Ajouter "𝼶" U+1DF36. compose-2.yml [0dc2d32](https://github.com/dispoclavier/azerty-complet/commit/0dc2d3214afd7c30a0a059926351260a6522646b), [9f8f564](https://github.com/dispoclavier/azerty-complet/commit/9f8f5640f6e25228381b546657e62f3a1ab00bd9), [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3)
 		* Indice et crosse : Supprimer "ꭆ" U+AB46, qui va dans indice et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Indice et crochet palatal : Ajouter "𝼰" U+1DF30. compose-2.yml [faf42af](https://github.com/dispoclavier/azerty-complet/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f), [faf42af](https://github.com/dispoclavier/azerty-complet/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f)
 		* Indice et macron : Ajouter "ꭆ" 2026-10-03T0726+0200, qui était dans indice et crosse. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
@@ -131,7 +131,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* Rayé :
 		* Ajouter "𝽀" U+1DF40, "𝽁" U+1DF41 à la place de "Ꜻ", "ꜻ", qui sont en composition. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
 		* Ajouter "𝼿" U+1DF3F, "𝽂" U+1DF42, "𝽄" U+1DF44, "𝽊" U+1DF4A, "𝽋" U+1DF4B, "𝽍" U+1DF4D, "𝽎" U+1DF4E, "𝽏" U+1DF4F, "𝽑" U+1DF51, "𝽒" U+1DF52, "𝽓" U+1DF53, "𝽔" U+1DF54. ibidem
-		* Rayé et crochet palatal : Ajouter "𝼲" U+1DF32, "𝽅" U+1DF45. compose-2.yml [0dc2d32](https://github.com/dispoclavier/azerty-complet/commit/0dc2d3214afd7c30a0a059926351260a6522646b)
+		* Rayé et crochet palatal : Ajouter "𝼲" U+1DF32, "𝽅" U+1DF45. compose-2.yml [0dc2d32](https://github.com/dispoclavier/azerty-complet/commit/0dc2d3214afd7c30a0a059926351260a6522646b), [9f8f564](https://github.com/dispoclavier/azerty-complet/commit/9f8f5640f6e25228381b546657e62f3a1ab00bd9), [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3)
 		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)                            
 	* Macron : Ajouter "꟢" U+A7E2 à la place de "ꭆ" U+AB46, qui va dans indice et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Rond en chef : Ajouter "꭭" U+AB6D. ibidem
@@ -150,6 +150,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* Corriger ou mettre à jour des annotations ou l’alignement. kbligatures.c [afda6b6](https://github.com/dispoclavier/nouvel-azerty/commit/afda6b6e1b9eaeea4402d8757ec6f4781e3b41a9), kbcommon.h, kbcommon-3.c [a207474](https://github.com/dispoclavier/nouvel-azerty/commit/a2074745a66f7b74328c5c1bbd027fdc1bc62388), kbcommon-1.c [2ad66fb](https://github.com/dispoclavier/azerty-complet/commit/2ad66fbac312504fdf5d6f1c0ffdb5a5f6a9e9df), compose-1.yml, compose-2.yml, compose-3.yml [64f11fb](https://github.com/dispoclavier/nouvel-azerty/commit/64f11fb514d3dac30cdac699fc8de23c9dfce71b), [ddbafac](https://github.com/dispoclavier/nouvel-azerty/commit/ddbafaca68a4fa65227ac5d96ed0ec9843e37bbe), [3679c6b](https://github.com/dispoclavier/azerty-complet/commit/3679c6b4fee112c3e6d8e27bfd451c96f4803782),  [ccf0702](https://github.com/dispoclavier/azerty-complet/commit/ccf0702be4c856881c38745f07774b7ddf155dd1), [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5), [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), dispocla.cpp [b219e8b](https://github.com/dispoclavier/nouvel-azerty/commit/b219e8bd22cd1585be239bda66c4174a425d79e8), [8660a75](https://github.com/dispoclavier/nouvel-azerty/commit/8660a7560a67c84df765a25748ce4e11fd51b20d)
 	* Utiliser "mouvoir" au sens de "déplacer" au lieu de "mettre". CHANGELOG.md [31f1e43](https://github.com/dispoclavier/azerty-complet/commit/31f1e43ee4bd4aa289c2b8549f10047c3fbe9ac1)
 	* Mouvoir le JSON dans un fichier. outils/settings.json [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
+	* Déboguer la taille de fichier. compose-2.yml, compose-3.yml [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3), generate-deadkey-tables.pl [8fd4f48](https://github.com/dispoclavier/azerty-complet/commit/8fd4f48e1029aae695ba34e278de587dc9c83feb)
 * Builds :
 	* 6.2.9.0 [ce5a9a5](https://github.com/dispoclavier/nouvel-azerty/commit/ce5a9a55e799344d877b450ee811fae00f07cac0)
 	* 6.2.9.1 [a207474](https://github.com/dispoclavier/nouvel-azerty/commit/a2074745a66f7b74328c5c1bbd027fdc1bc62388)
@@ -1105,50 +1106,50 @@ Dans réfléchi, "ʕ" U+0295 est désormais par "G" au lieu de "q".
 	* Groupes des lettres :
 		* Groupe 4 :
 			* Ajouter "꟒" U+A7D2 par "T". compose-3.yml [58a2c65](https://github.com/dispoclavier/nouvel-azerty/commit/58a2c650268a292feec3253470ba967625960d47)
-			* Par "t", faire suivre "ꟓ" U+A7D3 du groupe 11 par "T" à la place de "ʨ" U+02A8, qui va par "C".
-			* Ajouter "꟔" U+A7D4 par "W".
-			* Permuter "ꟕ" U+A7D5 du groupe 11 et "ʍ" U+028D du groupe 4.
-		* Groupes 3 et 5 : Permuter "Ꟃ" U+A7C2 et "Ƿ" U+01F7, "ꟃ" U+A7C3 et "ƿ" U+01BF.
+			* Par "t", faire suivre "ꟓ" U+A7D3 du groupe 11 par "T" à la place de "ʨ" U+02A8, qui va par "C". ibidem
+			* Ajouter "꟔" U+A7D4 par "W". ibidem
+			* Permuter "ꟕ" U+A7D5 du groupe 11 et "ʍ" U+028D du groupe 4. ibidem
+		* Groupes 3 et 5 : Permuter "Ꟃ" U+A7C2 et "Ƿ" U+01F7, "ꟃ" U+A7C3 et "ƿ" U+01BF. ibidem
 	* Exposant :
 		* Ajouter "꟱" U+A7F1 par "S". compose-2.yml [9440bdb](https://github.com/dispoclavier/nouvel-azerty/commit/9440bdbb9be8eb9ced2e995155341b5c724e7d61)
 		* Suscrit :
-			* Ajouter "᫙" U+1AD9 par "D", "᫚" U+1ADA par "B".
-			* Ajouter "᫛" U+1ADB par "0", "᫠" U+1AE0 par "4", "᫡" U+1AE1 par "6".
-			* Ajouter "᫤" U+1AE4 par "C", "᫫" U+1AEB par "F".
-			* Groupe 1 : Ajouter "᫥" U+1AE5 par "m", "᫧" U+1AE7 par "M", "᫩" U+1AE9 par "c", "᫪" U+1AEA par "f", "᫫" U+1AEB par "F".
-	* Tourné : Ajouter "᫣" U+1AE3 par "p".
+			* Ajouter "᫙" U+1AD9 par "D", "᫚" U+1ADA par "B". ibidem
+			* Ajouter "᫛" U+1ADB par "0", "᫠" U+1AE0 par "4", "᫡" U+1AE1 par "6". ibidem
+			* Ajouter "᫤" U+1AE4 par "C", "᫫" U+1AEB par "F". ibidem
+			* Groupe 1 : Ajouter "᫥" U+1AE5 par "m", "᫧" U+1AE7 par "M", "᫩" U+1AE9 par "c", "᫪" U+1AEA par "f", "᫫" U+1AEB par "F". ibidem
+	* Tourné : Ajouter "᫣" U+1AE3 par "p". ibidem
 	* Réfléchi :
-		* Changer le caractère de base de "ʕ" U+0295 de "q" en "G".
+		* Changer le caractère de base de "ʕ" U+0295 de "q" en "G". ibidem
 		* Ajouter "꟎" U+A7CE par "Q" à la place de "ʢ" U+02A2, qui va dans réfléchi rayé par "q"
-		* Ajouter "꟏" U+A7CF par "q" à la place de "ʕ" U+0295, qui va par "G".
-		* Réfléchi rayé : Ajouter pour "ʢ" U+02A2, qui était dans réfléchi par "Q".
+		* Ajouter "꟏" U+A7CF par "q" à la place de "ʕ" U+0295, qui va par "G". ibidem
+		* Réfléchi rayé : Ajouter pour "ʢ" U+02A2, qui était dans réfléchi par "Q". ibidem
 	* Tilde :
-		* Ajouter "͌" U+034C par "=" à la place de "͠" U+0360, qui est par "—" U+2014 et par "$".
-		* Changer le caractère de base ASCII de "͠" U+0360 de "=" en "$".
-	* Point en chef > Ligne verticale en chef : Ajouter "᫐" U+1AD0, "᫑" U+1AD1, "᫒" U+1AD2, "᫓" U+1AD3, "᫔" U+1AD4, "᫕" U+1AD5, "᫖" U+1AD6, "᫗" U+1AD7 par les touches mortes impliquées suivies d’espace.
-	* Symbole monétaire > Symbole monétaire étendu : Ajouter "⃁" U+20C1 par "S" à la place de "₷" U+20B7, qui est par "s".
+		* Ajouter "͌" U+034C par "=" à la place de "͠" U+0360, qui est par "—" U+2014 et par "$". ibidem
+		* Changer le caractère de base ASCII de "͠" U+0360 de "=" en "$". ibidem
+	* Point en chef > Ligne verticale en chef : Ajouter "᫐" U+1AD0, "᫑" U+1AD1, "᫒" U+1AD2, "᫓" U+1AD3, "᫔" U+1AD4, "᫕" U+1AD5, "᫖" U+1AD6, "᫗" U+1AD7 par les touches mortes impliquées suivies d’espace. ibidem
+	* Symbole monétaire > Symbole monétaire étendu : Ajouter "⃁" U+20C1 par "S" à la place de "₷" U+20B7, qui est par "s". ibidem
 	* Brève inversée :
-		* Changer le caractère de base ASCII de "͡" U+0361 de "=" en "$".
-		* Brève inversée souscrite : Changer le caractère de base ASCII de "᷼" U+1DFC de "=" en "$".
+		* Changer le caractère de base ASCII de "͡" U+0361 de "=" en "$". ibidem
+		* Brève inversée souscrite : Changer le caractère de base ASCII de "᷼" U+1DFC de "=" en "$". ibidem
 	* Brève :
-		* Changer le caractère de base ASCII de "͝" U+035D de "=" en "$".
-		* Brève souscrite : Changer le caractère de base ASCII de "͜" U+035C de "=" en "$".
-	* Rayé > Raie haute : Ajouter "᫢" U+1AE2 par espace à la place de "͆" U+0346, qui est dans le groupe 5 de "P".
+		* Changer le caractère de base ASCII de "͝" U+035D de "=" en "$". ibidem
+		* Brève souscrite : Changer le caractère de base ASCII de "͜" U+035C de "=" en "$". ibidem
+	* Rayé > Raie haute : Ajouter "᫢" U+1AE2 par espace à la place de "͆" U+0346, qui est dans le groupe 5 de "P". ibidem
 	* Indice > Souscrit :
-		* Redonder "̼" U+033C par "m".
-		* Ajouter "᫦" U+1AE6 par "M".
+		* Redonder "̼" U+033C par "m". ibidem
+		* Ajouter "᫦" U+1AE6 par "M". ibidem
 	* Macron :
-		* Ajouter "᫘" U+1AD8 par les touches mortes impliquées suivies d’espace.
-		* Changer le caractère de base ASCII de "͞" U+035E de "=" en "$".
-		* Macron souscrit : Changer le caractère de base ASCII de "͟" U+035F de "=" en "$".
+		* Ajouter "᫘" U+1AD8 par les touches mortes impliquées suivies d’espace. ibidem
+		* Changer le caractère de base ASCII de "͞" U+035E de "=" en "$". ibidem
+		* Macron souscrit : Changer le caractère de base ASCII de "͟" U+035F de "=" en "$". ibidem
 	* Accent circonflexe :
-		* Supprimer "ſ" U+017F par "$".
-		* Changer le caractère de base ASCII de "᷍" U+1DCD de "=" en "$".
-	* Hatchek : Ajouter "᫏" U+1ACF par "w".
-	* Drapeau : Ajouter "᫨" U+1AE8 par espace à la place de "͇" U+0347, qui va en double frappe à la place de "͌" U+034C, qui va dans tilde par "=".
+		* Supprimer "ſ" U+017F par "$". ibidem
+		* Changer le caractère de base ASCII de "᷍" U+1DCD de "=" en "$". ibidem
+	* Hatchek : Ajouter "᫏" U+1ACF par "w". ibidem
+	* Drapeau : Ajouter "᫨" U+1AE8 par espace à la place de "͇" U+0347, qui va en double frappe à la place de "͌" U+034C, qui va dans tilde par "=". ibidem
 	* Tréma :
-		* Ajouter "᫜" U+1ADC par "^".
-		* Tréma souscrit : Ajouter "᫝" U+1ADD par "*".
+		* Ajouter "᫜" U+1ADC par "^". ibidem
+		* Tréma souscrit : Ajouter "᫝" U+1ADD par "*". ibidem
 * Documentation : Convertir le Démarrage-rapide.txt de texte brut en Markdown et le fournir en PDF. Démarrage-rapide.md [8d3d6e1](https://github.com/dispoclavier/nouvel-azerty/commit/8d3d6e17721137c34753a90b8b0e1c89f211159a)
 
 ## 6.0.3 (2025-08-24)
@@ -1225,7 +1226,7 @@ Débogage du niveau Maj + AltEm + AltMa.
 	* Niveau Maj + AltEm + AltMa :
 		* Déboguer par rapport à la bascule VerrMod. kbfrFRs.C [d4d7bc1](https://github.com/dispoclavier/nouvel-azerty/commit/d4d7bc1305c97a80bdcd9cac1924bbb292ebd6b6), kbfrFRsr.C [5b3c05d](https://github.com/dispoclavier/nouvel-azerty/commit/5b3c05dfa4e52bb1264c80157e19631a1d99a7a8)
 		* Doubler les touches de la colonne 02 (en panne) dans les colonnes 11 (rangées C, D, E) ou 07 (rangée B). ibidem
-	* Niveau AltGr + AltEm + AltMa : Maintenir les majuscules du niveau Maj + AltEm + AltMa.
+	* Niveau AltGr + AltEm + AltMa : Maintenir les majuscules du niveau Maj + AltEm + AltMa. ibidem
 * Documentation :
 	* Mettre à jour le mode d’emploi. windows/readme.md alias Mode-d-emploi-sous-Windows.md [d223b29](https://github.com/dispoclavier/nouvel-azerty/commit/d223b292108c9c17affc87ac9c9aa8354c4750e1)
 	* Mettre à jour les tableaux de touches mortes. generate-deadkey-tables.pl [85f388a](https://github.com/dispoclavier/nouvel-azerty/commit/85f388a4dff37f7091056bbf9e663cd3de9ca0fd)
@@ -1258,13 +1259,13 @@ Aide à la production autonome de pilotes personnalisés et d’installateurs so
 		* Mode français :
 			* Permuter le point d’exclamation et le point-virgule espacés en Maj, et non espacés en AltFr et en Maj + AltFr, pour les remettre sur leurs touches historiques. dispocla.cpp [82e9d24](https://github.com/dispoclavier/nouvel-azerty/commit/82e9d2491813bdd5b6fa34996bd8423d4e437765), kbfrFRs.klc [296e005](https://github.com/dispoclavier/nouvel-azerty/commit/296e005d99eb73fa0369cb21ff3ee77ffd0bfa21), kbfrFRsr.klc [cce59f2](https://github.com/dispoclavier/nouvel-azerty/commit/cce59f2df32436404dcb1d17d71e4e3ac8789605), kbfrFRs.C [f49c397](https://github.com/dispoclavier/nouvel-azerty/commit/f49c3976e715eb76d64b06b9e4b979606cc2d3d8), kbfrFRsr.C [2421757](https://github.com/dispoclavier/nouvel-azerty/commit/2421757a63fcf19113c305fccb1c50ac60441306), nouvel-azerty.json [1dc6f5c](https://github.com/dispoclavier/nouvel-azerty/commit/1dc6f5c49de31a689fe36012294e698763f5dd1f), nouvel-azerty-verrcap.json [e27cd0d](https://github.com/dispoclavier/nouvel-azerty/commit/e27cd0d70b75ae3af1a21f5f4cb2e6a17099ce04), nouvel-azerty-verrmod.json [c2997e3](https://github.com/dispoclavier/nouvel-azerty/commit/c2997e3895081e3a6c46d303204b3b87b68943c6), nouvel-azerty-verrmod-verrcap.json [de7a668](https://github.com/dispoclavier/nouvel-azerty/commit/de7a668dc1ea5899567c5fee98bb71c95db27308), qzjfgy.json [7488861](https://github.com/dispoclavier/nouvel-azerty/commit/7488861e9a10760a0ab6a618ee1fa56cef32982d)
 			* Disposition de base et variantes AZERTY : Mettre le point médian "·" U+00B7 sur touche vive en Minuscule sur B10 à la place de la contre-oblique "\\" U+005C, qui est sur AltGr + R. ibidem, dispocla.cpp [a77cafe](https://github.com/dispoclavier/nouvel-azerty/commit/a77cafe29f357d26e69ebbe17495096a554237da)
-			* En AltGr, laisser "§" U+00A7 sur B10 pour la rétrocompatibilité, et "!" U+0021 sur B08 pour la synergie avec "<" U+003C, plutôt que d’y faire suivre ";" U+003B.
+			* En AltGr, laisser "§" U+00A7 sur B10 pour la rétrocompatibilité, et "!" U+0021 sur B08 pour la synergie avec "<" U+003C, plutôt que d’y faire suivre ";" U+003B. ibidem
 		* Mode ASCII :
-			* Ne pas permuter "." U+002E et ";" U+003B, quitte à ne pas remettre le point-virgule sur sa place historique, afin d’assurer la stabilité du point, tout en ayant le point-virgule en Minuscule.
+			* Ne pas permuter "." U+002E et ";" U+003B, quitte à ne pas remettre le point-virgule sur sa place historique, afin d’assurer la stabilité du point, tout en ayant le point-virgule en Minuscule. ibidem
 			* En Maj, permuter "\\" U+005C et "!" U+0021 pour remettre le point d’exclamation sur sa touche historique. ibidem
 			* En AltFr, permuter "!" U+0021 et ";" U+003B pour la cohérence avec le mode français. ibidem
-			* En AltGr, ne pas permuter "!" U+0021 et ";" U+003B, pour la cohérence avec le mode français et la stabilité du point d’exclamation en AltGr.
-		* En Maj + AltGr, ne pas permuter les touches mortes point souscrit et virgule souscrite, pour la cohérence avec "!" U+0021 et ";" U+003B (ou "§" U+00A7) en AltGr, et parce que le point souscrit est plus fréquent que la virgule souscrite.
+			* En AltGr, ne pas permuter "!" U+0021 et ";" U+003B, pour la cohérence avec le mode français et la stabilité du point d’exclamation en AltGr. ibidem
+		* En Maj + AltGr, ne pas permuter les touches mortes point souscrit et virgule souscrite, pour la cohérence avec "!" U+0021 et ";" U+003B (ou "§" U+00A7) en AltGr, et parce que le point souscrit est plus fréquent que la virgule souscrite. ibidem
 	* Pavé numérique :
 		* Mettre à niveau sous Windows selon le pavé numérique sous Linux. kbcommon.H [eda6c76](https://github.com/dispoclavier/nouvel-azerty/commit/eda6c7662762cf75a58c5c6cd1db3762485b0305), kbfrFRs.C [1363945](https://github.com/dispoclavier/nouvel-azerty/commit/136394566f4e27d3f29b3673c125ea38856af442), [f14901b](https://github.com/dispoclavier/nouvel-azerty/commit/f14901b7302bcd8cc61c55ca832c53633fcbcb03), kbfredis.C [5bc3ad8](https://github.com/dispoclavier/nouvel-azerty/commit/5bc3ad89888cd0dd9c3be10230597447a7b902ec)
 		* Remplir les positions vides. dispocla.cpp [4517a6d](https://github.com/dispoclavier/nouvel-azerty/commit/4517a6db7a9f8be2511b0b0f5d9402bebeda7296), kbfrFRs.C [f14901b](https://github.com/dispoclavier/nouvel-azerty/commit/f14901b7302bcd8cc61c55ca832c53633fcbcb03), kbfredis.C [5ea4c28](https://github.com/dispoclavier/nouvel-azerty/commit/5ea4c28f2ef48eb2315c231564cad4403b9d50aa)
@@ -1309,8 +1310,10 @@ Aide à la production autonome de pilotes personnalisés et d’installateurs so
 			* kbfredis.RC devient kbfrFRsr.RC. [84a648a](https://github.com/dispoclavier/nouvel-azerty/commit/84a648ac537988bae50f132c1f5e1bfc079a5f8d)
 			* kbfredis.klc devient kbfrFRsr.klc. [a2da410](https://github.com/dispoclavier/nouvel-azerty/commit/a2da41057cd5ee795b41478bd1a92f04d484c1a5)
 	* Sous-variantes :
-		* Corriger les fichiers pour Linux et les mettre en ligne. evdev.c [20f6df1](https://github.com/dispoclavier/nouvel-azerty/commit/20f6df1504136fa544a60a9c2a2dce5fcf1c53c2), [6c1a939](https://github.com/dispoclavier/nouvel-azerty/commit/6c1a9394e0e2fa7d80e2261c43e05eb8bbe13795), [43b9b0b](https://github.com/dispoclavier/nouvel-azerty/commit/43b9b0b3a2cc6ba11f2451f3978cb6c7f4141c4e), linux/chromeos/redispositions/evdev-ansi.c, evdev-ansi-menu.c, evdev-ansi-menu-sans.c, evdev-ansi-pur.c, evdev-ctrl.c, evdev-menu.c, evdev-menu-sans.c, evdev-win.c, evdev-win-sans.c [19b2ece](https://github.com/dispoclavier/nouvel-azerty/commit/19b2ece949e1de96cc2bd9f5c6191cf126ef71be), [5bc557e](https://github.com/dispoclavier/nouvel-azerty/commit/5bc557ef5a4ad8091a9072f6e5506690d59e232a), [9098687](https://github.com/dispoclavier/nouvel-azerty/commit/9098687b4bee70cf6029f59b7de3a68225075b20), [6865ae0](https://github.com/dispoclavier/nouvel-azerty/commit/6865ae028ea303b7ee0fa416b434e6105acdfe39)
-		* Ajouter l’équivalent sous Windows. windows/redispositions/readme.md alias _Scancode_Map.txt [859528e](https://github.com/dispoclavier/nouvel-azerty/commit/859528eca5a6d43b5f828f6f315375162f76bd11), [7ca3436](https://github.com/dispoclavier/nouvel-azerty/commit/7ca3436c120f6d60ff84461c55831190ee3037bc), [40bea50](https://github.com/dispoclavier/nouvel-azerty/commit/40bea506488a325a7b789cfc55bfa6f3cd79c6eb), [6b2d0d4](https://github.com/dispoclavier/nouvel-azerty/commit/6b2d0d458f36338dc00dac75447e65928eec26de), [eeb4811](https://github.com/dispoclavier/nouvel-azerty/commit/eeb4811589389e8ca846ef8bb350a23f14eefd13), [964feb7](https://github.com/dispoclavier/nouvel-azerty/commit/964feb7fea816929436b39195e2875bbd0226350), [923d88a](https://github.com/dispoclavier/nouvel-azerty/commit/923d88a599b74229b95ff0135d6c94eb6c623924), [6dffbaf](https://github.com/dispoclavier/nouvel-azerty/commit/6dffbaf9c7796bbd0d2c80f450c1925b45b14364), [b1f81ad](https://github.com/dispoclavier/nouvel-azerty/commit/b1f81ad57704c481b045e403ba1d4644ff72dbcf), [8c03400](https://github.com/dispoclavier/nouvel-azerty/commit/8c03400541bc7bb78b822fbe1533920ce48b0343), [46bd178](https://github.com/dispoclavier/nouvel-azerty/commit/46bd178b2f15883a376fa2e68abe4831d07afbcd), windows/redispositions/annulation.reg, ansi-iso.reg, ansi-iso_menu=ret-arr_sans-menu.reg, ansi-iso_menu=x=ret-arr.reg, ansi-pur.reg, ctrl-dr=x=ret-arr.reg, menu=ret-arr_sans-menu.reg, menu=x=ret-arr.reg, win-dr=ret-arr.reg, win-dr=ret-arr_sans-menu.reg [1a46fc8](https://github.com/dispoclavier/nouvel-azerty/commit/1a46fc852dee5659bec5378a6622d6b2a25d96ae), [b3865f1](https://github.com/dispoclavier/nouvel-azerty/commit/b3865f1d63343884e744db3c78392bf5fc810e0a), [6a4c947](https://github.com/dispoclavier/nouvel-azerty/commit/6a4c947006073ef9888a99d1b14134b548cdbda3), [ed21663](https://github.com/dispoclavier/nouvel-azerty/commit/ed2166302fc7b33fe56bd06b70c7d4766469ad2d), [f58bb25](https://github.com/dispoclavier/nouvel-azerty/commit/f58bb25c905adde87a930f7e825612b903d2e594), [b84b94f](https://github.com/dispoclavier/nouvel-azerty/commit/b84b94f143e5ee8c67b9f6765fd5961c44fb69e5), [d9932ab](https://github.com/dispoclavier/nouvel-azerty/commit/d9932ab9621a4830ca11202689648de53164ed0a)
+		* Pour Linux :
+			* Corriger le fichier de redisposition. evdev.c [20f6df1](https://github.com/dispoclavier/nouvel-azerty/commit/20f6df1504136fa544a60a9c2a2dce5fcf1c53c2), [6c1a939](https://github.com/dispoclavier/nouvel-azerty/commit/6c1a9394e0e2fa7d80e2261c43e05eb8bbe13795), [43b9b0b](https://github.com/dispoclavier/nouvel-azerty/commit/43b9b0b3a2cc6ba11f2451f3978cb6c7f4141c4e), 
+			* Fournir un fichier evdev.c redisposé pour chaque catégorie de sous-variantes. linux-chromeos/redispositions/evdev-ansi.c, evdev-ansi-menu.c, evdev-ansi-menu-sans.c, evdev-ansi-pur.c, evdev-ctrl.c, evdev-menu.c, evdev-menu-sans.c, evdev-win.c, evdev-win-sans.c [19b2ece](https://github.com/dispoclavier/nouvel-azerty/commit/19b2ece949e1de96cc2bd9f5c6191cf126ef71be), [5bc557e](https://github.com/dispoclavier/nouvel-azerty/commit/5bc557ef5a4ad8091a9072f6e5506690d59e232a), [9098687](https://github.com/dispoclavier/nouvel-azerty/commit/9098687b4bee70cf6029f59b7de3a68225075b20), [6865ae0](https://github.com/dispoclavier/nouvel-azerty/commit/6865ae028ea303b7ee0fa416b434e6105acdfe39)
+		* Pour Windows : Ajouter l’équivalent. windows/redispositions/readme.md alias _Scancode_Map.txt [859528e](https://github.com/dispoclavier/nouvel-azerty/commit/859528eca5a6d43b5f828f6f315375162f76bd11), [7ca3436](https://github.com/dispoclavier/nouvel-azerty/commit/7ca3436c120f6d60ff84461c55831190ee3037bc), [40bea50](https://github.com/dispoclavier/nouvel-azerty/commit/40bea506488a325a7b789cfc55bfa6f3cd79c6eb), [6b2d0d4](https://github.com/dispoclavier/nouvel-azerty/commit/6b2d0d458f36338dc00dac75447e65928eec26de), [eeb4811](https://github.com/dispoclavier/nouvel-azerty/commit/eeb4811589389e8ca846ef8bb350a23f14eefd13), [964feb7](https://github.com/dispoclavier/nouvel-azerty/commit/964feb7fea816929436b39195e2875bbd0226350), [923d88a](https://github.com/dispoclavier/nouvel-azerty/commit/923d88a599b74229b95ff0135d6c94eb6c623924), [6dffbaf](https://github.com/dispoclavier/nouvel-azerty/commit/6dffbaf9c7796bbd0d2c80f450c1925b45b14364), [b1f81ad](https://github.com/dispoclavier/nouvel-azerty/commit/b1f81ad57704c481b045e403ba1d4644ff72dbcf), [8c03400](https://github.com/dispoclavier/nouvel-azerty/commit/8c03400541bc7bb78b822fbe1533920ce48b0343), [46bd178](https://github.com/dispoclavier/nouvel-azerty/commit/46bd178b2f15883a376fa2e68abe4831d07afbcd), windows/redispositions/annulation.reg, ansi-iso.reg, ansi-iso_menu=ret-arr_sans-menu.reg, ansi-iso_menu=x=ret-arr.reg, ansi-pur.reg, ctrl-dr=x=ret-arr.reg, menu=ret-arr_sans-menu.reg, menu=x=ret-arr.reg, win-dr=ret-arr.reg, win-dr=ret-arr_sans-menu.reg [1a46fc8](https://github.com/dispoclavier/nouvel-azerty/commit/1a46fc852dee5659bec5378a6622d6b2a25d96ae), [b3865f1](https://github.com/dispoclavier/nouvel-azerty/commit/b3865f1d63343884e744db3c78392bf5fc810e0a), [6a4c947](https://github.com/dispoclavier/nouvel-azerty/commit/6a4c947006073ef9888a99d1b14134b548cdbda3), [ed21663](https://github.com/dispoclavier/nouvel-azerty/commit/ed2166302fc7b33fe56bd06b70c7d4766469ad2d), [f58bb25](https://github.com/dispoclavier/nouvel-azerty/commit/f58bb25c905adde87a930f7e825612b903d2e594), [b84b94f](https://github.com/dispoclavier/nouvel-azerty/commit/b84b94f143e5ee8c67b9f6765fd5961c44fb69e5), [d9932ab](https://github.com/dispoclavier/nouvel-azerty/commit/d9932ab9621a4830ca11202689648de53164ed0a)
 * Composition :
 	* Ajouter « ¦d| » pour "‬" U+202C. compose-1.yml [e1e7e69](https://github.com/dispoclavier/nouvel-azerty/commit/e1e7e6933d618630cb0a6bf010500e2e92fabd18)
 	* Changer la séquence de "―" U+2015 de « ¦8- » en « ¦7- ». compose-1.yml [e3de699](https://github.com/dispoclavier/nouvel-azerty/commit/e3de699bff76a6932a15bc55a54fea656933cc64)
@@ -2426,7 +2429,7 @@ Permutation des ponctuations espacées et non espacées sur AltFr et Maj.
 
 * Disposition :
 	* Mettre les ponctuations espacées à la place des ponctuations non espacées en Maj, qui prennent les places en AltFr laissées par les ponctuations espacées. dispocla.cpp [ba9f321](https://github.com/dispoclavier/nouvel-azerty/commit/ba9f321504bc8042429bf931eb6f47d403d7fe13), dispotypes [e41b05b](https://github.com/dispoclavier/nouvel-azerty/commit/e41b05b03fa268244027b9a8ca2caba8035889e2)
-	* Redonder l’opérateur point "⋅" U+22C5 sur AltGr + AltFr + X à la place du liant "‍" U+200D, qui prend la place de l’antiliant "‌" U+200C sur AltGr + AltFr + W, qui prend la place du ":" sur AltGr + AltFr + Q, qui est sur AltFr + la touche du deux-points.
+	* Redonder l’opérateur point "⋅" U+22C5 sur AltGr + AltFr + X à la place du liant "‍" U+200D, qui prend la place de l’antiliant "‌" U+200C sur AltGr + AltFr + W, qui prend la place du ":" sur AltGr + AltFr + Q, qui est sur AltFr + la touche du deux-points. ibidem
 * Documentation :
 	* Mettre à jour le mode d’emploi. linux-chromeos/readme.md [3ab3d33](https://github.com/dispoclavier/nouvel-azerty/commit/3ab3d3331d0a3196936feb33a66bcba6e22cd8ff)
 	* Mettre à jour le code source. compose-1.yml [0e1aedf](https://github.com/dispoclavier/nouvel-azerty/commit/0e1aedfb0b6646f672fa511567adf3141b071532), compose-2.yml [eaf2807](https://github.com/dispoclavier/nouvel-azerty/commit/eaf2807c711908fa26273a72ee573fc2c3c88f24)
@@ -2678,7 +2681,6 @@ Script d’installation qui prend en charge aussi les redispositions des sous-va
 * Sous-variantes :
 	* Prendre en charge aussi les agencements ANSI purs. evdev.c [d98b5de](https://github.com/dispoclavier/nouvel-azerty/commit/d98b5de4daa2c29fb690f2d175b41a6301996deb)
 	* Restaurer les touches de fonction 19 et 24 (désactivées pour la version 1.1.1). ibidem
-	* Fournir un fichier evdev.c redisposé pour chaque catégorie de sous-variantes.
 * Installation sous Linux :
 	* Gérer les redispositions de touches des sous-variantes pendant l’installation. installer.sh [bc51116](https://github.com/dispoclavier/nouvel-azerty/commit/bc51116238f53b2be4f7f28b31ab950a59078dd6), [df8aac7](https://github.com/dispoclavier/nouvel-azerty/commit/df8aac7e8389ec85af0a13c035c9aa6852f7448d)
 	* Déverrouiller les fichiers sauvegardés pendant la désinstallation. ibidem
