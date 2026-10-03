@@ -8,7 +8,7 @@ These replacerules are intended to be added in settings.json.
 
 Chained dead keys may be symmetrized using the "bhughes339.replacerules"
 extension for VSCode with a replaceruleset based on the observation that
-at this point, chaining does not encompass more than four dead key strokes
+at this point, chaining does not encompass more than five dead key strokes
 other than group selection, that always trails and is thus not symmetrized.
 
 The ruleset "symmetrizeChainedDeadKeys" goes into user settings and has the
