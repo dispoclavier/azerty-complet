@@ -11,9 +11,10 @@ extension for VSCode with a replaceruleset based on the observation that
 at this point, chaining does not encompass more than four dead key strokes
 other than group selection, that always trails and is thus not symmetrized.
 
-The "JSONsymmetrizeChainedDeadKeys" goes into user settings and has the "@"
-prefix for subsequent multikey equivalent generation built in. It covers a
-number of likely use cases.
+The ruleset "symmetrizeChainedDeadKeys" goes into user settings and has the
+"@" prefix for subsequent multikey equivalent generation built in, for the
+use cases actually occurring in this file.
+See compose-2.yml # # Multikey equivalents
 See linux-chromeos/outils/generate-multikey.pl
 
 ## Conflictlessness check

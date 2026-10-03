@@ -108,9 +108,10 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* Tilde et perluète : Changer en "Tilde et accolade fermante" (Tilde&braceright). compose-2.yml [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* Grec ou cerclé : Changer le caractère mort de "ε" U+03B5 en "⚪" U+26AA. compose-2.yml [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* Indice :
-		* Indice et crosse : Supprimer "ꭆ" U+AB46, qui va dans indice et macron.
+@		* Indice et inversé et crochet palatal : Ajouter "𝼶" U+1DF36.
+		* Indice et crosse : Supprimer "ꭆ" U+AB46, qui va dans indice et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Indice et crochet palatal : Ajouter "𝼰" U+1DF30. compose-2.yml [faf42af](https://github.com/dispoclavier/azerty-complet/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f), [faf42af](https://github.com/dispoclavier/azerty-complet/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f)
-		* Indice et macron : Ajouter "ꭆ" U+AB46, qui était dans indice et crosse.
+		* Indice et macron : Ajouter "ꭆ" 2026-10-03T0726+0200, qui était dans indice et crosse. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Crosse :
 		* Ajouter "〽" U+303D. compose-2.yml [8660a75](https://github.com/dispoclavier/nouvel-azerty/commit/8660a7560a67c84df765a25748ce4e11fd51b20d), [8026430](https://github.com/dispoclavier/azerty-complet/commit/8026430e22cee6ed650616e75a7316803ca2ce05), [e75719e](https://github.com/dispoclavier/azerty-complet/commit/e75719e314bfe0d115a6839986df89d5ba348abe)
 		* Redonder "ɚ" U+025A à la place de "ɝ" U+025D, qui est dans les groupes 1 à 3. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
@@ -130,7 +131,8 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 	* Rayé :
 		* Ajouter "𝽀" U+1DF40, "𝽁" U+1DF41 à la place de "Ꜻ", "ꜻ", qui sont en composition. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
 		* Ajouter "𝼿" U+1DF3F, "𝽂" U+1DF42, "𝽄" U+1DF44, "𝽊" U+1DF4A, "𝽋" U+1DF4B, "𝽍" U+1DF4D, "𝽎" U+1DF4E, "𝽏" U+1DF4F, "𝽑" U+1DF51, "𝽒" U+1DF52, "𝽓" U+1DF53, "𝽔" U+1DF54. ibidem
-		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. ibidem
+@		* Rayé et crochet palatal : Ajouter "𝼲" U+1DF32, "𝽅" U+1DF45.
+		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)                            
 	* Macron : Ajouter "꟢" U+A7E2 à la place de "ꭆ" U+AB46, qui va dans indice et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Rond en chef : Ajouter "꭭" U+AB6D. ibidem
 	* Accent circonflexe :
@@ -141,7 +143,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 		* Redonder "Ç" U+00C7, "ç" U+00E7. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Corriger le caractère de base de "᫜" U+1ADC de "^" en "`". ibidem
 	* Sous Windows :
-		* Déboguer le transpilateur. dead-key-convert.pl [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
+@		* Déboguer le transpilateur. dead-key-convert.pl [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
 		* Mouvoir le transpilateur de linux-chromeos/outils/ à windows/outils/. dead-key-convert.pl [d6924ec](https://github.com/dispoclavier/azerty-complet/commit/d6924ecc352f0f935ea22d57afd3c63a45dcabeb)
 * Documentation :
 	* Raccourcir les descripteurs des dispositions de clavier sous Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
@@ -968,10 +970,7 @@ Complétion et simplification de séquences de composition.
 		* kbcommon.H devient kbcommon.h [6dc70f2](https://github.com/dispoclavier/nouvel-azerty/commit/6dc70f26f58364e9e93a01edc54f7cded04bb1da)
 	* Déboguer les numéros de version dans les métadonnées. kbbrFRs.RC, kbfrAFs.RC, kbfrFRr2.RC, kbfrFRs2.RC, kbfrFRs.RC, kbfrFRsr.RC, kbfrPFs.RC [1ec3bda](https://github.com/dispoclavier/nouvel-azerty/commit/1ec3bda65e4e885f0dc5aebf725c25b200f5c619)
 	* Centraliser le versionnage. kbversion-int.RC, kbversion-str.RC, kbbrFRs.RC, kbfrAFs.RC, kbfrFRr2.RC, kbfrFRs2.RC, kbfrFRs.RC, kbfrFRsr.RC, kbfrPFs.RC [756a357](https://github.com/dispoclavier/nouvel-azerty/commit/756a357dab635d1ed7649514644c43c033373c0b)
-	* Corriger le versionnage.
-		* kbversion-int.rc [47e62a5](https://github.com/dispoclavier/nouvel-azerty/commit/47e62a5d7d3a1c654742870a63c93f9a27dd67d3)
-		* kbversion-str.rc [a6e7acc](https://github.com/dispoclavier/nouvel-azerty/commit/a6e7acc3bfae74aeba61ad3f458153fab1408d38)
-		* kbligatures.c [ddd6cb2](https://github.com/dispoclavier/nouvel-azerty/commit/ddd6cb2f894aedd4d9334059abceec3906d37793)
+	* Corriger le versionnage. kbversion-int.rc [47e62a5](https://github.com/dispoclavier/nouvel-azerty/commit/47e62a5d7d3a1c654742870a63c93f9a27dd67d3), kbversion-str.rc [a6e7acc](https://github.com/dispoclavier/nouvel-azerty/commit/a6e7acc3bfae74aeba61ad3f458153fab1408d38), kbligatures.c [ddd6cb2](https://github.com/dispoclavier/nouvel-azerty/commit/ddd6cb2f894aedd4d9334059abceec3906d37793)
 * Composition :
 	* Simplifier et compléter les séquences de "⋇" U+22C7. compose-1.yml [cbb719d](https://github.com/dispoclavier/nouvel-azerty/commit/cbb719dcb4e26e1427c91c560f03d1b1060f305b), [105f4d7](https://github.com/dispoclavier/nouvel-azerty/commit/105f4d7b68211409cdf6b24d9918f15b2f8216d6)
 	* Adapter la séquence de "🣖" U+1F8D6. ibidem
@@ -983,8 +982,8 @@ Complétion et simplification de séquences de composition.
 	* 6.0.9.00 [41512f2](https://github.com/dispoclavier/nouvel-azerty/commit/41512f2dbaad6c0b4263902214f486682053b310)
 	* 6.0.9.01 [a361b04](https://github.com/dispoclavier/nouvel-azerty/commit/a361b04af93c721b97bf1c7214a1fc960b92ad19)
 	* 6.0.9.02 [1ec3bda](https://github.com/dispoclavier/nouvel-azerty/commit/1ec3bda65e4e885f0dc5aebf725c25b200f5c619)
-	* 6.0.9.03 mojibake.
-	* 6.0.9.04 échec.
+	* 6.0.9.03 mojibake
+	* 6.0.9.04 échec
 	* 6.0.9.05 [756a357](https://github.com/dispoclavier/nouvel-azerty/commit/756a357dab635d1ed7649514644c43c033373c0b)
 	* 6.0.9.6 [9e041f8](https://github.com/dispoclavier/nouvel-azerty/commit/9e041f8cbe829073c0793254509cdc02a3c06de1)
 	* 6.0.9.7 [ddd6cb2](https://github.com/dispoclavier/nouvel-azerty/commit/ddd6cb2f894aedd4d9334059abceec3906d37793)
@@ -1074,7 +1073,7 @@ Rectification et simplification de séquences de composition.
 * Transformations : Touche morte groupe : Groupe 1 : Supprimer "―" U+2015 par "ʻ" U+02BB, qui ne prend plus la place de "―" U+2015 sur les variantes pour la Polynésie. compose-2.yml [844c0bf](https://github.com/dispoclavier/nouvel-azerty/commit/844c0bfc11f01c55c2e16c92c43a55cf03848319), kbdeadtrans.c [0ff59d7](https://github.com/dispoclavier/nouvel-azerty/commit/0ff59d70f0d619a9e95b05284025ee8128e132c5)
 * Documentation : Mettre à jour et déboguer les modes d’emploi :
 	* Commun : readme.md [d66b174](https://github.com/dispoclavier/nouvel-azerty/commit/d66b1747204665b2f7a6ed60d075da06bce85356)
-	* Sous Linux : linux-chromeos/readme.md [8f51187](https://github.com/dispoclavier/nouvel-azerty/commit/8f511879a37714f0b82b6a0a36770eb8d3a3b989), Lisez-moi-svp.md [313a75f](https://github.com/dispoclavier/nouvel-azerty/commit/313a75f44083c1eb534f942acd3137a848570aea).
+	* Sous Linux : linux-chromeos/readme.md [8f51187](https://github.com/dispoclavier/nouvel-azerty/commit/8f511879a37714f0b82b6a0a36770eb8d3a3b989), Lisez-moi-svp.md [313a75f](https://github.com/dispoclavier/nouvel-azerty/commit/313a75f44083c1eb534f942acd3137a848570aea)
 	* Sous Windows : windows/readme.md [a850608](https://github.com/dispoclavier/nouvel-azerty/commit/a850608e538abe1c4802a6ddf49c8f55e442fde5), [58f8c55](https://github.com/dispoclavier/nouvel-azerty/commit/58f8c55b9fa3c487faf3391810f6348de05161f2), Lisez-moi-svp.md [c6d3121](https://github.com/dispoclavier/nouvel-azerty/commit/c6d3121199d121e79af28d6f2f95bf3b0d98b633)
 
 ## 6.0.5 (2025-08-31)

@@ -691,13 +691,15 @@
 #
 #   Chained dead keys may be symmetrized using the "bhughes339.replacerules"
 #   extension for VSCode with a replaceruleset based on the observation that
-#   at this point, chaining does not encompass more than four dead key strokes
+#   at this point, chaining does not encompass more than five dead key strokes
 #   other than group selection, that always trails and is thus not symmetrized.
-#   The JSONsymmetrizeChainedDeadKeys" goes into user settings and has the "@"
-#   prefix for subsequent multikey equivalent generation built in, for a number
-#   of likely use cases.
+#
+#   The ruleset "symmetrizeChainedDeadKeys" goes into user settings and has the
+#   "@" prefix for subsequent multikey equivalent generation built in, for the
+#   use cases actually occurring in this file.
 #   See outils/settings.json
 #   See # # Multikey equivalents
+#   See linux-chromeos/outils/generate-multikey.pl
 #
 #
 # # Lenient dead key press
@@ -7772,6 +7774,7 @@
 #
 #
 # # SUBSCRIPT&TURNED
+#   Lenient dead key press
 #
 <UEFD2><UEFD5>                                                                            <exclam> : "ꜟ" UA71F # MODIFIER LETTER LOW INVERTED EXCLAMATION MARK
 <Multi_key><underscore><percent>                                                          <exclam> : "ꜟ" UA71F # MODIFIER LETTER LOW INVERTED EXCLAMATION MARK
@@ -7795,6 +7798,52 @@
 <Multi_key><percent><underscore>                                                               <R> : "ᴚ" U1D1A # LATIN LETTER SMALL CAPITAL TURNED R
 #
 #
+# # SUBSCRIPT&TURNED&RETROFLEX_HOOK
+#   Lenient dead key press
+#
+<UEFD2><UEFD5><UEFD4>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><percent><braceright>                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD2><UEFD4><UEFD5>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><braceright><percent>                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD2><UEFD4>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><underscore><braceright>                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD2><UEFD5>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><underscore><percent>                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD4><UEFD2>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><braceright><underscore>                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD5><UEFD2>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><percent><underscore>                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+#
+#
+# # SUBSCRIPT&TURNED&PALATAL_HOOK
+#   Lenient dead key press
+#
+<UEFD2><UEFD5><UEFD4><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><percent><braceright><braceright>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD2><UEFD4><UEFD5><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><braceright><percent><braceright>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD2><UEFD4><UEFD4><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><braceright><braceright><percent>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD2><UEFD4><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><underscore><braceright><braceright>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD4><UEFD2><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><braceright><underscore><braceright>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD4><UEFD4><UEFD2>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><braceright><braceright><underscore>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD2><UEFD5><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><underscore><percent><braceright>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD2><UEFD4><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><underscore><braceright><percent>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD5><UEFD2><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><percent><underscore><braceright>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD5><UEFD4><UEFD2>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><percent><braceright><underscore>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD2><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><braceright><underscore><percent>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD5><UEFD2>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><braceright><percent><underscore>                                       <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+#
+#
 # # SUBSCRIPT&INVERTED
 #
 <UEFD2><UEFD5><UEFD5>                                                                     <exclam> : "ꜟ" UA71F # MODIFIER LETTER LOW INVERTED EXCLAMATION MARK
@@ -7809,6 +7858,79 @@
 <Multi_key><percent><underscore><percent>                                                      <R> : "ʁ" U0281 # LATIN LETTER SMALL CAPITAL INVERTED R
 <UEFD5><UEFD5><UEFD2>                                                                          <R> : "ʁ" U0281 # LATIN LETTER SMALL CAPITAL INVERTED R
 <Multi_key><percent><percent><underscore>                                                      <R> : "ʁ" U0281 # LATIN LETTER SMALL CAPITAL INVERTED R
+#
+#
+# # SUBSCRIPT&INVERTED&RETROFLEX_HOOK
+#   Lenient dead key press
+#
+<UEFD2><UEFD5><UEFD5><UEFD4>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><percent><percent><braceright>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD2><UEFD5><UEFD4><UEFD5>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><percent><braceright><percent>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD2><UEFD4><UEFD5><UEFD5>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><braceright><percent><percent>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD2><UEFD5><UEFD4>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><underscore><percent><braceright>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD2><UEFD4><UEFD5>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><underscore><braceright><percent>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD5><UEFD2><UEFD4>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><percent><underscore><braceright>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD5><UEFD4><UEFD2>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><percent><braceright><underscore>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD4><UEFD2><UEFD5>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><braceright><underscore><percent>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD4><UEFD5><UEFD2>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><braceright><percent><underscore>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD2><UEFD5><UEFD5>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><underscore><percent><percent>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD5><UEFD2><UEFD5>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><percent><underscore><percent>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD5><UEFD5><UEFD2>                                                                          <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><percent><percent><underscore>                                                 <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+#
+#
+# # SUBSCRIPT&INVERTED&PALATAL_HOOK
+#
+<UEFD2><UEFD5><UEFD5><UEFD4><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><percent><percent><braceright><braceright>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD2><UEFD5><UEFD4><UEFD5><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><percent><braceright><percent><braceright>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD2><UEFD4><UEFD5><UEFD4><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><braceright><percent><braceright><percent>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD2><UEFD4><UEFD4><UEFD5><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><underscore><braceright><braceright><percent><percent>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD2><UEFD5><UEFD4><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><underscore><percent><braceright><braceright>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD2><UEFD4><UEFD5><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><underscore><braceright><percent><braceright>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD2><UEFD5><UEFD4><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><underscore><percent><braceright><percent>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD2><UEFD4><UEFD5><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><underscore><braceright><percent><percent>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD5><UEFD2><UEFD4><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><percent><underscore><braceright><braceright>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD4><UEFD2><UEFD5><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><braceright><underscore><percent><braceright>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD5><UEFD2><UEFD4><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><percent><underscore><braceright><percent>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD2><UEFD5><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><braceright><underscore><percent><percent>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD5><UEFD4><UEFD2><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><percent><braceright><underscore><braceright>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD4><UEFD5><UEFD2><UEFD4>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><braceright><percent><underscore><braceright>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD5><UEFD4><UEFD2><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><percent><braceright><underscore><percent>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD5><UEFD2><UEFD5>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><braceright><percent><underscore><percent>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD5><UEFD4><UEFD4><UEFD2>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><percent><braceright><braceright><underscore>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD5><UEFD4><UEFD5><UEFD4><UEFD2>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><percent><braceright><percent><braceright><underscore>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD5><UEFD4><UEFD5><UEFD2>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><percent><braceright><percent><underscore>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD5><UEFD5><UEFD2>                                                                   <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
+<Multi_key><braceright><braceright><percent><percent><underscore>                                     <R> : "𝼶" U1DF36 # LATIN LETTER SMALL CAPITAL INVERTED R WITH PALATAL HOOK
 #
 #
 # # SUBSCRIPT&REVERSED
@@ -11118,6 +11240,33 @@
 <Multi_key><minus><braceleft>                                                                  <s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
 <dead_hook><UEFD8>                                                                             <s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
 <Multi_key><braceleft><minus>                                                                  <s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<UEFD8><dead_hook>                                                                             <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><minus><braceleft>                                                                  <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><UEFD8>                                                                             <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><minus>                                                                  <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+#
+#
+# # BAR&HOOK&GROUP_1
+#   Lenient dead key press
+#   Lenient group selection
+#
+<UEFD8><dead_hook>                                                                      <UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><minus><braceleft>                                                      <numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><UEFD8>                                                                      <UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><minus>                                                      <numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<UEFD8><dead_hook>                                                                      <UEFD0><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><minus><braceleft>                                                      <numbersign><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><UEFD8>                                                                      <UEFD0><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><minus>                                                      <numbersign><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+#
+#
+# # BAR&HOOK&GROUP_2
+#   Lenient dead key press
+#
+<UEFD8><dead_hook>                                                                      <UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><minus><braceleft>                                                      <numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><UEFD8>                                                                      <UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><minus>                                                      <numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
 #
 #
 # # BAR&CURL
@@ -11130,14 +11279,73 @@
 <Multi_key><braceleft><minus><braceleft>                                                       <s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
 <dead_hook><dead_hook><UEFD8>                                                                  <s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
 <Multi_key><braceleft><braceleft><minus>                                                       <s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<UEFD8><dead_hook><dead_hook>                                                                  <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><minus><braceleft><braceleft>                                                       <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><UEFD8><dead_hook>                                                                  <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><minus><braceleft>                                                       <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><dead_hook><UEFD8>                                                                  <w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+#
+#
+# # BAR&CURL&GROUP_1
+#   Lenient dead key press
+#   Lenient group selection
+#
+<UEFD8><dead_hook><dead_hook>                                                           <UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><minus><braceleft><braceleft>                                           <numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><UEFD8><dead_hook>                                                           <UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><minus><braceleft>                                           <numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><dead_hook><UEFD8>                                                           <UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><braceleft><minus>                                           <numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<UEFD8><dead_hook><dead_hook>                                                           <UEFD0><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><minus><braceleft><braceleft>                                           <numbersign><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><UEFD8><dead_hook>                                                           <UEFD0><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><minus><braceleft>                                           <numbersign><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><dead_hook><UEFD8>                                                           <UEFD0><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><braceleft><minus>                                           <numbersign><w> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+#
+#
+# # BAR&CURL&GROUP_2
+#   Lenient dead key press
+#
+<UEFD8><dead_hook><dead_hook>                                                    <UEFD0><UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><minus><braceleft><braceleft>                               <numbersign><numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><UEFD8><dead_hook>                                                    <UEFD0><UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><minus><braceleft>                               <numbersign><numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<dead_hook><dead_hook><UEFD8>                                                    <UEFD0><UEFD0><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
+<Multi_key><braceleft><braceleft><minus>                               <numbersign><numbersign><s> : "𝼌" U1DF0C # LATIN SMALL LETTER ESH WITH DOUBLE BAR AND CURL
 #
 #
 # # BAR&RETROFLEX_HOOK
+#   Lenient dead key press
 #
+<UEFD8><UEFD4>                                                                                 <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<Multi_key><minus><braceright>                                                                 <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<UEFD4><UEFD8>                                                                                 <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<Multi_key><braceright><minus>                                                                 <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<UEFD8><UEFD4>                                                                                 <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
+<Multi_key><minus><braceright>                                                                 <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
+<UEFD4><UEFD8>                                                                                 <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
+<Multi_key><braceright><minus>                                                                 <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
 <UEFD8><UEFD4>                                                                                 <i> : "𝼚" U1DF1A # LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK
 <Multi_key><minus><braceright>                                                                 <i> : "𝼚" U1DF1A # LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK
 <UEFD4><UEFD8>                                                                                 <i> : "𝼚" U1DF1A # LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK
 <Multi_key><braceright><minus>                                                                 <i> : "𝼚" U1DF1A # LATIN SMALL LETTER I WITH STROKE AND RETROFLEX HOOK
+#
+#
+# # BAR&PALATAL_HOOK
+#
+<UEFD8><UEFD4><UEFD4>                                                                          <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<Multi_key><minus><braceright><braceright>                                                     <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<UEFD4><UEFD8><UEFD4>                                                                          <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<Multi_key><braceright><minus><braceright>                                                     <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<UEFD4><UEFD4><UEFD8>                                                                          <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<Multi_key><braceright><braceright><minus>                                                     <g> : "𝽅" U1DF45 # LATIN SMALL LETTER G WITH STROKE AND PALATAL HOOK
+<UEFD8><UEFD4><UEFD4>                                                                          <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
+<Multi_key><minus><braceright><braceright>                                                     <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
+<UEFD4><UEFD8><UEFD4>                                                                          <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
+<Multi_key><braceright><minus><braceright>                                                     <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
+<UEFD4><UEFD4><UEFD8>                                                                          <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
+<Multi_key><braceright><braceright><minus>                                                     <h> : "𝼲" U1DF32 # LATIN SMALL LETTER H WITH STROKE AND PALATAL HOOK
 #
 #
 # # BAR&STROKE

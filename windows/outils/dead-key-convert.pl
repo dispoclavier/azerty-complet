@@ -1,30 +1,34 @@
 #!/usr/bin/perl
 # 2024-10-10T0617+0200
-# 2024-12-31T0424+0100
 # 2025-01-02T2142+0100
 # 2025-10-23T2145+0200
-# 2025-11-15T0554+0100
 # 2025-12-23T0450+0100
-# 2025-12-25T0221+0100
 # 2025-12-31T1259+0100
-# 2026-01-26T0514+0100
-# 2026-03-04T1042+0100
 # 2026-03-16T1433+0100
-# 2026-09-30T1731+0200
+# 2026-10-03T0640+0200
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
-# therefore part of the toolset for Windows, despite it takes in the dead key
+# therefore part of the toolset for Windows, although it runs on the dead key
 # configuration file for Linux, Compose.yml, like a couple of other scripts.
 #
-# Lines parsed for single character dead key or multikey content must contain
-# the output as a literal followed by a code point and a "#" (not necessarily
-# a comment, typically the character name). This is consistent with what is
-# expected by the XCompose parser, notably the trailing hash, as documented in
-# Compose.yml #   End of line comments
+# Lines parsed for single character output by dead keys or by multikey must
+# contain the output as a literal followed by a code point and at least a
+# trailing "#" even when there is no character name or anything else as a
+# comment. This is consistent with what the XCompose parser seems to expect,
+# most notably the trailing hash, as documented in Compose.yml.
+# See Compose.yml #   End of line comments
 #
-# This script has the two replace rulesets documented in Compose.yml built in,
-# and sorting is improved.
+# Multicharacter output is not processed, due to the defective DEADTRANS macro
+# unable to output more than a single UTF-16 code unit. By contrast, single
+# character output is processed regardless whether the character is in the BMP
+# or in the SMP. In the latter case, only the low surrogate is output, while
+# the high surrogate is mentioned in the EOL comment and can be input using
+# typically the same dead key followed by U200B on Shift + AltGr + Spacebar.
+# See # SMP characters
+#
+# This script executes the two replace rulesets included in settings.json and
+# documented in Compose.yml, and sorting is improved.
 # https://alvinalexander.com/perl/perl-array-sort-sorting-string-case-insensitive/
 # See Compose.yml # # Notes for maintenance
 #
@@ -35,7 +39,9 @@
 # require a dedicated dead character in the subroutine get_dead_character, and
 # need to be added in @chained for a virtual dead key to be generated. Chains
 # need to be supported incrementally, even when there is no output for a given
-# intermediate chain. Missing dead key chains are reported in dead-keys.txt.
+# intermediate chain. Missing dead key chains are reported in dead-keys.txt and
+# need to be added to @virtual_dead_characters somewhere below the comment line
+# "Intermediate dead key chains".
 # See Compose.yml # # Lenient dead key press
 #
 # Not all chained dead keys are symmetric. As the symmetricity of chained dead
@@ -77,6 +83,12 @@
 #
 # Multikey equivalents of dead keys, by contrast, are an XCompose feature for
 # incomplete keyboard layouts. As a consequence, these are sort of optional.
+#
+# The dead characters on Windows cannot be in sync with those of multikey
+# chains, because if they were, this would work around commenting out the
+# conflicting multikey equivalents, and the conflicts would break part of the
+# sequences.
+#
 # Supporting all available multikey equivalents of dead key chains on Windows
 # causes issues progressively, when exceeding some layout driver file size
 # threshold. Not 256 kB; issues also occur at 243 kB and 244 kB, but not at
@@ -87,20 +99,16 @@
 # Touchpad Dell and its driver GlidePoint® provided by ALPSALPINE Co., Ltd,
 # v.10.3201.101.121 (https://dl.dell.com/FOLDER06037821M/6/Dell-Touchpad-Driver_18D77_WIN_10.3201.101.215_A08_03.EXE).
 #
+# So, unsupporting most of the multikey equivalents is only a matter of keeping
+# the layout driver file size below the Windows-specific bug threshold.
+# Otherwise, the 6400 code points of the BMP private use area E000..F8FF are
+# enough to support both dedicated multikey sequences and dead key multikey
+# equivalents. (On 2026-09-11, a set of 2831 intermediate multikey chains used
+# E200..ED0E.)
+#
 # As multikey equivalents may increase the DLL file size from 219 to 289 kB,
-# half of the equivalents could still be supported. As a compromise, only
-# unchained dead keys may have their multikey equivalent supported.
-#
-# However, on Windows, the dead characters cannot be in sync with those of
-# multikey chains, because if they were, this would work around commenting out
-# the conflicting multikey equivalents, and the conflicts would break part of
-# the sequences.
-#
-# Unsupporting most of the multikey equivalents is only a matter of keeping the
-# layout driver file size below the Windows-specific bug threshold. Otherwise,
-# the 6400 code points of the BMP private use area E000..F8FF are enough to
-# support both dedicated multikey sequences and dead key multikey equivalents.
-# On 2026-09-11, a set of 2831 intermediate multikey chains used E200..ED0E.
+# half of the equivalents could still be supported. As a compromise, the
+# multikey equivalents are supported for unchained dead keys only.
 #
 # For test purposes, this can be toggled here by replacing false (!1) with
 # true (!0):
@@ -111,17 +119,17 @@ my $support_all_multikey_equivalents    = !1;
 # Multicharacter output
 #
 # On 2026-09-06, 1 287 sequences had multicharacter output. Most are letters
-# with combining diacritics, since composed letters are standard and mostly do
-# not have precomposed equivalents. Additionally, an "ê" key and a "ç" key are
-# emulated by digraphs or trigraphs output by the related dead keys, and even
-# the defective DEADTRANS macro on Windows supports the lowercase part of this.
-# Otherwise, Windows is unable to output composed letters by dead keys. In an
-# attempt to mitigate the resulting UX disruption, the string start output is
-# configured in kbdeadtrans.c.
+# with combining diacritics, given that composed letters are standard, and
+# mostly do not have precomposed equivalents. Additionally, an "ê" key and a
+# "ç" key are emulated by digraphs or trigraphs output by the related dead
+# keys, and even the DEADTRANS macro defect on Windows can be worked around
+# to support the lowercase part of this. In an attempt to mitigate the UX
+# disturbance resulting from Windows’s inability to output composed letters
+# by dead keys, the string start output is configured in kbdeadtrans.c.
 # See kbdeadtrans.c * Diacriticized letter key emulations
 #
 # In order to compensate Windows users for a defective dead key implementation
-# that disregards the official Unicode recommendation as of supporting composed
+# that disregards the official Unicode recommendation to support composed
 # letters by dead keys, alternative output is provided in Compose.yml, so as to
 # have all sequences in a single place, given that documenting them requires
 # special formatting in the dead key tables, that Compose.yml is the source of.
@@ -202,32 +210,32 @@ use feature 'unicode_strings';
 # By courtesy of https://stackoverflow.com/a/12291409
 use open ":std", ":encoding(UTF-8)";
 
-my $console_log_path = '../../windows/outils/dead-key-convert-display.txt';
+my $console_log_path = 'dead-key-convert-display.txt';
 open( CONSOLE, '>', $console_log_path ) or die $!;
 print( "Opened file $console_log_path.\n" );
 print CONSOLE ( "Opened file $console_log_path.\n" );
 
-my $input_path = '../compose/Compose.yml';
+my $input_path = '../../linux-chromeos/compose/Compose.yml';
 open( INPUT, '<', $input_path ) or die $!;
 print( "Opened file $input_path.\n" );
 print CONSOLE ( "Opened file $input_path.\n" );
 
-my $deadkey_path = '../../windows/outils/dead-keys.c';
+my $deadkey_path = './dead-keys.c';
 open( DEADKEYS, '>', $deadkey_path ) or die $!;
 print( "Opened file $deadkey_path.\n" );
 print CONSOLE ( "Opened file $deadkey_path.\n" );
 
-my $multikey_path = '../../windows/outils/multikey.c';
+my $multikey_path = './multikey.c';
 open( MULTIKEY, '>', $multikey_path ) or die $!;
 print( "Opened file $multikey_path.\n" );
 print CONSOLE ( "Opened file $multikey_path.\n" );
 
-my $report_path = '../../windows/outils/dead-keys.txt';
+my $report_path = './dead-keys.txt';
 open( REPORT, '>', $report_path ) or die $!;
 print( "Opened file $report_path.\n" );
 print CONSOLE ( "Opened file $report_path.\n" );
 
-my $log_path = '../../windows/outils/dead-key-high-log.txt';
+my $log_path = './dead-key-high-log.txt';
 open( LOG, '>', $log_path ) or die $!;
 print( "Opened file $log_path.\n" );
 print CONSOLE ( "Opened file $log_path.\n" );
@@ -358,9 +366,9 @@ sub dekeysym {
 	return $keysym;
 }
 
-my @dead_key_characters = (
+my @virtual_dead_characters = (
 
-	# Intermediate dead key chain links (608).
+	# Intermediate dead key chains (676).
 	'<!abovedot><!abovedot>➔02C8',#<dead_abovedot><dead_abovedot>
 	'<!abovedot><!abovedot><!acute>➔02C7',#<dead_abovedot><dead_abovedot><dead_acute>
 	'<!abovedot><!abovedot><!acute><!grave>➔02B7',#<dead_abovedot><dead_abovedot><dead_acute><dead_grave>
@@ -948,27 +956,95 @@ my @dead_key_characters = (
 	'<!turned><!turned><!stroke>➔1D13',#<UEFD5><UEFD5><dead_stroke>
 	'<!turned><!turned><!subscript>➔0298',#<UEFD5><UEFD5><UEFD2>
 	'<!turned><!turned><!superscript>➔1D59',#<UEFD5><UEFD5><UEFD1>
-	'<!bar><!bar><!superscript>➔AB32',#
-	'<!bar><!bar><!superscript><!group>➔AB33',#
-	'<!bar><!bar><!superscript><!group><!group>➔AB3C',#
-	'<!bar><!group><!group><!group><!group>➔AB53',#
-	'<!bar><!group><4>➔AB54',#
-	'<!bar><!superscript><!bar>➔AB55',#
-	'<!bar><!superscript><!bar><!group>➔AB56',#
-	'<!bar><!superscript><!bar><!group><!group>➔AB57',#
-  	'<!macron><!subscript>➔AB59',#
-	'<!retroflexhook><!retroflexhook><!subscript>➔AB5B',#
-	'<!retroflexhook><!subscript>➔AB6C',#
-	'<!retroflexhook><!subscript><!retroflexhook>➔AB6D',#
-	'<!subscript><!macron>➔A719',#
-	'<!subscript><!retroflexhook>➔A71B',#
-	'<!subscript><!retroflexhook><!retroflexhook>➔A71C',#
-	'<!superscript><!bar><!bar>➔A71D',#
-	'<!superscript><!bar><!bar><!group>➔A726',#
-	'<!superscript><!bar><!bar><!group><!group>➔A727',#
-	'<!superscript><!turned><!turned><!group>➔A728',#
-	'<!turned><!superscript><!turned><!group>➔A729',#
-	'<!turned><!turned><!superscript><!group>➔A72A',#
+	'<!bar><!bar><!superscript>➔AB32',
+	'<!bar><!bar><!superscript><!group>➔AB33',
+	'<!bar><!bar><!superscript><!group><!group>➔AB3C',
+	'<!bar><!group><!group><!group><!group>➔AB53',
+	'<!bar><!group><4>➔AB54',
+	'<!bar><!superscript><!bar>➔AB55',
+	'<!bar><!superscript><!bar><!group>➔AB56',
+	'<!bar><!superscript><!bar><!group><!group>➔AB57',
+  	'<!macron><!subscript>➔AB59',
+	'<!retroflexhook><!retroflexhook><!subscript>➔AB5B',
+	'<!retroflexhook><!subscript>➔AB6C',
+	'<!retroflexhook><!subscript><!retroflexhook>➔AB6D',
+	'<!subscript><!macron>➔A719',
+	'<!subscript><!retroflexhook>➔A71B',
+	'<!subscript><!retroflexhook><!retroflexhook>➔A71C',
+	'<!superscript><!bar><!bar>➔A71D',
+	'<!superscript><!bar><!bar><!group>➔A726',
+	'<!superscript><!bar><!bar><!group><!group>➔A727',
+	'<!superscript><!turned><!turned><!group>➔A728',
+	'<!turned><!superscript><!turned><!group>➔A729',
+	'<!turned><!turned><!superscript><!group>➔A72A',
+	'<!bar><!hook><!group>➔A730',
+	'<!bar><!hook><!hook><!group><!group>➔A731',
+	'<!bar><!hook><!hook><!group>➔A732',
+	'<!bar><!retroflexhook><!retroflexhook>➔A733',
+	'<!hook><!bar><!group>➔A734',
+	'<!hook><!bar><!hook><!group><!group>➔A735',
+	'<!hook><!bar><!hook><!group>➔A736',
+	'<!hook><!hook><!bar><!group><!group>➔A737',
+	'<!hook><!hook><!bar><!group>➔A738',
+	'<!retroflexhook><!bar><!retroflexhook>➔A739',
+	'<!retroflexhook><!retroflexhook><!bar>➔A73A',
+	'<!retroflexhook><!retroflexhook><!subscript><!turned><!turned>➔A73B',
+	'<!retroflexhook><!retroflexhook><!subscript><!turned>➔A73C',
+	'<!retroflexhook><!retroflexhook><!turned><!subscript><!turned>➔A73D',
+	'<!retroflexhook><!retroflexhook><!turned><!subscript>➔A73E',
+	'<!retroflexhook><!retroflexhook><!turned><!turned><!subscript>➔A73F',
+	'<!retroflexhook><!subscript><!retroflexhook><!turned><!turned>➔A740',
+	'<!retroflexhook><!subscript><!retroflexhook><!turned>➔A741',
+	'<!retroflexhook><!subscript><!turned><!retroflexhook><!turned>➔A742',
+	'<!retroflexhook><!subscript><!turned><!retroflexhook>➔A743',
+	'<!retroflexhook><!subscript><!turned><!turned>➔A76D',
+	'<!retroflexhook><!subscript><!turned>➔A76E',
+	'<!retroflexhook><!turned><!retroflexhook><!subscript><!turned>➔A746',
+	'<!retroflexhook><!turned><!retroflexhook><!subscript>➔A747',
+	'<!retroflexhook><!turned><!retroflexhook><!turned><!subscript>➔A748',
+	'<!retroflexhook><!turned><!subscript><!retroflexhook><!turned>➔A749',
+	'<!retroflexhook><!turned><!subscript><!retroflexhook>➔A74A',
+	'<!retroflexhook><!turned><!subscript><!turned>➔A74B',
+	'<!retroflexhook><!turned><!subscript>➔A74C',
+	'<!retroflexhook><!turned><!turned><!subscript>➔A74D',
+	'<!subscript><!retroflexhook><!retroflexhook><!turned><!turned>➔A74E',
+	'<!subscript><!retroflexhook><!retroflexhook><!turned>➔A74F',
+	'<!subscript><!retroflexhook><!turned><!retroflexhook><!turned>➔A750',
+	'<!subscript><!retroflexhook><!turned><!retroflexhook>➔A751',
+	'<!subscript><!retroflexhook><!turned><!turned>➔A752',
+	'<!subscript><!retroflexhook><!turned>➔A753',
+	'<!subscript><!turned><!retroflexhook><!retroflexhook>➔A754',
+	'<!subscript><!turned><!retroflexhook><!turned><!retroflexhook>➔A755',
+	'<!subscript><!turned><!retroflexhook><!turned>➔A756',
+	'<!subscript><!turned><!retroflexhook>➔A757',
+	'<!subscript><!turned><!turned><!retroflexhook><!retroflexhook>➔A758',
+	'<!subscript><!turned><!turned><!retroflexhook>➔A759',
+	'<!turned><!retroflexhook><!retroflexhook><!subscript>➔A75A',
+	'<!turned><!retroflexhook><!subscript><!retroflexhook>➔A75B',
+	'<!turned><!retroflexhook><!subscript><!turned><!retroflexhook>➔A75C',
+	'<!turned><!retroflexhook><!subscript><!turned>➔A75D',
+	'<!turned><!retroflexhook><!subscript>➔A75E',
+	'<!turned><!retroflexhook><!turned><!retroflexhook><!subscript>➔A75F',
+	'<!turned><!retroflexhook><!turned><!subscript><!retroflexhook>➔A760',
+	'<!turned><!retroflexhook><!turned><!subscript>➔A761',
+	'<!turned><!subscript><!retroflexhook><!retroflexhook>➔A762',
+	'<!turned><!subscript><!retroflexhook><!turned><!retroflexhook>➔A763',
+	'<!turned><!subscript><!retroflexhook><!turned>➔A764',
+	'<!turned><!subscript><!retroflexhook>➔A765',
+	'<!turned><!subscript><!turned><!retroflexhook><!retroflexhook>➔A766',
+	'<!turned><!subscript><!turned><!retroflexhook>➔A76F',
+	'<!turned><!turned><!retroflexhook><!retroflexhook><!subscript>➔A768',
+	'<!turned><!turned><!retroflexhook><!subscript><!retroflexhook>➔A769',
+	'<!turned><!turned><!retroflexhook><!subscript>➔A76A',
+	'<!turned><!turned><!subscript><!retroflexhook><!retroflexhook>➔A76B',
+	'<!turned><!turned><!subscript><!retroflexhook>➔A76C',
+	'<!retroflexhook><!retroflexhook><!turned><!turned>➔A770',
+	'<!retroflexhook><!turned><!retroflexhook><!turned>➔A771',
+	'<!retroflexhook><!turned><!turned>➔A772',
+	'<!turned><!retroflexhook><!turned>➔A773',
+	'<!turned><!retroflexhook><!turned><!retroflexhook>➔A774',
+	'<!turned><!turned><!retroflexhook>➔A775',
+	'<!turned><!turned><!retroflexhook><!retroflexhook>➔A776',
 
 	# Polytonic and monotonic Greek (256).
 	'<!abovehook><!greek>➔1FBD',#<UEFD3><dead_greek>
@@ -1287,7 +1363,7 @@ my @dead_key_characters = (
 );
 
 # Generates the required chained dead keys.
-foreach my $item ( @dead_key_characters ) {
+foreach my $item ( @virtual_dead_characters ) {
 	$deadkey  = substr( $item, 0, -5 );
 	$deadkey  =~ m/(<.+>)(<.+>)/;
 	$deadchar = get_dead_character( $1 );
@@ -1337,7 +1413,7 @@ sub get_dead_character {
 	$deadkey =~ s/^<!legacytilde>$/~/;
 	$deadkey =~ s/^<!M>$/00A6/;
 
-	foreach my $item ( @dead_key_characters ) {
+	foreach my $item ( @virtual_dead_characters ) {
 		if ( substr( $item, 0, -5 ) eq $deadkey ) {
 			$deadkey = substr( $item, -4, 4 );
 			last;
@@ -1523,8 +1599,8 @@ foreach my $line ( @dead_key_out ) {
 
 			# Register unsupported keysym.
 			if ( $deadchar =~ /^<.+>$/ ) {
-				unless ( grep { $_ eq $deadchar } @unsupported ) {
-					push( @unsupported, $deadchar );
+				unless ( grep { $_ eq "\t'" . $deadchar . "➔'," } @unsupported ) {
+					push( @unsupported, "\t'" . $deadchar . "➔'," );
 				}
 				$deadchar = 'dead';
 			}
@@ -1675,7 +1751,7 @@ if ( @unsupported == 0 ) {
 	print REPORT ( "There is one unsupported chain to transpile:\n\n" );
 } else {
 	@unsupported = sort( @unsupported );
-	print REPORT ( "This is the full list of " . @unsupported . " unsupported chains to transpile.\n\n" );
+	print REPORT ( "This is the full list of " . @unsupported . " unsupported chains to transpile,\nformatted for addition to \@virtual_dead_characters under \"Intermediate dead key chains\":\n\n" );
 }
 print REPORT join( "\n", @unsupported );
 
@@ -1685,7 +1761,7 @@ if ( @bad_format == 0 ) {
 	print REPORT ( "\n\n\nThere is one character in a bad format:\n\n" );
 } else {
 	@bad_format = sort( @bad_format );
-	print REPORT ( "\n\n\nThis is the full list of " . @bad_format . " characters in a bad format.\n\n" );
+	print REPORT ( "\n\n\nThis is the full list of " . @bad_format . " characters in a bad format:\n\n" );
 }
 print REPORT join( "\n", @bad_format );
 
@@ -1735,11 +1811,11 @@ print( "  $multikey_count potential multikey sequences in $multikey_path.\n" );
 print CONSOLE ( "  $multikey_count potential multikey sequences in $multikey_path.\n" );
 unless ( @unsupported == 0 ) {
 	if ( @unsupported == 1 ) {
-		print( "  The unsupported chain is listed in $report_path.\n" );
-		print CONSOLE ( "  The unsupported chain is listed in $report_path.\n" );
+		print( "  The unsupported chain is formatted in $report_path for\n     addition to \@virtual_dead_characters under \"Intermediate dead key chains\".\n" );
+		print CONSOLE ( "  The unsupported chain is formatted in $report_path for\n     addition to \@virtual_dead_characters under \"Intermediate dead key chains\".\n" );
 	} else {
-		print( "  The " . @unsupported . " unsupported chains are listed in $report_path.\n" );
-		print CONSOLE ( "  The " . @unsupported . " unsupported chains are listed in $report_path.\n" );
+		print( "  The " . @unsupported . " unsupported chains are listed in $report_path, formatted for\n     addition to \@virtual_dead_characters under \"Intermediate dead key chains\".\n" );
+		print CONSOLE ( "  The " . @unsupported . " unsupported chains are listed in $report_path, formatted for\n     addition to \@virtual_dead_characters under \"Intermediate dead key chains\".\n" );
 	}
 }
 unless ( $overlong == 0 ) {
