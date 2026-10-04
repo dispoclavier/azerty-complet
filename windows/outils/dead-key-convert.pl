@@ -5,7 +5,7 @@
 # 2025-12-23T0450+0100
 # 2025-12-31T1259+0100
 # 2026-03-16T1433+0100
-# 2026-10-03T0640+0200
+# 2026-10-03T1933+0200
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
@@ -278,7 +278,13 @@ sub format_character {
 	} elsif ( $character =~ /^[0-9a-fA-F]{4}$/ ) {
 		$character = '0x' . $character;
 	} else {
-		push( @bad_format, "'" . $character . "'" );
+		if ( $character =~ /^<.+?><.+>$/ ) {
+			unless ( grep { $_ eq "\t'" . $character . "➔'," } @unsupported ) {
+				push( @unsupported, "\t'" . $character . "➔'," );
+			}
+		} else {
+			push( @bad_format, "'" . $character . "'" );
+		}
 		$character = 'badf'; # Comment this out to see the actual string in context.
 	}
 	return $character;
@@ -368,7 +374,7 @@ sub dekeysym {
 
 my @virtual_dead_characters = (
 
-	# Intermediate dead key chains (676).
+	# Intermediate dead key chains (698).
 	'<!abovedot><!abovedot>➔02C8',#<dead_abovedot><dead_abovedot>
 	'<!abovedot><!abovedot><!acute>➔02C7',#<dead_abovedot><dead_abovedot><dead_acute>
 	'<!abovedot><!abovedot><!acute><!grave>➔02B7',#<dead_abovedot><dead_abovedot><dead_acute><dead_grave>
@@ -1045,6 +1051,28 @@ my @virtual_dead_characters = (
 	'<!turned><!retroflexhook><!turned><!retroflexhook>➔A774',
 	'<!turned><!turned><!retroflexhook>➔A775',
 	'<!turned><!turned><!retroflexhook><!retroflexhook>➔A776',
+	'<!abovering><!group><0>➔A777',
+	'<!bar><!bar><!bar><!superscript>➔A778',
+	'<!bar><!bar><!superscript><!bar>➔A779',
+	'<!bar><!hook><!group><!group>➔A77A',
+	'<!bar><!superscript><!bar><!bar>➔A77B',
+	'<!hook><!bar><!group><!group>➔A77C',
+	'<!hook><!hook><!hook><!turned>➔A77D',
+	'<!hook><!hook><!turned><!hook>➔A780',
+	'<!hook><!turned><!hook><!hook>➔A781',
+	'<!retroflexhook><!retroflexhook><!reversed><!group><!group>➔A782',
+	'<!retroflexhook><!retroflexhook><!reversed><!group>➔A783',
+	'<!retroflexhook><!retroflexhook><!reversed>➔A784',
+	'<!retroflexhook><!reversed><!retroflexhook><!group><!group>➔A785',
+	'<!retroflexhook><!reversed><!retroflexhook><!group>➔A786',
+	'<!retroflexhook><!reversed><!retroflexhook>➔A787',
+	'<!reversed><!group><0>➔A788',
+	'<!reversed><!group><1>➔A789',
+	'<!reversed><!retroflexhook><!retroflexhook><!group><!group>➔A78B',
+	'<!reversed><!retroflexhook><!retroflexhook><!group>➔A78C',
+	'<!reversed><!retroflexhook><!retroflexhook>➔A792',
+	'<!superscript><!bar><!bar><!bar>➔A793',
+	'<!turned><!hook><!hook><!hook>➔A794',
 
 	# Polytonic and monotonic Greek (256).
 	'<!abovehook><!greek>➔1FBD',#<UEFD3><dead_greek>
@@ -1807,8 +1835,8 @@ print( "  Their relationship to the dead keys is logged in $log_path.\n" );
 print CONSOLE ( "  Their relationship to the dead keys is logged in $log_path.\n" );
 print( "  $multichar unsupported multicharacter input/output dead key sequences not processed.\n" );
 print CONSOLE ( "  $multichar unsupported multicharacter input/output dead key sequences not processed.\n" );
-print( "  $multikey_count potential multikey sequences in $multikey_path.\n" );
-print CONSOLE ( "  $multikey_count potential multikey sequences in $multikey_path.\n" );
+print( "  $multikey_count fully functional multikey sequences in $multikey_path.\n" );
+print CONSOLE ( "  $multikey_count fully functional multikey sequences in $multikey_path.\n" );
 unless ( @unsupported == 0 ) {
 	if ( @unsupported == 1 ) {
 		print( "  The unsupported chain is formatted in $report_path for\n     addition to \@virtual_dead_characters under \"Intermediate dead key chains\".\n" );

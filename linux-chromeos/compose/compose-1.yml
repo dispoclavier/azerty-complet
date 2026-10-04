@@ -470,7 +470,7 @@
 #   with specific handling intended, was moved out of the projected Mongolian
 #   block starting at U1800, into the General Punctuation block, with the
 #   rationale that it is useful to other scripts as well. Those scripts that
-#   require a no-break thin space but were deprived thereof since Unicode 1.0.0
+#   require a no-break thin space but were deprived of it since Unicode 1.0.0
 #   (1991) until Unicode 3.0.0 (1999). Consistently, no-break thin space was
 #   readily adopted for use in French, Philippe Verdy reported.
 #   https://www.unicode.org/mail-arch/unicode-ml/y2019-m01/0146.html
@@ -3039,6 +3039,7 @@
 #
 <Multi_key><0><percent>                                                                            : "‰" U2030 # PER MILLE SIGN
 <Multi_key><KP_0><percent>                                                                         : "‰" U2030 # PER MILLE SIGN
+#Multi_key><0><0><percent>                                                                         : "‱" U2031 # PER TEN THOUSAND SIGN
 <Multi_key><0><0>                                                                                  : "‱" U2031 # PER TEN THOUSAND SIGN
 <Multi_key><KP_0><KP_0>                                                                            : "‱" U2031 # PER TEN THOUSAND SIGN
 #
@@ -4983,15 +4984,13 @@
 #
 #^# Alt code emulation
 #
-#   This feature is designed to mitigate a design flaw on some laptops shipped
-#   both without a full-size numeric keypad and without any emulation thereof
-#   at function level, as it is traditionally built into compact keyboards
-#   featuring a Function modifier key.
+#   This feature is designed to mitigate a design flaw on some compact laptops
+#   shipped without any emulation of the full-size numeric keypad at function
+#   level, as it is traditionally built into compact keyboards.
 #
-#   Initially targeted at Windows users, this Alt + numpad input method
-#   emulation is also available to Linux users and macOS users, so far as
-#   the dead key and multikey configuration in this file is transpiled to C
-#   and XML.
+#   Initially intended for Windows users, this Alt + numpad input method
+#   emulation is also available to Linux users and macOS users, so far as this
+#   dead key and multikey configuration is transpiled to C and XML.
 #
 #   The purpose of the leading plus is to prevent conflicts with the vulgar
 #   fractions.
