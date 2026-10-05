@@ -1809,6 +1809,7 @@
 <Multi_key><A><E><space>                                                                           : "Æ" U00C6 # LATIN CAPITAL LETTER AE
 <Multi_key><A><e>                                                                                  : "Æ" U00C6 # LATIN CAPITAL LETTER AE
 <Multi_key><a><e><space>                                                                           : "æ" U00E6 # LATIN SMALL LETTER AE
+<Multi_key><a><percent><e>                                                                         : "ꬱ" UAB31 # LATIN SMALL LETTER A REVERSED-SCHWA
 <Multi_key><A><O>                                                                                  : "Ꜵ" UA734 # LATIN CAPITAL LETTER AO
 <Multi_key><A><o>                                                                                  : "Ꜵ" UA734 # LATIN CAPITAL LETTER AO
 <Multi_key><a><o>                                                                                  : "ꜵ" UA735 # LATIN SMALL LETTER AO
@@ -4672,7 +4673,7 @@
 #   <1><d> : "╱" U2571 BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT,
 #   <1><2><d> : "╳" U2573 BOX DRAWINGS LIGHT DIAGONAL CROSS.
 #
-#   The 16 character cell diagonals, new to Unicode 16.0, from "🯐" U1FBD0 BOX
+#   The 16 character cell diagonals, new in Unicode 16.0, from "🯐" U1FBD0 BOX
 #   DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO LOWER LEFT through "🯟" U1FBDF BOX
 #   DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT TO LOWER LEFT are not
 #   supported however, nor are the other SMP box drawings:
@@ -10560,7 +10561,7 @@
 #   https://www.unicode.org/charts/PDF/U1CEC0.pdf
 #   https://www.unicode.org/charts/nameslist/n_1CEC0.html
 #
-#   This is new to Unicode 17.0.
+#   This is new in Unicode 17.0.
 #   https://www.unicode.org/charts/PDF/Unicode-17.0/U170-1CEC0.pdf
 #
 #   Although the circle is small, the letter may also be uppercase, so as to
@@ -10590,7 +10591,7 @@
 #   These reaction and unsuccessful reaction arrows and the isolobal arrow
 #   complete three arrows starting with "⟵" U27F5.
 #
-#   These are new to Unicode 17.0.
+#   These are new in Unicode 17.0.
 #   https://www.unicode.org/charts/PDF/Unicode-17.0/U170-1F800.pdf
 #
 #   To separate the two stacked arrows, comma or digit 0 are used alternatively

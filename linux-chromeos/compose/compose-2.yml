@@ -664,7 +664,7 @@
 #
 #   Another category of single-character dead keys is required to support the
 #   combining diacritic glyphs made out of multiple diacritics in a row. Many
-#   of these characters are new to Unicode 17.0.
+#   of these characters are new in Unicode 17.0.
 #   https://www.unicode.org/charts/PDF/Unicode-17.0/U170-1AB0.pdf
 #
 #   These dead keys require the space base character (either U0020 or U200B) as
@@ -3321,7 +3321,7 @@
 #
 # # SUPERSCRIPT&MACRON
 #
-#   The superscript of the stretched C "ʗ" U0297 is new to Unicode 18.0.
+#   The superscript of the stretched C "ʗ" U0297 is new in Unicode 18.0.
 #   https://www.unicode.org/charts/PDF/Unicode-18.0/U180-10780.pdf
 #   See #   Stretched C in dead_macron
 #   See # # MACRON&GROUP_2
@@ -5538,6 +5538,12 @@
 #   it has an intuitive multikey equivalent, backslash, that provides it with
 #   a consistent key position altogether.
 #
+#   "𝽫" U1DF6B LATIN SMALL LETTER PHONOTYPIC ROUNDTOP A new in Unicode 18.0 is
+#   actually a reversed "a". The encoding proposal does not point this out, but
+#   Gemini breaks it down.
+#   https://www.unicode.org/L2/L2024/24277-epa-proposal-fifth-edition.pdf
+#   https://share.google/aimode/k0H9Wu11Cflxs3EqF
+#
 #
 #   Misnomer alert
 #
@@ -5659,10 +5665,14 @@
 <Multi_key><backslash>                                                                         <4> : "∖" U2216 # SET MINUS
 <UEFD6>                                                                                     <KP_4> : "∖" U2216 # SET MINUS
 <Multi_key><backslash>                                                                      <KP_4> : "∖" U2216 # SET MINUS
-<UEFD6>                                                                                        <A> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
-<Multi_key><backslash>                                                                         <A> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
-<UEFD6>                                                                                        <a> : "ꬱ" UAB31 # LATIN SMALL LETTER A REVERSED-SCHWA
-<Multi_key><backslash>                                                                         <a> : "ꬱ" UAB31 # LATIN SMALL LETTER A REVERSED-SCHWA
+<UEFD6>                                                                                        <7> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
+<Multi_key><backslash>                                                                         <7> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
+<UEFD6>                                                                                     <KP_7> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
+<Multi_key><backslash>                                                                      <KP_7> : "⦥" U29A5 # REVERSED ANGLE WITH UNDERBAR
+<UEFD6>                                                                                        <A> : "𝽪" U1DF6A # LATIN CAPITAL LETTER PHONOTYPIC ROUNDTOP A
+<Multi_key><backslash>                                                                         <A> : "𝽪" U1DF6A # LATIN CAPITAL LETTER PHONOTYPIC ROUNDTOP A
+<UEFD6>                                                                                        <a> : "𝽫" U1DF6B # LATIN SMALL LETTER PHONOTYPIC ROUNDTOP A
+<Multi_key><backslash>                                                                         <a> : "𝽫" U1DF6B # LATIN SMALL LETTER PHONOTYPIC ROUNDTOP A
 <UEFD6>                                                                                        <B> : "⁍" U204D # BLACK RIGHTWARDS BULLET
 <Multi_key><backslash>                                                                         <B> : "⁍" U204D # BLACK RIGHTWARDS BULLET
 <UEFD6>                                                                                        <b> : "⁍" U204D # BLACK RIGHTWARDS BULLET
@@ -9608,7 +9618,7 @@
 #
 #
 #*# HOOK
-#   hook, fishhook, left hook, crook
+#   hook, fishhook, left hook, hook tail, swash, crook
 #   dead_hook
 #   Multikey: ¦{
 #
@@ -9677,10 +9687,10 @@
 <Multi_key><braceleft>                                                                         <5> : "˥" U02E5 # MODIFIER LETTER EXTRA-HIGH TONE BAR
 <dead_hook>                                                                                 <KP_5> : "˥" U02E5 # MODIFIER LETTER EXTRA-HIGH TONE BAR
 <Multi_key><braceleft>                                                                      <KP_5> : "˥" U02E5 # MODIFIER LETTER EXTRA-HIGH TONE BAR
-<dead_hook>                                                                                    <A> : "〽" U303D # PART ALTERNATION MARK
-<Multi_key><braceleft>                                                                         <A> : "〽" U303D # PART ALTERNATION MARK
-<dead_hook>                                                                                    <a> : "〽" U303D # PART ALTERNATION MARK
-<Multi_key><braceleft>                                                                         <a> : "〽" U303D # PART ALTERNATION MARK
+<dead_hook>                                                                                    <A> : "𝽨" U1DF68 # LATIN CAPITAL LETTER PHONOTYPIC A WITH SWASH
+<Multi_key><braceleft>                                                                         <A> : "𝽨" U1DF68 # LATIN CAPITAL LETTER PHONOTYPIC A WITH SWASH
+<dead_hook>                                                                                    <a> : "𝽩" U1DF69 # LATIN SMALL LETTER PHONOTYPIC A WITH SWASH
+<Multi_key><braceleft>                                                                         <a> : "𝽩" U1DF69 # LATIN SMALL LETTER PHONOTYPIC A WITH SWASH
 <dead_hook>                                                                                    <B> : "Ɓ" U0181 # LATIN CAPITAL LETTER B WITH HOOK
 <Multi_key><braceleft>                                                                         <B> : "Ɓ" U0181 # LATIN CAPITAL LETTER B WITH HOOK
 <dead_hook>                                                                                    <b> : "ɓ" U0253 # LATIN SMALL LETTER B WITH HOOK
@@ -9924,11 +9934,18 @@
 #   and is found as a CURL on "ɕ" U0255, "ȡ" U0221, "ʥ" U02A5, "ȴ" U0234,
 #   "ȵ" U0235, "𝼞" U1DF1E, "ȶ" U0236, "ʨ" U02A8, "ⱴ" U2C74, "ʑ" U0291 and
 #   "ʓ" U0293; as a CROSSED-TAIL on "ꬼ" UAB3C, "ꬶ" UAB36, "Ʝ" UA7B2, "ʝ" U029D,
-#   "ꬺ" UAB3A, "ꬻ" UAB3B, "ꭉ" UAB49 and "ꭊ" UAB4A; and as a LOOP on "Ꝍ" UA74C,
-#   "ꝍ" UA74D and "Ỿ" U1EFE, "ỿ" U1EFF.
+#   "ꬺ" UAB3A, "ꬻ" UAB3B, "ꭉ" UAB49 and "ꭊ" UAB4A; as a LOOP on "Ꝍ" UA74C,
+#   "ꝍ" UA74D and "Ỿ" U1EFE, "ỿ" U1EFF, and in "𝽠" U1DF60.
 #   See  WITH CURL
 #   See  WITH CROSSED-TAIL
 #   See  WITH LOOP
+#
+#   For completeness, the Cossic letters new in Unicode 18.0 are also supported
+#   in this virtual dead key so far as they feature a loop. However, they are
+#   relegated to group 11: "𝾒" U1DF92, "𝾓" U1DF93, "𝾔" U1DF94, "𝾖" U1DF96.
+#
+#   "𝾑" U1DF91 in turn is in CEDILLA&CURL.
+#   See # # CEDILLA&CURL
 #
 #   This also supports FLOURISH for the purpose of streamlining the input,
 #   instead of supporting "Ꝓ" UA752, "ꝓ" UA753, "Ꞗ" UA796, "ꞗ" UA797 and
@@ -10057,12 +10074,16 @@
 <Multi_key><braceleft><braceleft>                                                  <numbersign><g> : "ꬶ" UAB36 # LATIN SMALL LETTER SCRIPT G WITH CROSSED-TAIL
 <dead_hook><dead_hook>                                                                  <UEFD0><n> : "ꬼ" UAB3C # LATIN SMALL LETTER ENG WITH CROSSED-TAIL
 <Multi_key><braceleft><braceleft>                                                  <numbersign><n> : "ꬼ" UAB3C # LATIN SMALL LETTER ENG WITH CROSSED-TAIL
+<dead_hook><dead_hook>                                                                  <UEFD0><o> : "𝽠" U1DF60 # LATIN SMALL LETTER OMEGA WITH LOOP
+<Multi_key><braceleft><braceleft>                                                  <numbersign><o> : "𝽠" U1DF60 # LATIN SMALL LETTER OMEGA WITH LOOP
 <dead_hook><dead_hook>                                                                  <UEFD0><R> : "ꭊ" UAB4A # LATIN SMALL LETTER DOUBLE R WITH CROSSED-TAIL
 <Multi_key><braceleft><braceleft>                                                  <numbersign><R> : "ꭊ" UAB4A # LATIN SMALL LETTER DOUBLE R WITH CROSSED-TAIL
 <dead_hook><dead_hook>                                                                  <UEFD0><s> : "ʆ" U0286 # LATIN SMALL LETTER ESH WITH CURL
 <Multi_key><braceleft><braceleft>                                                  <numbersign><s> : "ʆ" U0286 # LATIN SMALL LETTER ESH WITH CURL
 <dead_hook><dead_hook>                                                                  <UEFD0><t> : "ʨ" U02A8 # LATIN SMALL LETTER TC DIGRAPH WITH CURL
 <Multi_key><braceleft><braceleft>                                                  <numbersign><t> : "ʨ" U02A8 # LATIN SMALL LETTER TC DIGRAPH WITH CURL
+<dead_hook><dead_hook>                                                                  <UEFD0><v> : "𝽠" U1DF60 # LATIN SMALL LETTER OMEGA WITH LOOP
+<Multi_key><braceleft><braceleft>                                                  <numbersign><v> : "𝽠" U1DF60 # LATIN SMALL LETTER OMEGA WITH LOOP
 #
 #
 # # CURL&GROUP_2
@@ -10177,6 +10198,26 @@
 <Multi_key><braceleft><braceleft>                                               <numbersign><5><g> : "ꬶ" UAB36 # LATIN SMALL LETTER SCRIPT G WITH CROSSED-TAIL
 <dead_hook><dead_hook>                                                            <UEFD0><KP_5><g> : "ꬶ" UAB36 # LATIN SMALL LETTER SCRIPT G WITH CROSSED-TAIL
 <Multi_key><braceleft><braceleft>                                            <numbersign><KP_5><g> : "ꬶ" UAB36 # LATIN SMALL LETTER SCRIPT G WITH CROSSED-TAIL
+#
+#
+# # CURL&GROUP_11
+#
+<dead_hook><dead_hook>                                                               <UEFD0><1><c> : "𝾒" U1DF92 # LATIN SMALL LETTER C WITH RIGHT LOOP
+<Multi_key><braceleft><braceleft>                                               <numbersign><1><c> : "𝾒" U1DF92 # LATIN SMALL LETTER C WITH RIGHT LOOP
+<dead_hook><dead_hook>                                                            <UEFD0><KP_1><c> : "𝾒" U1DF92 # LATIN SMALL LETTER C WITH RIGHT LOOP
+<Multi_key><braceleft><braceleft>                                            <numbersign><KP_1><c> : "𝾒" U1DF92 # LATIN SMALL LETTER C WITH RIGHT LOOP
+<dead_hook><dead_hook>                                                               <UEFD0><1><d> : "𝾓" U1DF93 # LATIN SMALL LETTER D ROTUNDA WITH DESCENDING CROSSING LOOP
+<Multi_key><braceleft><braceleft>                                               <numbersign><1><d> : "𝾓" U1DF93 # LATIN SMALL LETTER D ROTUNDA WITH DESCENDING CROSSING LOOP
+<dead_hook><dead_hook>                                                            <UEFD0><KP_1><d> : "𝾓" U1DF93 # LATIN SMALL LETTER D ROTUNDA WITH DESCENDING CROSSING LOOP
+<Multi_key><braceleft><braceleft>                                            <numbersign><KP_1><d> : "𝾓" U1DF93 # LATIN SMALL LETTER D ROTUNDA WITH DESCENDING CROSSING LOOP
+<dead_hook><dead_hook>                                                               <UEFD0><1><r> : "𝾔" U1DF94 # LATIN SMALL LETTER R ROTUNDA WITH LOOP
+<Multi_key><braceleft><braceleft>                                               <numbersign><1><r> : "𝾔" U1DF94 # LATIN SMALL LETTER R ROTUNDA WITH LOOP
+<dead_hook><dead_hook>                                                            <UEFD0><KP_1><r> : "𝾔" U1DF94 # LATIN SMALL LETTER R ROTUNDA WITH LOOP
+<Multi_key><braceleft><braceleft>                                            <numbersign><KP_1><r> : "𝾔" U1DF94 # LATIN SMALL LETTER R ROTUNDA WITH LOOP
+<dead_hook><dead_hook>                                                               <UEFD0><1><s> : "𝾖" U1DF96 # LATIN SMALL LETTER LONG S WITH TOP LOOP
+<Multi_key><braceleft><braceleft>                                               <numbersign><1><s> : "𝾖" U1DF96 # LATIN SMALL LETTER LONG S WITH TOP LOOP
+<dead_hook><dead_hook>                                                            <UEFD0><KP_1><s> : "𝾖" U1DF96 # LATIN SMALL LETTER LONG S WITH TOP LOOP
+<Multi_key><braceleft><braceleft>                                            <numbersign><KP_1><s> : "𝾖" U1DF96 # LATIN SMALL LETTER LONG S WITH TOP LOOP
 #
 #
 #^# MID_HEIGHT_LEFT_HOOK
@@ -10339,7 +10380,7 @@
 <Multi_key><braceright>                                                                        <8> : "♺" U267A # RECYCLING SYMBOL FOR GENERIC MATERIALS
 <UEFD4>                                                                                     <KP_8> : "♺" U267A # RECYCLING SYMBOL FOR GENERIC MATERIALS
 <Multi_key><braceright>                                                                     <KP_8> : "♺" U267A # RECYCLING SYMBOL FOR GENERIC MATERIALS
-<UEFD4>                                                                                        <9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
+…<UEFD4>                                                                                        <9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
 <Multi_key><braceright>                                                                        <9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
 <UEFD4>                                                                                     <KP_9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
 <Multi_key><braceright>                                                                     <KP_9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
@@ -10808,7 +10849,7 @@
 <Multi_key><braceright><braceright><braceright>                                                <z> : "ɀ" U0240 # LATIN SMALL LETTER Z WITH SWASH TAIL
 #
 #
-#^# RETROFLEX_HOOK_DK_ID.
+#^# RETROFLEX_HOOK_DK_ID
 #   *dead_retroflexhook UEFD4 quadruple press
 #   Multikey: ¦}}}}
 #
@@ -11375,13 +11416,15 @@
 #   dead_breve
 #   Multikey: ¦)
 #
-#   This also supports cropped letters "ꭇ" UAB47, "ꭎ" UAB4E, "ꭏ" UAB4F,
-#   "ꭚ" UAB5A, with mnemonics based on the "short" semantics.
+#   This also supports a set of cropped letters: "ꭇ" UAB47, "ꭎ" UAB4E,
+#   "ꭏ" UAB4F, "ꭚ" UAB5A, with mnemonics based on the "short" semantics.
 #
 #   There does not seem to be any other dead key except the group dead key,
 #   for unintuitive support in letter groups 4 and 5.
 #   See #+# GROUP_4
 #   See #+# GROUP_5
+#
+#   By contrast, "𝽚" U1DF5A LATIN SMALL LETTER HALF A is supported in group 1.
 #
 #
 #   Flower punctuation
@@ -11491,6 +11534,12 @@
 <Multi_key><parenright>                                                                   <Agrave> : "Ằ" U1EB0 # LATIN CAPITAL LETTER A WITH BREVE AND GRAVE
 <dead_breve>                                                                              <agrave> : "ằ" U1EB1 # LATIN SMALL LETTER A WITH BREVE AND GRAVE
 <Multi_key><parenright>                                                                   <agrave> : "ằ" U1EB1 # LATIN SMALL LETTER A WITH BREVE AND GRAVE
+#
+#
+# # BREVE&GROUP_1
+#
+<dead_breve>                                                                            <UEFD0><a> : "𝽚" U1DF5A # LATIN SMALL LETTER HALF A
+<Multi_key><parenright>                                                            <numbersign><a> : "𝽚" U1DF5A # LATIN SMALL LETTER HALF A
 #
 #
 # # BREVE&TILDE
@@ -12202,7 +12251,7 @@
 #   WITH STROKE, and so makes a good point for support in this double press bar
 #   virtual dead key.
 #
-#   The middle bar in "𝽆" U1DF46 LATIN SMALL LETTER BARRED H is new to Unicode
+#   The middle bar in "𝽆" U1DF46 LATIN SMALL LETTER BARRED H is new in Unicode
 #   since version 18.0 and contrasts with the high bar in the more common and
 #   uppercase-supporting "ħ" U0127 LATIN SMALL LETTER H WITH STROKE. Therefore,
 #   "𝽆" U1DF46 is here in *dead_bar double press.
@@ -12345,7 +12394,7 @@
 #   "Ⱡ" U2C60, "ⱡ" U2C61 in *dead_bar double press.
 #
 #   This is also a straightforward pick to support the Spanish split letters
-#   new to Unicode 18.0 coming in a baseline set "𝽘" U1DF58, "𝽙" U1DF59 and a
+#   new in Unicode 18.0 coming in a baseline set "𝽘" U1DF58, "𝽙" U1DF59 and a
 #   superscript counterpart "𝿎" U1DFCE, "𝿏" U1DFCF. As a rationale, the split’s
 #   horizontality makes it look close to a bold negative bar.
 #
@@ -14954,7 +15003,7 @@
 #   *dead_abovehook UEFD3 double press
 #   Multikey: ¦]]
 #
-#   As the glottal letters new to Unicode v12 are diacriticized with a spiritus
+#   As the glottal letters new in Unicode v12 are diacriticized with a spiritus
 #   lenis, Greek psili, they are here in a dedicated virtual dead key, based on
 #   the hook above as looking closest. However, given the psili is considered a
 #   comma above, and has been encoded consistently, these letters are also part
@@ -15226,7 +15275,7 @@
 # # STROKE&GROUP_1
 #   Lenient group selection
 #
-#   The capital Latin lambda with stroke "Ƛ" UA7DC is new to Unicode as of
+#   The capital Latin lambda with stroke "Ƛ" UA7DC is new in Unicode as of
 #   v16.0.0 (2024).
 #   See #+# GROUP_3
 #

@@ -3729,6 +3729,25 @@
 <Multi_key><comma>                                                                             <u> : "çu" # U00E7 U0075 Canadian French: "Ç" key emulation
 #
 #
+# # CEDILLA&HOOK
+#   Lenient dead key press
+#
+<dead_cedilla><dead_hook>                                                                      <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+<Multi_key><comma><braceleft>                                                                  <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+<dead_hook><dead_cedilla>                                                                      <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+<Multi_key><braceleft><comma>                                                                  <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+#
+#
+# # CEDILLA&CURL
+#
+<dead_cedilla><dead_hook><dead_hook>                                                           <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+<Multi_key><comma><braceleft><braceleft>                                                       <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+<dead_hook><dead_cedilla><dead_hook>                                                           <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+<Multi_key><braceleft><comma><braceleft>                                                       <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+<dead_hook><dead_hook><dead_cedilla>                                                           <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+<Multi_key><braceleft><braceleft><comma>                                                       <c> : "𝾑" U1DF91 # LATIN SMALL LETTER C WITH LOOPED CEDILLA
+#
+#
 # # CEDILLA&ACUTE
 #
 <dead_cedilla><dead_acute>                                                                     <C> : "Ḉ" U1E08 # LATIN CAPITAL LETTER C WITH CEDILLA AND ACUTE
@@ -3818,7 +3837,7 @@
 #   with Spanish, English and French mnemonics based on the numeral.
 #   
 #   The glottal letters "Ꞻ" UA7BA, "ꞻ" UA7BB, "Ꞽ" UA7BC, "ꞽ" UA7BD, "Ꞿ" UA7BE,
-#   "ꞿ" UA7BF, new to Unicode v12, are duplicated here for convenience.
+#   "ꞿ" UA7BF, new in Unicode v12, are duplicated here for convenience.
 #   See LETTER GLOTTAL
 #   See #^# GLOTTAL
 #   See #^# COMMA_ABOVE
@@ -4001,7 +4020,7 @@
 #   Multikey: ¦;;
 #
 #   This yields mainly the glottal letters "Ꞻ" UA7BA, "ꞻ" UA7BB, "Ꞽ" UA7BC,
-#   "ꞽ" UA7BD, "Ꞿ" UA7BE, "ꞿ" UA7BF new to Unicode v12, as these may be
+#   "ꞽ" UA7BD, "Ꞿ" UA7BE, "ꞿ" UA7BF new in Unicode v12, as these may be
 #   expected here, because the spiritus lenis that these glottal letters are
 #   diacriticized with, often happens to be shaped like a comma above, that may
 #   also be referred to as a curly apostrophe on top, so that "̓" U0313
@@ -8910,7 +8929,7 @@
 #   dead_hook.
 #   See #*# HOOK
 #
-#   Latin lambda may look close to an inverted Yy. It is new to Unicode as of
+#   Latin lambda may look close to an inverted Yy. It is new in Unicode as of
 #   v16.0.0 (2024), along with its capital with stroke "Ƛ" UA7DC completing the
 #   lowercase "ƛ" U019B.
 #   https://www.unicode.org/L2/L2023/23191-three-latin-additions.pdf
