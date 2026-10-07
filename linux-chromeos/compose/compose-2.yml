@@ -4202,12 +4202,18 @@
 #
 # # TURNED&GROUP_4
 #
-<UEFD5>                                                                              <UEFD0><4><o> : "ꭃ" UAB43 # LATIN SMALL LETTER TURNED O OPEN-O
-<Multi_key><percent>                                                            <numbersign><4><o> : "ꭃ" UAB43 # LATIN SMALL LETTER TURNED O OPEN-O
-<UEFD5>                                                                           <UEFD0><KP_4><o> : "ꭃ" UAB43 # LATIN SMALL LETTER TURNED O OPEN-O
-<Multi_key><percent>                                                         <numbersign><KP_4><o> : "ꭃ" UAB43 # LATIN SMALL LETTER TURNED O OPEN-O
-<UEFD5>                                                            <UEFD0><UEFD0><UEFD0><UEFD0><o> : "ꭃ" UAB43 # LATIN SMALL LETTER TURNED O OPEN-O
-<Multi_key><percent>                           <numbersign><numbersign><numbersign><numbersign><o> : "ꭃ" UAB43 # LATIN SMALL LETTER TURNED O OPEN-O
+<UEFD5>                                                                              <UEFD0><4><O> : "𝽶" U1DF76 # LATIN CAPITAL LETTER TURNED CLOSED OMEGA
+<Multi_key><percent>                                                            <numbersign><4><O> : "𝽶" U1DF76 # LATIN CAPITAL LETTER TURNED CLOSED OMEGA
+<UEFD5>                                                                           <UEFD0><KP_4><O> : "𝽶" U1DF76 # LATIN CAPITAL LETTER TURNED CLOSED OMEGA
+<Multi_key><percent>                                                         <numbersign><KP_4><O> : "𝽶" U1DF76 # LATIN CAPITAL LETTER TURNED CLOSED OMEGA
+<UEFD5>                                                            <UEFD0><UEFD0><UEFD0><UEFD0><O> : "𝽶" U1DF76 # LATIN CAPITAL LETTER TURNED CLOSED OMEGA
+<Multi_key><percent>                           <numbersign><numbersign><numbersign><numbersign><O> : "𝽶" U1DF76 # LATIN CAPITAL LETTER TURNED CLOSED OMEGA
+<UEFD5>                                                                              <UEFD0><4><o> : "𝽷" U1DF77 # LATIN SMALL LETTER TURNED CLOSED OMEGA
+<Multi_key><percent>                                                            <numbersign><4><o> : "𝽷" U1DF77 # LATIN SMALL LETTER TURNED CLOSED OMEGA
+<UEFD5>                                                                           <UEFD0><KP_4><o> : "𝽷" U1DF77 # LATIN SMALL LETTER TURNED CLOSED OMEGA
+<Multi_key><percent>                                                         <numbersign><KP_4><o> : "𝽷" U1DF77 # LATIN SMALL LETTER TURNED CLOSED OMEGA
+<UEFD5>                                                            <UEFD0><UEFD0><UEFD0><UEFD0><o> : "𝽷" U1DF77 # LATIN SMALL LETTER TURNED CLOSED OMEGA
+<Multi_key><percent>                           <numbersign><numbersign><numbersign><numbersign><o> : "𝽷" U1DF77 # LATIN SMALL LETTER TURNED CLOSED OMEGA
 #
 #
 # # TURNED&GROUP_5
@@ -5727,6 +5733,10 @@
 <Multi_key><backslash>                                                                         <S> : "ƪ" U01AA # LATIN LETTER REVERSED ESH LOOP
 <UEFD6>                                                                                        <s> : "ʅ" U0285 # LATIN SMALL LETTER SQUAT REVERSED ESH
 <Multi_key><backslash>                                                                         <s> : "ʅ" U0285 # LATIN SMALL LETTER SQUAT REVERSED ESH
+<UEFD6>                                                                                        <U> : "𝽾" U1DF7E # LATIN CAPITAL LETTER REVERSED U
+<Multi_key><backslash>                                                                         <U> : "𝽾" U1DF7E # LATIN CAPITAL LETTER REVERSED U
+<UEFD6>                                                                                        <u> : "𝽿" U1DF7F # LATIN SMALL LETTER REVERSED U
+<Multi_key><backslash>                                                                         <u> : "𝽿" U1DF7F # LATIN SMALL LETTER REVERSED U
 <UEFD6>                                                                                        <V> : "Ꜿ" UA73E # LATIN CAPITAL LETTER REVERSED C WITH DOT
 <Multi_key><backslash>                                                                         <V> : "Ꜿ" UA73E # LATIN CAPITAL LETTER REVERSED C WITH DOT
 <UEFD6>                                                                                        <v> : "ꜿ" UA73F # LATIN SMALL LETTER REVERSED C WITH DOT
@@ -10286,6 +10296,10 @@
 #   LETTER O WITH CURL and its capital, actually featuring a flourish.
 #   https://share.google/aimode/dtpGRBWI08fWbCuib
 #
+#   The pigtail on "𝽰" U1DF70 LATIN SMALL LETTER I WITH PIGTAIL AT BOTTOM is a
+#   flourish, too. So is the hook tail on "𝽺" U1DF7A, "𝽻" U1DF7B, the better as
+#   the single press hook slot is taken by "ꭒ" UAB52.
+#
 #
 #   Diacritic
 #
@@ -10312,6 +10326,8 @@
 <Multi_key><braceleft><braceleft><braceleft>                                                   <d> : "𝼥" U1DF25 # LATIN SMALL LETTER D WITH MID-HEIGHT LEFT HOOK
 <dead_hook><dead_hook><dead_hook>                                                              <e> : "ꬴ" UAB34 # LATIN SMALL LETTER E WITH FLOURISH
 <Multi_key><braceleft><braceleft><braceleft>                                                   <e> : "ꬴ" UAB34 # LATIN SMALL LETTER E WITH FLOURISH
+<dead_hook><dead_hook><dead_hook>                                                              <i> : "𝽰" U1DF70 # LATIN SMALL LETTER I WITH PIGTAIL AT BOTTOM
+<Multi_key><braceleft><braceleft><braceleft>                                                   <i> : "𝽰" U1DF70 # LATIN SMALL LETTER I WITH PIGTAIL AT BOTTOM
 <dead_hook><dead_hook><dead_hook>                                                              <l> : "𝼦" U1DF26 # LATIN SMALL LETTER L WITH MID-HEIGHT LEFT HOOK
 <Multi_key><braceleft><braceleft><braceleft>                                                   <l> : "𝼦" U1DF26 # LATIN SMALL LETTER L WITH MID-HEIGHT LEFT HOOK
 <dead_hook><dead_hook><dead_hook>                                                              <n> : "𝼧" U1DF27 # LATIN SMALL LETTER N WITH MID-HEIGHT LEFT HOOK
@@ -10330,6 +10346,10 @@
 <Multi_key><braceleft><braceleft><braceleft>                                                   <s> : "𝼩" U1DF29 # LATIN SMALL LETTER S WITH MID-HEIGHT LEFT HOOK
 <dead_hook><dead_hook><dead_hook>                                                              <t> : "𝼪" U1DF2A # LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK
 <Multi_key><braceleft><braceleft><braceleft>                                                   <t> : "𝼪" U1DF2A # LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK
+<dead_hook><dead_hook><dead_hook>                                                              <U> : "𝽺" U1DF7A # LATIN CAPITAL LETTER U WITH HOOK TAIL
+<Multi_key><braceleft><braceleft><braceleft>                                                   <U> : "𝽺" U1DF7A # LATIN CAPITAL LETTER U WITH HOOK TAIL
+<dead_hook><dead_hook><dead_hook>                                                              <u> : "𝽻" U1DF7B # LATIN SMALL LETTER U WITH HOOK TAIL
+<Multi_key><braceleft><braceleft><braceleft>                                                   <u> : "𝽻" U1DF7B # LATIN SMALL LETTER U WITH HOOK TAIL
 #
 #
 # # FLOURISH&TURNED
@@ -12552,6 +12572,10 @@
 #   https://fr.wikipedia.org/wiki/%E2%B1%B8
 #   https://fr.wikipedia.org/wiki/%EA%AD%95
 #
+#   The bottom notch in "𝽼" U1DF7C, "𝽽" U1DF7D new in Unicode 18.0 qualifies
+#   this casing pair of the English Phonotypic Alphabet for support in this
+#   dead key, be it in group 1 due to the "U", "u" baseletter.
+#
 #   HORN could also be used as an easier alternative for the belt diacritic.
 #   It is not, to prevent HORN from becoming an unmnemonic holdall.
 #   See #^# BREVE_BELOW
@@ -12785,6 +12809,14 @@
 <Multi_key><plus>                                                                         <ugrave> : "ừ" U1EEB # LATIN SMALL LETTER U WITH HORN AND GRAVE
 #
 #
+# # HORN&GROUP_1
+#
+<dead_horn>                                                                             <UEFD0><U> : "𝽼" U1DF7C # LATIN CAPITAL LETTER U WITH NOTCH AT BOTTOM
+<Multi_key><plus>                                                                  <numbersign><U> : "𝽼" U1DF7C # LATIN CAPITAL LETTER U WITH NOTCH AT BOTTOM
+<dead_horn>                                                                             <UEFD0><u> : "𝽽" U1DF7D # LATIN SMALL LETTER U WITH NOTCH AT BOTTOM
+<Multi_key><plus>                                                                  <numbersign><u> : "𝽽" U1DF7D # LATIN SMALL LETTER U WITH NOTCH AT BOTTOM
+#
+#
 # # HORN&TILDE
 #
 <dead_horn><dead_tilde>                                                                        <O> : "Ỡ" U1EE0 # LATIN CAPITAL LETTER O WITH HORN AND TILDE
@@ -12987,16 +13019,17 @@
 #
 #
 #*# MACRON
-#   macron, topbar, vertical bar, long arm, long leg, leg
+#   macron, topbar, vertical bar, long arm, long leg, stretched, longa
 #   dead_macron
 #   Multikey: ¦|
 #
-#   Long leg is merged with macron thanks to an empty intersection and with a
-#   mnemonic based on the macron multikey equivalent pipe "|" spurring the
-#   extended "long" semantics of dead_macron, that therefore supports "ɼ" U027C
-#   and its capital "꟢" UA7E2, as well as its turned counterpart "ɺ" U027A in
-#   group 1 additionally to its support in the dead_macron UEFD5 virtual dead
-#   key.
+#   Elongated letter forms are merged with macron based on the rationale that
+#   the new-school multikey equivalent of dead_macron is bar (given that the
+#   old-school equivalent underscore is required for subscript). The mnemonic
+#   based on this fact spurs the extended "long" semantics of dead_macron, thus
+#   able to support a number of letters such as "ɼ" U027C and its capital
+#   "꟢" UA7E2. Also, its turned counterpart "ɺ" U027A is the *dead_turned UEFD5
+#   virtual dead key combination.
 #   See # # TURNED&MACRON
 #
 #   By contrast, "Ƞ" U0220, "ƞ" U019E cannot be supported in group 0 in a
@@ -13295,7 +13328,7 @@
 <Multi_key><colon><colon>                                                                      <C> : "₵" U20B5 # CEDI SIGN
 <dead_macron>                                                                                  <c> : "¢" U00A2 # CENT SIGN
 <Multi_key><bar>                                                                               <c> : "¢" U00A2 # CENT SIGN
-<dead_diaeresis><dead_diaeresis>                                                               <c> : "¢" U00A2 # CENT SIGNo /]\/« p\/
+<dead_diaeresis><dead_diaeresis>                                                               <c> : "¢" U00A2 # CENT SIGN
 <Multi_key><colon><colon>                                                                      <c> : "¢" U00A2 # CENT SIGN
 <dead_macron>                                                                                  <D> : "Ƌ" U018B # LATIN CAPITAL LETTER D WITH TOPBAR
 <Multi_key><bar>                                                                               <D> : "Ƌ" U018B # LATIN CAPITAL LETTER D WITH TOPBAR
@@ -13549,14 +13582,14 @@
 <Multi_key><bar>                                                                   <numbersign><n> : "ƞ" U019E # LATIN SMALL LETTER N WITH LONG RIGHT LEG
 <dead_diaeresis><dead_diaeresis>                                                        <UEFD0><n> : "ƞ" U019E # LATIN SMALL LETTER N WITH LONG RIGHT LEG
 <Multi_key><colon><colon>                                                          <numbersign><n> : "ƞ" U019E # LATIN SMALL LETTER N WITH LONG RIGHT LEG
-<dead_macron>                                                                           <UEFD0><R> : "ɺ" U027A # LATIN SMALL LETTER TURNED R WITH LONG LEG
-<Multi_key><bar>                                                                   <numbersign><R> : "ɺ" U027A # LATIN SMALL LETTER TURNED R WITH LONG LEG
-<dead_diaeresis><dead_diaeresis>                                                        <UEFD0><R> : "ɺ" U027A # LATIN SMALL LETTER TURNED R WITH LONG LEG
-<Multi_key><colon><colon>                                                          <numbersign><R> : "ɺ" U027A # LATIN SMALL LETTER TURNED R WITH LONG LEG
-<dead_macron>                                                                           <UEFD0><r> : "ɺ" U027A # LATIN SMALL LETTER TURNED R WITH LONG LEG
-<Multi_key><bar>                                                                   <numbersign><r> : "ɺ" U027A # LATIN SMALL LETTER TURNED R WITH LONG LEG
-<dead_diaeresis><dead_diaeresis>                                                        <UEFD0><r> : "ɺ" U027A # LATIN SMALL LETTER TURNED R WITH LONG LEG
-<Multi_key><colon><colon>                                                          <numbersign><r> : "ɺ" U027A # LATIN SMALL LETTER TURNED R WITH LONG LEG
+<dead_macron>                                                                           <UEFD0><O> : "Ɔ̄" # U0186 U0304 LATIN CAPITAL LETTER OPEN O WITH MACRON: Languages in Togo
+<Multi_key><bar>                                                                   <numbersign><O> : "Ɔ̄" # U0186 U0304 LATIN CAPITAL LETTER OPEN O WITH MACRON: Languages in Togo
+<dead_diaeresis><dead_diaeresis>                                                        <UEFD0><O> : "Ɔ̄" # U0186 U0304 LATIN CAPITAL LETTER OPEN O WITH MACRON: Languages in Togo
+<Multi_key><colon><colon>                                                          <numbersign><O> : "Ɔ̄" # U0186 U0304 LATIN CAPITAL LETTER OPEN O WITH MACRON: Languages in Togo
+<dead_macron>                                                                           <UEFD0><o> : "ɔ̄" # U0254 U0304 LATIN SMALL LETTER OPEN O WITH MACRON: Languages in Togo
+<Multi_key><bar>                                                                   <numbersign><o> : "ɔ̄" # U0254 U0304 LATIN SMALL LETTER OPEN O WITH MACRON: Languages in Togo
+<dead_diaeresis><dead_diaeresis>                                                        <UEFD0><o> : "ɔ̄" # U0254 U0304 LATIN SMALL LETTER OPEN O WITH MACRON: Languages in Togo
+<Multi_key><colon><colon>                                                          <numbersign><o> : "ɔ̄" # U0254 U0304 LATIN SMALL LETTER OPEN O WITH MACRON: Languages in Togo
 <dead_macron>                                                                           <UEFD0><U> : "Ʋ̄" # U01B2 U0304 LATIN CAPITAL LETTER V WITH HOOK AND MACRON: Languages in Togo
 <Multi_key><bar>                                                                   <numbersign><U> : "Ʋ̄" # U01B2 U0304 LATIN CAPITAL LETTER V WITH HOOK AND MACRON: Languages in Togo
 <dead_diaeresis><dead_diaeresis>                                                        <UEFD0><U> : "Ʋ̄" # U01B2 U0304 LATIN CAPITAL LETTER V WITH HOOK AND MACRON: Languages in Togo
@@ -13601,6 +13634,10 @@
 #
 # # MACRON&GROUP_2
 #
+<dead_macron>                                                                    <UEFD0><UEFD0><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<Multi_key><bar>                                                       <numbersign><numbersign><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<dead_diaeresis><dead_diaeresis>                                                 <UEFD0><UEFD0><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<Multi_key><colon><colon>                                              <numbersign><numbersign><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
 <dead_macron>                                                                    <UEFD0><UEFD0><C> : "ʗ" U0297 # LATIN LETTER STRETCHED C
 <Multi_key><bar>                                                       <numbersign><numbersign><C> : "ʗ" U0297 # LATIN LETTER STRETCHED C
 <dead_diaeresis><dead_diaeresis>                                                 <UEFD0><UEFD0><C> : "ʗ" U0297 # LATIN LETTER STRETCHED C
@@ -13617,6 +13654,10 @@
 <Multi_key><bar>                                                       <numbersign><numbersign><e> : "ɛ̄" # U025B U0304 LATIN SMALL LETTER OPEN E WITH MACRON: Languages in Togo
 <dead_diaeresis><dead_diaeresis>                                                 <UEFD0><UEFD0><e> : "ɛ̄" # U025B U0304 LATIN SMALL LETTER OPEN E WITH MACRON: Languages in Togo
 <Multi_key><colon><colon>                                              <numbersign><numbersign><e> : "ɛ̄" # U025B U0304 LATIN SMALL LETTER OPEN E WITH MACRON: Languages in Togo
+<dead_macron>                                                                    <UEFD0><UEFD0><i> : "𝽱" U1DF71 # LATIN SMALL LETTER STRETCHED I
+<Multi_key><bar>                                                       <numbersign><numbersign><i> : "𝽱" U1DF71 # LATIN SMALL LETTER STRETCHED I
+<dead_diaeresis><dead_diaeresis>                                                 <UEFD0><UEFD0><i> : "𝽱" U1DF71 # LATIN SMALL LETTER STRETCHED I
+<Multi_key><colon><colon>                                              <numbersign><numbersign><i> : "𝽱" U1DF71 # LATIN SMALL LETTER STRETCHED I
 <dead_macron>                                                                    <UEFD0><UEFD0><O> : "Ɔ̄" # U0186 U0304 LATIN CAPITAL LETTER OPEN O WITH MACRON: Languages in Togo
 <Multi_key><bar>                                                       <numbersign><numbersign><O> : "Ɔ̄" # U0186 U0304 LATIN CAPITAL LETTER OPEN O WITH MACRON: Languages in Togo
 <dead_diaeresis><dead_diaeresis>                                                 <UEFD0><UEFD0><O> : "Ɔ̄" # U0186 U0304 LATIN CAPITAL LETTER OPEN O WITH MACRON: Languages in Togo
@@ -13645,6 +13686,54 @@
 #
 # # MACRON&GROUP_3
 #
+<dead_macron>                                                                        <UEFD0><3><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<Multi_key><bar>                                                                <numbersign><3><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<dead_diaeresis><dead_diaeresis>                                                     <UEFD0><3><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<Multi_key><colon><colon>                                                       <numbersign><3><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<dead_macron>                                                                     <UEFD0><KP_3><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<Multi_key><bar>                                                             <numbersign><KP_3><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<dead_diaeresis><dead_diaeresis>                                                  <UEFD0><KP_3><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<Multi_key><colon><colon>                                                    <numbersign><KP_3><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<dead_macron>                                                             <UEFD0><UEFD0><UEFD0><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<Multi_key><bar>                                           <numbersign><numbersign><numbersign><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<dead_diaeresis><dead_diaeresis>                                          <UEFD0><UEFD0><UEFD0><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<Multi_key><colon><colon>                                  <numbersign><numbersign><numbersign><A> : "𝾀" U1DF80 # LATIN CAPITAL LETTER A WITH TOPBAR
+<dead_macron>                                                                        <UEFD0><3><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<Multi_key><bar>                                                                <numbersign><3><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<dead_diaeresis><dead_diaeresis>                                                     <UEFD0><3><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<Multi_key><colon><colon>                                                       <numbersign><3><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<dead_macron>                                                                     <UEFD0><KP_3><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<Multi_key><bar>                                                             <numbersign><KP_3><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<dead_diaeresis><dead_diaeresis>                                                  <UEFD0><KP_3><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<Multi_key><colon><colon>                                                    <numbersign><KP_3><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<dead_macron>                                                             <UEFD0><UEFD0><UEFD0><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<Multi_key><bar>                                           <numbersign><numbersign><numbersign><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<dead_diaeresis><dead_diaeresis>                                          <UEFD0><UEFD0><UEFD0><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<Multi_key><colon><colon>                                  <numbersign><numbersign><numbersign><E> : "𝾁" U1DF81 # LATIN CAPITAL LETTER E WITH BENT TOPBAR
+<dead_macron>                                                                        <UEFD0><3><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><bar>                                                                <numbersign><3><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_diaeresis><dead_diaeresis>                                                     <UEFD0><3><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><colon><colon>                                                       <numbersign><3><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_macron>                                                                     <UEFD0><KP_3><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><bar>                                                             <numbersign><KP_3><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_diaeresis><dead_diaeresis>                                                  <UEFD0><KP_3><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><colon><colon>                                                    <numbersign><KP_3><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_macron>                                                             <UEFD0><UEFD0><UEFD0><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><bar>                                           <numbersign><numbersign><numbersign><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_diaeresis><dead_diaeresis>                                          <UEFD0><UEFD0><UEFD0><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><colon><colon>                                  <numbersign><numbersign><numbersign><O> : "𝽴" U1DF74 # LATIN CAPITAL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_macron>                                                                        <UEFD0><3><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><bar>                                                                <numbersign><3><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_diaeresis><dead_diaeresis>                                                     <UEFD0><3><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><colon><colon>                                                       <numbersign><3><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_macron>                                                                     <UEFD0><KP_3><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><bar>                                                             <numbersign><KP_3><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_diaeresis><dead_diaeresis>                                                  <UEFD0><KP_3><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><colon><colon>                                                    <numbersign><KP_3><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_macron>                                                             <UEFD0><UEFD0><UEFD0><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><bar>                                           <numbersign><numbersign><numbersign><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<dead_diaeresis><dead_diaeresis>                                          <UEFD0><UEFD0><UEFD0><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
+<Multi_key><colon><colon>                                  <numbersign><numbersign><numbersign><o> : "𝽵" U1DF75 # LATIN SMALL LETTER CLOSED OMEGA WITH LONG STEM
 <dead_macron>                                                                        <UEFD0><3><V> : "Ʋ̄" # U01B2 U0304 LATIN CAPITAL LETTER V WITH HOOK AND MACRON: Languages in Togo
 <Multi_key><bar>                                                                <numbersign><3><V> : "Ʋ̄" # U01B2 U0304 LATIN CAPITAL LETTER V WITH HOOK AND MACRON: Languages in Togo
 <dead_diaeresis><dead_diaeresis>                                                     <UEFD0><3><V> : "Ʋ̄" # U01B2 U0304 LATIN CAPITAL LETTER V WITH HOOK AND MACRON: Languages in Togo
