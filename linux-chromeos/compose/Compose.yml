@@ -21505,10 +21505,8 @@
 <Multi_key><backslash>                                                                         <X> : "Ɜ" UA7AB # LATIN CAPITAL LETTER REVERSED OPEN E
 <UEFD6>                                                                                        <x> : "ɜ" U025C # LATIN SMALL LETTER REVERSED OPEN E
 <Multi_key><backslash>                                                                         <x> : "ɜ" U025C # LATIN SMALL LETTER REVERSED OPEN E
-<UEFD6>                                                                                        <Z> : "Ƹ" U01B8 # LATIN CAPITAL LETTER EZH REVERSED
-<Multi_key><backslash>                                                                         <Z> : "Ƹ" U01B8 # LATIN CAPITAL LETTER EZH REVERSED
-<UEFD6>                                                                                        <z> : "ƹ" U01B9 # LATIN SMALL LETTER EZH REVERSED
-<Multi_key><backslash>                                                                         <z> : "ƹ" U01B9 # LATIN SMALL LETTER EZH REVERSED
+<UEFD6>                                                                                        <z> : "𝽦" U1DF66 # LATIN SMALL LETTER REVERSED Z
+<Multi_key><backslash>                                                                         <z> : "𝽦" U1DF66 # LATIN SMALL LETTER REVERSED Z
 #
 #
 # # REVERSED&GROUP_1
@@ -21557,7 +21555,20 @@
 #
 #
 # # REVERSED&GROUP_3
+#   Lenient group selection
 #
+<UEFD6>                                                                              <UEFD0><3><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><3><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_3><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_3><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                   <UEFD0><UEFD0><UEFD0><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                     <numbersign><numbersign><numbersign><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                              <UEFD0><3><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><3><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_3><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_3><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                   <UEFD0><UEFD0><UEFD0><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                     <numbersign><numbersign><numbersign><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
 <UEFD6>                                                                              <UEFD0><3><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
 <Multi_key><backslash>                                                          <numbersign><3><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
 <UEFD6>                                                                           <UEFD0><KP_3><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
@@ -21579,7 +21590,20 @@
 #
 #
 # # REVERSED&GROUP_4
+#   Lenient group selection
 #
+<UEFD6>                                                                              <UEFD0><4><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><4><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_4><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_4><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                            <UEFD0><UEFD0><UEFD0><UEFD0><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                         <numbersign><numbersign><numbersign><numbersign><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                              <UEFD0><4><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><4><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_4><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_4><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<UEFD6>                                                            <UEFD0><UEFD0><UEFD0><UEFD0><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                         <numbersign><numbersign><numbersign><numbersign><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
 <UEFD6>                                                                              <UEFD0><4><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
 <Multi_key><backslash>                                                          <numbersign><4><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
 <UEFD6>                                                                           <UEFD0><KP_4><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
@@ -21601,7 +21625,16 @@
 #
 #
 # # REVERSED&GROUP_5
+#   Lenient group selection
 #
+<UEFD6>                                                                              <UEFD0><5><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><5><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_5><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_5><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                              <UEFD0><5><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><5><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_5><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_5><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
 <UEFD6>                                                                              <UEFD0><5><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
 <Multi_key><backslash>                                                          <numbersign><5><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
 <UEFD6>                                                                           <UEFD0><KP_5><g> : "𝼁" U1DF01 # LATIN SMALL LETTER REVERSED SCRIPT G
@@ -21617,19 +21650,37 @@
 #
 #
 # # REVERSED&GROUP_10
+#   Lenient group selection
 #
 <UEFD6>                                                                     <UEFD0><0><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
 <Multi_key><backslash>                                                 <numbersign><0><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
 <UEFD6>                                                                  <UEFD0><KP_0><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
 <Multi_key><backslash>                                              <numbersign><KP_0><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
+<UEFD6>                                                                              <UEFD0><0><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><0><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_0><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_0><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                              <UEFD0><0><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><0><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_0><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_0><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
 #
 #
 # # REVERSED&GROUP_11
+#   Lenient group selection
 #
 <UEFD6>                                                                     <UEFD0><1><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
 <Multi_key><backslash>                                                 <numbersign><1><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
 <UEFD6>                                                                  <UEFD0><KP_1><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
 <Multi_key><backslash>                                              <numbersign><KP_1><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
+<UEFD6>                                                                              <UEFD0><1><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><1><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_1><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_1><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                              <UEFD0><1><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><1><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_1><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_1><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
 #
 #
 # # REVERSED&GROUP_12
@@ -21638,6 +21689,14 @@
 <Multi_key><backslash>                                                 <numbersign><2><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
 <UEFD6>                                                                  <UEFD0><KP_2><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
 <Multi_key><backslash>                                              <numbersign><KP_2><underscore> : "⮈" U2B88 # LEFTWARDS BLACK CIRCLED WHITE ARROW
+<UEFD6>                                                                              <UEFD0><2><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><2><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_2><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_2><E> : "𝽬" U1DF6C # LATIN CAPITAL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                              <UEFD0><2><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                          <numbersign><2><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<UEFD6>                                                                           <UEFD0><KP_2><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
+<Multi_key><backslash>                                                       <numbersign><KP_2><e> : "𝽭" U1DF6D # LATIN SMALL LETTER REVERSED SCRUPLE
 #
 #
 # # REVERSED&HOOK
@@ -31067,6 +31126,8 @@
 <Multi_key><slash>                                                                 <numbersign><l> : "ƛ" U019B # LATIN SMALL LETTER LAMBDA WITH STROKE
 <dead_stroke>                                                                           <UEFD0><o> : "ꬿ" UAB3F # LATIN SMALL LETTER OPEN O WITH STROKE
 <Multi_key><slash>                                                                 <numbersign><o> : "ꬿ" UAB3F # LATIN SMALL LETTER OPEN O WITH STROKE
+<dead_stroke>                                                                           <UEFD0><r> : "𝽡" U1DF61 # LATIN SMALL LETTER R WITH LEFT TIE
+<Multi_key><slash>                                                                 <numbersign><r> : "𝽡" U1DF61 # LATIN SMALL LETTER R WITH LEFT TIE
 <dead_stroke>                                                                           <UEFD0><s> : "ẜ" U1E9C # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
 <Multi_key><slash>                                                                 <numbersign><s> : "ẜ" U1E9C # LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
 #
@@ -31226,12 +31287,13 @@
 #   Multikey: ¦//
 #
 #   This double press virtual dead key is dedicated to letters with a slightly
-#   slanted stroke, some of which occur alongside letters with a steep slash,
-#   including those with a short stroke merely through the descender, both of
-#   which are supported in dead_stroke single press.
+#   slanted stroke, for the sake of those occurring alongside letters with a
+#   steep slash. If these do not exist ("Ꞡ" UA7A0, "ꞡ" UA7A1, "Ꞥ" UA7A4,
+#  "ꞥ" UA7A5 and "Ꞧ" UA7A6, "ꞧ" UA7A7), the same are supported in single press,
+#   but they are still in double press too for consistency.
 #
-#   As a spacing modifier letter, "⟋" U27CB is picked for graphic consistency,
-#   although it is a math symbol, not a letter.
+#   As a spacing modifier letter, "⟋" U27CB is picked, although this is a math
+#   symbol.
 #
 <dead_stroke><dead_stroke>                                                                 <space> : "̷" U0337 # COMBINING SHORT SOLIDUS OVERLAY
 #   Multikey conflicts with "⫽" U2AFD.                                                     <space> : "̷" U0337 # COMBINING SHORT SOLIDUS OVERLAY
