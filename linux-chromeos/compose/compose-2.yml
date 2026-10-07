@@ -1045,7 +1045,7 @@
 #   See #^# CIRCLED
 #   See #^# DOUBLE_ACUTE
 #   See #^# CURL
-#   See #^# MID_HEIGHT_LEFT_HOOK
+#   See #^# FLOURISH
 #   See #^# PALATAL_HOOK
 #   See #^# SWASH_TAIL
 #   See #^# VERTICAL_LINE_ABOVE
@@ -9984,7 +9984,7 @@
 #
 #
 #^# CURL
-#   curl, crossed-tail, loop, flourish, hook tail
+#   curl, crossed-tail, loop, hook tail, squirrel tail
 #   dead_hook double press
 #   Multikey: ¦{{
 #
@@ -9999,16 +9999,17 @@
 #   See  WITH CROSSED-TAIL
 #   See  WITH LOOP
 #
+#   This also supports squirrel tail, so as to move the flourish into triple
+#   press when Unicode 18.0 added "𝽳" U1DF73 LATIN SMALL LETTER O WITH CURL and
+#   its capital, actually featuring a flourish.
+#   https://share.google/aimode/dtpGRBWI08fWbCuib
+#
 #   For completeness, the Cossic letters new in Unicode 18.0 are also supported
 #   in this virtual dead key so far as they feature a loop. However, they are
 #   relegated to group 11: "𝾒" U1DF92, "𝾓" U1DF93, "𝾔" U1DF94, "𝾖" U1DF96.
 #
 #   "𝾑" U1DF91 in turn is in CEDILLA&CURL.
 #   See # # CEDILLA&CURL
-#
-#   This also supports FLOURISH for the purpose of streamlining the input,
-#   instead of supporting "Ꝓ" UA752, "ꝓ" UA753, "Ꞗ" UA796, "ꞗ" UA797 and
-#   "ꬴ" UAB34 only by triple press.
 #
 #   Double press of dead_hook is also the straightforward input method for
 #   "Ɋ" U024A, "ɋ" U024B when considering its HOOK TAIL as a downwards hook,
@@ -10051,18 +10052,12 @@
 <Multi_key><braceleft><braceleft>                                                              <A> : "Ꜣ" UA722 # LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF
 <dead_hook><dead_hook>                                                                         <a> : "ꜣ" UA723 # LATIN SMALL LETTER EGYPTOLOGICAL ALEF
 <Multi_key><braceleft><braceleft>                                                              <a> : "ꜣ" UA723 # LATIN SMALL LETTER EGYPTOLOGICAL ALEF
-<dead_hook><dead_hook>                                                                         <B> : "Ꞗ" UA796 # LATIN CAPITAL LETTER B WITH FLOURISH
-<Multi_key><braceleft><braceleft>                                                              <B> : "Ꞗ" UA796 # LATIN CAPITAL LETTER B WITH FLOURISH
-<dead_hook><dead_hook>                                                                         <b> : "ꞗ" UA797 # LATIN SMALL LETTER B WITH FLOURISH
-<Multi_key><braceleft><braceleft>                                                              <b> : "ꞗ" UA797 # LATIN SMALL LETTER B WITH FLOURISH
 <dead_hook><dead_hook>                                                                         <c> : "ɕ" U0255 # LATIN SMALL LETTER C WITH CURL
 <Multi_key><braceleft><braceleft>                                                              <c> : "ɕ" U0255 # LATIN SMALL LETTER C WITH CURL
 <dead_hook><dead_hook>                                                                         <D> : "ʥ" U02A5 # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
 <Multi_key><braceleft><braceleft>                                                              <D> : "ʥ" U02A5 # LATIN SMALL LETTER DZ DIGRAPH WITH CURL
 <dead_hook><dead_hook>                                                                         <d> : "ȡ" U0221 # LATIN SMALL LETTER D WITH CURL
 <Multi_key><braceleft><braceleft>                                                              <d> : "ȡ" U0221 # LATIN SMALL LETTER D WITH CURL
-<dead_hook><dead_hook>                                                                         <e> : "ꬴ" UAB34 # LATIN SMALL LETTER E WITH FLOURISH
-<Multi_key><braceleft><braceleft>                                                              <e> : "ꬴ" UAB34 # LATIN SMALL LETTER E WITH FLOURISH
 <dead_hook><dead_hook>                                                                         <G> : "ꬼ" UAB3C # LATIN SMALL LETTER ENG WITH CROSSED-TAIL
 <Multi_key><braceleft><braceleft>                                                              <G> : "ꬼ" UAB3C # LATIN SMALL LETTER ENG WITH CROSSED-TAIL
 <dead_hook><dead_hook>                                                                         <g> : "ꬶ" UAB36 # LATIN SMALL LETTER SCRIPT G WITH CROSSED-TAIL
@@ -10091,10 +10086,10 @@
 <Multi_key><braceleft><braceleft>                                                              <O> : "Ꝍ" UA74C # LATIN CAPITAL LETTER O WITH LOOP
 <dead_hook><dead_hook>                                                                         <o> : "ꝍ" UA74D # LATIN SMALL LETTER O WITH LOOP
 <Multi_key><braceleft><braceleft>                                                              <o> : "ꝍ" UA74D # LATIN SMALL LETTER O WITH LOOP
-<dead_hook><dead_hook>                                                                         <P> : "Ꝓ" UA752 # LATIN CAPITAL LETTER P WITH FLOURISH
-<Multi_key><braceleft><braceleft>                                                              <P> : "Ꝓ" UA752 # LATIN CAPITAL LETTER P WITH FLOURISH
-<dead_hook><dead_hook>                                                                         <p> : "ꝓ" UA753 # LATIN SMALL LETTER P WITH FLOURISH
-<Multi_key><braceleft><braceleft>                                                              <p> : "ꝓ" UA753 # LATIN SMALL LETTER P WITH FLOURISH
+<dead_hook><dead_hook>                                                                         <P> : "Ꝕ" UA754 # LATIN CAPITAL LETTER P WITH SQUIRREL TAIL
+<Multi_key><braceleft><braceleft>                                                              <P> : "Ꝕ" UA754 # LATIN CAPITAL LETTER P WITH SQUIRREL TAIL
+<dead_hook><dead_hook>                                                                         <p> : "ꝕ" UA755 # LATIN SMALL LETTER P WITH SQUIRREL TAIL
+<Multi_key><braceleft><braceleft>                                                              <p> : "ꝕ" UA755 # LATIN SMALL LETTER P WITH SQUIRREL TAIL
 <dead_hook><dead_hook>                                                                         <Q> : "Ɋ" U024A # LATIN CAPITAL LETTER SMALL Q WITH HOOK TAIL
 <Multi_key><braceleft><braceleft>                                                              <Q> : "Ɋ" U024A # LATIN CAPITAL LETTER SMALL Q WITH HOOK TAIL
 <dead_hook><dead_hook>                                                                         <q> : "ɋ" U024B # LATIN SMALL LETTER Q WITH HOOK TAIL
@@ -10279,23 +10274,22 @@
 <Multi_key><braceleft><braceleft>                                            <numbersign><KP_1><s> : "𝾖" U1DF96 # LATIN SMALL LETTER LONG S WITH TOP LOOP
 #
 #
-#^# MID_HEIGHT_LEFT_HOOK
-#   mid-height left hook, squirrel tail
+#^# FLOURISH
+#   mid-height left hook, flourish
 #   dead_hook triple press
 #   Multikey: ¦{{{
 #
-#   After Unicode 18.0 added "𝽗" U1DF57 as yet another a mid-height left hook
-#   featuring letter (though a turned "𝼨" U1DF28), the iconic SQUIRREL_TAIL was
-#   dropped as a projected new dead key name for the FLOURISH virtual dead key
-#   named after a previous set, moved to double press, now CURL.
+#   Unicode 18.0 adds "𝽗" U1DF57 as yet another a mid-height left hook
+#   featuring letter (though a turned "𝼨" U1DF28).
 #
-#   The squirrel tail and the mid-height left hook are merged into a single
-#   dead key thanks to their empty intersection.
+#   This needs to support FLOURISH, as Unicode 18.0 adds "𝽳" U1DF73 LATIN SMALL
+#   LETTER O WITH CURL and its capital, actually featuring a flourish.
+#   https://share.google/aimode/dtpGRBWI08fWbCuib
 #
 #
 #   Diacritic
 #
-#   As a diacritic, double ring is used, as coming closest to a squirrel tail.
+#   As a diacritic, double ring is used, with sort of a metaphoric mnemonic.
 #   As the combining double ring below has no spacing clone nor any modifier
 #   looking close to it, the centered half rings "˒" U02D2, "˓" U02D3 are used
 #   instead, with a rationale based on the laterality of the AltFr and AltGr
@@ -10310,16 +10304,26 @@
 <Multi_key><braceleft><braceleft><braceleft>                                        <nobreakspace> : "˒" U02D2 # MODIFIER LETTER CENTRED RIGHT HALF RING
 <dead_hook><dead_hook><dead_hook>                                                          <U202F> : "˓" U02D3 # MODIFIER LETTER CENTRED LEFT HALF RING
 <Multi_key><braceleft><braceleft><braceleft>                                               <U202F> : "˓" U02D3 # MODIFIER LETTER CENTRED LEFT HALF RING
+<dead_hook><dead_hook><dead_hook>                                                              <B> : "Ꞗ" UA796 # LATIN CAPITAL LETTER B WITH FLOURISH
+<Multi_key><braceleft><braceleft><braceleft>                                                   <B> : "Ꞗ" UA796 # LATIN CAPITAL LETTER B WITH FLOURISH
+<dead_hook><dead_hook><dead_hook>                                                              <b> : "ꞗ" UA797 # LATIN SMALL LETTER B WITH FLOURISH
+<Multi_key><braceleft><braceleft><braceleft>                                                   <b> : "ꞗ" UA797 # LATIN SMALL LETTER B WITH FLOURISH
 <dead_hook><dead_hook><dead_hook>                                                              <d> : "𝼥" U1DF25 # LATIN SMALL LETTER D WITH MID-HEIGHT LEFT HOOK
 <Multi_key><braceleft><braceleft><braceleft>                                                   <d> : "𝼥" U1DF25 # LATIN SMALL LETTER D WITH MID-HEIGHT LEFT HOOK
+<dead_hook><dead_hook><dead_hook>                                                              <e> : "ꬴ" UAB34 # LATIN SMALL LETTER E WITH FLOURISH
+<Multi_key><braceleft><braceleft><braceleft>                                                   <e> : "ꬴ" UAB34 # LATIN SMALL LETTER E WITH FLOURISH
 <dead_hook><dead_hook><dead_hook>                                                              <l> : "𝼦" U1DF26 # LATIN SMALL LETTER L WITH MID-HEIGHT LEFT HOOK
 <Multi_key><braceleft><braceleft><braceleft>                                                   <l> : "𝼦" U1DF26 # LATIN SMALL LETTER L WITH MID-HEIGHT LEFT HOOK
 <dead_hook><dead_hook><dead_hook>                                                              <n> : "𝼧" U1DF27 # LATIN SMALL LETTER N WITH MID-HEIGHT LEFT HOOK
 <Multi_key><braceleft><braceleft><braceleft>                                                   <n> : "𝼧" U1DF27 # LATIN SMALL LETTER N WITH MID-HEIGHT LEFT HOOK
-<dead_hook><dead_hook><dead_hook>                                                              <P> : "Ꝕ" UA754 # LATIN CAPITAL LETTER P WITH SQUIRREL TAIL
-<Multi_key><braceleft><braceleft><braceleft>                                                   <P> : "Ꝕ" UA754 # LATIN CAPITAL LETTER P WITH SQUIRREL TAIL
-<dead_hook><dead_hook><dead_hook>                                                              <p> : "ꝕ" UA755 # LATIN SMALL LETTER P WITH SQUIRREL TAIL
-<Multi_key><braceleft><braceleft><braceleft>                                                   <p> : "ꝕ" UA755 # LATIN SMALL LETTER P WITH SQUIRREL TAIL
+<dead_hook><dead_hook><dead_hook>                                                              <O> : "𝽲" U1DF72 # LATIN CAPITAL LETTER O WITH CURL
+<Multi_key><braceleft><braceleft><braceleft>                                                   <O> : "𝽲" U1DF72 # LATIN CAPITAL LETTER O WITH CURL
+<dead_hook><dead_hook><dead_hook>                                                              <o> : "𝽳" U1DF73 # LATIN SMALL LETTER O WITH CURL
+<Multi_key><braceleft><braceleft><braceleft>                                                   <o> : "𝽳" U1DF73 # LATIN SMALL LETTER O WITH CURL
+<dead_hook><dead_hook><dead_hook>                                                              <P> : "Ꝓ" UA752 # LATIN CAPITAL LETTER P WITH FLOURISH
+<Multi_key><braceleft><braceleft><braceleft>                                                   <P> : "Ꝓ" UA752 # LATIN CAPITAL LETTER P WITH FLOURISH
+<dead_hook><dead_hook><dead_hook>                                                              <p> : "ꝓ" UA753 # LATIN SMALL LETTER P WITH FLOURISH
+<Multi_key><braceleft><braceleft><braceleft>                                                   <p> : "ꝓ" UA753 # LATIN SMALL LETTER P WITH FLOURISH
 <dead_hook><dead_hook><dead_hook>                                                              <r> : "𝼨" U1DF28 # LATIN SMALL LETTER R WITH MID-HEIGHT LEFT HOOK
 <Multi_key><braceleft><braceleft><braceleft>                                                   <r> : "𝼨" U1DF28 # LATIN SMALL LETTER R WITH MID-HEIGHT LEFT HOOK
 <dead_hook><dead_hook><dead_hook>                                                              <s> : "𝼩" U1DF29 # LATIN SMALL LETTER S WITH MID-HEIGHT LEFT HOOK
@@ -10328,7 +10332,7 @@
 <Multi_key><braceleft><braceleft><braceleft>                                                   <t> : "𝼪" U1DF2A # LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK
 #
 #
-# # MID_HEIGHT_LEFT_HOOK&TURNED
+# # FLOURISH&TURNED
 #
 <dead_hook><dead_hook><dead_hook><UEFD5>                                                       <r> : "𝽗" U1DF57 # LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
 <Multi_key><braceleft><braceleft><braceleft><percent>                                          <r> : "𝽗" U1DF57 # LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
@@ -10366,7 +10370,7 @@
 #   A shortcut for "Ꝕ" UA754, "ꝕ" UA755 P WITH SQUIRREL TAIL is provided for
 #   convenience and ease of input, thanks to the availability of the "P", "p"
 #   base characters.
-#   See #^# MID_HEIGHT_LEFT_HOOK
+#   See #^# FLOURISH
 #
 #   As a result, *dead_retroflexhook supports "ᶏ" U1D8F, "𝼝" U1DF1D, "Ɖ" U0189,
 #   "ɖ" U0256, "ᶒ" U1D92, "ᶖ" U1D96, "ɭ" U026D, "ɳ" U0273, "𝼛" U1DF1B,

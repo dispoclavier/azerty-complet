@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Update                                  7.0.0.10.5 Wed 2026-10-07T0415+0200
 * Update                                  7.0.0.10.3 Mon 2026-10-05T2309+0200
 * Update                                  7.0.0.10.2 Sun 2026-10-04T1908+0200
 * Update                                  7.0.0.10.1 Sat 2026-10-03T0708+0200
@@ -7621,11 +7622,16 @@
 /*<!hook><!hook><!group>                                           */ DEADTRANS( L'v'	,0x02A5	,0xDF60	,0x0000), // High surrogate: D837; 'v' ➔ "𝽠" U+1DF60 LATIN SMALL LETTER OMEGA WITH LOOP
 /*<!hook><!hook><!hook>                                            */ DEADTRANS( 0x0192	,0xA796	,0x0192	,0x0000), // 'ƒ' ➔ "ƒ" U+0192 LATIN SMALL LETTER F WITH HOOK
 /*<!hook><!hook><!hook><!turned>                                   */ DEADTRANS( L'r'	,0xA77D	,0xDF57	,0x0000), // High surrogate: D837; 'r' ➔ "𝽗" U+1DF57 LATIN SMALL LETTER TURNED R WITH MID-HEIGHT LEFT HOOK
+/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'B'	,0xA796	,0xA796	,0x0000), // 'B' ➔ "Ꞗ" U+A796 LATIN CAPITAL LETTER B WITH FLOURISH
+/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'b'	,0xA796	,0xA797	,0x0000), // 'b' ➔ "ꞗ" U+A797 LATIN SMALL LETTER B WITH FLOURISH
 /*<!hook><!hook><!hook>                                            */ DEADTRANS( L'd'	,0xA796	,0xDF25	,0x0000), // High surrogate: D837; 'd' ➔ "𝼥" U+1DF25 LATIN SMALL LETTER D WITH MID-HEIGHT LEFT HOOK
+/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'e'	,0xA796	,0xAB34	,0x0000), // 'e' ➔ "ꬴ" U+AB34 LATIN SMALL LETTER E WITH FLOURISH
 /*<!hook><!hook><!hook>                                            */ DEADTRANS( L'l'	,0xA796	,0xDF26	,0x0000), // High surrogate: D837; 'l' ➔ "𝼦" U+1DF26 LATIN SMALL LETTER L WITH MID-HEIGHT LEFT HOOK
 /*<!hook><!hook><!hook>                                            */ DEADTRANS( L'n'	,0xA796	,0xDF27	,0x0000), // High surrogate: D837; 'n' ➔ "𝼧" U+1DF27 LATIN SMALL LETTER N WITH MID-HEIGHT LEFT HOOK
-/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'P'	,0xA796	,0xA754	,0x0000), // 'P' ➔ "Ꝕ" U+A754 LATIN CAPITAL LETTER P WITH SQUIRREL TAIL
-/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'p'	,0xA796	,0xA755	,0x0000), // 'p' ➔ "ꝕ" U+A755 LATIN SMALL LETTER P WITH SQUIRREL TAIL
+/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'O'	,0xA796	,0xDF72	,0x0000), // High surrogate: D837; 'O' ➔ "𝽲" U+1DF72 LATIN CAPITAL LETTER O WITH CURL
+/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'o'	,0xA796	,0xDF73	,0x0000), // High surrogate: D837; 'o' ➔ "𝽳" U+1DF73 LATIN SMALL LETTER O WITH CURL
+/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'P'	,0xA796	,0xA752	,0x0000), // 'P' ➔ "Ꝓ" U+A752 LATIN CAPITAL LETTER P WITH FLOURISH
+/*<!hook><!hook><!hook>                                            */ DEADTRANS( L'p'	,0xA796	,0xA753	,0x0000), // 'p' ➔ "ꝓ" U+A753 LATIN SMALL LETTER P WITH FLOURISH
 /*<!hook><!hook><!hook>                                            */ DEADTRANS( L'r'	,0xA796	,0xDF28	,0x0000), // High surrogate: D837; 'r' ➔ "𝼨" U+1DF28 LATIN SMALL LETTER R WITH MID-HEIGHT LEFT HOOK
 /*<!hook><!hook><!hook>                                            */ DEADTRANS( L's'	,0xA796	,0xDF29	,0x0000), // High surrogate: D837; 's' ➔ "𝼩" U+1DF29 LATIN SMALL LETTER S WITH MID-HEIGHT LEFT HOOK
 /*<!hook><!hook><!hook>                                            */ DEADTRANS( L't'	,0xA796	,0xDF2A	,0x0000), // High surrogate: D837; 't' ➔ "𝼪" U+1DF2A LATIN SMALL LETTER T WITH MID-HEIGHT LEFT HOOK
@@ -7659,12 +7665,9 @@
 /*<!hook><!hook><!turned>                                          */ DEADTRANS( L't'	,0x028A	,0xDF0D	,0x0000), // High surrogate: D837; 't' ➔ "𝼍" U+1DF0D LATIN SMALL LETTER TURNED T WITH CURL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'A'	,0x0255	,0xA722	,0x0000), // 'A' ➔ "Ꜣ" U+A722 LATIN CAPITAL LETTER EGYPTOLOGICAL ALEF
 /*<!hook><!hook>                                                   */ DEADTRANS( L'a'	,0x0255	,0xA723	,0x0000), // 'a' ➔ "ꜣ" U+A723 LATIN SMALL LETTER EGYPTOLOGICAL ALEF
-/*<!hook><!hook>                                                   */ DEADTRANS( L'B'	,0x0255	,0xA796	,0x0000), // 'B' ➔ "Ꞗ" U+A796 LATIN CAPITAL LETTER B WITH FLOURISH
-/*<!hook><!hook>                                                   */ DEADTRANS( L'b'	,0x0255	,0xA797	,0x0000), // 'b' ➔ "ꞗ" U+A797 LATIN SMALL LETTER B WITH FLOURISH
 /*<!hook><!hook>                                                   */ DEADTRANS( L'c'	,0x0255	,0x0255	,0x0000), // 'c' ➔ "ɕ" U+0255 LATIN SMALL LETTER C WITH CURL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'd'	,0x0255	,0x0221	,0x0000), // 'd' ➔ "ȡ" U+0221 LATIN SMALL LETTER D WITH CURL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'D'	,0x0255	,0x02A5	,0x0000), // 'D' ➔ "ʥ" U+02A5 LATIN SMALL LETTER DZ DIGRAPH WITH CURL
-/*<!hook><!hook>                                                   */ DEADTRANS( L'e'	,0x0255	,0xAB34	,0x0000), // 'e' ➔ "ꬴ" U+AB34 LATIN SMALL LETTER E WITH FLOURISH
 /*<!hook><!hook>                                                   */ DEADTRANS( L'g'	,0x0255	,0xAB36	,0x0000), // 'g' ➔ "ꬶ" U+AB36 LATIN SMALL LETTER SCRIPT G WITH CROSSED-TAIL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'G'	,0x0255	,0xAB3C	,0x0000), // 'G' ➔ "ꬼ" U+AB3C LATIN SMALL LETTER ENG WITH CROSSED-TAIL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'H'	,0x0255	,0xA724	,0x0000), // 'H' ➔ "Ꜥ" U+A724 LATIN CAPITAL LETTER EGYPTOLOGICAL AIN
@@ -7679,8 +7682,8 @@
 /*<!hook><!hook>                                                   */ DEADTRANS( L'n'	,0x0255	,0xAB3B	,0x0000), // 'n' ➔ "ꬻ" U+AB3B LATIN SMALL LETTER N WITH CROSSED-TAIL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'O'	,0x0255	,0xA74C	,0x0000), // 'O' ➔ "Ꝍ" U+A74C LATIN CAPITAL LETTER O WITH LOOP
 /*<!hook><!hook>                                                   */ DEADTRANS( L'o'	,0x0255	,0xA74D	,0x0000), // 'o' ➔ "ꝍ" U+A74D LATIN SMALL LETTER O WITH LOOP
-/*<!hook><!hook>                                                   */ DEADTRANS( L'P'	,0x0255	,0xA752	,0x0000), // 'P' ➔ "Ꝓ" U+A752 LATIN CAPITAL LETTER P WITH FLOURISH
-/*<!hook><!hook>                                                   */ DEADTRANS( L'p'	,0x0255	,0xA753	,0x0000), // 'p' ➔ "ꝓ" U+A753 LATIN SMALL LETTER P WITH FLOURISH
+/*<!hook><!hook>                                                   */ DEADTRANS( L'P'	,0x0255	,0xA754	,0x0000), // 'P' ➔ "Ꝕ" U+A754 LATIN CAPITAL LETTER P WITH SQUIRREL TAIL
+/*<!hook><!hook>                                                   */ DEADTRANS( L'p'	,0x0255	,0xA755	,0x0000), // 'p' ➔ "ꝕ" U+A755 LATIN SMALL LETTER P WITH SQUIRREL TAIL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'Q'	,0x0255	,0x024A	,0x0000), // 'Q' ➔ "Ɋ" U+024A LATIN CAPITAL LETTER SMALL Q WITH HOOK TAIL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'q'	,0x0255	,0x024B	,0x0000), // 'q' ➔ "ɋ" U+024B LATIN SMALL LETTER Q WITH HOOK TAIL
 /*<!hook><!hook>                                                   */ DEADTRANS( L'r'	,0x0255	,0xAB49	,0x0000), // 'r' ➔ "ꭉ" U+AB49 LATIN SMALL LETTER R WITH CROSSED-TAIL
@@ -8913,9 +8916,13 @@
 /*<!reversed><!doubleacute>                                        */ DEADTRANS( L'y'	,0x263A	,0xDD1C	,0x0000), // High surrogate: D83D; 'y' ➔ "🔜" U+1F51C SOON WITH RIGHTWARDS ARROW ABOVE emoji
 /*<!reversed><!doubleacute>                                        */ DEADTRANS( L'Z'	,0x263A	,0xDD1C	,0x0000), // High surrogate: D83D; 'Z' ➔ "🔜" U+1F51C SOON WITH RIGHTWARDS ARROW ABOVE emoji
 /*<!reversed><!doubleacute>                                        */ DEADTRANS( L'z'	,0x263A	,0xDD1C	,0x0000), // High surrogate: D83D; 'z' ➔ "🔜" U+1F51C SOON WITH RIGHTWARDS ARROW ABOVE emoji
+/*<!reversed><!group><!group><!group><!group>                      */ DEADTRANS( L'E'	,0xA7F5	,0xDF6C	,0x0000), // High surrogate: D837; 'E' ➔ "𝽬" U+1DF6C LATIN CAPITAL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><!group><!group><!group>                      */ DEADTRANS( L'e'	,0xA7F5	,0xDF6D	,0x0000), // High surrogate: D837; 'e' ➔ "𝽭" U+1DF6D LATIN SMALL LETTER REVERSED SCRUPLE
 /*<!reversed><!group><!group><!group><!group>                      */ DEADTRANS( L'g'	,0xA7F5	,0xDF01	,0x0000), // High surrogate: D837; 'g' ➔ "𝼁" U+1DF01 LATIN SMALL LETTER REVERSED SCRIPT G
 /*<!reversed><!group><!group><!group><!group>                      */ DEADTRANS( L'H'	,0xA7F5	,0xA7F5	,0x0000), // 'H' ➔ "Ꟶ" U+A7F5 LATIN CAPITAL LETTER REVERSED HALF H
 /*<!reversed><!group><!group><!group><!group>                      */ DEADTRANS( L'h'	,0xA7F5	,0xA7F6	,0x0000), // 'h' ➔ "ꟶ" U+A7F6 LATIN SMALL LETTER REVERSED HALF H
+/*<!reversed><!group><!group><!group>                              */ DEADTRANS( L'E'	,0xA7F6	,0xDF6C	,0x0000), // High surrogate: D837; 'E' ➔ "𝽬" U+1DF6C LATIN CAPITAL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><!group><!group>                              */ DEADTRANS( L'e'	,0xA7F6	,0xDF6D	,0x0000), // High surrogate: D837; 'e' ➔ "𝽭" U+1DF6D LATIN SMALL LETTER REVERSED SCRUPLE
 /*<!reversed><!group><!group><!group>                              */ DEADTRANS( L'g'	,0xA7F6	,0xDF01	,0x0000), // High surrogate: D837; 'g' ➔ "𝼁" U+1DF01 LATIN SMALL LETTER REVERSED SCRIPT G
 /*<!reversed><!group><!group><!group>                              */ DEADTRANS( L'H'	,0xA7F6	,0xA7F5	,0x0000), // 'H' ➔ "Ꟶ" U+A7F5 LATIN CAPITAL LETTER REVERSED HALF H
 /*<!reversed><!group><!group><!group>                              */ DEADTRANS( L'h'	,0xA7F6	,0xA7F6	,0x0000), // 'h' ➔ "ꟶ" U+A7F6 LATIN SMALL LETTER REVERSED HALF H
@@ -8926,14 +8933,26 @@
 /*<!reversed><!group><!group>                                      */ DEADTRANS( L'h'	,0xA7AB	,0xA7F6	,0x0000), // 'h' ➔ "ꟶ" U+A7F6 LATIN SMALL LETTER REVERSED HALF H
 /*<!reversed><!group>                                              */ DEADTRANS( L'_'	,0x2B88	,0x2B88	,0x0000), // '_' ➔ "⮈" U+2B88 LEFTWARDS BLACK CIRCLED WHITE ARROW
 /*<!reversed><!group><0>                                           */ DEADTRANS( L'_'	,0xA788	,0x2B88	,0x0000), // '_' ➔ "⮈" U+2B88 LEFTWARDS BLACK CIRCLED WHITE ARROW
+/*<!reversed><!group><0>                                           */ DEADTRANS( L'E'	,0xA788	,0xDF6C	,0x0000), // High surrogate: D837; 'E' ➔ "𝽬" U+1DF6C LATIN CAPITAL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><0>                                           */ DEADTRANS( L'e'	,0xA788	,0xDF6D	,0x0000), // High surrogate: D837; 'e' ➔ "𝽭" U+1DF6D LATIN SMALL LETTER REVERSED SCRUPLE
 /*<!reversed><!group><1>                                           */ DEADTRANS( L'_'	,0xA789	,0x2B88	,0x0000), // '_' ➔ "⮈" U+2B88 LEFTWARDS BLACK CIRCLED WHITE ARROW
+/*<!reversed><!group><1>                                           */ DEADTRANS( L'E'	,0xA789	,0xDF6C	,0x0000), // High surrogate: D837; 'E' ➔ "𝽬" U+1DF6C LATIN CAPITAL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><1>                                           */ DEADTRANS( L'e'	,0xA789	,0xDF6D	,0x0000), // High surrogate: D837; 'e' ➔ "𝽭" U+1DF6D LATIN SMALL LETTER REVERSED SCRUPLE
 /*<!reversed><!group><2>                                           */ DEADTRANS( L'_'	,0x01B8	,0x2B88	,0x0000), // '_' ➔ "⮈" U+2B88 LEFTWARDS BLACK CIRCLED WHITE ARROW
+/*<!reversed><!group><2>                                           */ DEADTRANS( L'E'	,0x01B8	,0xDF6C	,0x0000), // High surrogate: D837; 'E' ➔ "𝽬" U+1DF6C LATIN CAPITAL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><2>                                           */ DEADTRANS( L'e'	,0x01B8	,0xDF6D	,0x0000), // High surrogate: D837; 'e' ➔ "𝽭" U+1DF6D LATIN SMALL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><3>                                           */ DEADTRANS( L'E'	,0xA7F6	,0xDF6C	,0x0000), // High surrogate: D837; 'E' ➔ "𝽬" U+1DF6C LATIN CAPITAL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><3>                                           */ DEADTRANS( L'e'	,0xA7F6	,0xDF6D	,0x0000), // High surrogate: D837; 'e' ➔ "𝽭" U+1DF6D LATIN SMALL LETTER REVERSED SCRUPLE
 /*<!reversed><!group><3>                                           */ DEADTRANS( L'g'	,0xA7F6	,0xDF01	,0x0000), // High surrogate: D837; 'g' ➔ "𝼁" U+1DF01 LATIN SMALL LETTER REVERSED SCRIPT G
 /*<!reversed><!group><3>                                           */ DEADTRANS( L'H'	,0xA7F6	,0xA7F5	,0x0000), // 'H' ➔ "Ꟶ" U+A7F5 LATIN CAPITAL LETTER REVERSED HALF H
 /*<!reversed><!group><3>                                           */ DEADTRANS( L'h'	,0xA7F6	,0xA7F6	,0x0000), // 'h' ➔ "ꟶ" U+A7F6 LATIN SMALL LETTER REVERSED HALF H
+/*<!reversed><!group><4>                                           */ DEADTRANS( L'E'	,0xA7F5	,0xDF6C	,0x0000), // High surrogate: D837; 'E' ➔ "𝽬" U+1DF6C LATIN CAPITAL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><4>                                           */ DEADTRANS( L'e'	,0xA7F5	,0xDF6D	,0x0000), // High surrogate: D837; 'e' ➔ "𝽭" U+1DF6D LATIN SMALL LETTER REVERSED SCRUPLE
 /*<!reversed><!group><4>                                           */ DEADTRANS( L'g'	,0xA7F5	,0xDF01	,0x0000), // High surrogate: D837; 'g' ➔ "𝼁" U+1DF01 LATIN SMALL LETTER REVERSED SCRIPT G
 /*<!reversed><!group><4>                                           */ DEADTRANS( L'H'	,0xA7F5	,0xA7F5	,0x0000), // 'H' ➔ "Ꟶ" U+A7F5 LATIN CAPITAL LETTER REVERSED HALF H
 /*<!reversed><!group><4>                                           */ DEADTRANS( L'h'	,0xA7F5	,0xA7F6	,0x0000), // 'h' ➔ "ꟶ" U+A7F6 LATIN SMALL LETTER REVERSED HALF H
+/*<!reversed><!group><5>                                           */ DEADTRANS( L'E'	,0x01B9	,0xDF6C	,0x0000), // High surrogate: D837; 'E' ➔ "𝽬" U+1DF6C LATIN CAPITAL LETTER REVERSED SCRUPLE
+/*<!reversed><!group><5>                                           */ DEADTRANS( L'e'	,0x01B9	,0xDF6D	,0x0000), // High surrogate: D837; 'e' ➔ "𝽭" U+1DF6D LATIN SMALL LETTER REVERSED SCRUPLE
 /*<!reversed><!group><5>                                           */ DEADTRANS( L'g'	,0x01B9	,0xDF01	,0x0000), // High surrogate: D837; 'g' ➔ "𝼁" U+1DF01 LATIN SMALL LETTER REVERSED SCRIPT G
 /*<!reversed><!group><5>                                           */ DEADTRANS( L'H'	,0x01B9	,0xA7F5	,0x0000), // 'H' ➔ "Ꟶ" U+A7F5 LATIN CAPITAL LETTER REVERSED HALF H
 /*<!reversed><!group><5>                                           */ DEADTRANS( L'h'	,0x01B9	,0xA7F6	,0x0000), // 'h' ➔ "ꟶ" U+A7F6 LATIN SMALL LETTER REVERSED HALF H
@@ -9037,8 +9056,7 @@
 /*<!reversed>                                                      */ DEADTRANS( L'w'	,0x1D19	,0x2AED	,0x0000), // 'w' ➔ "⫭" U+2AED REVERSED DOUBLE STROKE NOT SIGN
 /*<!reversed>                                                      */ DEADTRANS( L'x'	,0x1D19	,0x025C	,0x0000), // 'x' ➔ "ɜ" U+025C LATIN SMALL LETTER REVERSED OPEN E
 /*<!reversed>                                                      */ DEADTRANS( L'X'	,0x1D19	,0xA7AB	,0x0000), // 'X' ➔ "Ɜ" U+A7AB LATIN CAPITAL LETTER REVERSED OPEN E
-/*<!reversed>                                                      */ DEADTRANS( L'Z'	,0x1D19	,0x01B8	,0x0000), // 'Z' ➔ "Ƹ" U+01B8 LATIN CAPITAL LETTER EZH REVERSED
-/*<!reversed>                                                      */ DEADTRANS( L'z'	,0x1D19	,0x01B9	,0x0000), // 'z' ➔ "ƹ" U+01B9 LATIN SMALL LETTER EZH REVERSED
+/*<!reversed>                                                      */ DEADTRANS( L'z'	,0x1D19	,0xDF66	,0x0000), // High surrogate: D837; 'z' ➔ "𝽦" U+1DF66 LATIN SMALL LETTER REVERSED Z
 /*<!reversed>                                                      */ DEADTRANS( 0x00A0	,0x1D19	,0x02BD	,0x0000), // ' ' ➔ "ʽ" U+02BD MODIFIER LETTER REVERSED COMMA
 /*<!reversed>                                                      */ DEADTRANS( 0x202F	,0x1D19	,0x02BD	,0x0000), // ' ' ➔ "ʽ" U+02BD MODIFIER LETTER REVERSED COMMA
 /*<!reversed>                                                      */ DEADTRANS( L' '	,0x1D19	,0x0314	,0x0000), // ' ' ➔ "̔" U+0314 COMBINING REVERSED COMMA ABOVE
@@ -9097,6 +9115,7 @@
 /*<!stroke><!group>                                                */ DEADTRANS( L'l'	,0x019B	,0x019B	,0x0000), // 'l' ➔ "ƛ" U+019B LATIN SMALL LETTER LAMBDA WITH STROKE
 /*<!stroke><!group>                                                */ DEADTRANS( L'L'	,0x019B	,0xA7DC	,0x0000), // 'L' ➔ "Ƛ" U+A7DC LATIN CAPITAL LETTER LAMBDA WITH STROKE
 /*<!stroke><!group>                                                */ DEADTRANS( L'o'	,0x019B	,0xAB3F	,0x0000), // 'o' ➔ "ꬿ" U+AB3F LATIN SMALL LETTER OPEN O WITH STROKE
+/*<!stroke><!group>                                                */ DEADTRANS( L'r'	,0x019B	,0xDF61	,0x0000), // High surrogate: D837; 'r' ➔ "𝽡" U+1DF61 LATIN SMALL LETTER R WITH LEFT TIE
 /*<!stroke><!group>                                                */ DEADTRANS( L's'	,0x019B	,0x1E9C	,0x0000), // 's' ➔ "ẜ" U+1E9C LATIN SMALL LETTER LONG S WITH DIAGONAL STROKE
 /*<!stroke><!stroke><!stroke>                                      */ DEADTRANS( 0x00F8	,0x2425	,0x00F8	,0x0000), // 'ø' ➔ "ø" U+00F8 LATIN SMALL LETTER O WITH STROKE
 /*<!stroke><!stroke><!stroke>                                      */ DEADTRANS( 0x00A0	,0x2425	,0x2425	,0x0000), // ' ' ➔ "␥" U+2425 SYMBOL FOR DELETE FORM TWO
