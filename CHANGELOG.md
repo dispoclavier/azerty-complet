@@ -108,13 +108,13 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 		* Exposant et raie haute : Ajouter "𝿎" U+1DFCE, "𝿏" U+1DFCF. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 		* Exposant et macron : Ajouter "𐞽" U+107BD. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
 	* Tourné :
-@		* Ajouter "𝽶" U+1DF76, "𝽷" U+1DF77 (dans le groupe 4).
+		* Ajouter "𝽶" U+1DF76, "𝽷" U+1DF77 (dans le groupe 4). compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-complet/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 		* Tourné et rayé : Ajouter "𝼾" U+1DF3E, "𝽐" U+1DF50. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Réfléchi :
 		* Ajouter "𝽪" U+1DF6A à la place de "⦥" U+29A5, qui va par "7". compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 		* Ajouter "𝽫" U+1DF6B à la place de "ꬱ" U+AB31, qui va en composition. ibidem
 		* Ajouter "𝽦" U+1DF66, "𝽬" U+1DF6C, "𝽭" U+1DF6D. compose-2.yml [49de9f2](https://github.com/dispoclavier/azerty-complet/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
-@		* Ajouter "𝽾" U+1DF7E, "𝽿" U+1DF7F.
+		* Ajouter "𝽾" U+1DF7E, "𝽿" U+1DF7F. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-complet/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 		* Réfléchi et crochet palatal : Ajouter "𝼺" U+1DF3A. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Tilde et perluète : Changer en "Tilde et accolade fermante" (Tilde&braceright). compose-2.yml [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
 	* Grec ou cerclé : Changer le caractère mort de "ε" U+03B5 en "⚪" U+26AA. compose-2.yml [9b16834](https://github.com/dispoclavier/azerty-complet/commit/9b16834d8a7a828a1be3d1dacfe06a6e258cefb5)
@@ -138,7 +138,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 			* Ajouter "𝽠" U+1DF60, "𝾒" U+1DF92, "𝾓" U+1DF93, "𝾔" U+1DF94, "𝾖" U+1DF96. compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 		* Fioriture : compose-2.yml [70d7839](https://github.com/dispoclavier/azerty-complet/commit/70d7839a6b5c5eadacf6f950b754de2a6e24a14d), [121266d](https://github.com/dispoclavier/azerty-complet/commit/121266d39bcdb174c479f36737a97b2a69af1fd4)
 			* Ajouter "𝽲" U+1DF72, "𝽳" U+1DF73. compose-2.yml [49de9f2](https://github.com/dispoclavier/azerty-complet/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
-@			* Ajouter "𝽰" U+1DF70, "𝽺" U+1DF7A, "𝽻" U+1DF7B.
+			* Ajouter "𝽰" U+1DF70, "𝽺" U+1DF7A, "𝽻" U+1DF7B. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-complet/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 			* Fioriture et tourné : Ajouter "𝽗" U+1DF57. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Crochet rétroflexe :
 		* Crochet palatal :
@@ -153,10 +153,10 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 		* Rayé et crochet palatal : Ajouter "𝼲" U+1DF32, "𝽅" U+1DF45. compose-2.yml [0dc2d32](https://github.com/dispoclavier/azerty-complet/commit/0dc2d3214afd7c30a0a059926351260a6522646b), [9f8f564](https://github.com/dispoclavier/azerty-complet/commit/9f8f5640f6e25228381b546657e62f3a1ab00bd9), [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3)
 		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)                            
 		* Raie haute : Ajouter "𝽘" U+1DF58, "𝽙" U+1DF59. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
-@	* Cornu : Ajouter "𝽼" U+1DF7C, "𝽽" U+1DF7D.
+	* Cornu : Ajouter "𝽼" U+1DF7C, "𝽽" U+1DF7D. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-complet/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 	* Macron :
 		* Ajouter "꟢" U+A7E2 à la place de "ꭆ" U+AB46, qui va dans indice et macron. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
-@		* Ajouter "𝽱" U+1DF71, "𝾀" U+1DF80, "𝾁" U+1DF81 (dans les groupes 2 et 3).
+		* Ajouter "𝽱" U+1DF71, "𝾀" U+1DF80, "𝾁" U+1DF81 (dans les groupes 2 et 3). compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-complet/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 	* Barré : Ajouter "𝽡" U+1DF61 (dans le groupe 1). compose-2.yml [49de9f2](https://github.com/dispoclavier/azerty-complet/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Accent circonflexe :
