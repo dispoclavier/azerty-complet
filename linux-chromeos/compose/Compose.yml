@@ -1,5 +1,5 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-10-07T0350+0200
+#                       Date: 2026-10-07T0716+0200
 #                    Version: See # # Output of keyboard layout version number
 <UEFA0>                     : "version 7.0.0.10" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
@@ -26041,7 +26041,7 @@
 #
 #
 #^# FLOURISH
-#   mid-height left hook, flourish
+#   flourish, mid-height left hook, curl
 #   dead_hook triple press
 #   Multikey: ¦{{{
 #
