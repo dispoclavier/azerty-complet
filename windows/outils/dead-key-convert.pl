@@ -5,7 +5,7 @@
 # 2025-12-23T0450+0100
 # 2025-12-31T1259+0100
 # 2026-03-16T1433+0100
-# 2026-10-07T1955+0200
+# 2026-10-09T2024+0200
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
@@ -374,7 +374,7 @@ sub dekeysym {
 
 my @virtual_dead_characters = (
 
-	# Intermediate dead key chains (706).
+	# Intermediate dead key chains (762).
 	'<!abovedot><!abovedot>➔02C8',#<dead_abovedot><dead_abovedot>
 	'<!abovedot><!abovedot><!acute>➔02C7',#<dead_abovedot><dead_abovedot><dead_acute>
 	'<!abovedot><!abovedot><!acute><!grave>➔02B7',#<dead_abovedot><dead_abovedot><dead_acute><dead_grave>
@@ -1081,6 +1081,42 @@ my @virtual_dead_characters = (
 	'<!hook><!hook><!cedilla>➔A79C',
 	'<!hook><!hook><!group><1>➔A79D',
 	'<!horn><!group>➔A79E',
+	'<!hook><!hook><!hook><!superscript><!turned>➔A79F',
+	'<!hook><!hook><!hook><!turned><!superscript>➔A7A0',
+	'<!hook><!hook><!superscript><!hook><!turned>➔A7A2',
+	'<!hook><!hook><!superscript><!turned><!hook>➔A7A3',
+	'<!hook><!hook><!superscript><!turned>➔A7A4',
+	'<!hook><!hook><!turned><!hook><!superscript>➔A7A5',
+	'<!hook><!hook><!turned><!superscript><!hook>➔A7A6',
+	'<!hook><!hook><!turned><!superscript>➔A7A7',
+	'<!hook><!superscript><!hook><!hook><!turned>➔A7A8',
+	'<!hook><!superscript><!hook><!turned><!hook>➔A7A9',
+	'<!hook><!superscript><!hook><!turned>➔A7AA',
+	'<!hook><!superscript><!turned><!hook><!hook>➔A7AC',
+	'<!hook><!superscript><!turned><!hook>➔A7AD',
+	'<!hook><!turned><!hook><!hook><!superscript>➔A7AE',
+	'<!hook><!turned><!hook><!superscript><!hook>➔A7AF',
+	'<!hook><!turned><!hook><!superscript>➔A7B0',
+	'<!hook><!turned><!superscript><!hook><!hook>➔A7B1',
+	'<!hook><!turned><!superscript><!hook>➔A7B2',
+	'<!superscript><!hook><!hook><!hook><!turned>➔A7B3',
+	'<!superscript><!hook><!hook><!turned><!hook>➔A7B4',
+	'<!superscript><!hook><!hook><!turned>➔A7B5',
+	'<!superscript><!hook><!turned><!hook><!hook>➔A7B6',
+	'<!superscript><!hook><!turned><!hook>➔A7B7',
+	'<!superscript><!turned><!hook><!hook><!hook>➔A7B8',
+	'<!superscript><!turned><!hook><!hook>➔A7B9',
+	'<!turned><!hook><!hook><!hook><!superscript>➔A7BA',
+	'<!turned><!hook><!hook><!superscript><!hook>➔A7BC',
+	'<!turned><!hook><!hook><!superscript>➔A7BD',
+	'<!turned><!hook><!superscript><!hook><!hook>➔A7BE',
+	'<!turned><!hook><!superscript><!hook>➔A7BF',
+	'<!turned><!superscript><!hook><!hook><!hook>➔A7C0',
+	'<!turned><!superscript><!hook><!hook>➔A7C1',
+	'<!hook><!hook><!hook><!superscript>➔A7C2',
+	'<!hook><!hook><!superscript><!hook>➔A7C3',
+	'<!hook><!superscript><!hook><!hook>➔A7C4',
+	'<!superscript><!hook><!hook><!hook>➔A7C5',
 
 	# Polytonic and monotonic Greek (256).
 	'<!abovehook><!greek>➔1FBD',#<UEFD3><dead_greek>

@@ -168,9 +168,17 @@
 			"find": "^(<[^<>]+>)(<[^<>]+>)\\2(<[^<>]+>)\\3( .+)",
 			"replace": "@$1$2$2$3$3$4\n@$1$2$3$2$3$4\n@$1$3$2$3$2$4\n@$1$3$3$2$2$4\n@$2$1$2$3$3$4\n@$2$1$3$2$3$4\n@$3$1$2$3$2$4\n@$3$1$3$2$2$4\n@$2$2$1$3$3$4\n@$2$3$1$2$3$4\n@$3$2$1$3$2$4\n@$3$3$1$2$2$4\n@$2$2$3$1$3$4\n@$2$3$2$1$3$4\n@$3$2$3$1$2$4\n@$3$3$2$1$2$4\n@$2$2$3$3$1$4\n@$2$3$2$3$1$4\n@$3$2$3$2$1$4\n@$3$3$2$2$1$4"
 		},
+		"permutate1And3SameAnd1": {
+			"find": "^(<[^<>]+>)(<[^<>]+>)\\2\\2(<[^<>]+>)( .+)",
+			"replace": "@$1$2$2$2$3$4\n@$2$1$2$2$3$4\n@$2$2$1$2$3$4\n@$2$2$2$1$3$4\n@$1$2$2$3$2$4\n@$2$1$2$3$2$4\n@$2$2$1$3$2$4\n@$2$2$2$3$1$4\n@$1$2$3$2$2$4\n@$2$1$3$2$2$4\n@$2$2$3$1$2$4\n@$2$2$3$2$1$4\n@$1$3$2$2$2$4\n@$2$3$1$2$2$4\n@$2$3$2$1$2$4\n@$2$3$2$2$1$4\n@$3$1$2$2$2$4\n@$3$2$1$2$2$4\n@$3$2$2$1$2$4\n@$3$2$2$2$1$4"
+		},
 		"formatChangelogRule": {
 			"find": "U([0-9A-F]{4,5})",
 			"replace": "U+$1"
+		},
+		"removeLeadingAtSigns": {
+			"find": "^@",
+			"replace": ""
 		},
 		"unformatChangelogRule": {
 			"find": "U\\+([0-9A-F]{4,5})",
@@ -191,7 +199,8 @@
 				"permutate1And2SameAnd1",
 				"permutate2And2Same",
 				"permutate4",
-				"permutate1And2SameAnd2Same"
+				"permutate1And2SameAnd2Same",
+				"permutate1And3SameAnd1"
 			]
 		},
 		"prepareXComposeForCheck": {
@@ -238,9 +247,15 @@
 				"unformatChangelogRule"
 			]
 		},
+		"unmarkupChangelog": {
+			"rules": [
+				"removeLeadingAtSigns"
+			]
+		},
 		"formatChangelog": {
 			"rules": [
-				"formatChangelogRule"
+				"formatChangelogRule",
+				"removeLeadingAtSigns"
 			]
 		}
 	}

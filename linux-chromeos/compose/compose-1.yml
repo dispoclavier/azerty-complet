@@ -270,7 +270,7 @@
 #   For development, maintenance and reference, UnicodeData.txt is formatted by
 #   the script format-UnicodeData-txt.pl.
 #   https://www.unicode.org/Public/UCD/latest/ucd/UnicodeData.txt
-#   https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/outils/format-UnicodeData-txt.pl
+#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/outils/format-UnicodeData-txt.pl
 #
 #   The URL scheme used for the Unicode Code Charts is consistent with tbe
 #   omission of the plus sign in X11 keysyms.
@@ -958,11 +958,11 @@
 #   third does not number patches only, and the build number is part of the
 #   string because this file is also the source code of the dead key content as
 #   it is transpiled to the sources of keyboard layout drivers for Windows.
-#   https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/readme.md
+#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/readme.md
 #   See Legal note
 #
 #   Version v1.0.0 was released on 2023-07-14T0423+0200.
-#   https://github.com/dispoclavier/nouvel-azerty/releases/tag/v1.0.0
+#   https://github.com/dispoclavier/azerty-complet/releases/tag/v1.0.0
 #
 #
 # # Output of keyboard layout variant descriptor
@@ -1053,9 +1053,9 @@
 #   plain text, this file needs to be split into three partials maxing at 2GB,
 #   due to a file size restriction in GitHub’s web interface on github.com (not
 #   on github.dev).
-#   https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/compose-1.yml
-#   https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/compose-2.yml
-#   https://github.com/dispoclavier/nouvel-azerty/blob/main/linux-chromeos/compose/compose-3.yml
+#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/compose-1.yml
+#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/compose-2.yml
+#   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/compose-3.yml
 #
 #   The colon alignment in column 100 is based on longest multikey sequences
 #   in terms of string length.
@@ -1117,7 +1117,7 @@
 #   See #*# COMPOSE
 #   See ### Dead keys
 #   See ### Group dead key introduction
-#   https://github.com/dispoclavier/nouvel-azerty/tree/main/linux-chromeos/outils
+#   https://github.com/dispoclavier/azerty-complet/tree/main/linux-chromeos/outils
 #
 #   Polytonic Greek is documented in an extra table since version 6.1.1 when it
 #   was included in the transpilation.
@@ -1165,7 +1165,7 @@
 #
 #   Many characters supported by multikey in this section are also supported by
 #   dead keys, but for maintainability these are not cross-referenced.
-#   https://github.com/dispoclavier/nouvel-azerty/commit/aa5147813f7872b2d3fe7faca6b3f6a5c6fd2ca6
+#   https://github.com/dispoclavier/azerty-complet/commit/aa5147813f7872b2d3fe7faca6b3f6a5c6fd2ca6
 #
 #
 #^# Legacy ordinal indicators
@@ -10544,7 +10544,7 @@
 #   See # # B04 greater
 #   See # # B06 grave
 #   See # # B09 colon
-#   https://github.com/dispoclavier/nouvel-azerty/commit/b72a8e5752e39e1c82c920dacdd54b93ca145ef7
+#   https://github.com/dispoclavier/azerty-complet/commit/b72a8e5752e39e1c82c920dacdd54b93ca145ef7
 #
 #   The design of this sequence is consistent with "ℵ" U2135, "ℶ" U2136,
 #   "ℷ" U2137, "ℸ" U2138.

@@ -61,7 +61,7 @@
 #   https://www.frathwiki.com/Circumflex
 #
 #   For maintainability, these overridden sequences have been removed.
-#   https://github.com/dispoclavier/nouvel-azerty/commit/f1d465e92b885ae0659bfaa5d3d418f18b7f2b13
+#   https://github.com/dispoclavier/azerty-complet/commit/f1d465e92b885ae0659bfaa5d3d418f18b7f2b13
 #
 #   Cross-platform compatibility is full on MacOS, but only partial on Windows,
 #   that is able to support only lowercase, and only digrams, provided that the
