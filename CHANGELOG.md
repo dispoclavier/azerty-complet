@@ -8,17 +8,17 @@
 
 ## 7.3.0 (projet)
 
-Disposition de plus d’émojis sur les touches vives prévues sous Windows.
+Disposition de plus d’émojis sur les touches vives prévues sous Windows
 
-Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels pris en charge sur touches vives sous Windows.
+Prise en charge par touches mortes pour Linux et macOS, des émojis additionnels pris en charge sur touches vives sous Windows
 
 ## 7.2.0 (projet)
 
-Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux.
+Mise à jour pour macOS des dispositions développées pour Windows, portées sous macOS puis sous Linux, rétroportées sous Windows et complétées pour Windows et pour Linux
 
 ## 7.1.0 (projet)
 
-Mise à niveau vers Unicode 18.0 par l’ajout de 241 caractères dont 158 lettres latines.
+Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 lettres latines, 7 diacritiques et 65 symboles mathématiques
 
 * Composition :
 	* Ajouter "ꬱ" U+AB31, qui était dans réfléchi. compose-1.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
@@ -109,19 +109,23 @@ Mise à niveau vers Unicode 18.0 par l’ajout de 241 caractères dont 158 le
 
 ## 7.0.0 (2026-09-18)
 
-Ajout d’une variante encore plus rétrocompatible, l’AZERTY DCS pour "débogué, complété, semi-automatique"
+### Nouveautés
 
-Correction de la disposition des symboles et ponctuations ASCII au niveau 3.
+* Variante encore plus rétrocompatible : **AZERTY DCS** pour « débogué, complété, semi-automatique »
+* Émulation de codes Alt + pavé numérique (pour claviers compacts sans pavé numérique intégré)
 
-Inclusion du tilde ASCII au pavé numérique graphique du niveau 5.
+### Correction des niveaux
 
-Correction de la disposition du tiret demi-cadratin et des flèches au niveau 7.
+* Correction de la disposition des symboles et ponctuations ASCII au **niveau 3**
+* Mise à jour des **groupes des symboles** suite aux redispositions au niveau 3
+* Inclusion du tilde ASCII au pavé numérique graphique du **niveau 5**
+* Correction de la disposition du tiret demi-cadratin et des flèches au **niveau 7**
 
-Mise à jour des groupes des symboles suite aux redispositions au niveau 3.
+### ⚠ Changement important
 
-Émulation de codes Alt + pavé numérique (pour claviers compacts sans pavé numérique intégré).
+* Suspension de la prise en charge de Linux suite aux régressions d’XKB post-2016
 
-Suspension de la prise en charge de Linux suite aux régressions d’XKB post-2016.
+### Modifications
 
 * Disposition :
 	* Ajouter une variante rétrocompatible limitant les disruptions au débogage du verrouillage Majuscule : windows/kbfrdcs.h, kbfrdcs-allo.c, kbfrdcs-common.c, kbfrdcs-ligatures.c, kbfrdcs1.klc, kbfrdcs1.C, kbfrdcs1.RC, kbfrdcs2.klc, kbfrdcs2.C, kbfrdcs2.RC [56c079c](https://github.com/dispoclavier/azerty-complet/commit/56c079c13700a0ee8bee7e0df0cefcd76c783a50), [34b961a](https://github.com/dispoclavier/azerty-complet/commit/34b961a80173301c281c39c310f8f3c740a56fb0), [e55d081](https://github.com/dispoclavier/azerty-complet/commit/e55d081b736573ccf98dbcd2a0b9dd7ea61ce30e), [0b5c8fa](https://github.com/dispoclavier/azerty-complet/commit/0b5c8fac83214766e44d5c34b003f28439070366), [f762093](https://github.com/dispoclavier/azerty-complet/commit/f7620936cd7123bf5e6a668fc80b5c51838b7a12), [e0f0057](https://github.com/dispoclavier/azerty-complet/commit/e0f0057c479c51fe6209faadf4a0f31573376fc1), [0243d21](https://github.com/dispoclavier/azerty-complet/commit/0243d219e59e28d55989032d11ddb21eaa95d830), [7fd387a](https://github.com/dispoclavier/azerty-complet/commit/7fd387a8c1ded37c61261fdd275b2ca632f27625), [e75719e](https://github.com/dispoclavier/azerty-complet/commit/e75719e314bfe0d115a6839986df89d5ba348abe)
@@ -215,7 +219,7 @@ Suspension de la prise en charge de Linux suite aux régressions d’XKB post-20
 
 ## 6.2.8 (2026-03-24)
 
-Débogage de la barre d’espace sous Windows.
+Débogage de la barre d’espace sous Windows
 
 * Disposition : Windows : Déboguer les niveaux 7 et 8 de la barre d’espace en mode français. kbligatures.c [5ea04bf](https://github.com/dispoclavier/nouvel-azerty/commit/5ea04bfa4a04f7ad902a221089a0b06f209828d4)
 * Documentation : Corriger, compléter et mettre à jour des annotations. ibidem, compose-1.yml [bfea557](https://github.com/dispoclavier/nouvel-azerty/commit/bfea55793cf18444d0e84dd4b49931fdc245e20e)
@@ -223,7 +227,7 @@ Débogage de la barre d’espace sous Windows.
 
 ## 6.2.7 (2026-03-22)
 
-Complétion des séquences droite-à-gauche pour symboles mathématiques.
+Complétion des séquences droite-à-gauche pour symboles mathématiques
 
 * Composition :
 	* Compléter les séquences de "⭀" U+2B40, "⭁" U+2B41, "⭂" U+2B42, "⭄" U+2B44. compose-1.yml [fb45879](https://github.com/dispoclavier/nouvel-azerty/commit/fb458796b6c42484f0b55a69031c685d437a6a57)
@@ -232,9 +236,9 @@ Complétion des séquences droite-à-gauche pour symboles mathématiques.
 
 ## 6.2.6 (2026-03-16)
 
-Simplification de la saisie des symboles mathématiques.
+Simplification de la saisie des symboles mathématiques
 
-Correction et mise à jour du contenu des touches mortes.
+Correction et mise à jour du contenu des touches mortes
 
 * Composition :
 	* Déboguer et corriger les séquences de "⁦" U+2066, U+2067. compose-1.yml [ea26e6a](https://github.com/dispoclavier/nouvel-azerty/commit/ea26e6a11a048595abd47c4edec466d07ed2bad6)
@@ -316,9 +320,9 @@ Correction et mise à jour du contenu des touches mortes.
 
 ## 6.2.5 (2026-03-08)
 
-Simplification de la saisie de symboles mathématiques.
+Simplification de la saisie de symboles mathématiques
 
-Mise à jour du contenu des touches mortes.
+Mise à jour du contenu des touches mortes
 
 * Composition :
 	* Supprimer "ẞ" U+1E9E par « ¦SS ». compose-1.yml [4cca3ed](https://github.com/dispoclavier/nouvel-azerty/commit/4cca3ed1fcf2cd80a67685554172e64de5950d15)
@@ -333,11 +337,11 @@ Mise à jour du contenu des touches mortes.
 
 ## 6.2.4 (2026-03-05)
 
-Débogage des pilotes de disposition pour Windows par l’arrêt des équivalents en composition de touches mortes.
+Débogage des pilotes de disposition pour Windows par l’arrêt des équivalents en composition de touches mortes
 
-Simplification de la saisie de symboles mathématiques.
+Simplification de la saisie de symboles mathématiques
 
-Correction de contenu de touche morte.
+Correction de contenu de touche morte
 
 * Composition :
 	* Sous Windows :
@@ -356,18 +360,18 @@ Correction de contenu de touche morte.
 
 ## 6.2.3 (2026-02-23)
 
-Débogage des séquences de composition dédiées en conflit avec des équivalents en composition de touches mortes.
+Débogage des séquences de composition dédiées en conflit avec des équivalents en composition de touches mortes
 
-Correction des noms donnés aux touches modificatrices supplémentaires AltEm et AltMa.
+Correction des noms donnés aux touches modificatrices supplémentaires AltEm et AltMa
 
-Correction et complétion du contenu des touches mortes.
+Correction et complétion du contenu des touches mortes
 
-Complétion des séquences de touches mortes spécifiques sous Windows.
+Complétion des séquences de touches mortes spécifiques sous Windows
 
-Généralisation de raccourcis à touche morte développés sous Windows.
+Généralisation de raccourcis à touche morte développés sous Windows
 
-* Disposition :AltEm
-	* Renommer AltLe en . kbcommon-1.c [4f7a9dc](https://github.com/dispoclavier/nouvel-azerty/commit/4f7a9dc242e44a6d6a089b779aa21f7b56439f4b), windows/readme.md alias Mode-d-emploi-sous-Windows.pdf [83c5798](https://github.com/dispoclavier/nouvel-azerty/commit/83c579898a4b6324b1b8c6fbe59145e514772eb4)
+* Disposition :
+	* Renommer AltLe en AltEm. kbcommon-1.c [4f7a9dc](https://github.com/dispoclavier/nouvel-azerty/commit/4f7a9dc242e44a6d6a089b779aa21f7b56439f4b), windows/readme.md alias Mode-d-emploi-sous-Windows.pdf [83c5798](https://github.com/dispoclavier/nouvel-azerty/commit/83c579898a4b6324b1b8c6fbe59145e514772eb4)
 	* Renommer AltQr en AltMa. ibidem, dispocla.cpp [dd24fd5](https://github.com/dispoclavier/nouvel-azerty/commit/dd24fd51d8abd697d0c02c7ea6ab6bfc9b1bcd44)
 * Composition : Déboguer "∓" U+2213 par « ¦-+ », "⫩" U+2AE9 par « ¦'=' », "⥍" U+294D par « ¦'!' », "⥠" U+2960 par « ¦'!| », "⥮" U+296E par « ¦'!! », […]. dead-key-convert.pl [3a8c224](https://github.com/dispoclavier/nouvel-azerty/commit/3a8c224608e03fd30a8edd2e41900d0e63d9e887) (entre les builds 0 et 1)
 * Transformations :
@@ -402,11 +406,11 @@ Généralisation de raccourcis à touche morte développés sous Windows.
 
 ## 6.2.2 (2026-02-08)
 
-Complétion des séquences de touches mortes spécifiques sous Windows.
+Complétion des séquences de touches mortes spécifiques sous Windows
 
-Correction et simplification du contenu des touches mortes.
+Correction et simplification du contenu des touches mortes
 
-Généralisation de raccourcis à touche morte développés sous Windows.
+Généralisation de raccourcis à touche morte développés sous Windows
 
 * Disposition : AltGr + Échap : Mettre à jour les descripteurs des dispositions de clavier redisposées. compose-1.yml [7af2bd2](https://github.com/dispoclavier/nouvel-azerty/commit/7af2bd29e29e1de1632f99ee40accc923b783cf5)
 *	Transformations :
@@ -457,9 +461,9 @@ Généralisation de raccourcis à touche morte développés sous Windows.
 
 ## 6.2.1 (2026-02-01)
 
-Ajout de séquences de touches mortes spécifiques sous Windows.
+Ajout de séquences de touches mortes spécifiques sous Windows
 
-Correction et simplification du contenu des touches mortes.
+Correction et simplification du contenu des touches mortes
 
 * Composition : Sous Windows : Déboguer la séquence « ¦Mul » pour "¦" U+00A6. kbdeadtrans-multikey.c [4df04ef](https://github.com/dispoclavier/nouvel-azerty/commit/4df04ef8f38fc7c5254836d6636c3af90b10e836)
 *	Transformations :
@@ -489,11 +493,11 @@ Correction et simplification du contenu des touches mortes.
 
 ## 6.2.0 (2026-01-27)
 
-Inversion des touches mortes point souscrit et virgule souscrite suite à la version 6.0.0 (2025-08-11).
+Inversion des touches mortes point souscrit et virgule souscrite suite à la version 6.0.0 (2025-08-11)
 
-Harmonisation du niveau 3 des touches du point-virgule et du point d’exclamation.
+Harmonisation du niveau 3 des touches du point-virgule et du point d’exclamation
 
-Harmonisation du contenu des touches mortes.
+Harmonisation du contenu des touches mortes
 
 * Disposition :
 	* Maj + AltGr : Inverser la touche morte point souscrit, qui va sur B10, et la touche morte virgule souscrite, qui va sur B08. dispocla.cpp [2574be2](https://github.com/dispoclavier/nouvel-azerty/commit/2574be2da636dab55a75ce3b8a19fefa1cda9ca0), kbcomazerty.c, kbcomredispo.c [4520be4](https://github.com/dispoclavier/nouvel-azerty/commit/4520be45b7ac8e86dfd6d41c68041ef3ef7f5cb6), compose-1.yml, compose-2.yml, compose-3.yml [2e82db8](https://github.com/dispoclavier/nouvel-azerty/commit/2e82db805376d66554c2678089d9d7e1ff7d5a31), [cfa8d12](https://github.com/dispoclavier/nouvel-azerty/commit/cfa8d12739a9f456f30e9ffbd26fe8bceb54bf6a), [b11199b](https://github.com/dispoclavier/nouvel-azerty/commit/b11199b64f45e6c510ae658f14bac41efe8cfaf0), nouvel-azerty.json, nouvel-azerty-verrcap.json, nouvel-azerty-verrmod.json, nouvel-azerty-verrmod-verrcap.json, qzjfgy.json [2858190](https://github.com/dispoclavier/nouvel-azerty/commit/2858190fa067f84e3ab74c68be1dffcd08831f4a), dead-key-convert.pl, generate-multikey.pl, generate-deadkey-tables.pl, generate-multikey-tables.pl [84f2f06](https://github.com/dispoclavier/nouvel-azerty/commit/84f2f062285f75b5b1ade0eb438cf6b807b38135)
@@ -520,9 +524,9 @@ Harmonisation du contenu des touches mortes.
 
 ## 6.1.8 (2026-01-25)
 
-Portage sous Linux de la touche morte virtuelle traversant.
+Portage sous Linux de la touche morte virtuelle traversant
 
-Correction du contenu des touches mortes.
+Correction du contenu des touches mortes
 
 * Transformations :
 	* Accent circonflexe et rond en chef : Ajouter comme raccourci pour l’accent circonflexe souscrit. compose-2.yml [4110edd](https://github.com/dispoclavier/nouvel-azerty/commit/4110edd799564331df667712671f3286020b8317), dead-key-convert.pl [a0a44b1](https://github.com/dispoclavier/nouvel-azerty/commit/a0a44b13d19be38623a008dbbe043b7e1bf397d5)
@@ -541,11 +545,11 @@ Correction du contenu des touches mortes.
 
 ## 6.1.7 (2026-01-20)
 
-Correction du contenu des touches mortes.
+Correction du contenu des touches mortes
 
-Simplification de la saisie des symboles mathématiques.
+Simplification de la saisie des symboles mathématiques
 
-Portage sous Linux de raccourcis à touche morte développés sous Windows.
+Portage sous Linux de raccourcis à touche morte développés sous Windows
 
 * Composition :
 	* Corriger des séquences de "🣘" U+1F8D8. compose-1.yml [ec2586a](https://github.com/dispoclavier/nouvel-azerty/commit/ec2586ad2757336f4ceb1367da68da88366d0e5d), [a804301](https://github.com/dispoclavier/nouvel-azerty/commit/a80430158606b9407183edd38f89805112b63460)
@@ -628,7 +632,7 @@ Portage sous Linux de raccourcis à touche morte développés sous Windows.
 
 ## 6.1.6 (2026-01-02)
 
-Prise en charge sous Windows des équivalents en composition des touches mortes simples.
+Prise en charge sous Windows des équivalents en composition des touches mortes simples
 
 * Composition :
 	* Sous Windows :
@@ -644,11 +648,11 @@ Prise en charge sous Windows des équivalents en composition des touches mortes 
 
 ## 6.1.5 (2025-12-31)
 
-Correction des séquences de composition des ciseaux et des coups de glotte.
+Correction des séquences de composition des ciseaux et des coups de glotte
 
-Simplification de la saisie de symboles mathématiques.
+Simplification de la saisie de symboles mathématiques
 
-Prise en charge de "х" U+0445 utilisé comme symbole de multiplication.
+Prise en charge de "х" U+0445 utilisé comme symbole de multiplication
 
 * Composition :
 	* Corriger les séquences de "✀" U+2700, "✁" U+2701, "✂" U+2702, "✃" U+2703, "✄" U+2704. compose-1.yml [f14575e](https://github.com/dispoclavier/nouvel-azerty/commit/f14575e151b54d497ac8c2b52022aa83b1477391)
@@ -678,9 +682,9 @@ Prise en charge de "х" U+0445 utilisé comme symbole de multiplication.
 
 ## 6.1.4 (2025-12-22)
 
-Transpilation pour Windows des séquences de composition dédiées.
+Transpilation pour Windows des séquences de composition dédiées
 
-Débogage, simplification ou correction de plusieurs séquences de composition.
+Débogage, simplification ou correction de plusieurs séquences de composition
 
 * Composition :
 	* Déboguer la séquence de "⤷" U+2937. compose-1.yml [451b4b7](https://github.com/dispoclavier/nouvel-azerty/commit/451b4b7f50a05d2f429789000bdf24162cd345f1)
@@ -694,15 +698,15 @@ Débogage, simplification ou correction de plusieurs séquences de composition.
 
 ## 6.1.3 (2025-11-30)
 
-Prise en charge des personnalisations lors de la réinstallation sous Linux.
+Prise en charge des personnalisations lors de la réinstallation sous Linux
 
-Prise en charge de séquences de touche morte spécifiques sous Windows.
+Prise en charge de séquences de touche morte spécifiques sous Windows
 
-Portage sous Linux de raccourcis à touche morte développés sous Windows.
+Portage sous Linux de raccourcis à touche morte développés sous Windows
 
-Réduction de la taille de fichier des paquets téléchargeables pour Windows.
+Réduction de la taille de fichier des paquets téléchargeables pour Windows
 
-Complétion du contenu des touches mortes et des séquences de composition.
+Complétion du contenu des touches mortes et des séquences de composition
 
 * Composition :
 	* Ajouter "⭶" U+2B76, "↸" U+21B8, autres symboles de la touche début. compose-1.yml [ec94770](https://github.com/dispoclavier/nouvel-azerty/commit/ec947701e8dbe712d1f1f13de78e589f09ef645c)
@@ -792,11 +796,11 @@ Complétion du contenu des touches mortes et des séquences de composition.
 
 ## 6.1.2 (2025-11-10)
 
-Rectification et simplification des séquences de composition.
+Rectification et simplification des séquences de composition
 
-Rectification des groupes des symboles.
+Rectification des groupes des symboles
 
-Amélioration des touches mortes tréma, tilde et rond en chef.
+Amélioration des touches mortes tréma, tilde et rond en chef
 
 * Composition :
 	* Simplifier la saisie de "♀" U+2640. compose-1.yml [4b4dcbd](https://github.com/dispoclavier/nouvel-azerty/commit/4b4dcbd8b13e01dd75df21843d6b34d3fc4262a7)
@@ -891,9 +895,9 @@ Amélioration des touches mortes tréma, tilde et rond en chef.
 
 ## 6.1.1 (2025-10-29)
 
-Transpilation pour Windows des enchaînements de touches mortes grecs polytoniques et monotoniques.
+Transpilation pour Windows des enchaînements de touches mortes grecs polytoniques et monotoniques
 
-Correction, complétion et simplification de séquences de composition.
+Correction, complétion et simplification de séquences de composition
 
 * Composition :
 	* Simplifier la saisie de "⋻" U+22FB (et supprimer "¶" U+00B6 par « ¦P| » et « ¦p| » qui ne sont pas dans en_US.UTF-8/Compose). compose-1.yml [0a8980e](https://github.com/dispoclavier/nouvel-azerty/commit/0a8980ef1bb08bbcb867e1ec00cdcc978d938889)
@@ -914,11 +918,11 @@ Correction, complétion et simplification de séquences de composition.
 
 ## 6.1.0 (2025-10-23)
 
-Rectification des groupes des symboles.
+Rectification des groupes des symboles
 
-Correction des enchaînements de touches mortes.
+Correction des enchaînements de touches mortes
 
-Transpilation pour Windows des enchaînements de touches mortes.
+Transpilation pour Windows des enchaînements de touches mortes
 
 * Transformations :
 	* Enchaînements de touches mortes : Porter sous Windows. dead-key-convert.pl [767b448](https://github.com/dispoclavier/nouvel-azerty/commit/767b448206fc157b9481c873526865fcc7a363b4), [f8086f7](https://github.com/dispoclavier/nouvel-azerty/commit/f8086f736fe1a37ae772b9123e06daa215ee5f41), [4a32f70](https://github.com/dispoclavier/nouvel-azerty/commit/4a32f7017c7d38ba9913fca7c3e8df5f5c264cbd), kbdeadtrans.c [3879914](https://github.com/dispoclavier/nouvel-azerty/commit/3879914249c6c09deea33655c043a85494fee431), [286020b](https://github.com/dispoclavier/nouvel-azerty/commit/286020b83706fe10348a6f07f7d76bd9f0a29276), [98ed3b1](https://github.com/dispoclavier/nouvel-azerty/commit/98ed3b14ca26120eb24a34c8e907d59497580bf9)
@@ -965,11 +969,11 @@ Transpilation pour Windows des enchaînements de touches mortes.
 
 ## 6.0.10 (2025-10-12)
 
-Complétion du mode d’emploi des fichiers d’inscription au Registre.
+Complétion du mode d’emploi des fichiers d’inscription au Registre
 
-Correction, complétion et simplification de séquences de composition.
+Correction, complétion et simplification de séquences de composition
 
-Complétion de la touche morte accent aigu.
+Complétion de la touche morte accent aigu
 
 * Composition :
 	* Redonder les coups de glotte "ƾ" U+01BE, "Ɂ" U+0241, "ɂ" U+0242, "ʔ" U+0294, "ʕ" U+0295, "ʖ" U+0296, "ʡ" U+02A1, "ʢ" U+02A2, "ˀ" U+02C0, "ˁ" U+02C1, "ˤ" U+02E4, "𐞳" U+107B3, "𐞴" U+107B4, "𝼎" U+1DF0E. compose-1.yml [71360f5](https://github.com/dispoclavier/nouvel-azerty/commit/71360f5560e4b129e9e7fbd71e89c07423fdb723)
@@ -992,9 +996,9 @@ Complétion de la touche morte accent aigu.
 
 ## 6.0.9 (2025-10-02)
 
-Dépannage des pilotes de disposition pour Windows, phase 2.
+Dépannage des pilotes de disposition pour Windows, phase 2
 
-Complétion et simplification de séquences de composition.
+Complétion et simplification de séquences de composition
 
 * Pilotes de disposition :
 	* Fournir des clones de dépannage. kbfrFRs2.C, kbfrFRr2.C [41512f2](https://github.com/dispoclavier/nouvel-azerty/commit/41512f2dbaad6c0b4263902214f486682053b310), [a361b04](https://github.com/dispoclavier/nouvel-azerty/commit/a361b04af93c721b97bf1c7214a1fc960b92ad19), kbbrFRs2.C, kbfrAFs2.C, kbfrPFs2.C [71edaea](https://github.com/dispoclavier/nouvel-azerty/commit/71edaea623bb75946c19cbef29408d5195d702c3)
@@ -1040,7 +1044,7 @@ Complétion et simplification de séquences de composition.
 
 ## 6.0.8 (2025-09-25)
 
-Dépannage des pilotes de disposition pour Windows, phase 1.
+Dépannage des pilotes de disposition pour Windows, phase 1
 
 * Disposition : Déboguer les pilotes de disposition. kbcommon-1.c [5b92ff9](https://github.com/dispoclavier/nouvel-azerty/commit/5b92ff973eb61eb4f057e47067788ac9af16e4c5), kbcommon-2.c, kbcommon-3.c, kbfrFRs-allo.c, kbbrFRs-allo.c, kbfrAFs-allo.c, kbfrPFs-allo.c, kbfrFRsr-allo.c [d66813e](https://github.com/dispoclavier/nouvel-azerty/commit/d66813e13e185a062389f6cc41d7a837b999ba4b), kbcommon-2.c, kbcommon-3.c [f077167](https://github.com/dispoclavier/nouvel-azerty/commit/f0771674b25954f226f6daaa225dc6c88d5e6800)
 * Transformations :
@@ -1053,15 +1057,15 @@ Dépannage des pilotes de disposition pour Windows, phase 1.
 
 ## 6.0.7 (2025-09-23)
 
-Mise à niveau des symboles mathématiques vers [Unicode 17.0](https://www.unicode.org/versions/Unicode17.0.0/).
+Mise à niveau des symboles mathématiques vers [Unicode 17.0](https://www.unicode.org/versions/Unicode17.0.0/)
 
-Complétion de touches mortes sous Linux et Windows.
+Complétion de touches mortes sous Linux et Windows
 
-Rectification et simplification de séquences de composition.
+Rectification et simplification de séquences de composition
 
-Harmonisation de la sortie des métadonnées sous Linux et Windows.
+Harmonisation de la sortie des métadonnées sous Linux et Windows
 
-Meilleure personnalisabilité sous Linux.
+Meilleure personnalisabilité sous Linux
 
 * Disposition :
 	* Sous Windows :
@@ -1106,9 +1110,9 @@ Meilleure personnalisabilité sous Linux.
 
 ## 6.0.6 (2025-09-03)
 
-Meilleure variante pour la Polynésie française avec le ʻeta en Minuscule.
+Meilleure variante pour la Polynésie française avec le ʻeta en Minuscule
 
-Rectification et simplification de séquences de composition.
+Rectification et simplification de séquences de composition
 
 * Disposition : Variantes pour la Polynésie :
 	* Mettre "ʻ" U+02BB en Minuscule sur E01 à la place de "²" U+00B2, qui est sur Maj + AltFr + 2 et dans accent circonflexe par "2". dispocla.cpp [ebd6683](https://github.com/dispoclavier/nouvel-azerty/commit/ebd6683497f3f8ddf3e11c94ee3710cfe3385333), compose-2.yml [844c0bf](https://github.com/dispoclavier/nouvel-azerty/commit/844c0bfc11f01c55c2e16c92c43a55cf03848319), compose-3.yml [3d8f321](https://github.com/dispoclavier/nouvel-azerty/commit/3d8f321bad3f40336de986504ae0534da8c5584f), kbfrPFs.C, kbfrPFs.klc, kbdeadtrans.c [0ff59d7](https://github.com/dispoclavier/nouvel-azerty/commit/0ff59d70f0d619a9e95b05284025ee8128e132c5)
@@ -1126,9 +1130,9 @@ Rectification et simplification de séquences de composition.
 
 ## 6.0.5 (2025-08-31)
 
-Variantes pour la Polynésie française et pour l’Afrique francophone AZERTY sous Windows.
+Variantes pour la Polynésie française et pour l’Afrique francophone AZERTY sous Windows
 
-Rectification et simplification de séquences de composition.
+Rectification et simplification de séquences de composition
 
 * Disposition :
 	* Variantes :
@@ -1144,9 +1148,9 @@ Rectification et simplification de séquences de composition.
 
 ## 6.0.4 (2025-08-27)
 
-Mise à niveau vers [Unicode 17.0](https://www.unicode.org/versions/Unicode17.0.0/).
+Mise à niveau vers [Unicode 17.0](https://www.unicode.org/versions/Unicode17.0.0/)
 
-Dans réfléchi, "ʕ" U+0295 est désormais par "G" au lieu de "q".
+Dans réfléchi, "ʕ" U+0295 est désormais par "G" au lieu de "q"
 
 * Disposition : Disposer "🆗" U+1F197 sur toutes les combinaisons de touches qui fonctionnent sous Windows. kbazerty.h, kbbrFRs.C, kbbrFRs.klc, kbcomazerty.c, kbcommon.c, kbdeadtrans.c, kbfrFRs.C, kbfrFRs.klc, kbligatures.c [4f2c6d2](https://github.com/dispoclavier/nouvel-azerty/commit/4f2c6d2a912cee94aa75f39a9fc8190c607d4e66), kbcomredispo.c, kbfrFRsr.C, kbfrFRsr.klc, kbredispo.h [2ec8ac6](https://github.com/dispoclavier/nouvel-azerty/commit/2ec8ac6a983d50d01e5f0a797a0e6d5996791233)
 * Transformations :
@@ -1201,9 +1205,9 @@ Dans réfléchi, "ʕ" U+0295 est désormais par "G" au lieu de "q".
 
 ## 6.0.3 (2025-08-24)
 
-Variante bretonne AZERTY sous Windows.
+Variante bretonne AZERTY sous Windows
 
-Débogage de 2 touches AZERTY sous Windows.
+Débogage de 2 touches AZERTY sous Windows
 
 * Disposition :
 	* Déboguer les touches E07 et E08 par rapport au verrouillage des capitales. kbfrFRs.klc [ac61bdd](https://github.com/dispoclavier/nouvel-azerty/commit/ac61bdd8d23a011b85ef3f30416531af1a8f8ff7), kbfrFRs.C [9a345fe](https://github.com/dispoclavier/nouvel-azerty/commit/9a345fe47ba09516e0fad02197433e4e9a43e7fc)
@@ -1232,9 +1236,9 @@ Débogage de 2 touches AZERTY sous Windows.
 
 ## 6.0.2 (2025-08-19)
 
-L’émoji du phoque sur touche vive sous Windows.
+L’émoji du phoque sur touche vive sous Windows
 
-Des touches mortes simplifiées.
+Des touches mortes simplifiées
 
 * Disposition : E11, niveau 9 : Ajouter "🦭" U+1F9AD à la place de "*️⃣", qui est sur C12. kbfrFRs.C, kbcommon.H, kbdeadtrans.c [87810e2](https://github.com/dispoclavier/nouvel-azerty/commit/87810e28077c6f8dfa7cc7558fc3b50ed1b79dfb), kbfrFRsr.C [12f7083](https://github.com/dispoclavier/nouvel-azerty/commit/12f708311f1068818be416c81f2cd6bb1db0a792)
 * Transformations :
@@ -1267,7 +1271,7 @@ Des touches mortes simplifiées.
 
 ## 6.0.1 (2025-08-14)
 
-Débogage du niveau Maj + AltEm + AltMa.
+Débogage du niveau Maj + AltEm + AltMa
 
 * Disposition :
 	* Niveau Maj + AltEm + AltMa :
@@ -1281,25 +1285,25 @@ Débogage du niveau Maj + AltEm + AltMa.
 
 ## 6.0.0 (2025-08-11)
 
-Meilleure rétrocompatibilité de la touche du point-virgule et de celle du point d’exclamation.
+Meilleure rétrocompatibilité de la touche du point-virgule et de celle du point d’exclamation
 
-Point médian en Minuscule, sauf en mode ASCII, et sauf sur les variantes redisposées.
+Point médian en Minuscule, sauf en mode ASCII, et sauf sur les variantes redisposées
 
-Rectification du groupe 10 des symboles, par redondance du symbole paragraphe "§".
+Rectification du groupe 10 des symboles, par redondance du symbole paragraphe "§"
 
-Prise en charge des drapeaux et des émojis lettres sur touches vives sous Windows.
+Prise en charge des drapeaux et des émojis lettres sur touches vives sous Windows
 
-Prise en charge par touche morte sous Linux, des 3 drapeaux régionaux sur touche vive sous Windows.
+Prise en charge par touche morte sous Linux, des 3 drapeaux régionaux sur touche vive sous Windows
 
-Mise à niveau du pavé numérique sous Windows selon le pavé numérique complet pour Linux.
+Mise à niveau du pavé numérique sous Windows selon le pavé numérique complet pour Linux
 
-Rectification de la disposition du pavé numérique en vue d’une utilité accrue.
+Rectification de la disposition du pavé numérique en vue d’une utilité accrue
 
-Prise en charge de 5 alphabets mathématiques préformatés sur touches vives sous Windows.
+Prise en charge de 5 alphabets mathématiques préformatés sur touches vives sous Windows
 
-Prise en charge sous Windows des redispositions basées sur les sous-variantes configurables sous Linux.
+Prise en charge sous Windows des redispositions basées sur les sous-variantes configurables sous Linux
 
-Aide à la production autonome de pilotes personnalisés et d’installateurs sous Windows.
+Aide à la production autonome de pilotes personnalisés et d’installateurs sous Windows
 
 * Disposition :
 	* Touches B08 et B10 :
@@ -1446,13 +1450,13 @@ Aide à la production autonome de pilotes personnalisés et d’installateurs so
 
 ## 5.2.0 (2025-06-15)
 
-Réimplémentation pour Windows des touches mortes simples diacritiques ou transformationnelles sur le modèle finalisé pour Linux.
+Réimplémentation pour Windows des touches mortes simples diacritiques ou transformationnelles sur le modèle finalisé pour Linux
 
-Meilleure prise en charge des demi-codets hauts.
+Meilleure prise en charge des demi-codets hauts
 
-Simplification et complétion des touches mortes pour Linux.
+Simplification et complétion des touches mortes pour Linux
 
-Prise en charge d’un émoji supplémentaire sur touche vive.
+Prise en charge d’un émoji supplémentaire sur touche vive
 
 * Disposition :
 	* Ajouter "🙂" U+1F642 sur AltGr + AltFr + S à la place de "§" U+00A7, qui est sur sa touche historique B10. dispocla.cpp [8109e39](https://github.com/dispoclavier/nouvel-azerty/commit/8109e3963de158c46d85221115c85cef740a5106), kbfrFRs.klc [b28de47](https://github.com/dispoclavier/nouvel-azerty/commit/b28de473c5a2596b3be90716ace5e953859c1636), kbfrFRs.C [e439bc6](https://github.com/dispoclavier/nouvel-azerty/commit/e439bc645b6eaad8f481c4e8d696b6892e193b95), kbfredis.klc [1053c20](https://github.com/dispoclavier/nouvel-azerty/commit/1053c201fe9799b122c0e7c0bacb4e1eba4e2fe6), kbfredis.C [c7017f9](https://github.com/dispoclavier/nouvel-azerty/commit/c7017f9e95d89d00aa2a20e1d5010d2b9e2a3f02), nouvel-azerty.json [8a5bc2b](https://github.com/dispoclavier/nouvel-azerty/commit/8a5bc2b3daecaf1603fd9cc3977c2baa1c5b83d4), [da1531d](https://github.com/dispoclavier/nouvel-azerty/commit/da1531d797674e522fc2591443523a69ddebdae6), nouvel-azerty-verrcap.json [8267eee](https://github.com/dispoclavier/nouvel-azerty/commit/8267eee327bd4223f220771f7d10db6cfb0785e0), [f0acf71](https://github.com/dispoclavier/nouvel-azerty/commit/f0acf718993293dc7a90c2e22402882c2d6142c6), nouvel-azerty-verrmod.json [155b470](https://github.com/dispoclavier/nouvel-azerty/commit/155b4700633c6d34b6fd7291aa42cbb66ab156a1), [272e1b1](https://github.com/dispoclavier/nouvel-azerty/commit/272e1b1e88d053a1344f968d691ee4addb696ede), nouvel-azerty-verrmod-verrcap.json [0362a5a](https://github.com/dispoclavier/nouvel-azerty/commit/0362a5a822f37001fa5d8e5e086eb0d290778f23), [37a385e](https://github.com/dispoclavier/nouvel-azerty/commit/37a385e38f651620d9bdbc5675f5997c141dff42)
@@ -1479,15 +1483,15 @@ Prise en charge d’un émoji supplémentaire sur touche vive.
 
 ## 5.1.0 (2025-05-29)
 
-Mise à jour de la prise en charge des émojis suite à la mise à jour de la [page d’Unicode sur les fréquences](https://home.unicode.org/emoji/emoji-frequency/).
+Mise à jour de la prise en charge des émojis suite à la mise à jour de la [page d’Unicode sur les fréquences](https://home.unicode.org/emoji/emoji-frequency/)
 
-Rétablissement de la symétrie des enchaînements de touches mortes suite à la dissociation de celles-ci avec leur équivalent en composition.
+Rétablissement de la symétrie des enchaînements de touches mortes suite à la dissociation de celles-ci avec leur équivalent en composition
 
-Complétion des touches mortes grâce à cet allègement des contraintes.
+Complétion des touches mortes grâce à cet allègement des contraintes
 
-Rectification et amélioration des groupes des symboles.
+Rectification et amélioration des groupes des symboles
 
-Reconception, rectification et simplification de séquences de composition.
+Reconception, rectification et simplification de séquences de composition
 
 * Disposition :
 	* Prendre en charge "🥰" U+1F970 sur B05 "B", niveau 8, à la place de "💕" U+1F495. dispocla.cpp [88719a8](https://github.com/dispoclavier/nouvel-azerty/commit/88719a8cb290420dc871370eb3fa144d8c2087c8), kbfrFRs.klc [96950df](https://github.com/dispoclavier/nouvel-azerty/commit/96950dfbd1209398d6c02688b381c1461179f712), kbfrFRs.C [0c294ff](https://github.com/dispoclavier/nouvel-azerty/commit/0c294ff80c6591b9288255121bd84155229ca127), kbfredis.klc [5f45c24](https://github.com/dispoclavier/nouvel-azerty/commit/5f45c24d25c41d38379078a38cce830a3a34efc8), kbfredis.C [77e3126](https://github.com/dispoclavier/nouvel-azerty/commit/77e312667408bae9d2a8194f19a0d9348ff3f863)
@@ -1648,9 +1652,9 @@ Reconception, rectification et simplification de séquences de composition.
 
 ## 5.0.0 (2025-04-15)
 
-Amélioration de l’utilisabilité de la modificatrice AltFr et des touches B07 et B08 en mode ASCII par la stabilité des points d’interrogation et d’exclamation.
+Amélioration de l’utilisabilité de la modificatrice AltFr et des touches B07 et B08 en mode ASCII par la stabilité des points d’interrogation et d’exclamation
 
-Complétion des touches mortes au-delà du contenu pris en charge par équivalence en composition, grâce à la dissociation des touches mortes et des équivalents en composition.
+Complétion des touches mortes au-delà du contenu pris en charge par équivalence en composition, grâce à la dissociation des touches mortes et des équivalents en composition
 
 Amélioration des groupes des symboles :
 
@@ -1664,11 +1668,11 @@ Amélioration des groupes des lettres :
 * le v de ronde est doté d’un raccourci dans le groupe 1 ;
 * l’upsilon latin regagne sa place dans le groupe 1 de l’i grec.
 
-Correction de la prise en charge de l’émoji "❄" U+2744, arrêt de celle de "😃" U+1F603.
+Correction de la prise en charge de l’émoji "❄" U+2744, arrêt de celle de "😃" U+1F603
 
-Prise en charge sur touche vive du séparateur invisible "⁣" U+2063, comme du signe plus invisible "⁤" U+2064 pour les fractions ordinaires (depuis la version 4.14), améliorant la résilience des écritures bicamérales.
+Prise en charge sur touche vive du séparateur invisible "⁣" U+2063, comme du signe plus invisible "⁤" U+2064 pour les fractions ordinaires (depuis la version 4.14), améliorant la résilience des écritures bicamérales
 
-Rectification ou simplification de certaines séquences de composition.
+Rectification ou simplification de certaines séquences de composition
 
 * Disposition :
 	* Mode ASCII : AltFr :
@@ -1793,13 +1797,13 @@ Rectification ou simplification de certaines séquences de composition.
 
 ## 4.25.0 (2025-03-15)
 
-Correction des groupes des symboles pour plus d’utilité.
+Correction des groupes des symboles pour plus d’utilité
 
-Rectification et simplification de séquences de composition.
+Rectification et simplification de séquences de composition
 
-Complétion de la touche morte réfléchi.
+Complétion de la touche morte réfléchi
 
-Introduction du concept de « groupe 1 bis ».
+Introduction du concept de « groupe 1 bis »
 
 * Composition :
 	* Corriger les séquences de "⧤" U+29E4, "⧥" U+29E5. compose-1.yml [d093206](https://github.com/dispoclavier/nouvel-azerty/commit/d0932063616f358c2411ab3fc09cf235565850e1)
@@ -1830,9 +1834,9 @@ Introduction du concept de « groupe 1 bis ».
 
 ## 4.24.0 (2025-03-04)
 
-Correction de la prise en charge des émojis "☀" U+2600 et "☠" U+2620.
+Correction de la prise en charge des émojis "☀" U+2600 et "☠" U+2620
 
-Rectification de la touche morte exposant.
+Rectification de la touche morte exposant
 
 * Composition :
 	* Prendre en charge l’émoji "☀" U+2600 par « ¦sol », « ¦SOL », « ¦sun », « ¦SUN ». compose-1.yml [c4923d0](https://github.com/dispoclavier/nouvel-azerty/commit/c4923d0ab7f738e911a7552de60b6c3877891b52)
@@ -1854,7 +1858,7 @@ Rectification de la touche morte exposant.
 
 ## 4.23.0 (2025-02-23)
 
-Rectification de touches mortes.
+Rectification de touches mortes
 
 * Composition : Corriger les séquences de "⫨" U+2AE8, "⫭" U+2AED. compose-1.yml [9ffa049](https://github.com/dispoclavier/nouvel-azerty/commit/9ffa049ec9c978ecad7348db76cb7df251fff29d)
 * Transformations : Exposant et crochet rétroflexe, groupes 1–5 : Rectifier "𐞟" U+1079F. compose-2.yml [4032c88](https://github.com/dispoclavier/nouvel-azerty/commit/4032c886ce318fd209cebbe744ec4e698df597ca)
@@ -1865,7 +1869,7 @@ Rectification de touches mortes.
 
 ## 4.22.0 (2025-02-19)
 
-Rectification et simplification de la séquence de composition de la lettre "ȹ" U+0239.
+Rectification et simplification de la séquence de composition de la lettre "ȹ" U+0239
 
 * Composition : Rectifier et simplifier "ȹ" U+0239. compose-1.yml [17e32ec](https://github.com/dispoclavier/nouvel-azerty/commit/17e32ec85b5389b781cb05b1eac410eed46d9245)
 * Documentation :
@@ -1874,7 +1878,7 @@ Rectification et simplification de la séquence de composition de la lettre "ȹ"
 
 ## 4.21.0 (2025-02-16)
 
-Reconception des séquences de composition de nombreux symboles mathématiques.
+Reconception des séquences de composition de nombreux symboles mathématiques
 
 * Composition :
 	* Simplifier ou corriger les séquences de "←" U+2190, "↑" U+2191, "→" U+2192, "↓" U+2193, "↔" U+2194, "↕" U+2195, "↖" U+2196, "↗" U+2197, "↘" U+2198, "↙" U+2199, "↚" U+219A, "↛" U+219B, "↟" U+219F, "↡" U+21A1 , "↥" U+21A5, "↧" U+21A7, "↨" U+21A8, "⇐" U+21D0, "⇑" U+21D1, "⇒" U+21D2, "⇓" U+21D3, "⇔" U+21D4, "⇕" U+21D5, "⇖" U+21D6, "⇗" U+21D7, "⇘" U+21D8, "⇙" U+21D9, "⇚" U+21DA, "⇛" U+21DB, "∊" U+220A, "∍" U+220D, "∦" U+2226, "≤" U+2264, "≥" U+2265, "≦" U+2266, "≨" U+2268, "≮" U+226E, "≰" U+2270, "≱" U+2271, "⊆" U+2286, "⊇" U+2287, "⊈" U+2288, "⊉" U+2289, "⊊" U+228A, "⊋" U+228B, "⊑" U+2291, "⊒" U+2292, "⊭" U+22AD, "⊮" U+22AE, "⊯" U+22AF, "⊴" U+22B4, "⊵" U+22B5, "⋈" U+22C8, "⋍" U+22CD, "⋚" U+22DA, "⋛" U+22DB, "⋜" U+22DC, "⋝" U+22DD, "⋢" U+22E2, "⋣" U+22E3, "⋤" U+22E4, "⋥" U+22E5, "⋬" U+22EC, "⋭" U+22ED, "⋴" U+22F4, "⋷" U+22F7, "⋸" U+22F8, "⋼" U+22FC, "⋾" U+22FE, "◺" U+25FA, "⟖" U+27D6, "⟾" U+27FE, "⤇" U+2907, "⤊" U+290A, "⤋" U+290B, "⥒" U+2952, "⥖" U+2956, "⥘" U+2958, "⧐" U+29D0, "⧒" U+29D2, "⧡" U+29E1, "⧦" U+29E6, "⩽" U+2A7D, "⩾" U+2A7E, "⩿" U+2A7F, "⪀" U+2A80, "⪃" U+2A83, "⪄" U+2A84, "⪇" U+2A87, "⪈" U+2A88, "⪋" U+2A8B, "⪕" U+2A95, "⪖" U+2A96, "⪚" U+2A9A, "⪛" U+2A9B, "⪜" U+2A9C, "⪬" U+2AAC, "⪭" U+2AAD, "⪯" U+2AAF, "⪰" U+2AB0, "⪱" U+2AB1, "⪲" U+2AB2, "⫃" U+2AC3, "⫄" U+2AC4, "⫢" U+2AE2, "⫵" U+2AF5, "⫹" U+2AF9, "⫺" U+2AFA, "⭅" U+2B45, "⭆" U+2B46. compose-1.yml [d845f0a](https://github.com/dispoclavier/nouvel-azerty/commit/d845f0aa6133d8ed974a2eb45029ee4e77453937), [cd14b40](https://github.com/dispoclavier/nouvel-azerty/commit/cd14b4079507173f27aef8f23a3f5e9339f7c145)
@@ -1887,9 +1891,9 @@ Reconception des séquences de composition de nombreux symboles mathématiques.
 
 ## 4.20.0 (2025-02-02)
 
-Amélioration de l’utilité de la touche morte accent circonflexe par l’hatchek en double frappe.
+Amélioration de l’utilité de la touche morte accent circonflexe par l’hatchek en double frappe
 
-Simplification ou correction de plusieurs séquences de composition.
+Simplification ou correction de plusieurs séquences de composition
 
 * Composition :
 	* Simplifier ou corriger les séquences de "⇝" U+21DD, "≄" U+2244, "≇" U+2247, "≉" U+2249, "≊" U+224A, "≌" U+224C, "⋍" U+22CD, "⌉" U+2309, "▴" U+25B4, "⟿" U+27FF, "⤨" U+2928, "⤩" U+2929, "⥲" U+2972, "⦭" U+29AD, "⦮" U+29AE, "⧩" U+29E9, "⨳" U+2A33, "⩡" U+2A61, "⩬" U+2A6C, "⩮" U+2A6E, "⪟" U+2A9F, "⪠" U+2AA0, "⫳" U+2AF3, "⭁" U+2B41, "⭇" U+2B47, "⭉" U+2B49. compose-1.yml [5f99d7a](https://github.com/dispoclavier/nouvel-azerty/commit/5f99d7a6eca6d996c7319866173f5e918ea3390b)
@@ -1906,9 +1910,9 @@ Simplification ou correction de plusieurs séquences de composition.
 
 ## 4.19.0 (2025-01-26)
 
-Amélioration du groupe 1 des lettres pour plus d’intuitivité et de sûreté et moins de redondances.
+Amélioration du groupe 1 des lettres pour plus d’intuitivité et de sûreté et moins de redondances
 
-Débogage, simplification ou correction de plusieurs séquences de composition.
+Débogage, simplification ou correction de plusieurs séquences de composition
 
 * Composition :
 	* Déboguer "⫊" U+2ACA. compose-1.yml [c54f712](https://github.com/dispoclavier/nouvel-azerty/commit/c54f7127f27bb73ec533caca54bf656682415d06)
@@ -1933,7 +1937,7 @@ Débogage, simplification ou correction de plusieurs séquences de composition.
 
 ## 4.18.0 (2025-01-21)
 
-Débogage des lettres composées pour les langues du Togo.
+Débogage des lettres composées pour les langues du Togo
 
 * Composition :
 	* Simplifier ou corriger les séquences de "𐞉" U+10789, "𐞫" U+107AB. compose-1.yml [f247651](https://github.com/dispoclavier/nouvel-azerty/commit/f24765119811302e5f854adc3300ba4488ebad1f)
@@ -1945,9 +1949,9 @@ Débogage des lettres composées pour les langues du Togo.
 
 ## 4.17.0 (2025-01-19)
 
-Simplification des nombres cerclés et de nombreuses séquences de composition.
+Simplification des nombres cerclés et de nombreuses séquences de composition
 
-Amélioration de la prise en charge des symboles de recyclage.
+Amélioration de la prise en charge des symboles de recyclage
 
 * Composition :
 	* Déboguer "ℊ" U+210A, "ℋ" U+210B, "ℐ" U+2110, "ℒ" U+2112, "ℓ" U+2113, "℘" U+2118, "ℛ" U+211B, "ℬ" U+212C, "ℯ" U+212F, "ℰ" U+2130, "ℱ" U+2131, "ℳ" U+2133, "ℴ" U+2134. compose-1.yml [74fec91](https://github.com/dispoclavier/nouvel-azerty/commit/74fec9174c2db2b021320e5cc0cae29e254bd8f7)
@@ -1986,9 +1990,9 @@ Amélioration de la prise en charge des symboles de recyclage.
 
 ## 4.16.0 (2024-12-30)
 
-Amélioration de l’ergonomie des variantes redisposées en mode français par la permutation de la touche morte tréma et du guillemet double générique.
+Amélioration de l’ergonomie des variantes redisposées en mode français par la permutation de la touche morte tréma et du guillemet double générique
 
-Désormais avec paquetage pour Windows.
+Désormais avec paquetage pour Windows
 
 * Implémentation : Réimplémenter ce nouvel AZERTY sous Windows :
 	* Convertir en AZERTY la variante redisposée. kbfrFRs.klc [df66c78](https://github.com/dispoclavier/nouvel-azerty/commit/df66c7826f6f7d8e83cf325b8d9e1fbf6c498a9a), kbcommon.H [48bb029](https://github.com/dispoclavier/nouvel-azerty/commit/48bb029946c17ba27c741c3921f0a2d9007aa33b), kbfrFRs.C [44ab692](https://github.com/dispoclavier/nouvel-azerty/commit/44ab692a30f868ae0aa16b0bea2a6f768a5599eb), kbfrFRs.H ibidem, kbfrFRs.DEF ibidem, kbfrFRs.RC [c38441a](https://github.com/dispoclavier/nouvel-azerty/commit/c38441a2b8c14fb6da73b8a10ccf6bbc986baaea)
@@ -2014,7 +2018,7 @@ Désormais avec paquetage pour Windows.
 
 ## 4.15.0 (2024-12-18)
 
-Facilitation de la saisie des indices et adaptation à l’implémentation sous Windows.
+Facilitation de la saisie des indices et adaptation à l’implémentation sous Windows
 
 * Disposition : Mode ASCII : Maj + AltGr :
 	* Redonder les chiffres et signes en indice à la place des chiffres et signes en exposant, qui sont en Maj + AltFr. dispoocla.cpp [8c195a3](https://github.com/dispoclavier/nouvel-azerty/commit/8c195a30b0ac950798165939cb5b344fdc69c966), dispotypes.c [a70b9a7](https://github.com/dispoclavier/nouvel-azerty/commit/a70b9a7675d5553cdd193e541c6dfe1172a2fab5)
@@ -2031,11 +2035,11 @@ Facilitation de la saisie des indices et adaptation à l’implémentation sous 
 
 ## 4.14.0 (2024-12-10)
 
-Meilleure utilité et pertinence accrue grâce au remplacement du gluon par le signe plus invisible.
+Meilleure utilité et pertinence accrue grâce au remplacement du gluon par le signe plus invisible
 
-Amélioration de l’ergonomie du tiret demi-cadratin en notation d’intervalles.
+Amélioration de l’ergonomie du tiret demi-cadratin en notation d’intervalles
 
-Meilleure prise en charge des deux flèches les plus courantes.
+Meilleure prise en charge des deux flèches les plus courantes
 
 * Disposition :
 	* Redonder le signe plus invisible "⁤" U+2064 sur AltGr + AltFr + H à la place du gluon "⁠" U+2060, qui est dans le groupe 10 du trait d’union ASCII ainsi qu’en séquence avec l’espace sur Maj + AltFr + Espace, et qui n’est pas d’usage courant en écriture latine. dispocla.cpp [43d829c](https://github.com/dispoclavier/nouvel-azerty/commit/43d829c742478248b5e6c71156102dc205d6591d)
@@ -2047,16 +2051,16 @@ Meilleure prise en charge des deux flèches les plus courantes.
 
 ## 4.13.0 (2024-12-08)
 
-Amélioration de la compatibilité ascendante par la prise en charge sur touche vive du symbole monétaire générique de l’AZERTY traditionnel, utilisé en autocorrection.
+Amélioration de la compatibilité ascendante par la prise en charge sur touche vive du symbole monétaire générique de l’AZERTY traditionnel, utilisé en autocorrection
 
 * Disposition : Redonder "¤" U+00A4 sur Maj + AltGr + C11 à la place de "%" U+0025, qui y est en Maj + AltFr et qui est sur AltGr + Z. dispocla.cpp [eebfe08](https://github.com/dispoclavier/nouvel-azerty/commit/eebfe08878e60eefab6ff74003d23fdc90e39365), [2ffbd4d](https://github.com/dispoclavier/nouvel-azerty/commit/2ffbd4d03612af6272ad12d8564089aa5c3f103a)
 * Documentation : Corriger des annotations. dispocla.cpp [a51e124](https://github.com/dispoclavier/nouvel-azerty/commit/a51e124b904ec62b29645893767d377f8982e2f3), compose-1.yml [accd312](https://github.com/dispoclavier/nouvel-azerty/commit/accd31212b2f7d148ef4ae942433c9cef613c1ee)
 
 ## 4.12.0 (2024-12-01)
 
-Amélioration de l’ergonomie par la correction d’erreurs au niveau 7 provenant de la version 3.1.0, selon le principe que la mnémonique ne doit pas primer sur l’ergonomie.
+Amélioration de l’ergonomie par la correction d’erreurs au niveau 7 provenant de la version 3.1.0, selon le principe que la mnémonique ne doit pas primer sur l’ergonomie
 
-Facilitation de la personnalisation de la disposition utilisée.
+Facilitation de la personnalisation de la disposition utilisée
 
 * Disposition : Niveau 7 : Mettre le tiret demi-cadratin "–" U+2013 sur C05 à la place du gluon "⁠" U+2060, qui prend la place du symbole plus ou moins "±" U+00B1 sur C06, qui prend la place laissée par le tiret demi-cadratin sur D05. dispocla.cpp [a539f12](https://github.com/dispoclavier/nouvel-azerty/commit/a539f12454a6b63fbf33ba2e0479108cfffc8a3a), [ad71ea7](https://github.com/dispoclavier/nouvel-azerty/commit/ad71ea7ada905630c00a3649c71f76a649038373)
 * Personnalisation : Fournir et inclure un tableau d’allocation générique. dispocla_perso.cpp [3c04e45](https://github.com/dispoclavier/nouvel-azerty/commit/3c04e454170ca1d3c59cef1698dbea099235d911), [78a2156](https://github.com/dispoclavier/nouvel-azerty/commit/78a215628e89af3255f72c45785656cc850e3812), [9bfabf1](https://github.com/dispoclavier/nouvel-azerty/commit/9bfabf1728d098ecf4a6406b1abfa9eed19bc418), [8f93229](https://github.com/dispoclavier/nouvel-azerty/commit/8f93229df0fad05c3def54697bfdc107250e4986), dispocla.cpp [f16807e](https://github.com/dispoclavier/nouvel-azerty/commit/f16807e08d88aa5fc52a835570362858a331d9da), [dc31ecd](https://github.com/dispoclavier/nouvel-azerty/commit/dc31ecdaa2075aa7107e3559e58c95799283819d), [945929e](https://github.com/dispoclavier/nouvel-azerty/commit/945929ef657b4dc9a9086f8c3199a0be38b9a28e), installer.sh [a0e7691](https://github.com/dispoclavier/nouvel-azerty/commit/a0e7691541d0dd2cda550aa0b7693f0aa8fabcb3), [23b9ecf](https://github.com/dispoclavier/nouvel-azerty/commit/23b9ecf714eee621fc2d31e19bbc07a63dc7c622), [9004a4d](https://github.com/dispoclavier/nouvel-azerty/commit/9004a4dd8143426009cffd72c8f30a635713320f), [e3f6923](https://github.com/dispoclavier/nouvel-azerty/commit/e3f69236295277aaee8cbb2412e038981a22d3fa), linux-chromeos/readme.md [c33de30](https://github.com/dispoclavier/nouvel-azerty/commit/c33de307ba7da3d755843fc7119a9805c8e8b992), [12f535b](https://github.com/dispoclavier/nouvel-azerty/commit/12f535bddb3a243ba5149d5c128f8c8aff8b1850)
@@ -2064,7 +2068,7 @@ Facilitation de la personnalisation de la disposition utilisée.
 
 ## 4.11.0 (2024-11-09)
 
-Amélioration de l’utilité des groupes des symboles grâce à l’assurance de la prise en charge des touches vives sous Windows.
+Amélioration de l’utilité des groupes des symboles grâce à l’assurance de la prise en charge des touches vives sous Windows
 
 * Composition : Ajouter "↴" U+21B4, "↸" U+21B8. compose-1.yml [1ed0bed](https://github.com/dispoclavier/nouvel-azerty/commit/1ed0bedb0e12e5fa45322881f140b3684859f2da)
 * Transformations : Groupes des symboles :
@@ -2075,7 +2079,7 @@ Amélioration de l’utilité des groupes des symboles grâce à l’assurance d
 
 ## 4.10.0 (2024-10-28)
 
-Amélioration de l’ergonomie des variantes redisposées.
+Amélioration de l’ergonomie des variantes redisposées
 
 * Disposition : Variantes redisposées :
 	* Égaliser la touche morte accent grave avec les variantes non redisposées en la mettant en AltGr, sur C12 à la place du tiret bas, qui prend la place du guillemet simple générique sur E12, qui prend la place laissée par la touche morte accent grave sur E07. dispocla.cpp [474fcec](https://github.com/dispoclavier/nouvel-azerty/commit/474fcec8ec797be2c2a9f36011fe34fdf41dc7ef)
@@ -2085,7 +2089,7 @@ Amélioration de l’ergonomie des variantes redisposées.
 
 ## 4.9.0 (2024-10-27)
 
-Correction des touches E11 et E12, et C11, C12, D11, D12.
+Correction des touches E11 et E12, et C11, C12, D11, D12
 
 * Disposition :
 	* Redonder "⁻" U+207B sur Maj + AltFr + E11 à la place de "E", qui va sur AltGr + AltFr à la place de "*️⃣", qui est sur Maj + AltGr + AltFr. dispocla.cpp [699fead](https://github.com/dispoclavier/nouvel-azerty/commit/699feadefd59f1b557d0dd76773190d8a5d7fa49), dispotypes.c [e3e99d8](https://github.com/dispoclavier/nouvel-azerty/commit/e3e99d82624cbdd16993fa0de99bf5573fa3c99c)
@@ -2097,9 +2101,9 @@ Correction des touches E11 et E12, et C11, C12, D11, D12.
 
 ## 4.8.0 (2024-10-25)
 
-Amélioration de l’ergonomie de la touche morte tréma.
+Amélioration de l’ergonomie de la touche morte tréma
 
-Simplification de séquences de composition.
+Simplification de séquences de composition
 
 * Disposition :
 	* Permuter la touche morte tréma, qui va sur E05, et le guillemet simple générique, qui prend la place laissée par la touche morte tréma sur E12. dispocla.cpp [7a46213](https://github.com/dispoclavier/nouvel-azerty/commit/7a4621354858142eeadf7294ed6783a73e8ae1f5)
@@ -2114,15 +2118,15 @@ Simplification de séquences de composition.
 
 ## 4.7.0 (2024-10-20)
 
-Meilleure compatibilité multiplateforme grâce à la suppression des trois premiers groupes du croisillon.
+Meilleure compatibilité multiplateforme grâce à la suppression des trois premiers groupes du croisillon
 
-Prise en charge des lettres grecques polytoniques, par respect pour les utilisateurs et pour le grec.
+Prise en charge des lettres grecques polytoniques, par respect pour les utilisateurs et pour le grec
 
-Facilitation de la saisie du symbole micro "µ" U+00B5, désormais aussi sur AltFr + Y.
+Facilitation de la saisie du symbole micro "µ" U+00B5, désormais aussi sur AltFr + Y
 
-Amélioration de la versatilité de la disposition de base et des variantes redisposées.
+Amélioration de la versatilité de la disposition de base et des variantes redisposées
 
-Robustesse des scripts d’installation et d’activation.
+Robustesse des scripts d’installation et d’activation
 
 * Disposition :
 	* Redonder le symbole micro "µ" U+00B5 sur AltFr + Y à la place de "¥" U+00A5, qui va en AltGr + AltFr + Y à la place de la lettre "Ω" U+03A9, qui va sur O à la place du symbole "Ω" U+2126, qui est dans les groupes 4 et 12 du O, et en composition par « ¦ohm ». dispocla.cpp [ae82bc3](https://github.com/dispoclavier/nouvel-azerty/commit/ae82bc362da6a778441668fe58eddc1df9b158ee)
@@ -2164,7 +2168,7 @@ Robustesse des scripts d’installation et d’activation.
 
 ## 4.6.0 (2024-10-06)
 
-Correction des variantes redisposées pour une meilleure ergonomie.
+Correction des variantes redisposées pour une meilleure ergonomie
 
 * Disposition : Variantes redisposées : Mettre la touche morte tréma sur AltGr + C12 à la place de la touche morte accent grave, qui prend la place du trait d’union insécable "‑" U+2011 sur E07, qui prend la place laissée par la touche morte tréma sur E12. dispocla.cpp [53b3f20](https://github.com/dispoclavier/nouvel-azerty/commit/53b3f2055091f79e1f56e4f6d4293c77875f8887)
 * Documentation :
@@ -2173,7 +2177,7 @@ Correction des variantes redisposées pour une meilleure ergonomie.
 
 ## 4.5.0 (2024-10-05)
 
-Correction du mode ASCII suite à la version 2.
+Correction du mode ASCII suite à la version 2
 
 * Disposition : Mode ASCII : Accolades à la place des crochets en Majuscule de D11, D12. dispocla.cpp [8b89a50](https://github.com/dispoclavier/nouvel-azerty/commit/8b89a502ba4e0716a16347f270432cd3b0b49c05)
 * Documentation : Corriger des annotations. dispocla.cpp [4c1aebc](https://github.com/dispoclavier/nouvel-azerty/commit/4c1aebcf624a4174e0d4e0cf01c79874e5f2c48c), compose-1.yml [5f18c63](https://github.com/dispoclavier/nouvel-azerty/commit/5f18c6384404cb722bd0c5be26adf493551ab3e1)
@@ -2205,7 +2209,7 @@ Correction du mode ASCII suite à la version 2.
 
 ## 4.4.0 (2024-09-26)
 
-Redisposition des trois premiers groupes du tiret bas.
+Redisposition des trois premiers groupes du tiret bas
 
 * Composition : Classer les puces. compose-1.yml [f57e338](https://github.com/dispoclavier/nouvel-azerty/commit/f57e3380a1d6ddd40c86891a0a7cc0bd630bcf75)
 * Transformations :
@@ -2220,7 +2224,7 @@ Redisposition des trois premiers groupes du tiret bas.
 
 ## 4.3.1 (2024-09-22)
 
-Débogage par résolution de 34 conflits suite à l’amélioration de la méthode de test.
+Débogage par résolution de 34 conflits suite à l’amélioration de la méthode de test
 
 * Composition :
 	* Adapter les séquences de "🅭" U+1F16D par « ¦OCC », "©" U+00A9 par « ¦oc », « ¦()c », pour déboguer "©" U+00A9. compose-1.yml [cf47ccf](https://github.com/dispoclavier/nouvel-azerty/commit/cf47ccf1703b54cd0c7b116363632eef6964a769)
@@ -2256,9 +2260,9 @@ Débogage par résolution de 34 conflits suite à l’amélioration de la méth
 
 ## 4.3.0 (2024-09-15)
 
-Mise à jour vers Unicode 16.0, bouclage de la prise en charge de l’écriture latine.
+Mise à niveau pour Unicode 16.0, bouclage de la prise en charge de l’écriture latine
 
-Permutation du liant et de l’antiliant, plus fréquent et désormais plus facile à saisir sur AltGr + AltFr + W.
+Permutation du liant et de l’antiliant, plus fréquent et désormais plus facile à saisir sur AltGr + AltFr + W
 
 * Disposition :
 	* Permuter l’antiliant "‌" U+200C et le liant "‍" U+200D afin que l’antiliant soit sur AltGr + AltFr + W, et le liant sur AltGr + AltFr + Q. dispocla.cpp [b10b147](https://github.com/dispoclavier/nouvel-azerty/commit/b10b147daa058e2737e68176acae3debae34c259), linux-chromeos/readme.md [58dcaf0](https://github.com/dispoclavier/nouvel-azerty/commit/58dcaf0423496cd23fc763083d2ccd82c1c3bf37)
@@ -2388,9 +2392,9 @@ Permutation du liant et de l’antiliant, plus fréquent et désormais plus faci
 
 ## 4.2.0 (2024-08-30)
 
-Facilitation des mises à jour par le script d’installation.
+Facilitation des mises à jour par le script d’installation
 
-Simplification et automatisation de l’activation sans droits d’administrateur par le nouveau script d’activation.
+Simplification et automatisation de l’activation sans droits d’administrateur par le nouveau script d’activation
 
 * Installation sous Linux : Faciliter les mises à jour. installer.sh [0c93aaa](https://github.com/dispoclavier/nouvel-azerty/commit/0c93aaa8bb2aca60787791bf497a292ba0d45a91), [172f1a2](https://github.com/dispoclavier/nouvel-azerty/commit/172f1a2773bc49e2b9952208492cff5598c65777), [cd024ef](https://github.com/dispoclavier/nouvel-azerty/commit/cd024ef57cf461fa586cb52215754b690a006f88), linux-chromeos/readme.md [1145307](https://github.com/dispoclavier/nouvel-azerty/commit/114530720e83ca1b7325c69fd4c6eab8cf01fad0)
 * Activation :
@@ -2400,7 +2404,7 @@ Simplification et automatisation de l’activation sans droits d’administrateu
 
 ## 4.1.0 (2024-08-23)
 
-Le symbole racine cède sa place sur touche vive au symbole rapport, plus utile seul.
+Le symbole racine cède sa place sur touche vive au symbole rapport, plus utile seul
 
 * Disposition : Redonder "∶" U+2236 sur AltGr + AltFr + R à la place de "√" U+221A, qui est dans le groupe 2 de "\\" avec "∛" U+221B dans le groupe 3 et "∜" U+221C dans le groupe 4. dispocla.cpp [173f7b0](https://github.com/dispoclavier/nouvel-azerty/commit/173f7b0b728821c322c241cba5e306a26f232dc8)
 * Composition : Adapter les séquences de "∻" U+223B, "≀" U+2240, "≁" U+2241, "⟦" U+27E6, "⩳" U+2A73, "⫝" U+2ADD. compose-1.yml [6c30d09](https://github.com/dispoclavier/nouvel-azerty/commit/6c30d09f968239d96b81d904070d01b2fcdc45a6)
@@ -2472,7 +2476,7 @@ Le symbole racine cède sa place sur touche vive au symbole rapport, plus utile 
 
 ## 4.0.0 (2024-08-11)
 
-Permutation des ponctuations espacées et non espacées sur AltFr et Maj.
+Permutation des ponctuations espacées et non espacées sur AltFr et Maj
 
 * Disposition :
 	* Mettre les ponctuations espacées à la place des ponctuations non espacées en Maj, qui prennent les places en AltFr laissées par les ponctuations espacées. dispocla.cpp [ba9f321](https://github.com/dispoclavier/nouvel-azerty/commit/ba9f321504bc8042429bf931eb6f47d403d7fe13), dispotypes [e41b05b](https://github.com/dispoclavier/nouvel-azerty/commit/e41b05b03fa268244027b9a8ca2caba8035889e2)
@@ -2483,7 +2487,7 @@ Permutation des ponctuations espacées et non espacées sur AltFr et Maj.
 
 ## 3.5.1 (2024-08-10)
 
-Prise en charge des barres de ton manquantes.
+Prise en charge des barres de ton manquantes
 
 * Composition :
 	* Ajouter les barres de ton additionnelles "꜈" U+A708, "꜉" U+A709, "꜊" U+A70A, "꜋" U+A70B, "꜌" U+A70C, "꜍" U+A70D, "꜎" U+A70E, "꜏" U+A70F, "꜐" U+A710, "꜑" U+A711, "꜒" U+A712, "꜓" U+A713, "꜔" U+A714, "꜕" U+A715, "꜖" U+A716. compose-1.yml [d8d4de5](https://github.com/dispoclavier/nouvel-azerty/commit/d8d4de52fb8ad1448957d5b7c022eae17bc5291e)
@@ -2525,7 +2529,7 @@ Prise en charge des barres de ton manquantes.
 
 ## 3.4.3 (2024-07-31)
 
-Prise en charge de lettres manquantes.
+Prise en charge de lettres manquantes
 
 * Transformations :
 	* Exposant et tourné : Ajouter "ꭩ" U+AB69. compose-2.yml [6962d96](https://github.com/dispoclavier/nouvel-azerty/commit/6962d966f780f4d8109fa431e68e69b8efb65ed8)
@@ -2536,9 +2540,9 @@ Prise en charge de lettres manquantes.
 
 ## 3.4.2 (2024-07-31)
 
-Rajout d’un symbole mathématique perdu dans la version 1.7.3.
+Rajout d’un symbole mathématique perdu dans la version 1.7.3
 
-Prise en charge de lettres manquantes.
+Prise en charge de lettres manquantes
 
 * Composition :
 	* Restaurer "⋊" U+22CA, perdu dans la version 1.7.3. compose-1.yml [181f80f](https://github.com/dispoclavier/nouvel-azerty/commit/181f80f696d182232b23792169a111cbc6fe45a2)
@@ -2561,9 +2565,9 @@ Prise en charge de lettres manquantes.
 
 ## 3.4.1 (2024-07-30)
 
-Prise en charge du symbole som pour le Kirghizistan.
+Prise en charge du symbole som pour le Kirghizistan
 
-Débogages.
+Débogages
 
 * Composition :
 	* Mettre à jour le symbole monétaire par code ISO "Лв" U+041B U+0432 Som KYRGYZSTAN vers "⃀" U+20C0 SOM SIGN. compose-1.yml [9ea34e0](https://github.com/dispoclavier/nouvel-azerty/commit/9ea34e023b55c39301a7bb5bdd808fb065e2346b)
@@ -2574,11 +2578,11 @@ Débogages.
 
 ## 3.4.0 (2024-07-30)
 
-Prise en charge du symbole som pour le Kirghizistan.
+Prise en charge du symbole som pour le Kirghizistan
 
-Remise à plat de nombreuses séquences de composition de symboles mathématiques.
+Remise à plat de nombreuses séquences de composition de symboles mathématiques
 
-Poursuite de l’amélioration de la prise en charge de l’écriture latine.
+Poursuite de l’amélioration de la prise en charge de l’écriture latine
 
 * Composition :
 	* Corriger les séquences de "⁡" U+2061, "⁢" U+2062, "⁣" U+2063, "⁤" U+2064, "∇" U+2207, "∋" U+220B, "∌" U+220C, "∍" U+220D, "∐" U+2210, "∧" U+2227, "⊃" U+2283, "⊅" U+2285, "⊇" U+2287, "⊉" U+2289, "⊋" U+228B, "⊐" U+2290, "⊒" U+2292, "⊥" U+22A5, "⋀" U+22C0, "⋄" U+22C4, "⋏" U+22CF, "⋑" U+22D1, "⋣" U+22E3, "⋥" U+22E5, "⋺" U+22FA, "⋻" U+22FB, "⋼" U+22FC, "⋽" U+22FD, "⋾" U+22FE, "⟎" U+27CE, "⟏" U+27CF, "⟑" U+27D1, "⧘" U+29D8, "⧙" U+29D9, "⧚" U+29DA, "⧛" U+29DB, "⨇" U+2A07, "⨯" U+2A2F, "⨿" U+2A3F, "⩕" U+2A55, "⩗" U+2A57, "⩘" U+2A58, "⩙" U+2A59, "⩚" U+2A5A, "⩜" U+2A5C, "⩞" U+2A5E, "⩟" U+2A5F, "⩠" U+2A60, "⪃" U+2A83, "⪄" U+2A84, "⪾" U+2ABE, "⫀" U+2AC0, "⫂" U+2AC2, "⫄" U+2AC4, "⫆" U+2AC6, "⫈" U+2AC8, "⫊" U+2ACA, "⫌" U+2ACC, "⫐" U+2AD0, "⫑" U+2AD1, "⫒" U+2AD2, "⫓" U+2AD3, "⫖" U+2AD6, "⫘" U+2AD8, "⫪" U+2AEA, "⫫" U+2AEB, "⫾" U+2AFE. compose-1.yml [97ca5cb](https://github.com/dispoclavier/nouvel-azerty/commit/97ca5cb715405f1b28ce988c050921c7105dd1b3)
@@ -2598,7 +2602,7 @@ Poursuite de l’amélioration de la prise en charge de l’écriture latine.
 
 ## 3.3.0 (2024-07-26)
 
-Amélioration de la prise en charge de l’écriture latine.
+Amélioration de la prise en charge de l’écriture latine
 
 * Composition :
 	* Paléographie médiévale :
@@ -2633,7 +2637,7 @@ Amélioration de la prise en charge de l’écriture latine.
 
 ## 3.2.2 (2024-07-25)
 
-Débogage des fichiers servant à activer une disposition de clavier par xkbcomp.
+Débogage des fichiers servant à activer une disposition de clavier par xkbcomp
 
 * Activation : Déboguer les sources de disposition fusionnées en réactivant deux types de touches non utilisés et désactivés dans les distributions Linux de 2016. dispocla.cpp [6e6da51](https://github.com/dispoclavier/nouvel-azerty/commit/6e6da518aef27fac611ba90b6873328bf40d75c8), comp.sh [c0eecf0](https://github.com/dispoclavier/nouvel-azerty/commit/c0eecf0f0d8ca357b63c989d0ff3cd50daafa2e8)
 * Documentation :
@@ -2646,14 +2650,14 @@ Débogage des fichiers servant à activer une disposition de clavier par xkbcomp
 
 ## 3.2.1 (2024-07-14)
 
-Rectification du carré plein centré et de la marque de répétition.
+Rectification du carré plein centré et de la marque de répétition
 
 * Composition : Supprimer "⯀" U+2BC0. compose-1.yml [d746dbb](https://github.com/dispoclavier/nouvel-azerty/commit/d746dbb2a07cb2273a413f8b16570ea0b2a1a4f3)
 * Transformations : Groupes des symboles : Rajouter "⯀" U+2BC0 dans le groupe 6 à la place de "〃" U+3003, qui est dans le groupe 12. compose-3.yml [7629ef3](https://github.com/dispoclavier/nouvel-azerty/commit/7629ef3b3a9039aa0f0fc49b92d7d73db0103da4)
 
 ## 3.2.0 (2024-07-09)
 
-Meilleure prise en charge des émojis.
+Meilleure prise en charge des émojis
 
 * Disposition : Permuter "😭" U+1F62D et "😱" U+1F631 pour la mnémonique. dispocla.cpp [35f423f](https://github.com/dispoclavier/nouvel-azerty/commit/35f423f998a9af26189352f6d4eb8ed5bb376860)
 * Composition : Ajouter "⯀" U+2BC0 au nombre des puces. compose-1.yml [d9f67b1](https://github.com/dispoclavier/nouvel-azerty/commit/d9f67b10ebbf30578fa3df535076dc3410961392)
@@ -2670,7 +2674,7 @@ Meilleure prise en charge des émojis.
 
 ## 3.1.0 (2024-07-07)
 
-Plusieurs caractères sont redisposés.
+Plusieurs caractères sont redisposés
 
 * Disposition :
 	* Mettre le liant "‍" U+200D à la place de l’antiliant "‌" U+200C sur AltGr + AltFr + X, qui prend la place du deux-points sur AltGr + AltFr + W, qui prend la place de la barre de fraction "⁄" U+2044 sur (Maj puis) AltGr + AltFr + Q (depuis 1.0.9), qui prend la place du symbole micro "µ" U+00B5 sur AltGr + AltFr + F, qui est sur AltGr + AltFr + M. dispocla.cpp [157d828](https://github.com/dispoclavier/nouvel-azerty/commit/157d828f913b15f50666cc6d71e2124765c6390c)
@@ -2686,7 +2690,7 @@ Plusieurs caractères sont redisposés.
 
 ## 3.0.0 (2024-07-04)
 
-Les exposants changent de niveau, d’AltGr + AltFr à Maj + AltFr, afin que la majuscule de l’abréviation Numéro (avec le o en exposant) puisse être saisie en ajoutant Maj, non en ajoutant AltGr, sur Maj + AltGr + AltFr + N, et afin que le trigramme breton (avec la lettre apostrophe) bénéficie de la même logique sur A, ainsi que pour faciliter la saisie des minuscules en exposant (comme indicateurs d’abréviation, indicateurs ordinaux), en Maj + AltFr, non en AltGr + AltFr. Permutation des niveaux 6 et 7 sur la plupart des touches.
+Les exposants changent de niveau, d’AltGr + AltFr à Maj + AltFr, afin que la majuscule de l’abréviation Numéro (avec le o en exposant) puisse être saisie en ajoutant Maj, non en ajoutant AltGr, sur Maj + AltGr + AltFr + N, et afin que le trigramme breton (avec la lettre apostrophe) bénéficie de la même logique sur A, ainsi que pour faciliter la saisie des minuscules en exposant (comme indicateurs d’abréviation, indicateurs ordinaux), en Maj + AltFr, non en AltGr + AltFr. Permutation des niveaux 6 et 7 sur la plupart des touches
 
 * Permuter les niveaux 6 et 7. dispocla.cpp [eda4dd1](https://github.com/dispoclavier/nouvel-azerty/commit/eda4dd14bcca8f876eccbb5e68e9fccadcf130ee), [c74e5a8](https://github.com/dispoclavier/nouvel-azerty/commit/c74e5a82814311b1716389dae0ab351c1e3b2068), [e3924aa](https://github.com/dispoclavier/nouvel-azerty/commit/e3924aae79e0ebc30a08b21da8cd2e6fc47c92ed), [17f0984](https://github.com/dispoclavier/nouvel-azerty/commit/17f0984949b62b5fcd9825e618e7341ce596d9f6), dispotypes.c [fc8683b](https://github.com/dispoclavier/nouvel-azerty/commit/fc8683be9e555c4d5b86a9a4d6e55ea79502153f), [accfc83](https://github.com/dispoclavier/nouvel-azerty/commit/accfc83f04a40d4deb8f2511f8fcd41a274ac9cc)
 * Remettre "=" comme caractère en Contrôle plutôt que "+". dispotypes.c [accfc83](https://github.com/dispoclavier/nouvel-azerty/commit/accfc83f04a40d4deb8f2511f8fcd41a274ac9cc)
@@ -2723,7 +2727,7 @@ Les exposants changent de niveau, d’AltGr + AltFr à Maj + AltFr, afin
 
 ## 2.3.4 (2024-06-19)
 
-Script d’installation qui prend en charge aussi les redispositions des sous-variantes.
+Script d’installation qui prend en charge aussi les redispositions des sous-variantes
 
 * Sous-variantes :
 	* Prendre en charge aussi les agencements ANSI purs. evdev.c [d98b5de](https://github.com/dispoclavier/nouvel-azerty/commit/d98b5de4daa2c29fb690f2d175b41a6301996deb)
@@ -2737,7 +2741,7 @@ Script d’installation qui prend en charge aussi les redispositions des sous-va
 
 ## 2.3.3 (2024-06-16)
 
-Script d’installation amélioré.
+Script d’installation amélioré
 
 * Installation sous Linux :
 	* Sortir le script du sous-dossier linux-chromeos/outils/. installer.sh [b48cd4a](https://github.com/dispoclavier/nouvel-azerty/commit/b48cd4a59b3a56354b3dae710e5e134488a268da)
@@ -2898,7 +2902,7 @@ Version 2.0 due à la nécessité de redonder en AltGr le symbole euro, de redis
 	* Rond en chef : Redonder "∗" U+2217 par "0" et par "4". compose-2.yml [1510bb0](https://github.com/dispoclavier/nouvel-azerty/commit/1510bb04a2e041e24f0862ed64d34c606731bb4f)
 	* Accent circonflexe :
 		* Redonder "•" U+2022 par "1" U+0031 à la place de "♤" U+2664, "◦" U+25E6 par "2" U+0032 à la place de "♢" U+2662, "▪" U+25AA par "4" U+0034 à la place de "♡" U+2661, "▫" U+25AB par "5" U+0035 à la place de "♧" U+2667, "‣" U+2023 par "6" U+0036 à la place de "♠" U+2660. Ajouter "▹" U+25B9 par "7" U+0037 à la place de "♦" U+2666. Redonder "➢" U+27A2 par "9" U+0039 à la place de "♣" U+2663. Ajouter "➣" U+27A3 par "0" U+0030. Redonder "′" U+2032 par "²" U+00B2, "″" U+2033 par "³" U+00B3. compose-2.yml [6603624](https://github.com/dispoclavier/nouvel-azerty/commit/660362419d1d97088c6da803853a43d9f6b0fef7)
-		* Mettre à jour le caractère de base et l’ordre de "♡" U+2661, "♧" U+2667, "♢" U+2662, "♤" U+2664, (ibidem)
+		* Mettre à jour le caractère de base et l’ordre de "♡" U+2661, "♧" U+2667, "♢" U+2662, "♤" U+2664, ibidem
 	* Accent grave : Supprimer "(" et ")". ibidem
 	* Tilde :
 		* Permuter "⸷" U+2E37 et "⸸" U+2E38. ibidem
@@ -3222,7 +3226,7 @@ Version 2.0 due à la nécessité de redonder en AltGr le symbole euro, de redis
 	* Tourné : Déboguer "ᴑ" U+1D11.
 	* Réfléchi :
 		* Supprimer "∽" U+223D et les "❶" U+2776 à "❿" U+277F redondés. compose-1.yml [93c9fe6](https://github.com/dispoclavier/nouvel-azerty/commit/93c9fe6483f8a0a75e6b604da4b1a087614721a0), [b35266a](https://github.com/dispoclavier/nouvel-azerty/commit/b35266aa9928dfd426678be46690cc88d53888df), compose-2.yml [6560a3a](https://github.com/dispoclavier/nouvel-azerty/commit/6560a3a379683d9146307c29fbe6c4fae9c544d9)
-		* Déplacer ici "∖" U+2216, "⟍" U+27CD, "⧵" U+29F5. "⧹" U+29F9, (ibidem)
+		* Déplacer ici "∖" U+2216, "⟍" U+27CD, "⧵" U+29F5. "⧹" U+29F9, ibidem
 	* Tilde :
 		* Déboguer "≃" U+2243, "≈" U+2248. compose-1.yml [93c9fe6](https://github.com/dispoclavier/nouvel-azerty/commit/93c9fe6483f8a0a75e6b604da4b1a087614721a0), [b35266a](https://github.com/dispoclavier/nouvel-azerty/commit/b35266aa9928dfd426678be46690cc88d53888df), compose-2.yml [6560a3a](https://github.com/dispoclavier/nouvel-azerty/commit/6560a3a379683d9146307c29fbe6c4fae9c544d9)
 		* Adapter "̰" U+0330, "̴" U+0334. ibidem
@@ -3253,7 +3257,7 @@ Version 2.0 due à la nécessité de redonder en AltGr le symbole euro, de redis
 		* Supprimer "∤" U+2224 et "≁" U+2241 dans le groupe 0. compose-1.yml [76bd931](https://github.com/dispoclavier/nouvel-azerty/commit/76bd931410ab9bc143b0c19cbcadd593b8446a48)
 		* Déplacer "≠" U+2260, "≮" U+226E et "≯" U+226F dans le groupe 1. ibidem
 		* Supprimer les flèches émojis redondées. compose-1.yml [93c9fe6](https://github.com/dispoclavier/nouvel-azerty/commit/93c9fe6483f8a0a75e6b604da4b1a087614721a0), [b35266a](https://github.com/dispoclavier/nouvel-azerty/commit/b35266aa9928dfd426678be46690cc88d53888df), compose-2.yml [6560a3a](https://github.com/dispoclavier/nouvel-azerty/commit/6560a3a379683d9146307c29fbe6c4fae9c544d9)
-		* Déplacer ici "⁄" U+2044. "∕" U+2215, "⟋" U+27CB, "⧸" U+29F8, (ibidem)
+		* Déplacer ici "⁄" U+2044. "∕" U+2215, "⟋" U+27CB, "⧸" U+29F8, ibidem
 	* Rond en chef : Déboguer "∮" U+222E. compose-1.yml [93c9fe6](https://github.com/dispoclavier/nouvel-azerty/commit/93c9fe6483f8a0a75e6b604da4b1a087614721a0), [b35266a](https://github.com/dispoclavier/nouvel-azerty/commit/b35266aa9928dfd426678be46690cc88d53888df), compose-2.yml [6560a3a](https://github.com/dispoclavier/nouvel-azerty/commit/6560a3a379683d9146307c29fbe6c4fae9c544d9)
 	* Accent circonflexe :
 		* Déboguer "❛" U+275B. compose-2.yml [a089368](https://github.com/dispoclavier/nouvel-azerty/commit/a0893686afff6fd180597a1dde2e0e3241b8aee8)
