@@ -8,6 +8,7 @@
 * 2014..2026 Marcel Schneider dev[arobase]dispoclavier.com (pro parte)
 *
 * History:
+* Update                                   7.1.0.0.0 Sun 2026-10-11T2048+0200
 * Update                                  7.0.0.10.7 Fri 2026-10-09T2029+0200
 * Update                                  7.0.0.10.6 Wed 2026-10-07T1959+0200
 * Update                                  7.0.0.10.5 Wed 2026-10-07T0415+0200
@@ -818,6 +819,8 @@
 /*<!hook><!hook><!superscript><!hook>                              */ DEADTRANS( 0x0192	,0x1DA8	,0xA7C3	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!hook><!superscript><!hook><!hook>                              */ DEADTRANS( 0x0192	,0x1DBD	,0xA7C4	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!superscript><!hook><!hook><!hook>                              */ DEADTRANS( 0x0192	,0x1DB7	,0xA7C5	,0x0001), // Virtual dead key’s intermediate chain link
+/*<!stroke><!superscript>                                          */ DEADTRANS( L'^'	,0x00F8	,0xA7C6	,0x0001), // Virtual dead key’s intermediate chain link
+/*<!superscript><!stroke>                                          */ DEADTRANS( 0x00F8	,L'^'	,0xA7C7	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!abovehook><!greek>                                             */ DEADTRANS( 0x26AA	,0x1EBB	,0x1FBD	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!acute><!belowdot><!breve><!greek>                              */ DEADTRANS( 0x26AA	,0x2500	,0x1F84	,0x0001), // Virtual dead key’s intermediate chain link
 /*<!acute><!belowdot><!greek>                                      */ DEADTRANS( 0x26AA	,0x2501	,0x1FB4	,0x0001), // Virtual dead key’s intermediate chain link
@@ -1747,6 +1750,7 @@
 /*<!bar><!bar><!bar>                                               */ DEADTRANS( 0x024D	,0x02C2	,0x024D	,0x0000), // 'ɍ' ➔ "ɍ" U+024D LATIN SMALL LETTER R WITH STROKE
 /*<!bar><!bar><!bar><!superscript>                                 */ DEADTRANS( L'o'	,0xA778	,0xDFCE	,0x0000), // High surrogate: D837; 'o' ➔ "𝿎" U+1DFCE MODIFIER LETTER SMALL SPLIT O
 /*<!bar><!bar><!bar><!superscript>                                 */ DEADTRANS( L'u'	,0xA778	,0xDFCF	,0x0000), // High surrogate: D837; 'u' ➔ "𝿏" U+1DFCF MODIFIER LETTER SMALL SPLIT U
+/*<!bar><!bar><!bar>                                               */ DEADTRANS( L'|'	,0x02C2	,0x2020	,0x0000), // '|' ➔ "†" U+2020 DAGGER
 /*<!bar><!bar><!bar>                                               */ DEADTRANS( L'.'	,0x02C2	,0x2015	,0x0000), // '.' ➔ "―" U+2015 HORIZONTAL BAR
 /*<!bar><!bar><!bar>                                               */ DEADTRANS( L'A'	,0x02C2	,0x02C4	,0x0000), // 'A' ➔ "˄" U+02C4 MODIFIER LETTER UP ARROWHEAD
 /*<!bar><!bar><!bar>                                               */ DEADTRANS( L'a'	,0x02C2	,0x02C4	,0x0000), // 'a' ➔ "˄" U+02C4 MODIFIER LETTER UP ARROWHEAD
@@ -1880,17 +1884,25 @@
 /*<!bar><!superscript><!bar>                                       */ DEADTRANS( L'u'	,0xAB55	,0xDFCF	,0x0000), // High surrogate: D837; 'u' ➔ "𝿏" U+1DFCF MODIFIER LETTER SMALL SPLIT U
 /*<!bar><!superscript><!group>                                     */ DEADTRANS( L'q'	,0x1D2F	,0xDFB3	,0x0000), // High surrogate: D801; 'q' ➔ "𐞳" U+107B3 MODIFIER LETTER GLOTTAL STOP WITH STROKE
 /*<!bar><!superscript><!group>                                     */ DEADTRANS( L's'	,0x1D2F	,0xDFBF	,0x0000), // High surrogate: D801; 's' ➔ "𐞿" U+107BF MODIFIER LETTER SMALL ESH WITH DOUBLE BAR
+/*<!bar><!superscript><!group>                                     */ DEADTRANS( L'y'	,0x1D2F	,0xDFDA	,0x0000), // High surrogate: D837; 'y' ➔ "𝿚" U+1DFDA MODIFIER LETTER SMALL UPSILON WITH STROKE
 /*<!bar><!superscript>                                             */ DEADTRANS( 0x1D19	,0x02A1	,0xDFB4	,0x0000), // High surrogate: D801; 'ᴙ' ➔ "𐞴" U+107B4 MODIFIER LETTER REVERSED GLOTTAL STOP WITH STROKE
 /*<!bar><!superscript>                                             */ DEADTRANS( L'_'	,0x02A1	,0x1DA7	,0x0000), // '_' ➔ "ᶧ" U+1DA7 MODIFIER LETTER SMALL CAPITAL I WITH STROKE
 /*<!bar><!superscript>                                             */ DEADTRANS( L'B'	,0x02A1	,0x1D2F	,0x0000), // 'B' ➔ "ᴯ" U+1D2F MODIFIER LETTER CAPITAL BARRED B
+/*<!bar><!superscript>                                             */ DEADTRANS( L'b'	,0x02A1	,0xDFD2	,0x0000), // High surrogate: D837; 'b' ➔ "𝿒" U+1DFD2 MODIFIER LETTER SMALL B WITH STROKE
+/*<!bar><!superscript>                                             */ DEADTRANS( L'd'	,0x02A1	,0xDFD3	,0x0000), // High surrogate: D837; 'd' ➔ "𝿓" U+1DFD3 MODIFIER LETTER SMALL D WITH STROKE
+/*<!bar><!superscript>                                             */ DEADTRANS( L'g'	,0x02A1	,0xDFD4	,0x0000), // High surrogate: D837; 'g' ➔ "𝿔" U+1DFD4 MODIFIER LETTER SMALL G WITH STROKE
 /*<!bar><!superscript>                                             */ DEADTRANS( L'H'	,0x02A1	,0xA7F8	,0x0000), // 'H' ➔ "ꟸ" U+A7F8 MODIFIER LETTER CAPITAL H WITH STROKE
 /*<!bar><!superscript>                                             */ DEADTRANS( L'h'	,0x02A1	,0xDF95	,0x0000), // High surrogate: D801; 'h' ➔ "𐞕" U+10795 MODIFIER LETTER SMALL H WITH STROKE
 /*<!bar><!superscript>                                             */ DEADTRANS( L'i'	,0x02A1	,0x1DA4	,0x0000), // 'i' ➔ "ᶤ" U+1DA4 MODIFIER LETTER SMALL I WITH STROKE
 /*<!bar><!superscript>                                             */ DEADTRANS( L'I'	,0x02A1	,0x1DA7	,0x0000), // 'I' ➔ "ᶧ" U+1DA7 MODIFIER LETTER SMALL CAPITAL I WITH STROKE
+/*<!bar><!superscript>                                             */ DEADTRANS( L'j'	,0x02A1	,0xDFD9	,0x0000), // High surrogate: D837; 'j' ➔ "𝿙" U+1DFD9 MODIFIER LETTER SMALL J WITH STROKE
+/*<!bar><!superscript>                                             */ DEADTRANS( L'l'	,0x02A1	,0xDFD6	,0x0000), // High surrogate: D837; 'l' ➔ "𝿖" U+1DFD6 MODIFIER LETTER SMALL L WITH BAR
 /*<!bar><!superscript>                                             */ DEADTRANS( L'o'	,0x02A1	,0x1DB1	,0x0000), // 'o' ➔ "ᶱ" U+1DB1 MODIFIER LETTER SMALL BARRED O
 /*<!bar><!superscript>                                             */ DEADTRANS( L'q'	,0x02A1	,0xDFB3	,0x0000), // High surrogate: D801; 'q' ➔ "𐞳" U+107B3 MODIFIER LETTER GLOTTAL STOP WITH STROKE
 /*<!bar><!superscript>                                             */ DEADTRANS( L's'	,0x02A1	,0xDFBF	,0x0000), // High surrogate: D801; 's' ➔ "𐞿" U+107BF MODIFIER LETTER SMALL ESH WITH DOUBLE BAR
 /*<!bar><!superscript>                                             */ DEADTRANS( L'u'	,0x02A1	,0x1DB6	,0x0000), // 'u' ➔ "ᶶ" U+1DB6 MODIFIER LETTER SMALL U BAR
+/*<!bar><!superscript>                                             */ DEADTRANS( L'w'	,0x02A1	,0xDFDB	,0x0000), // High surrogate: D837; 'w' ➔ "𝿛" U+1DFDB MODIFIER LETTER SMALL BARRED W
+/*<!bar><!superscript>                                             */ DEADTRANS( L'y'	,0x02A1	,0xDFDA	,0x0000), // High surrogate: D837; 'y' ➔ "𝿚" U+1DFDA MODIFIER LETTER SMALL UPSILON WITH STROKE
 /*<!bar><!turned><!group>                                          */ DEADTRANS( L'o'	,0x0153	,0xAB42	,0x0000), // 'o' ➔ "ꭂ" U+AB42 LATIN SMALL LETTER TURNED OE WITH HORIZONTAL STROKE
 /*<!bar><!turned>                                                  */ DEADTRANS( L'h'	,0x2013	,0xDF3E	,0x0000), // High surrogate: D837; 'h' ➔ "𝼾" U+1DF3E LATIN SMALL LETTER BARRED TURNED H
 /*<!bar><!turned>                                                  */ DEADTRANS( L'o'	,0x2013	,0xAB42	,0x0000), // 'o' ➔ "ꭂ" U+AB42 LATIN SMALL LETTER TURNED OE WITH HORIZONTAL STROKE
@@ -1898,13 +1910,14 @@
 /*<!bar>                                                           */ DEADTRANS( L'\''	,0x024D	,0x02A1	,0x0000), // ''' ➔ "ʡ" U+02A1 LATIN LETTER GLOTTAL STOP WITH STROKE
 /*<!bar>                                                           */ DEADTRANS( 0x2019	,0x024D	,0x02A1	,0x0000), // '’' ➔ "ʡ" U+02A1 LATIN LETTER GLOTTAL STOP WITH STROKE
 /*<!bar>                                                           */ DEADTRANS( L'\\'	,0x024D	,0x02A2	,0x0000), // '\' ➔ "ʢ" U+02A2 LATIN LETTER REVERSED GLOTTAL STOP WITH STROKE
-/*<!bar>                                                           */ DEADTRANS( L'|'	,0x024D	,0x2020	,0x0000), // '|' ➔ "†" U+2020 DAGGER
+/*<!bar>                                                           */ DEADTRANS( L'|'	,0x024D	,0x2E20	,0x0000), // '|' ➔ "⸠" U+2E20 LEFT VERTICAL BAR WITH QUILL
 /*<!bar>                                                           */ DEADTRANS( L'{'	,0x024D	,0x29B5	,0x0000), // '{' ➔ "⦵" U+29B5 CIRCLE WITH HORIZONTAL BAR
 /*<!bar>                                                           */ DEADTRANS( L'['	,0x024D	,0x2045	,0x0000), // '[' ➔ "⁅" U+2045 LEFT SQUARE BRACKET WITH QUILL
 /*<!bar>                                                           */ DEADTRANS( L']'	,0x024D	,0x2046	,0x0000), // ']' ➔ "⁆" U+2046 RIGHT SQUARE BRACKET WITH QUILL
 /*<!bar>                                                           */ DEADTRANS( L':'	,0x024D	,0x00F7	,0x0000), // ':' ➔ "÷" U+00F7 DIVISION SIGN
 /*<!bar>                                                           */ DEADTRANS( L','	,0x024D	,0x00AC	,0x0000), // ',' ➔ "¬" U+00AC NOT SIGN
 /*<!bar>                                                           */ DEADTRANS( L'='	,0x024D	,0x2794	,0x0000), // '=' ➔ "➔" U+2794 HEAVY WIDE-HEADED RIGHTWARDS ARROW
+/*<!bar>                                                           */ DEADTRANS( L'!'	,0x024D	,0x2E21	,0x0000), // '!' ➔ "⸡" U+2E21 RIGHT VERTICAL BAR WITH QUILL
 /*<!bar>                                                           */ DEADTRANS( L'>'	,0x024D	,0x2192	,0x0000), // '>' ➔ "→" U+2192 RIGHTWARDS ARROW
 /*<!bar>                                                           */ DEADTRANS( L'<'	,0x024D	,0x2190	,0x0000), // '<' ➔ "←" U+2190 LEFTWARDS ARROW
 /*<!bar>                                                           */ DEADTRANS( L'-'	,0x024D	,0x2212	,0x0000), // '-' ➔ "−" U+2212 MINUS SIGN
@@ -9219,7 +9232,8 @@
 /*<!stroke><!stroke>                                               */ DEADTRANS( L' '	,0xA7A1	,0x0337	,0x0000), // ' ' ➔ "̷" U+0337 COMBINING SHORT SOLIDUS OVERLAY
 /*<!stroke><!stroke>                                               */ DEADTRANS( 0x200B	,0xA7A1	,0x0337	,0x0000), // '​' ➔ "̷" U+0337 COMBINING SHORT SOLIDUS OVERLAY
 /*<!stroke><!subscript>                                            */ DEADTRANS( L'L'	,0x1D7E	,0x1D0C	,0x0000), // 'L' ➔ "ᴌ" U+1D0C LATIN LETTER SMALL CAPITAL L WITH STROKE
-/*<!stroke>                                                        */ DEADTRANS( L'^'	,0x00F8	,0xDFA2	,0x0000), // High surrogate: D801; '^' ➔ "𐞢" U+107A2 MODIFIER LETTER SMALL O WITH STROKE
+/*<!stroke><!superscript>                                          */ DEADTRANS( L'l'	,0xA7C6	,0xDFD5	,0x0000), // High surrogate: D837; 'l' ➔ "𝿕" U+1DFD5 MODIFIER LETTER SMALL L WITH STROKE
+/*<!stroke><!superscript>                                          */ DEADTRANS( L'o'	,0xA7C6	,0xDFA2	,0x0000), // High surrogate: D801; 'o' ➔ "𐞢" U+107A2 MODIFIER LETTER SMALL O WITH STROKE
 /*<!stroke><!tilde>                                                */ DEADTRANS( 0x00A0	,0x2241	,0x2241	,0x0000), // ' ' ➔ "≁" U+2241 NOT TILDE
 /*<!stroke><!tilde>                                                */ DEADTRANS( 0x202F	,0x2241	,0x2241	,0x0000), // ' ' ➔ "≁" U+2241 NOT TILDE
 /*<!stroke><!tilde>                                                */ DEADTRANS( L' '	,0x2241	,0x034A	,0x0000), // ' ' ➔ "͊" U+034A COMBINING NOT TILDE ABOVE
@@ -9540,17 +9554,25 @@
 /*<!superscript><!bar><!bar>                                       */ DEADTRANS( L'u'	,0xA71D	,0xDFCF	,0x0000), // High surrogate: D837; 'u' ➔ "𝿏" U+1DFCF MODIFIER LETTER SMALL SPLIT U
 /*<!superscript><!bar><!group>                                     */ DEADTRANS( L'q'	,0x1DB6	,0xDFB3	,0x0000), // High surrogate: D801; 'q' ➔ "𐞳" U+107B3 MODIFIER LETTER GLOTTAL STOP WITH STROKE
 /*<!superscript><!bar><!group>                                     */ DEADTRANS( L's'	,0x1DB6	,0xDFBF	,0x0000), // High surrogate: D801; 's' ➔ "𐞿" U+107BF MODIFIER LETTER SMALL ESH WITH DOUBLE BAR
+/*<!superscript><!bar><!group>                                     */ DEADTRANS( L'y'	,0x1DB6	,0xDFDA	,0x0000), // High surrogate: D837; 'y' ➔ "𝿚" U+1DFDA MODIFIER LETTER SMALL UPSILON WITH STROKE
 /*<!superscript><!bar>                                             */ DEADTRANS( 0x1D19	,0xA7F8	,0xDFB4	,0x0000), // High surrogate: D801; 'ᴙ' ➔ "𐞴" U+107B4 MODIFIER LETTER REVERSED GLOTTAL STOP WITH STROKE
 /*<!superscript><!bar>                                             */ DEADTRANS( L'_'	,0xA7F8	,0x1DA7	,0x0000), // '_' ➔ "ᶧ" U+1DA7 MODIFIER LETTER SMALL CAPITAL I WITH STROKE
 /*<!superscript><!bar>                                             */ DEADTRANS( L'B'	,0xA7F8	,0x1D2F	,0x0000), // 'B' ➔ "ᴯ" U+1D2F MODIFIER LETTER CAPITAL BARRED B
+/*<!superscript><!bar>                                             */ DEADTRANS( L'b'	,0xA7F8	,0xDFD2	,0x0000), // High surrogate: D837; 'b' ➔ "𝿒" U+1DFD2 MODIFIER LETTER SMALL B WITH STROKE
+/*<!superscript><!bar>                                             */ DEADTRANS( L'd'	,0xA7F8	,0xDFD3	,0x0000), // High surrogate: D837; 'd' ➔ "𝿓" U+1DFD3 MODIFIER LETTER SMALL D WITH STROKE
+/*<!superscript><!bar>                                             */ DEADTRANS( L'g'	,0xA7F8	,0xDFD4	,0x0000), // High surrogate: D837; 'g' ➔ "𝿔" U+1DFD4 MODIFIER LETTER SMALL G WITH STROKE
 /*<!superscript><!bar>                                             */ DEADTRANS( L'H'	,0xA7F8	,0xA7F8	,0x0000), // 'H' ➔ "ꟸ" U+A7F8 MODIFIER LETTER CAPITAL H WITH STROKE
 /*<!superscript><!bar>                                             */ DEADTRANS( L'h'	,0xA7F8	,0xDF95	,0x0000), // High surrogate: D801; 'h' ➔ "𐞕" U+10795 MODIFIER LETTER SMALL H WITH STROKE
 /*<!superscript><!bar>                                             */ DEADTRANS( L'i'	,0xA7F8	,0x1DA4	,0x0000), // 'i' ➔ "ᶤ" U+1DA4 MODIFIER LETTER SMALL I WITH STROKE
 /*<!superscript><!bar>                                             */ DEADTRANS( L'I'	,0xA7F8	,0x1DA7	,0x0000), // 'I' ➔ "ᶧ" U+1DA7 MODIFIER LETTER SMALL CAPITAL I WITH STROKE
+/*<!superscript><!bar>                                             */ DEADTRANS( L'j'	,0xA7F8	,0xDFD9	,0x0000), // High surrogate: D837; 'j' ➔ "𝿙" U+1DFD9 MODIFIER LETTER SMALL J WITH STROKE
+/*<!superscript><!bar>                                             */ DEADTRANS( L'l'	,0xA7F8	,0xDFD6	,0x0000), // High surrogate: D837; 'l' ➔ "𝿖" U+1DFD6 MODIFIER LETTER SMALL L WITH BAR
 /*<!superscript><!bar>                                             */ DEADTRANS( L'o'	,0xA7F8	,0x1DB1	,0x0000), // 'o' ➔ "ᶱ" U+1DB1 MODIFIER LETTER SMALL BARRED O
 /*<!superscript><!bar>                                             */ DEADTRANS( L'q'	,0xA7F8	,0xDFB3	,0x0000), // High surrogate: D801; 'q' ➔ "𐞳" U+107B3 MODIFIER LETTER GLOTTAL STOP WITH STROKE
 /*<!superscript><!bar>                                             */ DEADTRANS( L's'	,0xA7F8	,0xDFBF	,0x0000), // High surrogate: D801; 's' ➔ "𐞿" U+107BF MODIFIER LETTER SMALL ESH WITH DOUBLE BAR
 /*<!superscript><!bar>                                             */ DEADTRANS( L'u'	,0xA7F8	,0x1DB6	,0x0000), // 'u' ➔ "ᶶ" U+1DB6 MODIFIER LETTER SMALL U BAR
+/*<!superscript><!bar>                                             */ DEADTRANS( L'w'	,0xA7F8	,0xDFDB	,0x0000), // High surrogate: D837; 'w' ➔ "𝿛" U+1DFDB MODIFIER LETTER SMALL BARRED W
+/*<!superscript><!bar>                                             */ DEADTRANS( L'y'	,0xA7F8	,0xDFDA	,0x0000), // High surrogate: D837; 'y' ➔ "𝿚" U+1DFDA MODIFIER LETTER SMALL UPSILON WITH STROKE
 /*<!superscript><!breve><!breve>                                   */ DEADTRANS( L'_'	,0x1DB2	,0xDF9C	,0x0000), // High surrogate: D801; '_' ➔ "𐞜" U+1079C MODIFIER LETTER SMALL CAPITAL L WITH BELT
 /*<!superscript><!breve><!breve>                                   */ DEADTRANS( 0x0250	,0x1DB2	,0xDFA1	,0x0000), // High surrogate: D801; 'ɐ' ➔ "𐞡" U+107A1 MODIFIER LETTER SMALL TURNED Y WITH BELT
 /*<!superscript><!breve>                                           */ DEADTRANS( 0x0273	,0x1DB1	,0xDF9D	,0x0000), // High surrogate: D801; 'ɳ' ➔ "𐞝" U+1079D MODIFIER LETTER SMALL L WITH RETROFLEX HOOK AND BELT
@@ -9787,7 +9809,8 @@
 /*<!superscript><!reversed>                                        */ DEADTRANS( L'e'	,0x1D83	,0xDF8E	,0x0000), // High surrogate: D801; 'e' ➔ "𐞎" U+1078E MODIFIER LETTER SMALL REVERSED E
 /*<!superscript><!reversed>                                        */ DEADTRANS( L'N'	,0x1D83	,0x1D3B	,0x0000), // 'N' ➔ "ᴻ" U+1D3B MODIFIER LETTER CAPITAL REVERSED N
 /*<!superscript><!reversed>                                        */ DEADTRANS( L'q'	,0x1D83	,0x02C1	,0x0000), // 'q' ➔ "ˁ" U+02C1 MODIFIER LETTER REVERSED GLOTTAL STOP
-/*<!superscript>                                                   */ DEADTRANS( 0x00F8	,L'^'	,0xDFA2	,0x0000), // High surrogate: D801; 'ø' ➔ "𐞢" U+107A2 MODIFIER LETTER SMALL O WITH STROKE
+/*<!superscript><!stroke>                                          */ DEADTRANS( L'l'	,0xA7C7	,0xDFD5	,0x0000), // High surrogate: D837; 'l' ➔ "𝿕" U+1DFD5 MODIFIER LETTER SMALL L WITH STROKE
+/*<!superscript><!stroke>                                          */ DEADTRANS( L'o'	,0xA7C7	,0xDFA2	,0x0000), // High surrogate: D801; 'o' ➔ "𐞢" U+107A2 MODIFIER LETTER SMALL O WITH STROKE
 /*<!superscript><!subscript>                                       */ DEADTRANS( 0x024D	,0x1D7A	,0x1DA7	,0x0000), // 'ɍ' ➔ "ᶧ" U+1DA7 MODIFIER LETTER SMALL CAPITAL I WITH STROKE
 /*<!superscript><!subscript>                                       */ DEADTRANS( 0x0115	,0x1D7A	,0xDF9C	,0x0000), // High surrogate: D801; 'ĕ' ➔ "𐞜" U+1079C MODIFIER LETTER SMALL CAPITAL L WITH BELT
 /*<!superscript><!subscript><!group>                               */ DEADTRANS( L'O'	,0x1D79	,0xDFA3	,0x0000), // High surrogate: D801; 'O' ➔ "𐞣" U+107A3 MODIFIER LETTER SMALL CAPITAL OE
