@@ -21,7 +21,7 @@ Mise à jour pour macOS des dispositions développées pour Windows, portées so
 Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 lettres latines, 7 diacritiques et 65 symboles mathématiques
 
 * Composition :
-	* Émulation de codes Alt : Déboguer « ¦+249␣ » en mettant "∙" U+2219 à la place de "·" U+00B7.
+	* Émulation de codes Alt : Déboguer « ¦+249␣ » en mettant "∙" U+2219 à la place de "·" U+00B7. compose-1.yml [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
 	* Ajouter "ꬱ" U+AB31, qui était dans réfléchi. compose-1.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 * Transformations :
 	* Groupes des lettres :
@@ -36,11 +36,11 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Exposant et fioriture et tourné : Ajouter "𝿍" U+1DFCD. compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-complet/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 		* Exposant et indice (petite capitale) ; Ajouter "𝿑" U+1DFD1. ibidem
 		* Exposant et rayé :
-			* Ajouter "𝿒" U+1DFD2, "𝿓" U+1DFD3, "𝿔" U+1DFD4, "𝿖" U+1DFD6, "𝿙" U+1DFD9, "𝿚" U+1DFDA, "𝿛" U+1DFDB.
+			* Ajouter "𝿒" U+1DFD2, "𝿓" U+1DFD3, "𝿔" U+1DFD4, "𝿖" U+1DFD6, "𝿙" U+1DFD9, "𝿚" U+1DFDA, "𝿛" U+1DFDB. compose-2.yml [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
 			* Exposant et double raie : Ajouter "𐞿" U+107BF. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
 			* Exposant et raie haute : Ajouter "𝿎" U+1DFCE, "𝿏" U+1DFCF. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 		* Exposant et macron : Ajouter "𐞽" U+107BD. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
-		* Exposant et barré : Ajouter "𝿕" U+1DFD5.
+		* Exposant et barré : Ajouter "𝿕" U+1DFD5. compose-2.yml [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
 	* Tourné :
 		* Ajouter "𝽶" U+1DF76, "𝽷" U+1DF77 (dans le groupe 4). compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-complet/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 		* Tourné et rayé : Ajouter "𝼾" U+1DF3E, "𝽐" U+1DF50. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
@@ -80,14 +80,14 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Paraphe : Ajouter "𝼷" U+1DF37. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Brève : Ajouter groupe 1 pour ajouter "𝽚" U+1DF5A par "a". compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 	* Rayé :
-		* Ajouter "⸠" U+2E20 à la place de "†" U+2020, qui va dans raie haute.
-		* Ajouter  "⸡" U+2E21 par "!".
+		* Ajouter "⸠" U+2E20 à la place de "†" U+2020, qui va dans raie haute. compose-2.yml [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
+		* Ajouter  "⸡" U+2E21 par "!". ibidem
 		* Ajouter "𝽀" U+1DF40, "𝽁" U+1DF41 à la place de "Ꜻ", "ꜻ", qui sont en composition. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
 		* Ajouter "𝼿" U+1DF3F, "𝽂" U+1DF42, "𝽄" U+1DF44, "𝽊" U+1DF4A, "𝽋" U+1DF4B, "𝽍" U+1DF4D, "𝽎" U+1DF4E, "𝽏" U+1DF4F, "𝽑" U+1DF51, "𝽒" U+1DF52, "𝽓" U+1DF53, "𝽔" U+1DF54. ibidem
 		* Rayé et crochet palatal : Ajouter "𝼲" U+1DF32, "𝽅" U+1DF45. compose-2.yml [0dc2d32](https://github.com/dispoclavier/azerty-complet/commit/0dc2d3214afd7c30a0a059926351260a6522646b), [9f8f564](https://github.com/dispoclavier/azerty-complet/commit/9f8f5640f6e25228381b546657e62f3a1ab00bd9), [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3)
 		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)                            
 		* Raie haute :
-			* Redonder "†" U+2020.
+			* Redonder "†" U+2020. compose-2.yml [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
 			* Ajouter "𝽘" U+1DF58, "𝽙" U+1DF59. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 	* Cornu : Ajouter "𝽼" U+1DF7C, "𝽽" U+1DF7D. compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-complet/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 	* Macron :
