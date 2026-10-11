@@ -105,6 +105,7 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 	* Raccourcir les descripteurs des dispositions de clavier sous Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Mouvoir le JSON dans un fichier. outils/settings.json [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
 	* Déboguer la taille de fichier. compose-2.yml, compose-3.yml [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3), generate-deadkey-tables.pl [8fd4f48](https://github.com/dispoclavier/azerty-complet/commit/8fd4f48e1029aae695ba34e278de587dc9c83feb)
+	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-complet/commit/1f7e36dd0102d8939aa11c348b956208deabd94a)
 * Builds :
 
 ## 7.0.0 (2026-09-18)
