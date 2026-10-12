@@ -1,7 +1,7 @@
 # START_additions_XCompose_Dispoclavier (please do not delete this keyword - ne pas effacer ce mot-clé s.v.p.)
-#                       Date: 2026-10-11T2059+0200
+#                       Date: 2026-10-12T1649+0200
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0.0" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0.0.1" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -5206,306 +5206,156 @@
 <Multi_key><plus>                                                             <9><8><nobreakspace> : "b" U0062 #
 <Multi_key><plus>                                                             <9><9>       <space> : "c" U0063 #
 <Multi_key><plus>                                                             <9><9><nobreakspace> : "c" U0063 #
-<Multi_key><plus>                                                          <1><0><0>       <space> : "d" U0064 #
-<Multi_key><plus>                                                          <1><0><0><nobreakspace> : "d" U0064 #
-<Multi_key><plus>                                                          <1><0><1>       <space> : "e" U0065 #
-<Multi_key><plus>                                                          <1><0><1><nobreakspace> : "e" U0065 #
-<Multi_key><plus>                                                          <1><0><2>       <space> : "f" U0066 #
-<Multi_key><plus>                                                          <1><0><2><nobreakspace> : "f" U0066 #
-<Multi_key><plus>                                                          <1><0><3>       <space> : "g" U0067 #
-<Multi_key><plus>                                                          <1><0><3><nobreakspace> : "g" U0067 #
-<Multi_key><plus>                                                          <1><0><4>       <space> : "h" U0068 #
-<Multi_key><plus>                                                          <1><0><4><nobreakspace> : "h" U0068 #
-<Multi_key><plus>                                                          <1><0><5>       <space> : "i" U0069 #
-<Multi_key><plus>                                                          <1><0><5><nobreakspace> : "i" U0069 #
-<Multi_key><plus>                                                          <1><0><6>       <space> : "j" U006A #
-<Multi_key><plus>                                                          <1><0><6><nobreakspace> : "j" U006A #
-<Multi_key><plus>                                                          <1><0><7>       <space> : "k" U006B #
-<Multi_key><plus>                                                          <1><0><7><nobreakspace> : "k" U006B #
-<Multi_key><plus>                                                          <1><0><8>       <space> : "l" U006C #
-<Multi_key><plus>                                                          <1><0><8><nobreakspace> : "l" U006C #
-<Multi_key><plus>                                                          <1><0><9>       <space> : "m" U006D #
-<Multi_key><plus>                                                          <1><0><9><nobreakspace> : "m" U006D #
-<Multi_key><plus>                                                          <1><1><0>       <space> : "n" U006E #
-<Multi_key><plus>                                                          <1><1><0><nobreakspace> : "n" U006E #
-<Multi_key><plus>                                                          <1><1><1>       <space> : "o" U006F #
-<Multi_key><plus>                                                          <1><1><1><nobreakspace> : "o" U006F #
-<Multi_key><plus>                                                          <1><1><2>       <space> : "p" U0070 #
-<Multi_key><plus>                                                          <1><1><2><nobreakspace> : "p" U0070 #
-<Multi_key><plus>                                                          <1><1><3>       <space> : "q" U0071 #
-<Multi_key><plus>                                                          <1><1><3><nobreakspace> : "q" U0071 #
-<Multi_key><plus>                                                          <1><1><4>       <space> : "r" U0072 #
-<Multi_key><plus>                                                          <1><1><4><nobreakspace> : "r" U0072 #
-<Multi_key><plus>                                                          <1><1><5>       <space> : "s" U0073 #
-<Multi_key><plus>                                                          <1><1><5><nobreakspace> : "s" U0073 #
-<Multi_key><plus>                                                          <1><1><6>       <space> : "t" U0074 #
-<Multi_key><plus>                                                          <1><1><6><nobreakspace> : "t" U0074 #
-<Multi_key><plus>                                                          <1><1><7>       <space> : "u" U0075 #
-<Multi_key><plus>                                                          <1><1><7><nobreakspace> : "u" U0075 #
-<Multi_key><plus>                                                          <1><1><8>       <space> : "v" U0076 #
-<Multi_key><plus>                                                          <1><1><8><nobreakspace> : "v" U0076 #
-<Multi_key><plus>                                                          <1><1><9>       <space> : "w" U0077 #
-<Multi_key><plus>                                                          <1><1><9><nobreakspace> : "w" U0077 #
-<Multi_key><plus>                                                          <1><2><0>       <space> : "x" U0078 #
-<Multi_key><plus>                                                          <1><2><0><nobreakspace> : "x" U0078 #
-<Multi_key><plus>                                                          <1><2><1>       <space> : "y" U0079 #
-<Multi_key><plus>                                                          <1><2><1><nobreakspace> : "y" U0079 #
-<Multi_key><plus>                                                          <1><2><2>       <space> : "z" U007A #
-<Multi_key><plus>                                                          <1><2><2><nobreakspace> : "z" U007A #
-<Multi_key><plus>                                                          <1><2><3>       <space> : "{" U007B #
-<Multi_key><plus>                                                          <1><2><3><nobreakspace> : "{" U007B #
-<Multi_key><plus>                                                          <1><2><4>       <space> : "|" U007C #
-<Multi_key><plus>                                                          <1><2><4><nobreakspace> : "|" U007C #
-<Multi_key><plus>                                                          <1><2><5>       <space> : "}" U007D #
-<Multi_key><plus>                                                          <1><2><5><nobreakspace> : "}" U007D #
-<Multi_key><plus>                                                          <1><2><6>       <space> : "~" U007E #
-<Multi_key><plus>                                                          <1><2><6><nobreakspace> : "~" U007E #
-<Multi_key><plus>                                                          <1><2><7>       <space> : "⌂" U2302 #
-<Multi_key><plus>                                                          <1><2><7><nobreakspace> : "⌂" U2302 #
-<Multi_key><plus>                                                          <1><2><8>       <space> : "Ç" U00C7 #
-<Multi_key><plus>                                                          <1><2><8><nobreakspace> : "Ç" U00C7 #
-<Multi_key><plus>                                                          <1><2><9>       <space> : "ü" U00FC #
-<Multi_key><plus>                                                          <1><2><9><nobreakspace> : "ü" U00FC #
-<Multi_key><plus>                                                          <1><3><0>       <space> : "é" U00E9 #
-<Multi_key><plus>                                                          <1><3><0><nobreakspace> : "é" U00E9 #
-<Multi_key><plus>                                                          <1><3><1>       <space> : "â" U00E2 #
-<Multi_key><plus>                                                          <1><3><1><nobreakspace> : "â" U00E2 #
-<Multi_key><plus>                                                          <1><3><2>       <space> : "ä" U00E4 #
-<Multi_key><plus>                                                          <1><3><2><nobreakspace> : "ä" U00E4 #
-<Multi_key><plus>                                                          <1><3><3>       <space> : "à" U00E0 #
-<Multi_key><plus>                                                          <1><3><3><nobreakspace> : "à" U00E0 #
-<Multi_key><plus>                                                          <1><3><4>       <space> : "å" U00E5 #
-<Multi_key><plus>                                                          <1><3><4><nobreakspace> : "å" U00E5 #
-<Multi_key><plus>                                                          <1><3><5>       <space> : "ç" U00E7 #
-<Multi_key><plus>                                                          <1><3><5><nobreakspace> : "ç" U00E7 #
-<Multi_key><plus>                                                          <1><3><6>       <space> : "ê" U00EA #
-<Multi_key><plus>                                                          <1><3><6><nobreakspace> : "ê" U00EA #
-<Multi_key><plus>                                                          <1><3><7>       <space> : "ë" U00EB #
-<Multi_key><plus>                                                          <1><3><7><nobreakspace> : "ë" U00EB #
-<Multi_key><plus>                                                          <1><3><8>       <space> : "è" U00E8 #
-<Multi_key><plus>                                                          <1><3><8><nobreakspace> : "è" U00E8 #
-<Multi_key><plus>                                                          <1><3><9>       <space> : "ï" U00EF #
-<Multi_key><plus>                                                          <1><3><9><nobreakspace> : "ï" U00EF #
-<Multi_key><plus>                                                          <1><4><0>       <space> : "î" U00EE #
-<Multi_key><plus>                                                          <1><4><0><nobreakspace> : "î" U00EE #
-<Multi_key><plus>                                                          <1><4><1>       <space> : "ì" U00EC #
-<Multi_key><plus>                                                          <1><4><1><nobreakspace> : "ì" U00EC #
-<Multi_key><plus>                                                          <1><4><2>       <space> : "Ä" U00C4 #
-<Multi_key><plus>                                                          <1><4><2><nobreakspace> : "Ä" U00C4 #
-<Multi_key><plus>                                                          <1><4><3>       <space> : "Å" U00C5 #
-<Multi_key><plus>                                                          <1><4><3><nobreakspace> : "Å" U00C5 #
-<Multi_key><plus>                                                          <1><4><4>       <space> : "É" U00C9 #
-<Multi_key><plus>                                                          <1><4><4><nobreakspace> : "É" U00C9 #
-<Multi_key><plus>                                                          <1><4><5>       <space> : "æ" U00E6 #
-<Multi_key><plus>                                                          <1><4><5><nobreakspace> : "æ" U00E6 #
-<Multi_key><plus>                                                          <1><4><6>       <space> : "Æ" U00C6 #
-<Multi_key><plus>                                                          <1><4><6><nobreakspace> : "Æ" U00C6 #
-<Multi_key><plus>                                                          <1><4><7>       <space> : "ô" U00F4 #
-<Multi_key><plus>                                                          <1><4><7><nobreakspace> : "ô" U00F4 #
-<Multi_key><plus>                                                          <1><4><8>       <space> : "ö" U00F6 #
-<Multi_key><plus>                                                          <1><4><8><nobreakspace> : "ö" U00F6 #
-<Multi_key><plus>                                                          <1><4><9>       <space> : "ò" U00F2 #
-<Multi_key><plus>                                                          <1><4><9><nobreakspace> : "ò" U00F2 #
-<Multi_key><plus>                                                          <1><5><0>       <space> : "û" U00FB #
-<Multi_key><plus>                                                          <1><5><0><nobreakspace> : "û" U00FB #
-<Multi_key><plus>                                                          <1><5><1>       <space> : "ù" U00F9 #
-<Multi_key><plus>                                                          <1><5><1><nobreakspace> : "ù" U00F9 #
-<Multi_key><plus>                                                          <1><5><2>       <space> : "ÿ" U00FF #
-<Multi_key><plus>                                                          <1><5><2><nobreakspace> : "ÿ" U00FF #
-<Multi_key><plus>                                                          <1><5><3>       <space> : "Ö" U00D6 #
-<Multi_key><plus>                                                          <1><5><3><nobreakspace> : "Ö" U00D6 #
-<Multi_key><plus>                                                          <1><5><4>       <space> : "Ü" U00DC #
-<Multi_key><plus>                                                          <1><5><4><nobreakspace> : "Ü" U00DC #
-<Multi_key><plus>                                                          <1><5><5>       <space> : "¢" U00A2 #
-<Multi_key><plus>                                                          <1><5><5><nobreakspace> : "¢" U00A2 #
-<Multi_key><plus>                                                          <1><5><6>       <space> : "£" U00A3 #
-<Multi_key><plus>                                                          <1><5><6><nobreakspace> : "£" U00A3 #
-<Multi_key><plus>                                                          <1><5><7>       <space> : "¥" U00A5 #
-<Multi_key><plus>                                                          <1><5><7><nobreakspace> : "¥" U00A5 #
-<Multi_key><plus>                                                          <1><5><8>       <space> : "₧" U20A7 #
-<Multi_key><plus>                                                          <1><5><8><nobreakspace> : "₧" U20A7 #
-<Multi_key><plus>                                                          <1><5><9>       <space> : "ƒ" U0192 #
-<Multi_key><plus>                                                          <1><5><9><nobreakspace> : "ƒ" U0192 #
-<Multi_key><plus>                                                          <1><6><4>       <space> : "ñ" U00F1 #
-<Multi_key><plus>                                                          <1><6><4><nobreakspace> : "ñ" U00F1 #
-<Multi_key><plus>                                                          <1><6><5>       <space> : "Ñ" U00D1 #
-<Multi_key><plus>                                                          <1><6><5><nobreakspace> : "Ñ" U00D1 #
-<Multi_key><plus>                                                          <1><6><6>       <space> : "ª" U00AA #
-<Multi_key><plus>                                                          <1><6><6><nobreakspace> : "ª" U00AA #
-<Multi_key><plus>                                                          <1><6><7>       <space> : "º" U00BA #
-<Multi_key><plus>                                                          <1><6><7><nobreakspace> : "º" U00BA #
-<Multi_key><plus>                                                          <1><6><8>       <space> : "¿" U00BF #
-<Multi_key><plus>                                                          <1><6><8><nobreakspace> : "¿" U00BF #
-<Multi_key><plus>                                                          <1><6><9>       <space> : "®" U00AE #
-<Multi_key><plus>                                                          <1><6><9><nobreakspace> : "®" U00AE #
-<Multi_key><plus>                                                          <1><7><0>       <space> : "¬" U00AC #
-<Multi_key><plus>                                                          <1><7><0><nobreakspace> : "¬" U00AC #
-<Multi_key><plus>                                                          <1><7><1>       <space> : "½" U00BD #
-<Multi_key><plus>                                                          <1><7><1><nobreakspace> : "½" U00BD #
-<Multi_key><plus>                                                          <1><7><2>       <space> : "¼" U00BC #
-<Multi_key><plus>                                                          <1><7><2><nobreakspace> : "¼" U00BC #
-<Multi_key><plus>                                                          <1><7><3>       <space> : "¡" U00A1 #
-<Multi_key><plus>                                                          <1><7><3><nobreakspace> : "¡" U00A1 #
-<Multi_key><plus>                                                          <1><7><4>       <space> : "«" U00AB #
-<Multi_key><plus>                                                          <1><7><4><nobreakspace> : "«" U00AB #
-<Multi_key><plus>                                                          <1><7><5>       <space> : "»" U00BB #
-<Multi_key><plus>                                                          <1><7><5><nobreakspace> : "»" U00BB #
-<Multi_key><plus>                                                          <1><7><6>       <space> : "░" U2591 #
-<Multi_key><plus>                                                          <1><7><6><nobreakspace> : "░" U2591 #
-<Multi_key><plus>                                                          <1><7><7>       <space> : "▒" U2592 #
-<Multi_key><plus>                                                          <1><7><7><nobreakspace> : "▒" U2592 #
-<Multi_key><plus>                                                          <1><7><8>       <space> : "▓" U2593 #
-<Multi_key><plus>                                                          <1><7><8><nobreakspace> : "▓" U2593 #
-<Multi_key><plus>                                                          <1><7><9>       <space> : "│" U2502 #
-<Multi_key><plus>                                                          <1><7><9><nobreakspace> : "│" U2502 #
-<Multi_key><plus>                                                          <1><8><0>       <space> : "┤" U2524 #
-<Multi_key><plus>                                                          <1><8><0><nobreakspace> : "┤" U2524 #
-<Multi_key><plus>                                                          <1><8><1>       <space> : "╡" U2561 #
-<Multi_key><plus>                                                          <1><8><1><nobreakspace> : "╡" U2561 #
-<Multi_key><plus>                                                          <1><8><2>       <space> : "╢" U2562 #
-<Multi_key><plus>                                                          <1><8><2><nobreakspace> : "╢" U2562 #
-<Multi_key><plus>                                                          <1><8><3>       <space> : "╖" U2556 #
-<Multi_key><plus>                                                          <1><8><3><nobreakspace> : "╖" U2556 #
-<Multi_key><plus>                                                          <1><8><4>       <space> : "╕" U2555 #
-<Multi_key><plus>                                                          <1><8><4><nobreakspace> : "╕" U2555 #
-<Multi_key><plus>                                                          <1><8><5>       <space> : "╣" U2563 #
-<Multi_key><plus>                                                          <1><8><5><nobreakspace> : "╣" U2563 #
-<Multi_key><plus>                                                          <1><8><6>       <space> : "║" U2551 #
-<Multi_key><plus>                                                          <1><8><6><nobreakspace> : "║" U2551 #
-<Multi_key><plus>                                                          <1><8><7>       <space> : "╗" U2557 #
-<Multi_key><plus>                                                          <1><8><7><nobreakspace> : "╗" U2557 #
-<Multi_key><plus>                                                          <1><8><8>       <space> : "╝" U255D #
-<Multi_key><plus>                                                          <1><8><8><nobreakspace> : "╝" U255D #
-<Multi_key><plus>                                                          <1><8><9>       <space> : "╜" U255C #
-<Multi_key><plus>                                                          <1><8><9><nobreakspace> : "╜" U255C #
-<Multi_key><plus>                                                          <1><9><0>       <space> : "╛" U255B #
-<Multi_key><plus>                                                          <1><9><0><nobreakspace> : "╛" U255B #
-<Multi_key><plus>                                                          <1><9><1>       <space> : "┐" U2510 #
-<Multi_key><plus>                                                          <1><9><1><nobreakspace> : "┐" U2510 #
-<Multi_key><plus>                                                          <1><9><2>       <space> : "└" U2514 #
-<Multi_key><plus>                                                          <1><9><2><nobreakspace> : "└" U2514 #
-<Multi_key><plus>                                                          <1><9><3>       <space> : "┴" U2534 #
-<Multi_key><plus>                                                          <1><9><3><nobreakspace> : "┴" U2534 #
-<Multi_key><plus>                                                          <1><9><4>       <space> : "┬" U252C #
-<Multi_key><plus>                                                          <1><9><4><nobreakspace> : "┬" U252C #
-<Multi_key><plus>                                                          <1><9><5>       <space> : "├" U251C #
-<Multi_key><plus>                                                          <1><9><5><nobreakspace> : "├" U251C #
-<Multi_key><plus>                                                          <1><9><6>       <space> : "─" U2500 #
-<Multi_key><plus>                                                          <1><9><6><nobreakspace> : "─" U2500 #
-<Multi_key><plus>                                                          <1><9><7>       <space> : "┼" U253C #
-<Multi_key><plus>                                                          <1><9><7><nobreakspace> : "┼" U253C #
-<Multi_key><plus>                                                          <1><9><8>       <space> : "╞" U255E #
-<Multi_key><plus>                                                          <1><9><8><nobreakspace> : "╞" U255E #
-<Multi_key><plus>                                                          <1><9><9>       <space> : "╟" U255F #
-<Multi_key><plus>                                                          <1><9><9><nobreakspace> : "╟" U255F #
-<Multi_key><plus>                                                          <2><0><0>       <space> : "╚" U255A #
-<Multi_key><plus>                                                          <2><0><0><nobreakspace> : "╚" U255A #
-<Multi_key><plus>                                                          <2><0><1>       <space> : "╔" U2554 #
-<Multi_key><plus>                                                          <2><0><1><nobreakspace> : "╔" U2554 #
-<Multi_key><plus>                                                          <2><0><2>       <space> : "╩" U2569 #
-<Multi_key><plus>                                                          <2><0><2><nobreakspace> : "╩" U2569 #
-<Multi_key><plus>                                                          <2><0><3>       <space> : "╦" U2566 #
-<Multi_key><plus>                                                          <2><0><3><nobreakspace> : "╦" U2566 #
-<Multi_key><plus>                                                          <2><0><4>       <space> : "╠" U2560 #
-<Multi_key><plus>                                                          <2><0><4><nobreakspace> : "╠" U2560 #
-<Multi_key><plus>                                                          <2><0><5>       <space> : "═" U2550 #
-<Multi_key><plus>                                                          <2><0><5><nobreakspace> : "═" U2550 #
-<Multi_key><plus>                                                          <2><0><6>       <space> : "╬" U256C #
-<Multi_key><plus>                                                          <2><0><6><nobreakspace> : "╬" U256C #
-<Multi_key><plus>                                                          <2><0><7>       <space> : "╧" U2567 #
-<Multi_key><plus>                                                          <2><0><7><nobreakspace> : "╧" U2567 #
-<Multi_key><plus>                                                          <2><0><8>       <space> : "╨" U2568 #
-<Multi_key><plus>                                                          <2><0><8><nobreakspace> : "╨" U2568 #
-<Multi_key><plus>                                                          <2><0><9>       <space> : "╤" U2564 #
-<Multi_key><plus>                                                          <2><0><9><nobreakspace> : "╤" U2564 #
-<Multi_key><plus>                                                          <2><1><0>       <space> : "╥" U2565 #
-<Multi_key><plus>                                                          <2><1><0><nobreakspace> : "╥" U2565 #
-<Multi_key><plus>                                                          <2><1><1>       <space> : "╙" U2559 #
-<Multi_key><plus>                                                          <2><1><1><nobreakspace> : "╙" U2559 #
-<Multi_key><plus>                                                          <2><1><2>       <space> : "╘" U2558 #
-<Multi_key><plus>                                                          <2><1><2><nobreakspace> : "╘" U2558 #
-<Multi_key><plus>                                                          <2><1><3>       <space> : "╒" U2552 #
-<Multi_key><plus>                                                          <2><1><3><nobreakspace> : "╒" U2552 #
-<Multi_key><plus>                                                          <2><1><4>       <space> : "╓" U2553 #
-<Multi_key><plus>                                                          <2><1><4><nobreakspace> : "╓" U2553 #
-<Multi_key><plus>                                                          <2><1><5>       <space> : "╫" U256B #
-<Multi_key><plus>                                                          <2><1><5><nobreakspace> : "╫" U256B #
-<Multi_key><plus>                                                          <2><1><6>       <space> : "╪" U256A #
-<Multi_key><plus>                                                          <2><1><6><nobreakspace> : "╪" U256A #
-<Multi_key><plus>                                                          <2><1><7>       <space> : "┘" U2518 #
-<Multi_key><plus>                                                          <2><1><7><nobreakspace> : "┘" U2518 #
-<Multi_key><plus>                                                          <2><1><8>       <space> : "┌" U250C #
-<Multi_key><plus>                                                          <2><1><8><nobreakspace> : "┌" U250C #
-<Multi_key><plus>                                                          <2><1><9>       <space> : "█" U2588 #
-<Multi_key><plus>                                                          <2><1><9><nobreakspace> : "█" U2588 #
-<Multi_key><plus>                                                          <2><2><0>       <space> : "▄" U2584 #
-<Multi_key><plus>                                                          <2><2><0><nobreakspace> : "▄" U2584 #
-<Multi_key><plus>                                                          <2><2><1>       <space> : "▌" U258C #
-<Multi_key><plus>                                                          <2><2><1><nobreakspace> : "▌" U258C #
-<Multi_key><plus>                                                          <2><2><2>       <space> : "▐" U2590 #
-<Multi_key><plus>                                                          <2><2><2><nobreakspace> : "▐" U2590 #
-<Multi_key><plus>                                                          <2><2><3>       <space> : "▀" U2580 #
-<Multi_key><plus>                                                          <2><2><3><nobreakspace> : "▀" U2580 #
-<Multi_key><plus>                                                          <2><2><4>       <space> : "α" U03B1 #
-<Multi_key><plus>                                                          <2><2><4><nobreakspace> : "α" U03B1 #
-<Multi_key><plus>                                                          <2><2><5>       <space> : "ß" U00DF #
-<Multi_key><plus>                                                          <2><2><5><nobreakspace> : "ß" U00DF #
-<Multi_key><plus>                                                          <2><2><6>       <space> : "Γ" U0393 #
-<Multi_key><plus>                                                          <2><2><6><nobreakspace> : "Γ" U0393 #
-<Multi_key><plus>                                                          <2><2><7>       <space> : "π" U03C0 #
-<Multi_key><plus>                                                          <2><2><7><nobreakspace> : "π" U03C0 #
-<Multi_key><plus>                                                          <2><2><8>       <space> : "Σ" U03A3 #
-<Multi_key><plus>                                                          <2><2><8><nobreakspace> : "Σ" U03A3 #
-<Multi_key><plus>                                                          <2><2><9>       <space> : "σ" U03C3 #
-<Multi_key><plus>                                                          <2><2><9><nobreakspace> : "σ" U03C3 #
-<Multi_key><plus>                                                          <2><3><0>       <space> : "µ" U00B5 #
-<Multi_key><plus>                                                          <2><3><0><nobreakspace> : "µ" U00B5 #
-<Multi_key><plus>                                                          <2><3><1>       <space> : "τ" U03C4 #
-<Multi_key><plus>                                                          <2><3><1><nobreakspace> : "τ" U03C4 #
-<Multi_key><plus>                                                          <2><3><2>       <space> : "Φ" U03A6 #
-<Multi_key><plus>                                                          <2><3><2><nobreakspace> : "Φ" U03A6 #
-<Multi_key><plus>                                                          <2><3><3>       <space> : "Θ" U0398 #
-<Multi_key><plus>                                                          <2><3><3><nobreakspace> : "Θ" U0398 #
-<Multi_key><plus>                                                          <2><3><4>       <space> : "Ω" U2126 #
-<Multi_key><plus>                                                          <2><3><4><nobreakspace> : "Ω" U2126 #
-<Multi_key><plus>                                                          <2><3><5>       <space> : "δ" U03B4 #
-<Multi_key><plus>                                                          <2><3><5><nobreakspace> : "δ" U03B4 #
-<Multi_key><plus>                                                          <2><3><6>       <space> : "∞" U221E #
-<Multi_key><plus>                                                          <2><3><6><nobreakspace> : "∞" U221E #
-<Multi_key><plus>                                                          <2><3><7>       <space> : "φ" U03C6 #
-<Multi_key><plus>                                                          <2><3><7><nobreakspace> : "φ" U03C6 #
-<Multi_key><plus>                                                          <2><3><8>       <space> : "ε" U03B5 #
-<Multi_key><plus>                                                          <2><3><8><nobreakspace> : "ε" U03B5 #
-<Multi_key><plus>                                                          <2><3><9>       <space> : "∩" U2229 #
-<Multi_key><plus>                                                          <2><3><9><nobreakspace> : "∩" U2229 #
-<Multi_key><plus>                                                          <2><4><0>       <space> : "≡" U2261 #
-<Multi_key><plus>                                                          <2><4><0><nobreakspace> : "≡" U2261 #
-<Multi_key><plus>                                                          <2><4><1>       <space> : "±" U00B1 #
-<Multi_key><plus>                                                          <2><4><1><nobreakspace> : "±" U00B1 #
-<Multi_key><plus>                                                          <2><4><2>       <space> : "≥" U2265 #
-<Multi_key><plus>                                                          <2><4><2><nobreakspace> : "≥" U2265 #
-<Multi_key><plus>                                                          <2><4><3>       <space> : "≤" U2264 #
-<Multi_key><plus>                                                          <2><4><3><nobreakspace> : "≤" U2264 #
-<Multi_key><plus>                                                          <2><4><4>       <space> : "⌠" U2320 #
-<Multi_key><plus>                                                          <2><4><4><nobreakspace> : "⌠" U2320 #
-<Multi_key><plus>                                                          <2><4><5>       <space> : "⌡" U2321 #
-<Multi_key><plus>                                                          <2><4><5><nobreakspace> : "⌡" U2321 #
-<Multi_key><plus>                                                          <2><4><7>       <space> : "≈" U2248 #
-<Multi_key><plus>                                                          <2><4><7><nobreakspace> : "≈" U2248 #
-<Multi_key><plus>                                                          <2><4><8>       <space> : "°" U00B0 #
-<Multi_key><plus>                                                          <2><4><8><nobreakspace> : "°" U00B0 #
-<Multi_key><plus>                                                          <2><4><9>       <space> : "∙" U2219 #
-<Multi_key><plus>                                                          <2><4><9><nobreakspace> : "∙" U2219 #
-<Multi_key><plus>                                                          <2><5><0>       <space> : "·" U00B7 #
-<Multi_key><plus>                                                          <2><5><0><nobreakspace> : "·" U00B7 #
-<Multi_key><plus>                                                          <2><5><1>       <space> : "√" U221A #
-<Multi_key><plus>                                                          <2><5><1><nobreakspace> : "√" U221A #
-<Multi_key><plus>                                                          <2><5><2>       <space> : "ⁿ" U207F #
-<Multi_key><plus>                                                          <2><5><2><nobreakspace> : "ⁿ" U207F #
-<Multi_key><plus>                                                          <2><5><4>       <space> : "■" U25A0 #
-<Multi_key><plus>                                                          <2><5><4><nobreakspace> : "■" U25A0 #
-<Multi_key><plus>                                                          <2><5><5>       <space> : " " U0020 #
-<Multi_key><plus>                                                          <2><5><5><nobreakspace> : " " U0020 #
+<Multi_key><plus>                                                          <1><0><0>               : "d" U0064 #
+<Multi_key><plus>                                                          <1><0><1>               : "e" U0065 #
+<Multi_key><plus>                                                          <1><0><2>               : "f" U0066 #
+<Multi_key><plus>                                                          <1><0><3>               : "g" U0067 #
+<Multi_key><plus>                                                          <1><0><4>               : "h" U0068 #
+<Multi_key><plus>                                                          <1><0><5>               : "i" U0069 #
+<Multi_key><plus>                                                          <1><0><6>               : "j" U006A #
+<Multi_key><plus>                                                          <1><0><7>               : "k" U006B #
+<Multi_key><plus>                                                          <1><0><8>               : "l" U006C #
+<Multi_key><plus>                                                          <1><0><9>               : "m" U006D #
+<Multi_key><plus>                                                          <1><1><0>               : "n" U006E #
+<Multi_key><plus>                                                          <1><1><1>               : "o" U006F #
+<Multi_key><plus>                                                          <1><1><2>               : "p" U0070 #
+<Multi_key><plus>                                                          <1><1><3>               : "q" U0071 #
+<Multi_key><plus>                                                          <1><1><4>               : "r" U0072 #
+<Multi_key><plus>                                                          <1><1><5>               : "s" U0073 #
+<Multi_key><plus>                                                          <1><1><6>               : "t" U0074 #
+<Multi_key><plus>                                                          <1><1><7>               : "u" U0075 #
+<Multi_key><plus>                                                          <1><1><8>               : "v" U0076 #
+<Multi_key><plus>                                                          <1><1><9>               : "w" U0077 #
+<Multi_key><plus>                                                          <1><2><0>               : "x" U0078 #
+<Multi_key><plus>                                                          <1><2><1>               : "y" U0079 #
+<Multi_key><plus>                                                          <1><2><2>               : "z" U007A #
+<Multi_key><plus>                                                          <1><2><3>               : "{" U007B #
+<Multi_key><plus>                                                          <1><2><4>               : "|" U007C #
+<Multi_key><plus>                                                          <1><2><5>               : "}" U007D #
+<Multi_key><plus>                                                          <1><2><6>               : "~" U007E #
+<Multi_key><plus>                                                          <1><2><7>               : "⌂" U2302 #
+<Multi_key><plus>                                                          <1><2><8>               : "Ç" U00C7 #
+<Multi_key><plus>                                                          <1><2><9>               : "ü" U00FC #
+<Multi_key><plus>                                                          <1><3><0>               : "é" U00E9 #
+<Multi_key><plus>                                                          <1><3><1>               : "â" U00E2 #
+<Multi_key><plus>                                                          <1><3><2>               : "ä" U00E4 #
+<Multi_key><plus>                                                          <1><3><3>               : "à" U00E0 #
+<Multi_key><plus>                                                          <1><3><4>               : "å" U00E5 #
+<Multi_key><plus>                                                          <1><3><5>               : "ç" U00E7 #
+<Multi_key><plus>                                                          <1><3><6>               : "ê" U00EA #
+<Multi_key><plus>                                                          <1><3><7>               : "ë" U00EB #
+<Multi_key><plus>                                                          <1><3><8>               : "è" U00E8 #
+<Multi_key><plus>                                                          <1><3><9>               : "ï" U00EF #
+<Multi_key><plus>                                                          <1><4><0>               : "î" U00EE #
+<Multi_key><plus>                                                          <1><4><1>               : "ì" U00EC #
+<Multi_key><plus>                                                          <1><4><2>               : "Ä" U00C4 #
+<Multi_key><plus>                                                          <1><4><3>               : "Å" U00C5 #
+<Multi_key><plus>                                                          <1><4><4>               : "É" U00C9 #
+<Multi_key><plus>                                                          <1><4><5>               : "æ" U00E6 #
+<Multi_key><plus>                                                          <1><4><6>               : "Æ" U00C6 #
+<Multi_key><plus>                                                          <1><4><7>               : "ô" U00F4 #
+<Multi_key><plus>                                                          <1><4><8>               : "ö" U00F6 #
+<Multi_key><plus>                                                          <1><4><9>               : "ò" U00F2 #
+<Multi_key><plus>                                                          <1><5><0>               : "û" U00FB #
+<Multi_key><plus>                                                          <1><5><1>               : "ù" U00F9 #
+<Multi_key><plus>                                                          <1><5><2>               : "ÿ" U00FF #
+<Multi_key><plus>                                                          <1><5><3>               : "Ö" U00D6 #
+<Multi_key><plus>                                                          <1><5><4>               : "Ü" U00DC #
+<Multi_key><plus>                                                          <1><5><5>               : "¢" U00A2 #
+<Multi_key><plus>                                                          <1><5><6>               : "£" U00A3 #
+<Multi_key><plus>                                                          <1><5><7>               : "¥" U00A5 #
+<Multi_key><plus>                                                          <1><5><8>               : "₧" U20A7 #
+<Multi_key><plus>                                                          <1><5><9>               : "ƒ" U0192 #
+<Multi_key><plus>                                                          <1><6><4>               : "ñ" U00F1 #
+<Multi_key><plus>                                                          <1><6><5>               : "Ñ" U00D1 #
+<Multi_key><plus>                                                          <1><6><6>               : "ª" U00AA #
+<Multi_key><plus>                                                          <1><6><7>               : "º" U00BA #
+<Multi_key><plus>                                                          <1><6><8>               : "¿" U00BF #
+<Multi_key><plus>                                                          <1><6><9>               : "®" U00AE #
+<Multi_key><plus>                                                          <1><7><0>               : "¬" U00AC #
+<Multi_key><plus>                                                          <1><7><1>               : "½" U00BD #
+<Multi_key><plus>                                                          <1><7><2>               : "¼" U00BC #
+<Multi_key><plus>                                                          <1><7><3>               : "¡" U00A1 #
+<Multi_key><plus>                                                          <1><7><4>               : "«" U00AB #
+<Multi_key><plus>                                                          <1><7><5>               : "»" U00BB #
+<Multi_key><plus>                                                          <1><7><6>               : "░" U2591 #
+<Multi_key><plus>                                                          <1><7><7>               : "▒" U2592 #
+<Multi_key><plus>                                                          <1><7><8>               : "▓" U2593 #
+<Multi_key><plus>                                                          <1><7><9>               : "│" U2502 #
+<Multi_key><plus>                                                          <1><8><0>               : "┤" U2524 #
+<Multi_key><plus>                                                          <1><8><1>               : "╡" U2561 #
+<Multi_key><plus>                                                          <1><8><2>               : "╢" U2562 #
+<Multi_key><plus>                                                          <1><8><3>               : "╖" U2556 #
+<Multi_key><plus>                                                          <1><8><4>               : "╕" U2555 #
+<Multi_key><plus>                                                          <1><8><5>               : "╣" U2563 #
+<Multi_key><plus>                                                          <1><8><6>               : "║" U2551 #
+<Multi_key><plus>                                                          <1><8><7>               : "╗" U2557 #
+<Multi_key><plus>                                                          <1><8><8>               : "╝" U255D #
+<Multi_key><plus>                                                          <1><8><9>               : "╜" U255C #
+<Multi_key><plus>                                                          <1><9><0>               : "╛" U255B #
+<Multi_key><plus>                                                          <1><9><1>               : "┐" U2510 #
+<Multi_key><plus>                                                          <1><9><2>               : "└" U2514 #
+<Multi_key><plus>                                                          <1><9><3>               : "┴" U2534 #
+<Multi_key><plus>                                                          <1><9><4>               : "┬" U252C #
+<Multi_key><plus>                                                          <1><9><5>               : "├" U251C #
+<Multi_key><plus>                                                          <1><9><6>               : "─" U2500 #
+<Multi_key><plus>                                                          <1><9><7>               : "┼" U253C #
+<Multi_key><plus>                                                          <1><9><8>               : "╞" U255E #
+<Multi_key><plus>                                                          <1><9><9>               : "╟" U255F #
+<Multi_key><plus>                                                          <2><0><0>               : "╚" U255A #
+<Multi_key><plus>                                                          <2><0><1>               : "╔" U2554 #
+<Multi_key><plus>                                                          <2><0><2>               : "╩" U2569 #
+<Multi_key><plus>                                                          <2><0><3>               : "╦" U2566 #
+<Multi_key><plus>                                                          <2><0><4>               : "╠" U2560 #
+<Multi_key><plus>                                                          <2><0><5>               : "═" U2550 #
+<Multi_key><plus>                                                          <2><0><6>               : "╬" U256C #
+<Multi_key><plus>                                                          <2><0><7>               : "╧" U2567 #
+<Multi_key><plus>                                                          <2><0><8>               : "╨" U2568 #
+<Multi_key><plus>                                                          <2><0><9>               : "╤" U2564 #
+<Multi_key><plus>                                                          <2><1><0>               : "╥" U2565 #
+<Multi_key><plus>                                                          <2><1><1>               : "╙" U2559 #
+<Multi_key><plus>                                                          <2><1><2>               : "╘" U2558 #
+<Multi_key><plus>                                                          <2><1><3>               : "╒" U2552 #
+<Multi_key><plus>                                                          <2><1><4>               : "╓" U2553 #
+<Multi_key><plus>                                                          <2><1><5>               : "╫" U256B #
+<Multi_key><plus>                                                          <2><1><6>               : "╪" U256A #
+<Multi_key><plus>                                                          <2><1><7>               : "┘" U2518 #
+<Multi_key><plus>                                                          <2><1><8>               : "┌" U250C #
+<Multi_key><plus>                                                          <2><1><9>               : "█" U2588 #
+<Multi_key><plus>                                                          <2><2><0>               : "▄" U2584 #
+<Multi_key><plus>                                                          <2><2><1>               : "▌" U258C #
+<Multi_key><plus>                                                          <2><2><2>               : "▐" U2590 #
+<Multi_key><plus>                                                          <2><2><3>               : "▀" U2580 #
+<Multi_key><plus>                                                          <2><2><4>               : "α" U03B1 #
+<Multi_key><plus>                                                          <2><2><5>               : "ß" U00DF #
+<Multi_key><plus>                                                          <2><2><6>               : "Γ" U0393 #
+<Multi_key><plus>                                                          <2><2><7>               : "π" U03C0 #
+<Multi_key><plus>                                                          <2><2><8>               : "Σ" U03A3 #
+<Multi_key><plus>                                                          <2><2><9>               : "σ" U03C3 #
+<Multi_key><plus>                                                          <2><3><0>               : "µ" U00B5 #
+<Multi_key><plus>                                                          <2><3><1>               : "τ" U03C4 #
+<Multi_key><plus>                                                          <2><3><2>               : "Φ" U03A6 #
+<Multi_key><plus>                                                          <2><3><3>               : "Θ" U0398 #
+<Multi_key><plus>                                                          <2><3><4>               : "Ω" U2126 #
+<Multi_key><plus>                                                          <2><3><5>               : "δ" U03B4 #
+<Multi_key><plus>                                                          <2><3><6>               : "∞" U221E #
+<Multi_key><plus>                                                          <2><3><7>               : "φ" U03C6 #
+<Multi_key><plus>                                                          <2><3><8>               : "ε" U03B5 #
+<Multi_key><plus>                                                          <2><3><9>               : "∩" U2229 #
+<Multi_key><plus>                                                          <2><4><0>               : "≡" U2261 #
+<Multi_key><plus>                                                          <2><4><1>               : "±" U00B1 #
+<Multi_key><plus>                                                          <2><4><2>               : "≥" U2265 #
+<Multi_key><plus>                                                          <2><4><3>               : "≤" U2264 #
+<Multi_key><plus>                                                          <2><4><4>               : "⌠" U2320 #
+<Multi_key><plus>                                                          <2><4><5>               : "⌡" U2321 #
+<Multi_key><plus>                                                          <2><4><7>               : "≈" U2248 #
+<Multi_key><plus>                                                          <2><4><8>               : "°" U00B0 #
+<Multi_key><plus>                                                          <2><4><9>               : "∙" U2219 #
+<Multi_key><plus>                                                          <2><5><0>               : "·" U00B7 #
+<Multi_key><plus>                                                          <2><5><1>               : "√" U221A #
+<Multi_key><plus>                                                          <2><5><2>               : "ⁿ" U207F #
+<Multi_key><plus>                                                          <2><5><4>               : "■" U25A0 #
+<Multi_key><plus>                                                          <2><5><5>               : " " U0020 #
 <Multi_key><plus>                                                       <0><1><2><8>               : "€" U20AC #
 <Multi_key><plus>                                                       <0><1><3><0>               : "‘" U2018 #
 <Multi_key><plus>                                                       <0><1><3><2>               : "„" U201E #
@@ -18014,10 +17864,22 @@
 <Multi_key><asciicircum><underscore>                                                       <slash> : "⁄" U2044 # FRACTION SLASH
 <UEFD2><UEFD1>                                                                             <slash> : "⁄" U2044 # FRACTION SLASH
 <Multi_key><underscore><asciicircum>                                                       <slash> : "⁄" U2044 # FRACTION SLASH
+<UEFD1><UEFD2>                                                                                 <A> : "𝿩" U1DFE9 # MODIFIER LETTER SMALL CAPITAL A
+<Multi_key><asciicircum><underscore>                                                           <A> : "𝿩" U1DFE9 # MODIFIER LETTER SMALL CAPITAL A
+<UEFD2><UEFD1>                                                                                 <A> : "𝿩" U1DFE9 # MODIFIER LETTER SMALL CAPITAL A
+<Multi_key><underscore><asciicircum>                                                           <A> : "𝿩" U1DFE9 # MODIFIER LETTER SMALL CAPITAL A
 <UEFD1><UEFD2>                                                                                 <B> : "𐞄" U10784 # MODIFIER LETTER SMALL CAPITAL B
 <Multi_key><asciicircum><underscore>                                                           <B> : "𐞄" U10784 # MODIFIER LETTER SMALL CAPITAL B
 <UEFD2><UEFD1>                                                                                 <B> : "𐞄" U10784 # MODIFIER LETTER SMALL CAPITAL B
 <Multi_key><underscore><asciicircum>                                                           <B> : "𐞄" U10784 # MODIFIER LETTER SMALL CAPITAL B
+<UEFD1><UEFD2>                                                                                 <D> : "𝿨" U1DFE8 # MODIFIER LETTER SMALL CAPITAL D
+<Multi_key><asciicircum><underscore>                                                           <D> : "𝿨" U1DFE8 # MODIFIER LETTER SMALL CAPITAL D
+<UEFD2><UEFD1>                                                                                 <D> : "𝿨" U1DFE8 # MODIFIER LETTER SMALL CAPITAL D
+<Multi_key><underscore><asciicircum>                                                           <D> : "𝿨" U1DFE8 # MODIFIER LETTER SMALL CAPITAL D
+<UEFD1><UEFD2>                                                                                 <E> : "𝿪" U1DFEA # MODIFIER LETTER SMALL CAPITAL E
+<Multi_key><asciicircum><underscore>                                                           <E> : "𝿪" U1DFEA # MODIFIER LETTER SMALL CAPITAL E
+<UEFD2><UEFD1>                                                                                 <E> : "𝿪" U1DFEA # MODIFIER LETTER SMALL CAPITAL E
+<Multi_key><underscore><asciicircum>                                                           <E> : "𝿪" U1DFEA # MODIFIER LETTER SMALL CAPITAL E
 <UEFD1><UEFD2>                                                                                 <G> : "𐞒" U10792 # MODIFIER LETTER SMALL CAPITAL G
 <Multi_key><asciicircum><underscore>                                                           <G> : "𐞒" U10792 # MODIFIER LETTER SMALL CAPITAL G
 <UEFD2><UEFD1>                                                                                 <G> : "𐞒" U10792 # MODIFIER LETTER SMALL CAPITAL G
@@ -18172,7 +18034,7 @@
 # # SUPERSCRIPT&HOOK
 #
 #   Empty base letters are filled in with duplicates of superscript with curl,
-#   for a streamlined user experience by cutting off one press of dead_hook.
+#   for a streamlined user experience by skipping one press of dead_hook.
 #   See # # SUPERSCRIPT&CURL
 #
 #   For this purpose, the dotless j with stroke "𐞘" U10798 is supported as a
@@ -18183,10 +18045,10 @@
 <Multi_key><asciicircum><braceleft>                                                            <b> : "𐞅" U10785 # MODIFIER LETTER SMALL B WITH HOOK
 <dead_hook><UEFD1>                                                                             <b> : "𐞅" U10785 # MODIFIER LETTER SMALL B WITH HOOK
 <Multi_key><braceleft><asciicircum>                                                            <b> : "𐞅" U10785 # MODIFIER LETTER SMALL B WITH HOOK
-<UEFD1><dead_hook>                                                                             <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
-<Multi_key><asciicircum><braceleft>                                                            <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
-<dead_hook><UEFD1>                                                                             <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
-<Multi_key><braceleft><asciicircum>                                                            <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
+<UEFD1><dead_hook>                                                                             <c> : "𝿺" U1DFFA # MODIFIER LETTER SMALL C WITH HOOK
+<Multi_key><asciicircum><braceleft>                                                            <c> : "𝿺" U1DFFA # MODIFIER LETTER SMALL C WITH HOOK
+<dead_hook><UEFD1>                                                                             <c> : "𝿺" U1DFFA # MODIFIER LETTER SMALL C WITH HOOK
+<Multi_key><braceleft><asciicircum>                                                            <c> : "𝿺" U1DFFA # MODIFIER LETTER SMALL C WITH HOOK
 <UEFD1><dead_hook>                                                                             <d> : "𐞌" U1078C # MODIFIER LETTER SMALL D WITH HOOK
 <Multi_key><asciicircum><braceleft>                                                            <d> : "𐞌" U1078C # MODIFIER LETTER SMALL D WITH HOOK
 <dead_hook><UEFD1>                                                                             <d> : "𐞌" U1078C # MODIFIER LETTER SMALL D WITH HOOK
@@ -18211,6 +18073,10 @@
 <Multi_key><asciicircum><braceleft>                                                            <j> : "ᶨ" U1DA8 # MODIFIER LETTER SMALL J WITH CROSSED-TAIL
 <dead_hook><UEFD1>                                                                             <j> : "ᶨ" U1DA8 # MODIFIER LETTER SMALL J WITH CROSSED-TAIL
 <Multi_key><braceleft><asciicircum>                                                            <j> : "ᶨ" U1DA8 # MODIFIER LETTER SMALL J WITH CROSSED-TAIL
+<UEFD1><dead_hook>                                                                             <k> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
+<Multi_key><asciicircum><braceleft>                                                            <k> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
+<dead_hook><UEFD1>                                                                             <k> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
+<Multi_key><braceleft><asciicircum>                                                            <k> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
 <UEFD1><dead_hook>                                                                             <m> : "ᶬ" U1DAC # MODIFIER LETTER SMALL M WITH HOOK
 <Multi_key><asciicircum><braceleft>                                                            <m> : "ᶬ" U1DAC # MODIFIER LETTER SMALL M WITH HOOK
 <dead_hook><UEFD1>                                                                             <m> : "ᶬ" U1DAC # MODIFIER LETTER SMALL M WITH HOOK
@@ -18219,6 +18085,14 @@
 <Multi_key><asciicircum><braceleft>                                                            <n> : "ᶮ" U1DAE # MODIFIER LETTER SMALL N WITH LEFT HOOK
 <dead_hook><UEFD1>                                                                             <n> : "ᶮ" U1DAE # MODIFIER LETTER SMALL N WITH LEFT HOOK
 <Multi_key><braceleft><asciicircum>                                                            <n> : "ᶮ" U1DAE # MODIFIER LETTER SMALL N WITH LEFT HOOK
+<UEFD1><dead_hook>                                                                             <p> : "𝿼" U1DFFC # MODIFIER LETTER SMALL P WITH HOOK
+<Multi_key><asciicircum><braceleft>                                                            <p> : "𝿼" U1DFFC # MODIFIER LETTER SMALL P WITH HOOK
+<dead_hook><UEFD1>                                                                             <p> : "𝿼" U1DFFC # MODIFIER LETTER SMALL P WITH HOOK
+<Multi_key><braceleft><asciicircum>                                                            <p> : "𝿼" U1DFFC # MODIFIER LETTER SMALL P WITH HOOK
+<UEFD1><dead_hook>                                                                             <q> : "𝿽" U1DFFD # MODIFIER LETTER SMALL Q WITH HOOK
+<Multi_key><asciicircum><braceleft>                                                            <q> : "𝿽" U1DFFD # MODIFIER LETTER SMALL Q WITH HOOK
+<dead_hook><UEFD1>                                                                             <q> : "𝿽" U1DFFD # MODIFIER LETTER SMALL Q WITH HOOK
+<Multi_key><braceleft><asciicircum>                                                            <q> : "𝿽" U1DFFD # MODIFIER LETTER SMALL Q WITH HOOK
 <UEFD1><dead_hook>                                                                             <r> : "𐞩" U107A9 # MODIFIER LETTER SMALL R WITH FISHHOOK
 <Multi_key><asciicircum><braceleft>                                                            <r> : "𐞩" U107A9 # MODIFIER LETTER SMALL R WITH FISHHOOK
 <dead_hook><UEFD1>                                                                             <r> : "𐞩" U107A9 # MODIFIER LETTER SMALL R WITH FISHHOOK
@@ -18227,10 +18101,10 @@
 <Multi_key><asciicircum><braceleft>                                                            <s> : "ᶳ" U1DB3 # MODIFIER LETTER SMALL S WITH HOOK
 <dead_hook><UEFD1>                                                                             <s> : "ᶳ" U1DB3 # MODIFIER LETTER SMALL S WITH HOOK
 <Multi_key><braceleft><asciicircum>                                                            <s> : "ᶳ" U1DB3 # MODIFIER LETTER SMALL S WITH HOOK
-<UEFD1><dead_hook>                                                                             <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
-<Multi_key><asciicircum><braceleft>                                                            <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
-<dead_hook><UEFD1>                                                                             <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
-<Multi_key><braceleft><asciicircum>                                                            <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
+<UEFD1><dead_hook>                                                                             <t> : "𝿾" U1DFFE # MODIFIER LETTER SMALL T WITH HOOK
+<Multi_key><asciicircum><braceleft>                                                            <t> : "𝿾" U1DFFE # MODIFIER LETTER SMALL T WITH HOOK
+<dead_hook><UEFD1>                                                                             <t> : "𝿾" U1DFFE # MODIFIER LETTER SMALL T WITH HOOK
+<Multi_key><braceleft><asciicircum>                                                            <t> : "𝿾" U1DFFE # MODIFIER LETTER SMALL T WITH HOOK
 <UEFD1><dead_hook>                                                                             <u> : "ꭟ" UAB5F # MODIFIER LETTER SMALL U WITH LEFT HOOK
 <Multi_key><asciicircum><braceleft>                                                            <u> : "ꭟ" UAB5F # MODIFIER LETTER SMALL U WITH LEFT HOOK
 <dead_hook><UEFD1>                                                                             <u> : "ꭟ" UAB5F # MODIFIER LETTER SMALL U WITH LEFT HOOK
@@ -18281,6 +18155,16 @@
 <Multi_key><braceleft><percent><asciicircum>                                                   <r> : "ʵ" U02B5 # MODIFIER LETTER SMALL TURNED R WITH HOOK
 #
 #
+# # SUPERSCRIPT&HOOK&REVERSED
+#
+@<UEFD1><dead_hook><UEFD6>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+@<UEFD1><UEFD6><dead_hook>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+@<dead_hook><UEFD1><UEFD6>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+@<UEFD6><UEFD1><dead_hook>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+@<dead_hook><UEFD6><UEFD1>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+@<UEFD6><dead_hook><UEFD1>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+#
+#
 # # SUPERSCRIPT&HOOK&RETROFLEX_HOOK
 #
 #   As this dead key exists for "𐞍" U1078D only, it is streamlined by cropping
@@ -18303,10 +18187,11 @@
 #
 #
 # # SUPERSCRIPT&CURL
+#   Lenient dead key press
 #   Lenient group selection
 #
-#   Mostly, duplicates are on empty base letters of superscript with hook,
-#   for a streamlined user experience by cutting off one press of dead_hook.
+#   Many duplicates of these are supported by empty base letters in superscript
+#   with hook, for a streamlined user experience by skipping 1 dead_hook press.
 #   See # # SUPERSCRIPT&HOOK
 #
 <UEFD1><dead_hook><dead_hook>                                                                  <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
@@ -18315,12 +18200,6 @@
 <Multi_key><braceleft><asciicircum><braceleft>                                                 <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
 <dead_hook><dead_hook><UEFD1>                                                                  <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
 <Multi_key><braceleft><braceleft><asciicircum>                                                 <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
-<UEFD1><dead_hook><dead_hook>                                                                  <d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
-<Multi_key><asciicircum><braceleft><braceleft>                                                 <d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
-<dead_hook><UEFD1><dead_hook>                                                                  <d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
-<Multi_key><braceleft><asciicircum><braceleft>                                                 <d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
-<dead_hook><dead_hook><UEFD1>                                                                  <d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
-<Multi_key><braceleft><braceleft><asciicircum>                                                 <d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
 <UEFD1><dead_hook><dead_hook>                                                                  <j> : "ᶨ" U1DA8 # MODIFIER LETTER SMALL J WITH CROSSED-TAIL
 <Multi_key><asciicircum><braceleft><braceleft>                                                 <j> : "ᶨ" U1DA8 # MODIFIER LETTER SMALL J WITH CROSSED-TAIL
 <dead_hook><UEFD1><dead_hook>                                                                  <j> : "ᶨ" U1DA8 # MODIFIER LETTER SMALL J WITH CROSSED-TAIL
@@ -18333,12 +18212,36 @@
 <Multi_key><braceleft><asciicircum><braceleft>                                                 <s> : "𐞺" U107BA # MODIFIER LETTER SMALL S WITH CURL
 <dead_hook><dead_hook><UEFD1>                                                                  <s> : "𐞺" U107BA # MODIFIER LETTER SMALL S WITH CURL
 <Multi_key><braceleft><braceleft><asciicircum>                                                 <s> : "𐞺" U107BA # MODIFIER LETTER SMALL S WITH CURL
-<UEFD1><dead_hook><dead_hook>                                                                  <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
-<Multi_key><asciicircum><braceleft><braceleft>                                                 <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
-<dead_hook><UEFD1><dead_hook>                                                                  <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
-<Multi_key><braceleft><asciicircum><braceleft>                                                 <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
-<dead_hook><dead_hook><UEFD1>                                                                  <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
-<Multi_key><braceleft><braceleft><asciicircum>                                                 <t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                                  <d> : "𝿯" U1DFEF # MODIFIER LETTER SMALL D WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                                                 <d> : "𝿯" U1DFEF # MODIFIER LETTER SMALL D WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                                  <d> : "𝿯" U1DFEF # MODIFIER LETTER SMALL D WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                                                 <d> : "𝿯" U1DFEF # MODIFIER LETTER SMALL D WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                                  <d> : "𝿯" U1DFEF # MODIFIER LETTER SMALL D WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                                                 <d> : "𝿯" U1DFEF # MODIFIER LETTER SMALL D WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                                  <l> : "𝿰" U1DFF0 # MODIFIER LETTER SMALL L WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                                                 <l> : "𝿰" U1DFF0 # MODIFIER LETTER SMALL L WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                                  <l> : "𝿰" U1DFF0 # MODIFIER LETTER SMALL L WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                                                 <l> : "𝿰" U1DFF0 # MODIFIER LETTER SMALL L WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                                  <l> : "𝿰" U1DFF0 # MODIFIER LETTER SMALL L WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                                                 <l> : "𝿰" U1DFF0 # MODIFIER LETTER SMALL L WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                                  <n> : "𝿱" U1DFF1 # MODIFIER LETTER SMALL N WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                                                 <n> : "𝿱" U1DFF1 # MODIFIER LETTER SMALL N WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                                  <n> : "𝿱" U1DFF1 # MODIFIER LETTER SMALL N WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                                                 <n> : "𝿱" U1DFF1 # MODIFIER LETTER SMALL N WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                                  <n> : "𝿱" U1DFF1 # MODIFIER LETTER SMALL N WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                                                 <n> : "𝿱" U1DFF1 # MODIFIER LETTER SMALL N WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                                  <t> : "𝿲" U1DFF2 # MODIFIER LETTER SMALL T WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                                                 <t> : "𝿲" U1DFF2 # MODIFIER LETTER SMALL T WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                                  <t> : "𝿲" U1DFF2 # MODIFIER LETTER SMALL T WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                                                 <t> : "𝿲" U1DFF2 # MODIFIER LETTER SMALL T WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                                  <t> : "𝿲" U1DFF2 # MODIFIER LETTER SMALL T WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                                                 <t> : "𝿲" U1DFF2 # MODIFIER LETTER SMALL T WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                                  <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                                                 <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                                  <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                                                 <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                                  <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                                                 <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
 <UEFD1><dead_hook><dead_hook>                                                                  <z> : "ᶽ" U1DBD # MODIFIER LETTER SMALL Z WITH CURL
 <Multi_key><asciicircum><braceleft><braceleft>                                                 <z> : "ᶽ" U1DBD # MODIFIER LETTER SMALL Z WITH CURL
 <dead_hook><UEFD1><dead_hook>                                                                  <z> : "ᶽ" U1DBD # MODIFIER LETTER SMALL Z WITH CURL
@@ -18355,12 +18258,30 @@
 <Multi_key><braceleft><asciicircum><braceleft>                                     <numbersign><d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
 <dead_hook><dead_hook><UEFD1>                                                           <UEFD0><d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
 <Multi_key><braceleft><braceleft><asciicircum>                                     <numbersign><d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                           <UEFD0><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                                     <numbersign><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                           <UEFD0><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                                     <numbersign><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                           <UEFD0><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                                     <numbersign><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
 <UEFD1><dead_hook><dead_hook>                                                           <UEFD0><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
 <Multi_key><asciicircum><braceleft><braceleft>                                     <numbersign><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
 <dead_hook><UEFD1><dead_hook>                                                           <UEFD0><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
 <Multi_key><braceleft><asciicircum><braceleft>                                     <numbersign><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
 <dead_hook><dead_hook><UEFD1>                                                           <UEFD0><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
 <Multi_key><braceleft><braceleft><asciicircum>                                     <numbersign><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                           <UEFD0><w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                                     <numbersign><w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                           <UEFD0><w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                                     <numbersign><w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                           <UEFD0><w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                                     <numbersign><w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                           <UEFD0><z> : "𝿦" U1DFE6 # MODIFIER LETTER SMALL EZH WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                                     <numbersign><z> : "𝿦" U1DFE6 # MODIFIER LETTER SMALL EZH WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                           <UEFD0><z> : "𝿦" U1DFE6 # MODIFIER LETTER SMALL EZH WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                                     <numbersign><z> : "𝿦" U1DFE6 # MODIFIER LETTER SMALL EZH WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                           <UEFD0><z> : "𝿦" U1DFE6 # MODIFIER LETTER SMALL EZH WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                                     <numbersign><z> : "𝿦" U1DFE6 # MODIFIER LETTER SMALL EZH WITH CURL
 #
 #
 # # SUPERSCRIPT&CURL&GROUP_2
@@ -18371,6 +18292,12 @@
 <Multi_key><braceleft><asciicircum><braceleft>                         <numbersign><numbersign><d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
 <dead_hook><dead_hook><UEFD1>                                                    <UEFD0><UEFD0><d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
 <Multi_key><braceleft><braceleft><asciicircum>                         <numbersign><numbersign><d> : "𐞉" U10789 # MODIFIER LETTER SMALL DZ DIGRAPH WITH CURL
+<UEFD1><dead_hook><dead_hook>                                                    <UEFD0><UEFD0><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><asciicircum><braceleft><braceleft>                         <numbersign><numbersign><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><UEFD1><dead_hook>                                                    <UEFD0><UEFD0><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><asciicircum><braceleft>                         <numbersign><numbersign><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><dead_hook><UEFD1>                                                    <UEFD0><UEFD0><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><braceleft><asciicircum>                         <numbersign><numbersign><s> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
 <UEFD1><dead_hook><dead_hook>                                                    <UEFD0><UEFD0><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
 <Multi_key><asciicircum><braceleft><braceleft>                         <numbersign><numbersign><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
 <dead_hook><UEFD1><dead_hook>                                                    <UEFD0><UEFD0><t> : "𐞫" U107AB # MODIFIER LETTER SMALL TC DIGRAPH WITH CURL
@@ -18602,6 +18529,10 @@
 <Multi_key><asciicircum><braceright>                                                           <r> : "𐞨" U107A8 # MODIFIER LETTER SMALL R WITH TAIL
 <UEFD4><UEFD1>                                                                                 <r> : "𐞨" U107A8 # MODIFIER LETTER SMALL R WITH TAIL
 <Multi_key><braceright><asciicircum>                                                           <r> : "𐞨" U107A8 # MODIFIER LETTER SMALL R WITH TAIL
+<UEFD1><UEFD4>                                                                                 <s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><asciicircum><braceright>                                                           <s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<UEFD4><UEFD1>                                                                                 <s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><braceright><asciicircum>                                                           <s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
 <UEFD1><UEFD4>                                                                                 <t> : "𐞯" U107AF # MODIFIER LETTER SMALL T WITH RETROFLEX HOOK
 <Multi_key><asciicircum><braceright>                                                           <t> : "𐞯" U107AF # MODIFIER LETTER SMALL T WITH RETROFLEX HOOK
 <UEFD4><UEFD1>                                                                                 <t> : "𐞯" U107AF # MODIFIER LETTER SMALL T WITH RETROFLEX HOOK
@@ -18610,6 +18541,10 @@
 <Multi_key><asciicircum><braceright>                                                           <v> : "𐞰" U107B0 # MODIFIER LETTER SMALL V WITH RIGHT HOOK
 <UEFD4><UEFD1>                                                                                 <v> : "𐞰" U107B0 # MODIFIER LETTER SMALL V WITH RIGHT HOOK
 <Multi_key><braceright><asciicircum>                                                           <v> : "𐞰" U107B0 # MODIFIER LETTER SMALL V WITH RIGHT HOOK
+<UEFD1><UEFD4>                                                                                 <w> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><asciicircum><braceright>                                                           <w> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<UEFD4><UEFD1>                                                                                 <w> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><braceright><asciicircum>                                                           <w> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
 <UEFD1><UEFD4>                                                                                 <z> : "ᶼ" U1DBC # MODIFIER LETTER SMALL Z WITH RETROFLEX HOOK
 <Multi_key><asciicircum><braceright>                                                           <z> : "ᶼ" U1DBC # MODIFIER LETTER SMALL Z WITH RETROFLEX HOOK
 <UEFD4><UEFD1>                                                                                 <z> : "ᶼ" U1DBC # MODIFIER LETTER SMALL Z WITH RETROFLEX HOOK
@@ -18630,10 +18565,22 @@
 <Multi_key><asciicircum><braceright>                                               <numbersign><m> : "𐞹" U107B9 # MODIFIER LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <UEFD4><UEFD1>                                                                          <UEFD0><m> : "𐞹" U107B9 # MODIFIER LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <Multi_key><braceright><asciicircum>                                               <numbersign><m> : "𐞹" U107B9 # MODIFIER LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+<UEFD1><UEFD4>                                                                          <UEFD0><s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><asciicircum><braceright>                                               <numbersign><s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<UEFD4><UEFD1>                                                                          <UEFD0><s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><braceright><asciicircum>                                               <numbersign><s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
 <UEFD1><UEFD4>                                                                          <UEFD0><t> : "𐞭" U107AD # MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
 <Multi_key><asciicircum><braceright>                                               <numbersign><t> : "𐞭" U107AD # MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
 <UEFD4><UEFD1>                                                                          <UEFD0><t> : "𐞭" U107AD # MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
 <Multi_key><braceright><asciicircum>                                               <numbersign><t> : "𐞭" U107AD # MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
+<UEFD1><UEFD4>                                                                          <UEFD0><w> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><asciicircum><braceright>                                               <numbersign><w> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<UEFD4><UEFD1>                                                                          <UEFD0><w> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><braceright><asciicircum>                                               <numbersign><w> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<UEFD1><UEFD4>                                                                          <UEFD0><z> : "𝿧" U1DFE7 # MODIFIER LETTER SMALL EZH WITH RETROFLEX HOOK
+<Multi_key><asciicircum><braceright>                                               <numbersign><z> : "𝿧" U1DFE7 # MODIFIER LETTER SMALL EZH WITH RETROFLEX HOOK
+<UEFD4><UEFD1>                                                                          <UEFD0><z> : "𝿧" U1DFE7 # MODIFIER LETTER SMALL EZH WITH RETROFLEX HOOK
+<Multi_key><braceright><asciicircum>                                               <numbersign><z> : "𝿧" U1DFE7 # MODIFIER LETTER SMALL EZH WITH RETROFLEX HOOK
 #
 #
 # # SUPERSCRIPT&RETROFLEX_HOOK&GROUP_2
@@ -18650,6 +18597,10 @@
 <Multi_key><asciicircum><braceright>                                   <numbersign><numbersign><m> : "𐞹" U107B9 # MODIFIER LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <UEFD4><UEFD1>                                                                   <UEFD0><UEFD0><m> : "𐞹" U107B9 # MODIFIER LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
 <Multi_key><braceright><asciicircum>                                   <numbersign><numbersign><m> : "𐞹" U107B9 # MODIFIER LETTER RETROFLEX CLICK WITH RETROFLEX HOOK
+<UEFD1><UEFD4>                                                                   <UEFD0><UEFD0><s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><asciicircum><braceright>                                   <numbersign><numbersign><s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<UEFD4><UEFD1>                                                                   <UEFD0><UEFD0><s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
+<Multi_key><braceright><asciicircum>                                   <numbersign><numbersign><s> : "𝿣" U1DFE3 # MODIFIER LETTER SMALL ESH WITH RETROFLEX HOOK
 <UEFD1><UEFD4>                                                                   <UEFD0><UEFD0><t> : "𐞭" U107AD # MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
 <Multi_key><asciicircum><braceright>                                   <numbersign><numbersign><t> : "𐞭" U107AD # MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
 <UEFD4><UEFD1>                                                                   <UEFD0><UEFD0><t> : "𐞭" U107AD # MODIFIER LETTER SMALL TS DIGRAPH WITH RETROFLEX HOOK
@@ -18875,20 +18826,52 @@
 #
 # # SUPERSCRIPT&PALATAL_HOOK
 #
-#   The lenient dead key press would conflict with "ᶩ" U1DA9.
+#   The lenient dead key press would conflict with "𐞋" U1078B, "ᶩ" U1DA9,
+#   "ᶯ" U1DAF, "𝿣" U1DFE3, "𐞯" U107AF, "ᶼ" U1DBC. So, supporting it for
+#   "𝿶" U1DFF6 would be pointless.
 #
+<UEFD1><UEFD4><UEFD4>                                                                          <d> : "𝿵" U1DFF5 # MODIFIER LETTER SMALL D WITH PALATAL HOOK
+<Multi_key><asciicircum><braceright><braceright>                                               <d> : "𝿵" U1DFF5 # MODIFIER LETTER SMALL D WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD1>                                                                          <d> : "𝿵" U1DFF5 # MODIFIER LETTER SMALL D WITH PALATAL HOOK
+<Multi_key><braceright><braceright><asciicircum>                                               <d> : "𝿵" U1DFF5 # MODIFIER LETTER SMALL D WITH PALATAL HOOK
+<UEFD4><UEFD1><UEFD4>                                                                          <d> : "𝿵" U1DFF5 # MODIFIER LETTER SMALL D WITH PALATAL HOOK
+<Multi_key><braceright><asciicircum><braceright>                                               <d> : "𝿵" U1DFF5 # MODIFIER LETTER SMALL D WITH PALATAL HOOK
+<UEFD1><UEFD4><UEFD4>                                                                          <h> : "𝿶" U1DFF6 # MODIFIER LETTER SMALL H WITH PALATAL HOOK
+<Multi_key><asciicircum><braceright><braceright>                                               <h> : "𝿶" U1DFF6 # MODIFIER LETTER SMALL H WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD1>                                                                          <h> : "𝿶" U1DFF6 # MODIFIER LETTER SMALL H WITH PALATAL HOOK
+<Multi_key><braceright><braceright><asciicircum>                                               <h> : "𝿶" U1DFF6 # MODIFIER LETTER SMALL H WITH PALATAL HOOK
+<UEFD4><UEFD1><UEFD4>                                                                          <h> : "𝿶" U1DFF6 # MODIFIER LETTER SMALL H WITH PALATAL HOOK
+<Multi_key><braceright><asciicircum><braceright>                                               <h> : "𝿶" U1DFF6 # MODIFIER LETTER SMALL H WITH PALATAL HOOK
 <UEFD1><UEFD4><UEFD4>                                                                          <l> : "ᶪ" U1DAA # MODIFIER LETTER SMALL L WITH PALATAL HOOK
 <Multi_key><asciicircum><braceright><braceright>                                               <l> : "ᶪ" U1DAA # MODIFIER LETTER SMALL L WITH PALATAL HOOK
 <UEFD4><UEFD4><UEFD1>                                                                          <l> : "ᶪ" U1DAA # MODIFIER LETTER SMALL L WITH PALATAL HOOK
 <Multi_key><braceright><braceright><asciicircum>                                               <l> : "ᶪ" U1DAA # MODIFIER LETTER SMALL L WITH PALATAL HOOK
 <UEFD4><UEFD1><UEFD4>                                                                          <l> : "ᶪ" U1DAA # MODIFIER LETTER SMALL L WITH PALATAL HOOK
 <Multi_key><braceright><asciicircum><braceright>                                               <l> : "ᶪ" U1DAA # MODIFIER LETTER SMALL L WITH PALATAL HOOK
+<UEFD1><UEFD4><UEFD4>                                                                          <n> : "𝿷" U1DFF7 # MODIFIER LETTER SMALL N WITH PALATAL HOOK
+<Multi_key><asciicircum><braceright><braceright>                                               <n> : "𝿷" U1DFF7 # MODIFIER LETTER SMALL N WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD1>                                                                          <n> : "𝿷" U1DFF7 # MODIFIER LETTER SMALL N WITH PALATAL HOOK
+<Multi_key><braceright><braceright><asciicircum>                                               <n> : "𝿷" U1DFF7 # MODIFIER LETTER SMALL N WITH PALATAL HOOK
+<UEFD4><UEFD1><UEFD4>                                                                          <n> : "𝿷" U1DFF7 # MODIFIER LETTER SMALL N WITH PALATAL HOOK
+<Multi_key><braceright><asciicircum><braceright>                                               <n> : "𝿷" U1DFF7 # MODIFIER LETTER SMALL N WITH PALATAL HOOK
+<UEFD1><UEFD4><UEFD4>                                                                          <s> : "𝿸" U1DFF8 # MODIFIER LETTER SMALL S WITH PALATAL HOOK
+<Multi_key><asciicircum><braceright><braceright>                                               <s> : "𝿸" U1DFF8 # MODIFIER LETTER SMALL S WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD1>                                                                          <s> : "𝿸" U1DFF8 # MODIFIER LETTER SMALL S WITH PALATAL HOOK
+<Multi_key><braceright><braceright><asciicircum>                                               <s> : "𝿸" U1DFF8 # MODIFIER LETTER SMALL S WITH PALATAL HOOK
+<UEFD4><UEFD1><UEFD4>                                                                          <s> : "𝿸" U1DFF8 # MODIFIER LETTER SMALL S WITH PALATAL HOOK
+<Multi_key><braceright><asciicircum><braceright>                                               <s> : "𝿸" U1DFF8 # MODIFIER LETTER SMALL S WITH PALATAL HOOK
 <UEFD1><UEFD4><UEFD4>                                                                          <t> : "ᶵ" U1DB5 # MODIFIER LETTER SMALL T WITH PALATAL HOOK
 <Multi_key><asciicircum><braceright><braceright>                                               <t> : "ᶵ" U1DB5 # MODIFIER LETTER SMALL T WITH PALATAL HOOK
 <UEFD4><UEFD4><UEFD1>                                                                          <t> : "ᶵ" U1DB5 # MODIFIER LETTER SMALL T WITH PALATAL HOOK
 <Multi_key><braceright><braceright><asciicircum>                                               <t> : "ᶵ" U1DB5 # MODIFIER LETTER SMALL T WITH PALATAL HOOK
 <UEFD4><UEFD1><UEFD4>                                                                          <t> : "ᶵ" U1DB5 # MODIFIER LETTER SMALL T WITH PALATAL HOOK
 <Multi_key><braceright><asciicircum><braceright>                                               <t> : "ᶵ" U1DB5 # MODIFIER LETTER SMALL T WITH PALATAL HOOK
+<UEFD1><UEFD4><UEFD4>                                                                          <z> : "𝿹" U1DFF9 # MODIFIER LETTER SMALL Z WITH PALATAL HOOK
+<Multi_key><asciicircum><braceright><braceright>                                               <z> : "𝿹" U1DFF9 # MODIFIER LETTER SMALL Z WITH PALATAL HOOK
+<UEFD4><UEFD4><UEFD1>                                                                          <z> : "𝿹" U1DFF9 # MODIFIER LETTER SMALL Z WITH PALATAL HOOK
+<Multi_key><braceright><braceright><asciicircum>                                               <z> : "𝿹" U1DFF9 # MODIFIER LETTER SMALL Z WITH PALATAL HOOK
+<UEFD4><UEFD1><UEFD4>                                                                          <z> : "𝿹" U1DFF9 # MODIFIER LETTER SMALL Z WITH PALATAL HOOK
+<Multi_key><braceright><asciicircum><braceright>                                               <z> : "𝿹" U1DFF9 # MODIFIER LETTER SMALL Z WITH PALATAL HOOK
 #
 #
 # # SUPERSCRIPT&BREVE
@@ -19012,6 +18995,10 @@
 <Multi_key><asciicircum><minus>                                                                <q> : "𐞳" U107B3 # MODIFIER LETTER GLOTTAL STOP WITH STROKE
 <UEFD8><UEFD1>                                                                                 <q> : "𐞳" U107B3 # MODIFIER LETTER GLOTTAL STOP WITH STROKE
 <Multi_key><minus><asciicircum>                                                                <q> : "𐞳" U107B3 # MODIFIER LETTER GLOTTAL STOP WITH STROKE
+<UEFD1><UEFD8>                                                                                 <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<Multi_key><asciicircum><minus>                                                                <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<UEFD8><UEFD1>                                                                                 <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<Multi_key><minus><asciicircum>                                                                <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
 <UEFD1><UEFD8>                                                                                 <s> : "𐞿" U107BF # MODIFIER LETTER SMALL ESH WITH DOUBLE BAR
 <Multi_key><asciicircum><minus>                                                                <s> : "𐞿" U107BF # MODIFIER LETTER SMALL ESH WITH DOUBLE BAR
 <UEFD8><UEFD1>                                                                                 <s> : "𐞿" U107BF # MODIFIER LETTER SMALL ESH WITH DOUBLE BAR
@@ -19046,6 +19033,22 @@
 <Multi_key><asciicircum><minus>                                                    <numbersign><y> : "𝿚" U1DFDA # MODIFIER LETTER SMALL UPSILON WITH STROKE
 <UEFD8><UEFD1>                                                                          <UEFD0><y> : "𝿚" U1DFDA # MODIFIER LETTER SMALL UPSILON WITH STROKE
 <Multi_key><minus><asciicircum>                                                    <numbersign><y> : "𝿚" U1DFDA # MODIFIER LETTER SMALL UPSILON WITH STROKE
+#
+#
+# # SUPERSCRIPT&BAR&TURNED
+#
+@<UEFD1><UEFD8><UEFD5>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+@<UEFD1><UEFD5><UEFD8>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+@<UEFD8><UEFD1><UEFD5>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+@<UEFD5><UEFD1><UEFD8>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+@<UEFD8><UEFD5><UEFD1>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+@<UEFD5><UEFD8><UEFD1>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+@<UEFD1><UEFD8><UEFD5>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+@<UEFD1><UEFD5><UEFD8>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+@<UEFD8><UEFD1><UEFD5>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+@<UEFD5><UEFD1><UEFD8>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+@<UEFD8><UEFD5><UEFD1>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+@<UEFD5><UEFD8><UEFD1>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
 #
 #
 # # SUPERSCRIPT&DOUBLE_BAR
@@ -19128,6 +19131,14 @@
 <Multi_key><asciicircum><bar>                                                                  <c> : "𐞽" U107BD # MODIFIER LETTER STRETCHED C
 <dead_macron><UEFD1>                                                                           <c> : "𐞽" U107BD # MODIFIER LETTER STRETCHED C
 <Multi_key><bar><asciicircum>                                                                  <c> : "𐞽" U107BD # MODIFIER LETTER STRETCHED C
+<UEFD1><dead_macron>                                                                           <n> : "𝿜" U1DFDC # MODIFIER LETTER SMALL N WITH LONG RIGHT LEG
+<Multi_key><asciicircum><bar>                                                                  <n> : "𝿜" U1DFDC # MODIFIER LETTER SMALL N WITH LONG RIGHT LEG
+<dead_macron><UEFD1>                                                                           <n> : "𝿜" U1DFDC # MODIFIER LETTER SMALL N WITH LONG RIGHT LEG
+<Multi_key><bar><asciicircum>                                                                  <n> : "𝿜" U1DFDC # MODIFIER LETTER SMALL N WITH LONG RIGHT LEG
+<UEFD1><dead_macron>                                                                           <r> : "𝿝" U1DFDD # MODIFIER LETTER SMALL R WITH LONG LEG
+<Multi_key><asciicircum><bar>                                                                  <r> : "𝿝" U1DFDD # MODIFIER LETTER SMALL R WITH LONG LEG
+<dead_macron><UEFD1>                                                                           <r> : "𝿝" U1DFDD # MODIFIER LETTER SMALL R WITH LONG LEG
+<Multi_key><bar><asciicircum>                                                                  <r> : "𝿝" U1DFDD # MODIFIER LETTER SMALL R WITH LONG LEG
 #
 #
 # # SUPERSCRIPT&MACRON&TURNED
@@ -24185,7 +24196,7 @@
 #
 #
 #*# SUBSCRIPT
-#   subscript, small cap
+#   subscript, small capital
 #   *dead_subscript UEFD2
 #   Multikey: ¦_
 #
@@ -24197,27 +24208,12 @@
 #   for small capitals, frequent in phonetics, consistently with other dead key
 #   implementations.
 #
-#   Letters still missing after a proposal advising to encode them all were
-#   replaced with "∄" U2204 THERE DOES NOT EXIST for the time being.
+#   Letters still missing after a proposal advising to encode them all are
+#   filled in with "∄" U2204 THERE DOES NOT EXIST for the time being.
 #   https://www.unicode.org/L2/L2002/02141-n2419-uralic-phonetic.pdf#page=5
 #
-#   But ultimately, all these instances are populated with the remaining Greek
-#   preformatted letters, both subscript and small caps:
 #
-#       "ᴦ" U1D26 # GREEK LETTER SMALL CAPITAL GAMMA
-#       "ᴧ" U1D27 # GREEK LETTER SMALL CAPITAL LAMDA
-#       "ᴨ" U1D28 # GREEK LETTER SMALL CAPITAL PI
-#       "ᴩ" U1D29 # GREEK LETTER SMALL CAPITAL RHO
-#       "ᴪ" U1D2A # GREEK LETTER SMALL CAPITAL PSI
-#       "ꭥ" UAB65 # GREEK LETTER SMALL CAPITAL OMEGA — This did not fit in the
-#            subscript empty slots, but it is both on regular V and intuitive O
-#            in the SUBSCRIPT&GROUP_6 and GREEK_OR_CIRCLED&SUBSCRIPT virtual
-#            dead keys.
-#       "ᵦ" U1D66 # GREEK SUBSCRIPT SMALL LETTER BETA
-#       "ᵧ" U1D67 # GREEK SUBSCRIPT SMALL LETTER GAMMA
-#       "ᵨ" U1D68 # GREEK SUBSCRIPT SMALL LETTER RHO
-#       "ᵩ" U1D69 # GREEK SUBSCRIPT SMALL LETTER PHI
-#       "ᵪ" U1D6A # GREEK SUBSCRIPT SMALL LETTER CHI
+#   Diacritics in *dead_subscript
 #
 #   This started supporting "⃨" U20E8 COMBINING TRIPLE UNDERDOT when it was
 #   moved in the wake of (temporarily) freeing up groups 1..3 of numbersign,
@@ -24231,10 +24227,15 @@
 #   are built on the underscore theme hinted by the subscript’s TeX command.
 #   See #*# SUPERSCRIPT
 #
-#   The multikey equivalent of "₋" U208B conflicts with "ᴃ" U1D03, "ᵻ" U1D7B,
-#   "ᵾ" U1D7E and "ᶧ" U1DA7, but this can be worked around by typing it the
-#   other way around instead. The same holds true for "₎" U208E conflicting
-#   with "𐞜" U1079C, "𝼄" U1DF04.
+#
+#   Math symbols in *dead_subscript
+#
+#   The subscript parentheses "₍" U208D, "₎" U208E are yielded intuitively by
+#   parenleft and parenright. So are the subscript plus and minus signs
+#   "₊" U208A, "₋" U208B and equals symbol "₌" U208C.
+#
+#   Some commented-out multikey equivalents are supported the other way around
+#   in the math section.
 #   See # # Superscript or subscript signs, symbol, punctuation
 #
 <UEFD2>                                                                                    <space> : "̲" U0332 # COMBINING LOW LINE
@@ -24305,28 +24306,28 @@
 #   Multikey conflicts with "⊼" U22BC.                                                         <a> : "ₐ" U2090 # LATIN SUBSCRIPT SMALL LETTER A
 <UEFD2>                                                                                        <B> : "ʙ" U0299 # LATIN LETTER SMALL CAPITAL B
 <Multi_key><underscore>                                                                        <B> : "ʙ" U0299 # LATIN LETTER SMALL CAPITAL B
-<UEFD2>                                                                                        <b> : "ᵦ" U1D66 # GREEK SUBSCRIPT SMALL LETTER BETA
-<Multi_key><underscore>                                                                        <b> : "ᵦ" U1D66 # GREEK SUBSCRIPT SMALL LETTER BETA
+<UEFD2>                                                                                        <b> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key><underscore>                                                                        <b> : "∄" U2204 # THERE DOES NOT EXIST
 <UEFD2>                                                                                        <C> : "ᴄ" U1D04 # LATIN LETTER SMALL CAPITAL C
 <Multi_key><underscore>                                                                        <C> : "ᴄ" U1D04 # LATIN LETTER SMALL CAPITAL C
-<UEFD2>                                                                                        <c> : "ᴨ" U1D28 # GREEK LETTER SMALL CAPITAL PI
-<Multi_key><underscore>                                                                        <c> : "ᴨ" U1D28 # GREEK LETTER SMALL CAPITAL PI
+<UEFD2>                                                                                        <c> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key><underscore>                                                                        <c> : "∄" U2204 # THERE DOES NOT EXIST
 <UEFD2>                                                                                        <D> : "ᴅ" U1D05 # LATIN LETTER SMALL CAPITAL D
 <Multi_key><underscore>                                                                        <D> : "ᴅ" U1D05 # LATIN LETTER SMALL CAPITAL D
-<UEFD2>                                                                                        <d> : "ᴩ" U1D29 # GREEK LETTER SMALL CAPITAL RHO
-<Multi_key><underscore>                                                                        <d> : "ᴩ" U1D29 # GREEK LETTER SMALL CAPITAL RHO
+<UEFD2>                                                                                        <d> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key><underscore>                                                                        <d> : "∄" U2204 # THERE DOES NOT EXIST
 <UEFD2>                                                                                        <E> : "ᴇ" U1D07 # LATIN LETTER SMALL CAPITAL E
 <Multi_key><underscore>                                                                        <E> : "ᴇ" U1D07 # LATIN LETTER SMALL CAPITAL E
 <UEFD2>                                                                                        <e> : "ₑ" U2091 # LATIN SUBSCRIPT SMALL LETTER E
 #   Multikey conflicts with "⋶" U22F6, "⋽" U22FD.                                              <e> : "ₑ" U2091 # LATIN SUBSCRIPT SMALL LETTER E
 <UEFD2>                                                                                        <F> : "ꜰ" UA730 # LATIN LETTER SMALL CAPITAL F
 <Multi_key><underscore>                                                                        <F> : "ꜰ" UA730 # LATIN LETTER SMALL CAPITAL F
-<UEFD2>                                                                                        <f> : "ᵩ" U1D69 # GREEK SUBSCRIPT SMALL LETTER PHI
-<Multi_key><underscore>                                                                        <f> : "ᵩ" U1D69 # GREEK SUBSCRIPT SMALL LETTER PHI
+<UEFD2>                                                                                        <f> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key><underscore>                                                                        <f> : "∄" U2204 # THERE DOES NOT EXIST
 <UEFD2>                                                                                        <G> : "ɢ" U0262 # LATIN LETTER SMALL CAPITAL G
 <Multi_key><underscore>                                                                        <G> : "ɢ" U0262 # LATIN LETTER SMALL CAPITAL G
-<UEFD2>                                                                                        <g> : "ᴦ" U1D26 # GREEK LETTER SMALL CAPITAL GAMMA
-<Multi_key><underscore>                                                                        <g> : "ᴦ" U1D26 # GREEK LETTER SMALL CAPITAL GAMMA
+<UEFD2>                                                                                        <g> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key><underscore>                                                                        <g> : "∄" U2204 # THERE DOES NOT EXIST
 <UEFD2>                                                                                        <H> : "ʜ" U029C # LATIN LETTER SMALL CAPITAL H
 <Multi_key><underscore>                                                                        <H> : "ʜ" U029C # LATIN LETTER SMALL CAPITAL H
 <UEFD2>                                                                                        <h> : "ₕ" U2095 # LATIN SUBSCRIPT SMALL LETTER H
@@ -24365,8 +24366,8 @@
 #   Multikey conflicts with "⋽" U22FD.                                                         <p> : "ₚ" U209A # LATIN SUBSCRIPT SMALL LETTER P
 <UEFD2>                                                                                        <Q> : "ꞯ" UA7AF # LATIN LETTER SMALL CAPITAL Q
 <Multi_key><underscore>                                                                        <Q> : "ꞯ" UA7AF # LATIN LETTER SMALL CAPITAL Q
-<UEFD2>                                                                                        <q> : "ᵨ" U1D68 # GREEK SUBSCRIPT SMALL LETTER RHO
-<Multi_key><underscore>                                                                        <q> : "ᵨ" U1D68 # GREEK SUBSCRIPT SMALL LETTER RHO
+<UEFD2>                                                                                        <q> : "∄" U2204 # THERE DOES NOT EXIST
+<Multi_key><underscore>                                                                        <q> : "∄" U2204 # THERE DOES NOT EXIST
 <UEFD2>                                                                                        <R> : "ʀ" U0280 # LATIN LETTER SMALL CAPITAL R
 <Multi_key><underscore>                                                                        <R> : "ʀ" U0280 # LATIN LETTER SMALL CAPITAL R
 <UEFD2>                                                                                        <r> : "ᵣ" U1D63 # LATIN SUBSCRIPT SMALL LETTER R
@@ -24389,20 +24390,20 @@
 #   Multikey conflicts with "⊼" U22BC, "⊽" U22BD.                                              <v> : "ᵥ" U1D65 # LATIN SUBSCRIPT SMALL LETTER V
 <UEFD2>                                                                                        <W> : "ᴡ" U1D21 # LATIN LETTER SMALL CAPITAL W
 <Multi_key><underscore>                                                                        <W> : "ᴡ" U1D21 # LATIN LETTER SMALL CAPITAL W
-<UEFD2>                                                                                        <w> : "ᴧ" U1D27 # GREEK LETTER SMALL CAPITAL LAMDA
-<Multi_key><underscore>                                                                        <w> : "ᴧ" U1D27 # GREEK LETTER SMALL CAPITAL LAMDA
-<UEFD2>                                                                                        <X> : "ᵪ" U1D6A # GREEK SUBSCRIPT SMALL LETTER CHI
-#   Multikey conflicts with "⧖" U29D6, "⧗" U29D7.                                              <X> : "ᵪ" U1D6A # GREEK SUBSCRIPT SMALL LETTER CHI
+<UEFD2>                                                                                        <w> : "₝" U209D # LATIN SUBSCRIPT SMALL LETTER W
+<Multi_key><underscore>                                                                        <w> : "₝" U209D # LATIN SUBSCRIPT SMALL LETTER W
+<UEFD2>                                                                                        <X> : "∄" U2204 # THERE DOES NOT EXIST
+#   Multikey conflicts with "⧖" U29D6, "⧗" U29D7.                                              <X> : "∄" U2204 # THERE DOES NOT EXIST
 <UEFD2>                                                                                        <x> : "ₓ" U2093 # LATIN SUBSCRIPT SMALL LETTER X
 #   Multikey conflicts with "⧖" U29D6, "⧗" U29D7.                                              <x> : "ₓ" U2093 # LATIN SUBSCRIPT SMALL LETTER X
 <UEFD2>                                                                                        <Y> : "ʏ" U028F # LATIN LETTER SMALL CAPITAL Y
 <Multi_key><underscore>                                                                        <Y> : "ʏ" U028F # LATIN LETTER SMALL CAPITAL Y
-<UEFD2>                                                                                        <y> : "ᵧ" U1D67 # GREEK SUBSCRIPT SMALL LETTER GAMMA
-<Multi_key><underscore>                                                                        <y> : "ᵧ" U1D67 # GREEK SUBSCRIPT SMALL LETTER GAMMA
+<UEFD2>                                                                                        <y> : "₞" U209E # LATIN SUBSCRIPT SMALL LETTER Y
+<Multi_key><underscore>                                                                        <y> : "₞" U209E # LATIN SUBSCRIPT SMALL LETTER Y
 <UEFD2>                                                                                        <Z> : "ᴢ" U1D22 # LATIN LETTER SMALL CAPITAL Z
 <Multi_key><underscore>                                                                        <Z> : "ᴢ" U1D22 # LATIN LETTER SMALL CAPITAL Z
-<UEFD2>                                                                                        <z> : "ᴪ" U1D2A # GREEK LETTER SMALL CAPITAL PSI
-<Multi_key><underscore>                                                                        <z> : "ᴪ" U1D2A # GREEK LETTER SMALL CAPITAL PSI
+<UEFD2>                                                                                        <z> : "₟" U209F # LATIN SUBSCRIPT SMALL LETTER Z
+<Multi_key><underscore>                                                                        <z> : "₟" U209F # LATIN SUBSCRIPT SMALL LETTER Z
 #
 #
 # # SUBSCRIPT&GROUP_1
