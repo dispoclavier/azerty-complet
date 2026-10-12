@@ -66,7 +66,7 @@
 #   Cross-platform compatibility is full on MacOS, but only partial on Windows,
 #   that is able to support only lowercase, and only digrams, provided that the
 #   dead key is assigned the appropriate dead character: "ê" U00EA LATIN SMALL
-#   LETTER E WITH CIRCUMFLEX, for instance.
+#   LETTER E WITH CIRCUMFLEX in this case.
 #
 #   Likewise, a "Ç" key is emulated for use on the Canadian French variant.
 #   See #*# CEDILLA
@@ -3837,7 +3837,7 @@
 #   with Spanish, English and French mnemonics based on the numeral.
 #   
 #   The glottal letters "Ꞻ" UA7BA, "ꞻ" UA7BB, "Ꞽ" UA7BC, "ꞽ" UA7BD, "Ꞿ" UA7BE,
-#   "ꞿ" UA7BF, new in Unicode v12, are duplicated here for convenience.
+#   "ꞿ" UA7BF, new for Unicode 12.0, are duplicated here for convenience.
 #   See LETTER GLOTTAL
 #   See #^# GLOTTAL
 #   See #^# COMMA_ABOVE
@@ -4020,7 +4020,7 @@
 #   Multikey: ¦;;
 #
 #   This yields mainly the glottal letters "Ꞻ" UA7BA, "ꞻ" UA7BB, "Ꞽ" UA7BC,
-#   "ꞽ" UA7BD, "Ꞿ" UA7BE, "ꞿ" UA7BF new in Unicode v12, as these may be
+#   "ꞽ" UA7BD, "Ꞿ" UA7BE, "ꞿ" UA7BF new for Unicode 12.0, as these may be
 #   expected here, because the spiritus lenis that these glottal letters are
 #   diacriticized with, often happens to be shaped like a comma above, that may
 #   also be referred to as a curly apostrophe on top, so that "̓" U0313
@@ -5134,18 +5134,19 @@
 #
 # # Oslash for Danish, Norwegian and other languages
 #
-#   While ISO layouts have Øø in group 1 of Oo, and Œœ in group 1 of Ee, for
-#   intuitivity and predictability both letters Ææ and Œœ are in group 1 of Aa
-#   and Oo in this layout, leaving no room for Oslash.
+#   While ISO layouts have "Ø", "ø" in group 1 of "O", "o", and "Œ", "œ" in
+#   group 1 of "E", "e", for intuitivity and predictability both letters "Æ",
+#   "æ" and "Œ", "œ" are in group 1 of "A", "a" and "O", "o" in this layout,
+#   leaving no room for Oslash.
 #
 #   Oslash has normal support in dead_stroke, but as a convenience for Danish
 #   and other languages, Oslash is in group 1 of Ccedilla and Odiaeresis.
-#   On AZERTY, Ccedilla is above the O key, while Swiss QWERTZ has also an
+#   On AZERTY, Ccedilla is above the "O" key, while Swiss QWERTZ has also an
 #   Odiaeresis live key. In an effort to mitigate the inconvenience of not
-#   having Øø in group 1 of Oo, Oslash is additionally in dead_diaeresis,
-#   with Ccedilla as a base character again, and good mnemonics based on Danish
-#   Oslash’s phonetic equivalence to Swedish Odiaeresis, and the Ccedilla key’s
-#   E09 location above the "O" key.
+#   having "Ø", "ø" in group 1 of "O", "o", Oslash is additionally in
+#   dead_diaeresis, with Ccedilla as a base character again, and good mnemonics
+#   based on Danish Oslash’s phonetic equivalence to Swedish Odiaeresis, and
+#   the Ccedilla key’s E09 location above the "O" key.
 #   See #*# DIAERESIS
 #
 <UEFD0>                                                                                 <Ccedilla> : "Ø" U00D8 # LATIN CAPITAL LETTER O WITH STROKE shortcut
@@ -6776,7 +6777,7 @@
 #   also "⬝" U2B1D BLACK VERY SMALL SQUARE, eventually somewhat confusable with
 #   "·" U00B7 MIDDLE DOT. "⬝" U2B1D is supported here, in group 4, alongside
 #   "‣" U2023 TRIANGULAR BULLET in group 3 as an interesting alternative, while
-#   "⁃" U2043 HYPHEN BULLET is in group 1 of minus.
+#   "⁃" U2043 HYPHEN BULLET is in group 9 of minus.
 #   See # # C05 minus
 #
 #   This adds to the support of bullets by multikey.
@@ -8808,11 +8809,24 @@
 #   "Ƴ" U01B3, "ƴ" U01B4 in particular is used in Niger and Senegal.
 #   https://fr.wikipedia.org/wiki/%C6%B3
 #
-#   The deprecated l with middle dot "Ŀ" U013F, "ŀ" U0140 is supported in the
+#   Latin lambda "Ꟛ" UA7DA, "ꟛ" UA7DB may look close to an inverted "Y", "y".
+#   It is new in Unicode since version 16.0 (2024), along with a capital with
+#   stroke "Ƛ" UA7DC completing the casing pair with "ƛ" U019B.
+#   https://www.unicode.org/L2/L2023/23191-three-latin-additions.pdf
+#   https://www.typotheque.com/blog/new-unicode-characters-for-heiltsuk
+#   https://commons.wikimedia.org/wiki/File:Latin_Lambda.svg
+#
+#   The deprecated "l" with middle dot "Ŀ" U013F, "ŀ" U0140 is supported in the
 #   dead_abovedot dead key, not in any group, the less as it is nearly unused,
-#   as opposed to "l" followed by middle dot "·" U00B7 supported in group 1.
+#   as opposed to "l" followed by the middle dot "·" U00B7 that is supported in
+#   groups 1 and 5.
 #   https://forum.glyphsapp.com/t/ldotaccent-takes-periodcentered-not-dot-accent/1058/3
+#   See #+# GROUP_1
+#   See # # D08 ampersand
+#   See # # B08-level_1 period
 #   See #*# DOT_ABOVE
+#   See #*# CIRCUMFLEX
+#   See #*# SUPERSCRIPT
 #
 <UEFD0><UEFD0>                                                                                 <A> : "Ʌ" U0245 # LATIN CAPITAL LETTER TURNED V
 <Multi_key><numbersign><numbersign>                                                            <A> : "Ʌ" U0245 # LATIN CAPITAL LETTER TURNED V
@@ -8928,13 +8942,6 @@
 #   "ʋ" U028B are supported for convenience as a subset of those supported by
 #   dead_hook.
 #   See #*# HOOK
-#
-#   Latin lambda may look close to an inverted Yy. It is new in Unicode as of
-#   v16.0.0 (2024), along with its capital with stroke "Ƛ" UA7DC completing the
-#   lowercase "ƛ" U019B.
-#   https://www.unicode.org/L2/L2023/23191-three-latin-additions.pdf
-#   https://www.typotheque.com/blog/new-unicode-characters-for-heiltsuk
-#   https://commons.wikimedia.org/wiki/File:Latin_Lambda.svg
 #
 <UEFD0><3>                                                                                     <A> : "Ɑ" U2C6D # LATIN CAPITAL LETTER ALPHA
 <Multi_key><numbersign><3>                                                                     <A> : "Ɑ" U2C6D # LATIN CAPITAL LETTER ALPHA
@@ -9259,13 +9266,9 @@
 #   almost unused, whereas its reversed variant represents the open-mid central
 #   rounded vowel.
 #
-#   Letters with hook, "Ɱ" U2C6E, "ɱ" U0271 for instance, are supported for
-#   convenience as a subset of those supported by dead_hook.
-#   See #*# HOOK
-#
 #   Tbe ties "⁀" U2040 CHARACTER TIE and "‿" U203F UNDERTIE are here by J, with
-#   mnemonics based on the curved tail of the letter. They are also in group 12
-#   of parenleft and parenright.
+#   a mnemonic based on the curve in the letter. They are also in group 12 of
+#   parenleft and parenright.
 #   See #*# TURNED
 #   See #^# INVERTED
 #   See # # C03 parenleft
@@ -9367,7 +9370,6 @@
 <Multi_key><numbersign><KP_4>                                                                  <h> : "ꜧ" UA727 # LATIN SMALL LETTER HENG
 <UEFD0><UEFD0><UEFD0><UEFD0>                                                                   <h> : "ꜧ" UA727 # LATIN SMALL LETTER HENG
 <Multi_key><numbersign><numbersign><numbersign><numbersign>                                    <h> : "ꜧ" UA727 # LATIN SMALL LETTER HENG
-#<UEFD0><4>                                                                                     <I> : "ℹ" U2139 # INFORMATION SOURCE emoji
 <UEFD0><4>                                                                                     <I> : "℟" U211F # RESPONSE
 <Multi_key><numbersign><4>                                                                     <I> : "℟" U211F # RESPONSE
 <UEFD0><KP_4>                                                                                  <I> : "℟" U211F # RESPONSE
@@ -9476,7 +9478,6 @@
 <Multi_key><numbersign><KP_4>                                                                  <q> : "ᴥ" U1D25 # LATIN LETTER AIN
 <UEFD0><UEFD0><UEFD0><UEFD0>                                                                   <q> : "ᴥ" U1D25 # LATIN LETTER AIN
 <Multi_key><numbersign><numbersign><numbersign><numbersign>                                    <q> : "ᴥ" U1D25 # LATIN LETTER AIN
-#<UEFD0><4>                                                                                     <R> : "℟" U211F # RESPONSE
 <UEFD0><4>                                                                                     <R> : "ꭅ" UAB45 # LATIN SMALL LETTER STIRRUP R
 <Multi_key><numbersign><4>                                                                     <R> : "ꭅ" UAB45 # LATIN SMALL LETTER STIRRUP R
 <UEFD0><KP_4>                                                                                  <R> : "ꭅ" UAB45 # LATIN SMALL LETTER STIRRUP R
@@ -9525,7 +9526,6 @@
 <Multi_key><numbersign><KP_4>                                                                  <u> : "ɯ" U026F # LATIN SMALL LETTER TURNED M
 <UEFD0><UEFD0><UEFD0><UEFD0>                                                                   <u> : "ɯ" U026F # LATIN SMALL LETTER TURNED M
 <Multi_key><numbersign><numbersign><numbersign><numbersign>                                    <u> : "ɯ" U026F # LATIN SMALL LETTER TURNED M
-#<UEFD0><4>                                                                                     <V> : "℣" U2123 # VERSICLE
 <UEFD0><4>                                                                                     <V> : "꟝" UA7DD # LATIN CAPITAL LETTER CLOSED OMEGA
 <Multi_key><numbersign><4>                                                                     <V> : "꟝" UA7DD # LATIN CAPITAL LETTER CLOSED OMEGA
 <UEFD0><KP_4>                                                                                  <V> : "꟝" UA7DD # LATIN CAPITAL LETTER CLOSED OMEGA

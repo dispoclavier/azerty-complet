@@ -1184,11 +1184,11 @@
 #   https://github.com/unicode-org/cldr/blob/main/common/main/fr.xml#L1602
 #
 #   All preformatted letters benefit from multikey support thanks to multikey
-#   equivalents, for instance by <Multi_key><asciicircum><[the letter]>. except
-#   on Window due to its inability to support complete layout drivers.
+#   equivalents, in this case by <Multi_key><asciicircum><[the letter]>. except
+#   on Windows due to its inability to support complete layout drivers.
 #   See #*# SUPERSCRIPT
 #   See # # Multikey equivalents
-#   See linux-chromeos/outils/dead-key-convert.pl # Multikey
+#   See windows/outils/dead-key-convert.pl # Multikey
 #
 #   The two legacy ordinal indicators are supported with alphabetic mnemonics
 #   in group 12 of "^" on key "A", and in group 12 of "{" on key "O".
@@ -4673,7 +4673,7 @@
 #   <1><d> : "╱" U2571 BOX DRAWINGS LIGHT DIAGONAL UPPER RIGHT TO LOWER LEFT,
 #   <1><2><d> : "╳" U2573 BOX DRAWINGS LIGHT DIAGONAL CROSS.
 #
-#   The 16 character cell diagonals, new in Unicode 16.0, from "🯐" U1FBD0 BOX
+#   The 16 character cell diagonals, new for Unicode 16.0, from "🯐" U1FBD0 BOX
 #   DRAWINGS LIGHT DIAGONAL MIDDLE RIGHT TO LOWER LEFT through "🯟" U1FBDF BOX
 #   DRAWINGS LIGHT DIAGONAL UPPER LEFT TO MIDDLE RIGHT TO LOWER LEFT are not
 #   supported however, nor are the other SMP box drawings:
@@ -4998,8 +4998,12 @@
 #   See # # Vulgar fractions
 #   See #*# HORN
 #
-#   Codes with less than 4 digits are space terminated. Level-3 nobreakspace
-#   is supported alongside for synergy with level-3 digits.
+#   Codes with fewer than 3 digits are space terminated. Level-3 "nobreakspace"
+#   is supported alongside for synergy with level-3 digits. These codes are due
+#   to the IBM PC OEM code page 437.
+#
+#   The 4-digit codes with a leading "0" map to the ANSI code page Windows-1252
+#   (issued by Microsoft based on an ANSI draft).
 #
 #   By courtesy of:
 #   https://www.freecodecamp.org/news/alt-codes-special-characters-keyboard-symbols-windows-list/
@@ -5491,8 +5495,8 @@
 <Multi_key><plus>                                                          <2><4><7><nobreakspace> : "≈" U2248 #
 <Multi_key><plus>                                                          <2><4><8>       <space> : "°" U00B0 #
 <Multi_key><plus>                                                          <2><4><8><nobreakspace> : "°" U00B0 #
-<Multi_key><plus>                                                          <2><4><9>       <space> : "·" U00B7 #
-<Multi_key><plus>                                                          <2><4><9><nobreakspace> : "·" U00B7 #
+<Multi_key><plus>                                                          <2><4><9>       <space> : "∙" U2219 #
+<Multi_key><plus>                                                          <2><4><9><nobreakspace> : "∙" U2219 #
 <Multi_key><plus>                                                          <2><5><0>       <space> : "·" U00B7 #
 <Multi_key><plus>                                                          <2><5><0><nobreakspace> : "·" U00B7 #
 <Multi_key><plus>                                                          <2><5><1>       <space> : "√" U221A #
@@ -5865,7 +5869,7 @@
 #   and "⋘" U22D8. More extensively ruling out dead key multikey equivalents
 #   helps since v6.2.5 make some of these math sequences more streamlined again.
 #   Windows is unable to support the multikey equivalents anyway.
-#   See linux-chromeos/outils/dead-key-convert.pl # Multikey
+#   See windows/outils/dead-key-convert.pl # Multikey
 #
 #
 #   Negation
@@ -6527,11 +6531,11 @@
 #   See # # Mathematical Latin alphabets and digits
 #   See # # Mathematical Greek alphabets and symbols
 #
-#   Sequences for double-struck or outlined symbols use duplication, script is
-#   a trailing asciitilde, blackletter is numbersign, Hebrew gets a trailing
+#   Sequences for double-struck or outlined symbols use duplication; script is
+#   a trailing asciitilde; blackletter is numbersign; Hebrew gets a trailing
 #   backslash based on the shape of aleph (for instance the symbol "ℵ" U2135)
-#   although backslash is also the ASCII equivalent of reversed, Greek gets a
-#   trailing at sign, and italic translates to a trailing slash, although in
+#   although backslash is also the ASCII equivalent of reversed; Greek gets a
+#   trailing at sign; and italic translates to a trailing slash, although in
 #   other instances, this is used to denote negation: "∄" U2204, "∅" U2205.
 #
 #       Font style                  Trailing transform
@@ -10561,7 +10565,7 @@
 #   https://www.unicode.org/charts/PDF/U1CEC0.pdf
 #   https://www.unicode.org/charts/nameslist/n_1CEC0.html
 #
-#   This is new in Unicode 17.0.
+#   This is new for Unicode 17.0.
 #   https://www.unicode.org/charts/PDF/Unicode-17.0/U170-1CEC0.pdf
 #
 #   Although the circle is small, the letter may also be uppercase, so as to
@@ -10591,7 +10595,7 @@
 #   These reaction and unsuccessful reaction arrows and the isolobal arrow
 #   complete three arrows starting with "⟵" U27F5.
 #
-#   These are new in Unicode 17.0.
+#   These are new for Unicode 17.0.
 #   https://www.unicode.org/charts/PDF/Unicode-17.0/U170-1F800.pdf
 #
 #   To separate the two stacked arrows, comma or digit 0 are used alternatively
