@@ -2045,6 +2045,68 @@
 <Multi_key><percent><asciicircum>                          <numbersign><numbersign><numbersign><e> : "ᵌ" U1D4C # MODIFIER LETTER SMALL TURNED OPEN E
 #
 #
+# # SUPERSCRIPT&TURNED&HOOK&RETROFLEX_HOOK
+#
+#   This supports the superscript of "ʯ" U02AF LATIN SMALL LETTER TURNED H
+#   WITH FISHHOOK AND TAIL.
+#   See # # TURNED&HOOK&RETROFLEX_HOOK
+#   See # # SUPERSCRIPT&HOOK&TURNED
+#
+#   As this dead key exists for "𝿮" U1DFEE only, it is streamlined by cropping
+#   the base character.
+#   See # # Single-character dead keys
+#
+#UEFD1><UEFD5><dead_hook><UEFD4>                                                               <h> : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD1><UEFD5><dead_hook><UEFD4>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><asciicircum><percent><braceleft><braceright>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD1><UEFD5><UEFD4><dead_hook>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><asciicircum><percent><braceright><braceleft>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD1><dead_hook><UEFD5><UEFD4>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><asciicircum><braceleft><percent><braceright>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD1><UEFD4><UEFD5><dead_hook>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><asciicircum><braceright><percent><braceleft>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD1><dead_hook><UEFD4><UEFD5>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><asciicircum><braceleft><braceright><percent>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD1><UEFD4><dead_hook><UEFD5>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><asciicircum><braceright><braceleft><percent>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD5><UEFD1><dead_hook><UEFD4>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><percent><asciicircum><braceleft><braceright>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD5><UEFD1><UEFD4><dead_hook>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><percent><asciicircum><braceright><braceleft>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<dead_hook><UEFD1><UEFD5><UEFD4>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceleft><asciicircum><percent><braceright>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD4><UEFD1><UEFD5><dead_hook>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceright><asciicircum><percent><braceleft>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<dead_hook><UEFD1><UEFD4><UEFD5>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceleft><asciicircum><braceright><percent>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD4><UEFD1><dead_hook><UEFD5>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceright><asciicircum><braceleft><percent>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD5><dead_hook><UEFD1><UEFD4>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><percent><braceleft><asciicircum><braceright>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD5><UEFD4><UEFD1><dead_hook>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><percent><braceright><asciicircum><braceleft>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<dead_hook><UEFD5><UEFD1><UEFD4>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceleft><percent><asciicircum><braceright>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD4><UEFD5><UEFD1><dead_hook>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceright><percent><asciicircum><braceleft>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<dead_hook><UEFD4><UEFD1><UEFD5>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceleft><braceright><asciicircum><percent>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD4><dead_hook><UEFD1><UEFD5>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceright><braceleft><asciicircum><percent>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD5><dead_hook><UEFD4><UEFD1>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><percent><braceleft><braceright><asciicircum>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD5><UEFD4><dead_hook><UEFD1>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><percent><braceright><braceleft><asciicircum>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<dead_hook><UEFD5><UEFD4><UEFD1>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceleft><percent><braceright><asciicircum>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD4><UEFD5><dead_hook><UEFD1>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceright><percent><braceleft><asciicircum>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<dead_hook><UEFD4><UEFD5><UEFD1>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceleft><braceright><percent><asciicircum>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<UEFD4><dead_hook><UEFD5><UEFD1>                                                                   : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+<Multi_key><braceright><braceleft><percent><asciicircum>                                           : "𝿮" U1DFEE # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK AND TAIL
+#
+#
 # # SUPERSCRIPT&INVERTED
 #   Lenient group selection
 #
@@ -2107,6 +2169,14 @@
 <Multi_key><asciicircum><backslash>                                                            <q> : "ˁ" U02C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
 <UEFD6><UEFD1>                                                                                 <q> : "ˁ" U02C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
 <Multi_key><backslash><asciicircum>                                                            <q> : "ˁ" U02C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
+<UEFD1><UEFD6>                                                                                 <s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><asciicircum><backslash>                                                            <s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<UEFD6><UEFD1>                                                                                 <s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><backslash><asciicircum>                                                            <s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<UEFD1><UEFD6>                                                                                 <w> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><asciicircum><backslash>                                                            <w> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<UEFD6><UEFD1>                                                                                 <w> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><backslash><asciicircum>                                                            <w> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
 #
 #
 # # SUPERSCRIPT&REVERSED&GROUP_1
@@ -2119,6 +2189,14 @@
 <Multi_key><asciicircum><backslash>                                                <numbersign><q> : "ˤ" U02E4 # MODIFIER LETTER SMALL REVERSED GLOTTAL STOP
 <UEFD6><UEFD1>                                                                          <UEFD0><q> : "ˤ" U02E4 # MODIFIER LETTER SMALL REVERSED GLOTTAL STOP
 <Multi_key><backslash><asciicircum>                                                <numbersign><q> : "ˤ" U02E4 # MODIFIER LETTER SMALL REVERSED GLOTTAL STOP
+<UEFD1><UEFD6>                                                                          <UEFD0><s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><asciicircum><backslash>                                                <numbersign><s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<UEFD6><UEFD1>                                                                          <UEFD0><s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><backslash><asciicircum>                                                <numbersign><s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<UEFD1><UEFD6>                                                                          <UEFD0><w> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><asciicircum><backslash>                                                <numbersign><w> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<UEFD6><UEFD1>                                                                          <UEFD0><w> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><backslash><asciicircum>                                                <numbersign><w> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
 #
 #
 # # SUPERSCRIPT&REVERSED&GROUP_2
@@ -2135,6 +2213,10 @@
 <Multi_key><asciicircum><backslash>                                    <numbersign><numbersign><q> : "ˁ" U02C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
 <UEFD6><UEFD1>                                                                   <UEFD0><UEFD0><q> : "ˁ" U02C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
 <Multi_key><backslash><asciicircum>                                    <numbersign><numbersign><q> : "ˁ" U02C1 # MODIFIER LETTER REVERSED GLOTTAL STOP
+<UEFD1><UEFD6>                                                                   <UEFD0><UEFD0><s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><asciicircum><backslash>                                    <numbersign><numbersign><s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<UEFD6><UEFD1>                                                                   <UEFD0><UEFD0><s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
+<Multi_key><backslash><asciicircum>                                    <numbersign><numbersign><s> : "𝿬" U1DFEC # MODIFIER LETTER SMALL SQUAT REVERSED ESH
 #
 #
 # # SUPERSCRIPT&REVERSED&GROUP_3
@@ -2457,6 +2539,10 @@
 <Multi_key><asciicircum><braceleft>                                                            <k> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
 <dead_hook><UEFD1>                                                                             <k> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
 <Multi_key><braceleft><asciicircum>                                                            <k> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
+<UEFD1><dead_hook>                                                                             <l> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
+<Multi_key><asciicircum><braceleft>                                                            <l> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
+<dead_hook><UEFD1>                                                                             <l> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
+<Multi_key><braceleft><asciicircum>                                                            <l> : "𝿻" U1DFFB # MODIFIER LETTER SMALL K WITH HOOK
 <UEFD1><dead_hook>                                                                             <m> : "ᶬ" U1DAC # MODIFIER LETTER SMALL M WITH HOOK
 <Multi_key><asciicircum><braceleft>                                                            <m> : "ᶬ" U1DAC # MODIFIER LETTER SMALL M WITH HOOK
 <dead_hook><UEFD1>                                                                             <m> : "ᶬ" U1DAC # MODIFIER LETTER SMALL M WITH HOOK
@@ -2493,6 +2579,10 @@
 <Multi_key><asciicircum><braceleft>                                                            <v> : "ᶹ" U1DB9 # MODIFIER LETTER SMALL V WITH HOOK
 <dead_hook><UEFD1>                                                                             <v> : "ᶹ" U1DB9 # MODIFIER LETTER SMALL V WITH HOOK
 <Multi_key><braceleft><asciicircum>                                                            <v> : "ᶹ" U1DB9 # MODIFIER LETTER SMALL V WITH HOOK
+<UEFD1><dead_hook>                                                                             <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><asciicircum><braceleft>                                                            <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<dead_hook><UEFD1>                                                                             <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
+<Multi_key><braceleft><asciicircum>                                                            <w> : "𝿢" U1DFE2 # MODIFIER LETTER SMALL ESH WITH CURL
 <UEFD1><dead_hook>                                                                             <z> : "ᶽ" U1DBD # MODIFIER LETTER SMALL Z WITH CURL
 <Multi_key><asciicircum><braceleft>                                                            <z> : "ᶽ" U1DBD # MODIFIER LETTER SMALL Z WITH CURL
 <dead_hook><UEFD1>                                                                             <z> : "ᶽ" U1DBD # MODIFIER LETTER SMALL Z WITH CURL
@@ -2509,6 +2599,12 @@
 #
 # # SUPERSCRIPT&HOOK&TURNED
 #
+#   While for "ʵ" U02B5, the rotation comes last, the likely opposite would
+#   require "𝿭" U1DFED MODIFIER LETTER SMALL TURNED H WITH FISHHOOK to be in a
+#   SUPERSCRIPT&TURNED&HOOK dead key, the better as "𝿮" U1DFEE MODIFIER LETTER
+#   SMALL TURNED H WITH FISHHOOK AND TAIL is clear about turning the initially
+#   upwards hook into a tail.
+#
 <UEFD1><dead_hook><UEFD5>                                                                      <f> : "𐞘" U10798 # MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK
 <Multi_key><asciicircum><braceleft><percent>                                                   <f> : "𐞘" U10798 # MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK
 <UEFD1><UEFD5><dead_hook>                                                                      <f> : "𐞘" U10798 # MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK
@@ -2521,6 +2617,18 @@
 <Multi_key><braceleft><percent><asciicircum>                                                   <f> : "𐞘" U10798 # MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK
 <UEFD5><dead_hook><UEFD1>                                                                      <f> : "𐞘" U10798 # MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK
 <Multi_key><percent><braceleft><asciicircum>                                                   <f> : "𐞘" U10798 # MODIFIER LETTER SMALL DOTLESS J WITH STROKE AND HOOK
+<UEFD1><dead_hook><UEFD5>                                                                      <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<Multi_key><asciicircum><braceleft><percent>                                                   <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<UEFD1><UEFD5><dead_hook>                                                                      <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<Multi_key><asciicircum><percent><braceleft>                                                   <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<dead_hook><UEFD1><UEFD5>                                                                      <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<Multi_key><braceleft><asciicircum><percent>                                                   <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<UEFD5><UEFD1><dead_hook>                                                                      <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<Multi_key><percent><asciicircum><braceleft>                                                   <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<dead_hook><UEFD5><UEFD1>                                                                      <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<Multi_key><braceleft><percent><asciicircum>                                                   <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<UEFD5><dead_hook><UEFD1>                                                                      <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
+<Multi_key><percent><braceleft><asciicircum>                                                   <h> : "𝿭" U1DFED # MODIFIER LETTER SMALL TURNED H WITH FISHHOOK
 <UEFD1><UEFD5><dead_hook>                                                                      <r> : "ʵ" U02B5 # MODIFIER LETTER SMALL TURNED R WITH HOOK
 <Multi_key><asciicircum><percent><braceleft>                                                   <r> : "ʵ" U02B5 # MODIFIER LETTER SMALL TURNED R WITH HOOK
 <UEFD1><dead_hook><UEFD5>                                                                      <r> : "ʵ" U02B5 # MODIFIER LETTER SMALL TURNED R WITH HOOK
@@ -2537,41 +2645,54 @@
 #
 # # SUPERSCRIPT&HOOK&REVERSED
 #
-@<UEFD1><dead_hook><UEFD6>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
-@<UEFD1><UEFD6><dead_hook>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
-@<dead_hook><UEFD1><UEFD6>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
-@<UEFD6><UEFD1><dead_hook>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
-@<dead_hook><UEFD6><UEFD1>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
-@<UEFD6><dead_hook><UEFD1>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<UEFD1><dead_hook><UEFD6>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<Multi_key><asciicircum><braceleft><backslash>                                                 <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<UEFD1><UEFD6><dead_hook>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<Multi_key><asciicircum><backslash><braceleft>                                                 <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<dead_hook><UEFD1><UEFD6>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<Multi_key><braceleft><asciicircum><backslash>                                                 <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<UEFD6><UEFD1><dead_hook>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<Multi_key><backslash><asciicircum><braceleft>                                                 <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<dead_hook><UEFD6><UEFD1>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<Multi_key><braceleft><backslash><asciicircum>                                                 <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<UEFD6><dead_hook><UEFD1>                                                                      <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
+<Multi_key><backslash><braceleft><asciicircum>                                                 <r> : "𝿫" U1DFEB # MODIFIER LETTER SMALL REVERSED R WITH FISHHOOK
 #
 #
 # # SUPERSCRIPT&HOOK&RETROFLEX_HOOK
 #
-#   As this dead key exists for "𐞍" U1078D only, it is streamlined by cropping
-#   the base character.
-#   See # # Single-character dead keys
-#
-#UEFD1><dead_hook><UEFD4>                                                                      <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<UEFD1><dead_hook><UEFD4>                                                                          : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<Multi_key><asciicircum><braceleft><braceright>                                                    : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<UEFD1><UEFD4><dead_hook>                                                                          : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<Multi_key><asciicircum><braceright><braceleft>                                                    : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<dead_hook><UEFD4><UEFD1>                                                                          : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<Multi_key><braceleft><braceright><asciicircum>                                                    : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<dead_hook><UEFD1><UEFD4>                                                                          : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<Multi_key><braceleft><asciicircum><braceright>                                                    : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<UEFD4><dead_hook><UEFD1>                                                                          : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<Multi_key><braceright><braceleft><asciicircum>                                                    : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<UEFD4><UEFD1><dead_hook>                                                                          : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
-<Multi_key><braceright><asciicircum><braceleft>                                                    : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<UEFD1><dead_hook><UEFD4>                                                                      <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<Multi_key><asciicircum><braceleft><braceright>                                                <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<UEFD1><UEFD4><dead_hook>                                                                      <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<Multi_key><asciicircum><braceright><braceleft>                                                <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<dead_hook><UEFD4><UEFD1>                                                                      <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<Multi_key><braceleft><braceright><asciicircum>                                                <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<dead_hook><UEFD1><UEFD4>                                                                      <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<Multi_key><braceleft><asciicircum><braceright>                                                <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<UEFD4><dead_hook><UEFD1>                                                                      <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<Multi_key><braceright><braceleft><asciicircum>                                                <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<UEFD4><UEFD1><dead_hook>                                                                      <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<Multi_key><braceright><asciicircum><braceleft>                                                <d> : "𐞍" U1078D # MODIFIER LETTER SMALL D WITH HOOK AND TAIL
+<UEFD1><dead_hook><UEFD4>                                                                      <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<Multi_key><asciicircum><braceleft><braceright>                                                <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<UEFD1><UEFD4><dead_hook>                                                                      <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<Multi_key><asciicircum><braceright><braceleft>                                                <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<dead_hook><UEFD4><UEFD1>                                                                      <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<Multi_key><braceleft><braceright><asciicircum>                                                <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<dead_hook><UEFD1><UEFD4>                                                                      <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<Multi_key><braceleft><asciicircum><braceright>                                                <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<UEFD4><dead_hook><UEFD1>                                                                      <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<Multi_key><braceright><braceleft><asciicircum>                                                <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<UEFD4><UEFD1><dead_hook>                                                                      <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
+<Multi_key><braceright><asciicircum><braceleft>                                                <t> : "𝿿" U1DFFF # MODIFIER LETTER SMALL T WITH HOOK AND RETROFLEX HOOK
 #
 #
 # # SUPERSCRIPT&CURL
-#   Lenient dead key press
 #   Lenient group selection
 #
-#   Many duplicates of these are supported by empty base letters in superscript
-#   with hook, for a streamlined user experience by skipping 1 dead_hook press.
+#   Duplicates of "ᶨ" U1DA8, "𝿰" U1DFF0, "𝿢" U1DFE2, "ᶽ" U1DBD are supported by
+#   unused base letters in superscript with hook, for a streamlined user
+#   experience through skipping 1 dead_hook press.
 #   See # # SUPERSCRIPT&HOOK
 #
 <UEFD1><dead_hook><dead_hook>                                                                  <c> : "ᶝ" U1D9D # MODIFIER LETTER SMALL C WITH CURL
@@ -3417,18 +3538,30 @@
 #
 # # SUPERSCRIPT&BAR&TURNED
 #
-@<UEFD1><UEFD8><UEFD5>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
-@<UEFD1><UEFD5><UEFD8>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
-@<UEFD8><UEFD1><UEFD5>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
-@<UEFD5><UEFD1><UEFD8>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
-@<UEFD8><UEFD5><UEFD1>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
-@<UEFD5><UEFD8><UEFD1>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
-@<UEFD1><UEFD8><UEFD5>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
-@<UEFD1><UEFD5><UEFD8>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
-@<UEFD8><UEFD1><UEFD5>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
-@<UEFD5><UEFD1><UEFD8>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
-@<UEFD8><UEFD5><UEFD1>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
-@<UEFD5><UEFD8><UEFD1>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<UEFD1><UEFD8><UEFD5>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<Multi_key><asciicircum><minus><percent>                                                       <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<UEFD1><UEFD5><UEFD8>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<Multi_key><asciicircum><percent><minus>                                                       <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<UEFD8><UEFD1><UEFD5>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<Multi_key><minus><asciicircum><percent>                                                       <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<UEFD5><UEFD1><UEFD8>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<Multi_key><percent><asciicircum><minus>                                                       <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<UEFD8><UEFD5><UEFD1>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<Multi_key><minus><percent><asciicircum>                                                       <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<UEFD5><UEFD8><UEFD1>                                                                          <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<Multi_key><percent><minus><asciicircum>                                                       <h> : "𝿘" U1DFD8 # MODIFIER LETTER SMALL BARRED TURNED H
+<UEFD1><UEFD8><UEFD5>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<Multi_key><asciicircum><minus><percent>                                                       <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<UEFD1><UEFD5><UEFD8>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<Multi_key><asciicircum><percent><minus>                                                       <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<UEFD8><UEFD1><UEFD5>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<Multi_key><minus><asciicircum><percent>                                                       <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<UEFD5><UEFD1><UEFD8>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<Multi_key><percent><asciicircum><minus>                                                       <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<UEFD8><UEFD5><UEFD1>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<Multi_key><minus><percent><asciicircum>                                                       <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<UEFD5><UEFD8><UEFD1>                                                                          <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
+<Multi_key><percent><minus><asciicircum>                                                       <r> : "𝿗" U1DFD7 # MODIFIER LETTER SMALL TURNED R WITH STROKE
 #
 #
 # # SUPERSCRIPT&DOUBLE_BAR
@@ -8291,6 +8424,14 @@
 <Multi_key><at><bracketleft>                                                                   <Z> : "🅉" U1F149 # SQUARED LATIN CAPITAL LETTER Z
 <dead_greek><bracketleft>                                                                      <z> : "🅉" U1F149 # SQUARED LATIN CAPITAL LETTER Z
 <Multi_key><at><bracketleft>                                                                   <z> : "🅉" U1F149 # SQUARED LATIN CAPITAL LETTER Z
+#
+#
+# # GREEK_OR_CIRCLED&SUPERSCRIPT
+#
+@<dead_greek><UEFD1>                                                                            <c> : "𝿳" U1DFF3 # MODIFIER LETTER SMALL GREEK PSI
+@<UEFD1><dead_greek>                                                                            <c> : "𝿳" U1DFF3 # MODIFIER LETTER SMALL GREEK PSI
+@<dead_greek><UEFD1>                                                                            <v> : "𝿴" U1DFF4 # MODIFIER LETTER SMALL GREEK OMEGA
+@<UEFD1><dead_greek>                                                                            <v> : "𝿴" U1DFF4 # MODIFIER LETTER SMALL GREEK OMEGA
 #
 #
 # # GREEK_OR_CIRCLED&SUBSCRIPT

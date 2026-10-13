@@ -34,13 +34,18 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Exposant et tourné :
 			* Ajouter "𐞻" U+107BB. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 			* Ajouter "𐞾" U+107BE. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
+			* Exposant et tourné et crosse et crochet rétroflexe : Ajouter "𝿮" U+1DFEE.
 			* Exposant et inversé : Ajouter "𐞼" U+107BC. ibidem
-		* Exposant et indice-ou-petite-capitale ;
+		* Exposant et réfléchi : Ajouter "𝿬" U+1DFEC.
+		* Exposant et indice-ou-petite-capitale :
 			* Ajouter "𝿑" U+1DFD1. ibidem
 			* Ajouter "𝿨" U+1DFE8, "𝿩" U+1DFE9, "𝿪" U+1DFEA. compose-2.yml [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
 		* Exposant et crosse :
 			* Ajouter "𝿺" U+1DFFA, "𝿻" U+1DFFB, "𝿼" U+1DFFC, "𝿽" U+1DFFD, "𝿾" U+1DFFE. compose-2.yml [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
-			* Exposant et crosse et réfléchi : Ajouter "𝿫" U+1DFEB.
+			* Exposant et grec-ou-cerclé : Ajouter "𝿳" U+1DFF3, "𝿴" U+1DFF4.
+			* Exposant et crosse et tourné : Ajouter "𝿭" U+1DFED.
+			* Exposant et crosse et réfléchi : Ajouter "𝿿" U+1DFFF.
+			* Exposant et crosse et crochet rétroflexe : Ajouter "𝿫" U+1DFEB.
 			* Exposant et boucle : Ajouter "𝿢" U+1DFE2, "𝿦" U+1DFE6, "𝿯" U+1DFEF, "𝿰" U+1DFF0, "𝿱" U+1DFF1, "𝿲" U+1DFF2.
 			* Exposant et fioriture et tourné : Ajouter "𝿍" U+1DFCD. compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-complet/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 		* Exposant et crochet rétroflexe : Ajouter "𝿣" U+1DFE3, "𝿧" U+1DFE7. compose-2.yml [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
@@ -1373,7 +1378,7 @@ Aide à la production autonome de pilotes personnalisés et d’installateurs so
 			* Niveau 5 : Ajouter le nom de la variante. kbfrFRs.C [f17bf4f](https://github.com/dispoclavier/nouvel-azerty/commit/f17bf4f0055aa836832c214e4c1e122c7c669a22), kbfredis.C [9b675ce](https://github.com/dispoclavier/nouvel-azerty/commit/9b675ce2710b45fd31add8f8996e1a9abe047c8a)
 			* Niveau 6 : Ajouter le numéro de version. ibidem
 	* Variantes :
-		* Variante redisposée de base : Aligner les noms de fichier sur les noms établis.
+		* Variante redisposée de base : Aligner les noms de fichier sur les noms établis :
 			* kbfredis.C devient kbfrFRsr.C. [730f0f9](https://github.com/dispoclavier/nouvel-azerty/commit/730f0f9d4889c363f30c6375347c4308b7c6fda8)
 			* kbfredis.DEF devient kbfrFRsr.DEF. [e2dea1b](https://github.com/dispoclavier/nouvel-azerty/commit/e2dea1b3f8264a3c2741453957576c39c4f78a81)
 			* kbfredis.H devient kbfrFRsr.H. [c685d07](https://github.com/dispoclavier/nouvel-azerty/commit/c685d073a528f02dcfca8403bc28f3c952da353b)
@@ -1677,15 +1682,15 @@ Complétion des touches mortes au-delà du contenu pris en charge par équivalen
 
 Amélioration des groupes des symboles :
 
-* gain de trois places dans les premiers groupes du croisillon grâce à la dissociation des touches mortes et de leur équivalent en composition ;
-* retour des cases à cocher sur "#" ;
-* intégration des obèles les plus fréquents et de l’astérisme très populaire.
+* gain de trois places dans les premiers groupes du croisillon grâce à la dissociation des touches mortes et de leur équivalent en composition
+* retour des cases à cocher sur "#"
+* intégration des obèles les plus fréquents et de l’astérisme très populaire
 
 Amélioration des groupes des lettres :
 
-* les lettres grecques latines passent du groupe 3 au groupe 2 ;
-* le v de ronde est doté d’un raccourci dans le groupe 1 ;
-* l’upsilon latin regagne sa place dans le groupe 1 de l’i grec.
+* les lettres grecques latines passent du groupe 3 au groupe 2
+* le v de ronde est doté d’un raccourci dans le groupe 1
+* l’upsilon latin regagne sa place dans le groupe 1 de l’i grec
 
 Correction de la prise en charge de l’émoji "❄" U+2744, arrêt de celle de "😃" U+1F603
 
@@ -3211,7 +3216,7 @@ Version 2.0 due à la nécessité de redonder en AltGr le symbole euro, de redis
 ## 1.0.14 (2023-09-29)
 
 * Sous-variantes : Effacement arrière : Remettre sur la touche traditionnelle. evdev.c [375b83a](https://github.com/dispoclavier/nouvel-azerty/commit/375b83a11353f6135d39b65a2eca085400de34ee), annule [0559e8f](https://github.com/dispoclavier/nouvel-azerty/commit/0559e8ff5b8b34ce91f775624f6293e0a8f98973)
-* Documentation : Mettre en sourdine la prise en charge de ChromeOS.
+* Documentation : Mettre en sourdine la prise en charge de ChromeOS
 
 ## 1.0.13 (2023-09-27)
 
@@ -3233,7 +3238,7 @@ Version 2.0 due à la nécessité de redonder en AltGr le symbole euro, de redis
 	* Adapter "≎" U+224E, "⨧" U+2A27. compose-1.yml [ce7072e](https://github.com/dispoclavier/nouvel-azerty/commit/ce7072e6c127c02426129ede66c4bca73542995b)
 	* Supprimer "‭" U+202D par « ¦o> », U+202E par « ¦o< », "🄯" U+1F12F par « ¦%oc » (maintenu par « ¦%OC »). compose-1.yml [ce7072e](https://github.com/dispoclavier/nouvel-azerty/commit/ce7072e6c127c02426129ede66c4bca73542995b)
 	* Supprimer la termination par espace pour les séquences les plus longues. compose-1.yml [be9366c](https://github.com/dispoclavier/nouvel-azerty/commit/be9366ce76362789212a21f5df80d4856c0c9b5a)
-* Transformations : Supprimer l’affichage des caractères morts. compose-1.yml [ce7072e](https://github.com/dispoclavier/nouvel-azerty/commit/ce7072e6c127c02426129ede66c4bca73542995b), compose-2.yml [eb82120](https://github.com/dispoclavier/nouvel-azerty/commit/eb82120550714a3344f22305821e6a409b62e891)
+* Transformations :
 	* Groupes des symboles :
 		* Supprimer "" U+000B, y déplacer "▢" U+25A2. compose-2.yml [a089368](https://github.com/dispoclavier/nouvel-azerty/commit/a0893686afff6fd180597a1dde2e0e3241b8aee8)
 		* Déredonder "□" U+25A1 et "■" U+25A0, y redonder "☐" U+2610, "☑" U+2611, "☒" U+2612. compose-2.yml [a089368](https://github.com/dispoclavier/nouvel-azerty/commit/a0893686afff6fd180597a1dde2e0e3241b8aee8)
@@ -3289,7 +3294,9 @@ Version 2.0 due à la nécessité de redonder en AltGr le symbole euro, de redis
 		* Adapter "˵" U+02F5. ibidem
 	* Tréma : Supprimer "≤" U+2264."≥" U+2265, "⊆" U+2286. compose-1.yml [93c9fe6](https://github.com/dispoclavier/nouvel-azerty/commit/93c9fe6483f8a0a75e6b604da4b1a087614721a0), [b35266a](https://github.com/dispoclavier/nouvel-azerty/commit/b35266aa9928dfd426678be46690cc88d53888df), compose-2.yml [6560a3a](https://github.com/dispoclavier/nouvel-azerty/commit/6560a3a379683d9146307c29fbe6c4fae9c544d9)
 	* Améliorer le rendu des surrogats hauts sous les systèmes ne les utilisant pas. compose-1.yml [fb60dfb](https://github.com/dispoclavier/nouvel-azerty/commit/fb60dfb6edac409a1309a97cdc0f54cebc0f5862), compose-2.yml [80d347c](https://github.com/dispoclavier/nouvel-azerty/commit/80d347cf92bd6913981506e7f2879603921258e9)
-* Documentation : Ajouter des caractères morts. compose-1.yml [be9366c](https://github.com/dispoclavier/nouvel-azerty/commit/be9366ce76362789212a21f5df80d4856c0c9b5a)
+* Documentation :
+	* Lister les caractères morts pour Windows. compose-1.yml [be9366c](https://github.com/dispoclavier/nouvel-azerty/commit/be9366ce76362789212a21f5df80d4856c0c9b5a)
+	* Supprimer l’affichage des caractères morts. compose-1.yml [ce7072e](https://github.com/dispoclavier/nouvel-azerty/commit/ce7072e6c127c02426129ede66c4bca73542995b), compose-2.yml [eb82120](https://github.com/dispoclavier/nouvel-azerty/commit/eb82120550714a3344f22305821e6a409b62e891)
 
 ## 1.0.12 (2023-09-23)
 

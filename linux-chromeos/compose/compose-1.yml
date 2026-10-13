@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0.0.1" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0.0.2" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -3033,9 +3033,10 @@
 #
 #^# Per mille and per myriad
 #
-#   en_US.UTF-8/Compose <Multi_key><percent><o> conflicts with "ᴑ" U1D11, so it
-#   cannot be supported. To compensate this loss, new sequences involving zeros
-#   are added, additionally to the support in groups 11 and 12 of "%".
+#   The en_US.UTF-8/Compose sequence <Multi_key><percent><o> conflicts with
+#   "ᴑ" U1D11, so it cannot be supported. To compensate this loss, new
+#   sequences involving zeros are added, additionally to the support in
+#   groups 11 and 12 of "%".
 #   See # # D02 percent
 #
 <Multi_key><0><percent>                                                                            : "‰" U2030 # PER MILLE SIGN
