@@ -34,22 +34,22 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Exposant et tourné :
 			* Ajouter "𐞻" U+107BB. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 			* Ajouter "𐞾" U+107BE. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
-			* Exposant et tourné et crosse et crochet rétroflexe : Ajouter "𝿮" U+1DFEE.
-			* Exposant et inversé : Ajouter "𐞼" U+107BC. ibidem
-		* Exposant et réfléchi : Ajouter "𝿬" U+1DFEC.
+			* Exposant et tourné et crosse et crochet rétroflexe : Ajouter "𝿮" U+1DFEE. compose-2.yml [d9d5919](https://github.com/dispoclavier/azerty-complet/commit/d9d5919b276287de387ac8555ff6ee8c704c25ef)
+			* Exposant et inversé : Ajouter "𐞼" U+107BC. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
+		* Exposant et réfléchi : Ajouter "𝿬" U+1DFEC. compose-2.yml [d9d5919](https://github.com/dispoclavier/azerty-complet/commit/d9d5919b276287de387ac8555ff6ee8c704c25ef)
 		* Exposant et indice-ou-petite-capitale :
-			* Ajouter "𝿑" U+1DFD1. ibidem
+			* Ajouter "𝿑" U+1DFD1. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
 			* Ajouter "𝿨" U+1DFE8, "𝿩" U+1DFE9, "𝿪" U+1DFEA. compose-2.yml [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
 		* Exposant et crosse :
 			* Ajouter "𝿺" U+1DFFA, "𝿻" U+1DFFB, "𝿼" U+1DFFC, "𝿽" U+1DFFD, "𝿾" U+1DFFE. compose-2.yml [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
-			* Exposant et grec-ou-cerclé : Ajouter "𝿳" U+1DFF3, "𝿴" U+1DFF4.
-			* Exposant et crosse et tourné : Ajouter "𝿭" U+1DFED.
-			* Exposant et crosse et réfléchi : Ajouter "𝿿" U+1DFFF.
-			* Exposant et crosse et crochet rétroflexe : Ajouter "𝿫" U+1DFEB.
-			* Exposant et boucle : Ajouter "𝿢" U+1DFE2, "𝿦" U+1DFE6, "𝿯" U+1DFEF, "𝿰" U+1DFF0, "𝿱" U+1DFF1, "𝿲" U+1DFF2.
+			* Exposant et grec-ou-cerclé : Ajouter "𝿳" U+1DFF3, "𝿴" U+1DFF4. compose-2.yml [d9d5919](https://github.com/dispoclavier/azerty-complet/commit/d9d5919b276287de387ac8555ff6ee8c704c25ef)
+			* Exposant et crosse et tourné : Ajouter "𝿭" U+1DFED. ibidem
+			* Exposant et crosse et réfléchi : Ajouter "𝿿" U+1DFFF. ibidem
+			* Exposant et crosse et crochet rétroflexe : Ajouter "𝿫" U+1DFEB. ibidem
+			* Exposant et boucle : Ajouter "𝿢" U+1DFE2, "𝿦" U+1DFE6, "𝿯" U+1DFEF, "𝿰" U+1DFF0, "𝿱" U+1DFF1, "𝿲" U+1DFF2. ibidem
 			* Exposant et fioriture et tourné : Ajouter "𝿍" U+1DFCD. compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-complet/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 		* Exposant et crochet rétroflexe : Ajouter "𝿣" U+1DFE3, "𝿧" U+1DFE7. compose-2.yml [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
-			* Exposant et crochet palatal : Ajouter "𝿵" U+1DFF5, "𝿶" U+1DFF6, "𝿷" U+1DFF7, "𝿸" U+1DFF8, "𝿹" U+1DFF9.
+			* Exposant et crochet palatal : Ajouter "𝿵" U+1DFF5, "𝿶" U+1DFF6, "𝿷" U+1DFF7, "𝿸" U+1DFF8, "𝿹" U+1DFF9. compose-2.yml [d9d5919](https://github.com/dispoclavier/azerty-complet/commit/d9d5919b276287de387ac8555ff6ee8c704c25ef)
 		* Exposant et rayé :
 			* Ajouter "𝿒" U+1DFD2, "𝿓" U+1DFD3, "𝿔" U+1DFD4, "𝿖" U+1DFD6, "𝿙" U+1DFD9, "𝿚" U+1DFDA, "𝿛" U+1DFDB. compose-2.yml [5aede36](https://github.com/dispoclavier/azerty-complet/commit/5aede36579ef870a404988c80359e12ffec87ebb), [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
 			* Exposant et rayé et tourné : Ajouter "𝿗" U+1DFD7, "𝿘" U+1DFD8. compose-2.yml [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
