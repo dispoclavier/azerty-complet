@@ -19,24 +19,25 @@ See linux-chromeos/outils/generate-multikey.pl
 
 ## Conflictlessness check
 
-Conflicts and duplicates can be checked following a protocol like this one,
+Dead key conflicts and dead key chain duplicates can be checked following a protocol like this one,
 where the first steps may be automated using the "bhughes339.replacerules"
 extension for VSCode with the "prepareXComposeForCheck" replaceruleset.
 
- 2  Case sensitive sorting, using "Tyriar.sort-lines" > F9.
+1 Run "prepareXComposeForCheck" on a Compose.yml copy
 
- 3  Checking for conflicts and duplicates:
+2  Case sensitive sorting, using "Tyriar.sort-lines" > F9
+
+3  Check for conflicts and duplicates:
     ^([^\s]+)\s.+\n\1(<|\s)
 
 Sortability and readability may then be further improved using the
 follow-up replaceruleset "improveXComposeSortability", where dead
 keysyms missing from keysymdef.h replace the generic private use keysyms,
 all dead keysyms are prefixed with an exclam so as to be sorted before
-letters and digits, as well as before ASCII symbols prefixed with a percent
+letters and digits, as well as before ASCII symbols, prefixed with a percent
 sign, some more letters get intuitive keysyms, and ordinary space and U200B
 as well as nobreakspace and U202F are grouped conveniently and sorted last
 by the means of a prepended asciitilde.
 
-The removal of padding spaces is included, as it does not affect sorting.
-This facilitates reviews for redundancies to be redacted for a streamlined
-user experience.
+The removal of padding spaces is included. This facilitates reviews for
+redundancies to be redacted for a streamlined user experience.
