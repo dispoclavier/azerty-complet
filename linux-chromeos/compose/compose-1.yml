@@ -1,7 +1,7 @@
 #                      Scope: Part 1 of Compose.yml
 #                       Date: See Compose.yml
 #                    Version: See # # Output of keyboard layout version number
-<UEFA0>                     : "version 7.1.0.0.2" # See #   End of line comments
+<UEFA0>                     : "version 7.1.0+0.3" # See #   End of line comments
 #       Operating file name*: .XCompose or Compose
 #                   Encoding: UTF-8
 #                       Type: text/XCompose
@@ -948,18 +948,17 @@
 <UEF9F> : "U+" #
 #
 #
-# # Output of keyboard layout version number
+# # Output of version number
 #
 #   <UEFA0> : For ease of maintenance, this is defined in the file header.
 #
-#   This string is mapped at level 3 of the Escape key.
+#   The version number is in SemVer format as MAJOR.MINOR.PATCH+BUILD.COMMIT
+#   and is mapped at level 3 of the Escape key.
 #
-#   The version number is a period-separated concatenation of 4 numbers. The
-#   third does not number patches only, and the build number is part of the
-#   string because this file is also the source code of the dead key content as
-#   it is transpiled to the sources of keyboard layout drivers for Windows.
+#   The "build" number makes sense because this file is also the source code of
+#   the dead key content for Windows.
 #   https://github.com/dispoclavier/azerty-complet/blob/main/linux-chromeos/compose/readme.md
-#   See Legal note
+#   See #                 Legal note:
 #
 #   Version v1.0.0 was released on 2023-07-14T0423+0200.
 #   https://github.com/dispoclavier/azerty-complet/releases/tag/v1.0.0
@@ -967,13 +966,13 @@
 #
 # # Output of keyboard layout variant descriptor
 #
-#   This string is mapped at level 4 of the Escape key.
+#   The relevant string is mapped at level 4 of the Escape key.
 #
 #   The Belgian layout variant comes without its remapped variant because
 #   the point in having a Belgian variant is a reasonable amount of sideways
 #   compatibility with the Belgian AZERTY, and remapping defeats this point.
 #
-#   These descriptors are output with the layout name and a trailing space for
+#   These descriptors are output with the layout ID and a trailing space for
 #   convenience.
 #   See #   End of line comments
 #

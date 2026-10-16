@@ -13410,6 +13410,10 @@
 #
 # # Italic Latin alphabet
 #
+#   "𝚤" U1D6A4 and "𝚥" U1D6A5 are in dead_abovedot.
+#   See #*# DOT_ABOVE
+#   See # # DOT_ABOVE&GROUP_8
+#
 <UEFD0><8><period>                                                                             <A> : "𝐴" U1D434 # MATHEMATICAL ITALIC CAPITAL A
 <Multi_key><numbersign><8><period>                                                             <A> : "𝐴" U1D434 # MATHEMATICAL ITALIC CAPITAL A
 <UEFD0><KP_8><KP_Decimal>                                                                      <A> : "𝐴" U1D434 # MATHEMATICAL ITALIC CAPITAL A

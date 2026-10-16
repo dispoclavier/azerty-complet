@@ -3253,23 +3253,23 @@
 #   This is a shortcut skipping the long-leg diacritic.
 #   See # # SUPERSCRIPT&MACRON&RETROFLEX_HOOK&TURNED
 #
-#   As this dead key exists for "𐞧" U107A7 only, it is streamlined by cropping
-#   the base character.
+#   The base character is required to prevent a conflict with *dead_superscript
+#   *dead_turned dead_hook *dead_retroflexhook.
+#   See # # SUPERSCRIPT&TURNED&HOOK&RETROFLEX_HOOK
 #   See # # Single-character dead keys
 #
-#UEFD1><UEFD4><UEFD5>                                                                          <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<UEFD1><UEFD4><UEFD5>                                                                              : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<Multi_key><asciicircum><braceright><percent>                                                      : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<UEFD1><UEFD5><UEFD4>                                                                              : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<Multi_key><asciicircum><percent><braceright>                                                      : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<UEFD4><UEFD1><UEFD5>                                                                              : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<Multi_key><braceright><asciicircum><percent>                                                      : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<UEFD5><UEFD1><UEFD4>                                                                              : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<Multi_key><percent><asciicircum><braceright>                                                      : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<UEFD4><UEFD5><UEFD1>                                                                              : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<Multi_key><braceright><percent><asciicircum>                                                      : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<UEFD5><UEFD4><UEFD1>                                                                              : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
-<Multi_key><percent><braceright><asciicircum>                                                      : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<UEFD1><UEFD4><UEFD5>                                                                          <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<Multi_key><asciicircum><braceright><percent>                                                  <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<UEFD1><UEFD5><UEFD4>                                                                          <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<Multi_key><asciicircum><percent><braceright>                                                  <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<UEFD4><UEFD1><UEFD5>                                                                          <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<Multi_key><braceright><asciicircum><percent>                                                  <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<UEFD5><UEFD1><UEFD4>                                                                          <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<Multi_key><percent><asciicircum><braceright>                                                  <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<UEFD4><UEFD5><UEFD1>                                                                          <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<Multi_key><braceright><percent><asciicircum>                                                  <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<UEFD5><UEFD4><UEFD1>                                                                          <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
+<Multi_key><percent><braceright><asciicircum>                                                  <r> : "𐞧" U107A7 # MODIFIER LETTER SMALL TURNED R WITH LONG LEG AND RETROFLEX HOOK
 #
 #
 # # SUPERSCRIPT&RETROFLEX_HOOK&BREVE
@@ -8428,10 +8428,14 @@
 #
 # # GREEK_OR_CIRCLED&SUPERSCRIPT
 #
-@<dead_greek><UEFD1>                                                                            <c> : "𝿳" U1DFF3 # MODIFIER LETTER SMALL GREEK PSI
-@<UEFD1><dead_greek>                                                                            <c> : "𝿳" U1DFF3 # MODIFIER LETTER SMALL GREEK PSI
-@<dead_greek><UEFD1>                                                                            <v> : "𝿴" U1DFF4 # MODIFIER LETTER SMALL GREEK OMEGA
-@<UEFD1><dead_greek>                                                                            <v> : "𝿴" U1DFF4 # MODIFIER LETTER SMALL GREEK OMEGA
+<dead_greek><UEFD1>                                                                            <c> : "𝿳" U1DFF3 # MODIFIER LETTER SMALL GREEK PSI
+<Multi_key><at><asciicircum>                                                                   <c> : "𝿳" U1DFF3 # MODIFIER LETTER SMALL GREEK PSI
+<UEFD1><dead_greek>                                                                            <c> : "𝿳" U1DFF3 # MODIFIER LETTER SMALL GREEK PSI
+<Multi_key><asciicircum><at>                                                                   <c> : "𝿳" U1DFF3 # MODIFIER LETTER SMALL GREEK PSI
+<dead_greek><UEFD1>                                                                            <v> : "𝿴" U1DFF4 # MODIFIER LETTER SMALL GREEK OMEGA
+<Multi_key><at><asciicircum>                                                                   <v> : "𝿴" U1DFF4 # MODIFIER LETTER SMALL GREEK OMEGA
+<UEFD1><dead_greek>                                                                            <v> : "𝿴" U1DFF4 # MODIFIER LETTER SMALL GREEK OMEGA
+<Multi_key><asciicircum><at>                                                                   <v> : "𝿴" U1DFF4 # MODIFIER LETTER SMALL GREEK OMEGA
 #
 #
 # # GREEK_OR_CIRCLED&SUBSCRIPT
@@ -9878,6 +9882,23 @@
 <Multi_key><period>                                        <numbersign><numbersign><numbersign><s> : "ẛ" U1E9B # LATIN SMALL LETTER LONG S WITH DOT ABOVE
 #
 #
+# # DOT_ABOVE&GROUP_8
+#
+#   As "𝚤" U1D6A4 and "𝚥" U1D6A5 are part of math italic, supporting lenient
+#   group selection for these would be pointless.
+#   See # # Italic Latin alphabet
+#   See #+# GROUP_8
+#
+<dead_abovedot>                                                              <UEFD0><8><period><i> : "𝚤" U1D6A4 # MATHEMATICAL ITALIC SMALL DOTLESS I
+<Multi_key><period>                                                     <numbersign><8><period><i> : "𝚤" U1D6A4 # MATHEMATICAL ITALIC SMALL DOTLESS I
+<dead_abovedot>                                                       <UEFD0><KP_8><KP_Decimal><i> : "𝚤" U1D6A4 # MATHEMATICAL ITALIC SMALL DOTLESS I
+<Multi_key><period>                                              <numbersign><KP_8><KP_Decimal><i> : "𝚤" U1D6A4 # MATHEMATICAL ITALIC SMALL DOTLESS I
+<dead_abovedot>                                                              <UEFD0><8><period><j> : "𝚥" U1D6A5 # MATHEMATICAL ITALIC SMALL DOTLESS J
+<Multi_key><period>                                                     <numbersign><8><period><j> : "𝚥" U1D6A5 # MATHEMATICAL ITALIC SMALL DOTLESS J
+<dead_abovedot>                                                       <UEFD0><KP_8><KP_Decimal><j> : "𝚥" U1D6A5 # MATHEMATICAL ITALIC SMALL DOTLESS J
+<Multi_key><period>                                              <numbersign><KP_8><KP_Decimal><j> : "𝚥" U1D6A5 # MATHEMATICAL ITALIC SMALL DOTLESS J
+#
+#
 # # DOT_ABOVE&TILDE
 #
 <dead_abovedot><dead_tilde>                                                                    <E> : "Ė̃" # U0116 U0303 LATIN CAPITAL LETTER E WITH DOT ABOVE AND TILDE: Lithuanian
@@ -10877,7 +10898,7 @@
 <Multi_key><braceright>                                                                        <8> : "♺" U267A # RECYCLING SYMBOL FOR GENERIC MATERIALS
 <UEFD4>                                                                                     <KP_8> : "♺" U267A # RECYCLING SYMBOL FOR GENERIC MATERIALS
 <Multi_key><braceright>                                                                     <KP_8> : "♺" U267A # RECYCLING SYMBOL FOR GENERIC MATERIALS
-…<UEFD4>                                                                                        <9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
+<UEFD4>                                                                                        <9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
 <Multi_key><braceright>                                                                        <9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
 <UEFD4>                                                                                     <KP_9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
 <Multi_key><braceright>                                                                     <KP_9> : "♻" U267B # BLACK UNIVERSAL RECYCLING SYMBOL emoji
@@ -11609,14 +11630,14 @@
 <Multi_key><dollar><dollar>                                                                    <C> : "₢" U20A2 # CRUZEIRO SIGN
 <dead_currency><dead_currency>                                                                 <c> : "₵" U20B5 # CEDI SIGN
 <Multi_key><dollar><dollar>                                                                    <c> : "₵" U20B5 # CEDI SIGN
-<dead_currency><dead_currency>                                                                 <D> : "֏" U058F # ARMENIAN DRAM SIGN
-<Multi_key><dollar><dollar>                                                                    <D> : "֏" U058F # ARMENIAN DRAM SIGN
+<dead_currency><dead_currency>                                                                 <D> : "⃃" U20C3 # UAE DIRHAM SIGN
+<Multi_key><dollar><dollar>                                                                    <D> : "⃃" U20C3 # UAE DIRHAM SIGN
 <dead_currency><dead_currency>                                                                 <d> : "֏" U058F # ARMENIAN DRAM SIGN
 <Multi_key><dollar><dollar>                                                                    <d> : "֏" U058F # ARMENIAN DRAM SIGN
 <dead_currency><dead_currency>                                                                 <I> : "₶" U20B6 # LIVRE TOURNOIS SIGN
 <Multi_key><dollar><dollar>                                                                    <I> : "₶" U20B6 # LIVRE TOURNOIS SIGN
-<dead_currency><dead_currency>                                                                 <i> : "₶" U20B6 # LIVRE TOURNOIS SIGN
-<Multi_key><dollar><dollar>                                                                    <i> : "₶" U20B6 # LIVRE TOURNOIS SIGN
+<dead_currency><dead_currency>                                                                 <i> : "₹" U20B9 # INDIAN RUPEE SIGN
+<Multi_key><dollar><dollar>                                                                    <i> : "₹" U20B9 # INDIAN RUPEE SIGN
 <dead_currency><dead_currency>                                                                 <L> : "₺" U20BA # TURKISH LIRA SIGN
 <Multi_key><dollar><dollar>                                                                    <L> : "₺" U20BA # TURKISH LIRA SIGN
 <dead_currency><dead_currency>                                                                 <l> : "₾" U20BE # LARI SIGN
@@ -11625,18 +11646,22 @@
 <Multi_key><dollar><dollar>                                                                    <M> : "₼" U20BC # MANAT SIGN
 <dead_currency><dead_currency>                                                                 <m> : "₻" U20BB # NORDIC MARK SIGN
 <Multi_key><dollar><dollar>                                                                    <m> : "₻" U20BB # NORDIC MARK SIGN
+<dead_currency><dead_currency>                                                                 <O> : "⃄" U20C4 # OMANI RIAL SIGN
+<Multi_key><dollar><dollar>                                                                    <O> : "⃄" U20C4 # OMANI RIAL SIGN
+<dead_currency><dead_currency>                                                                 <o> : "⃄" U20C4 # OMANI RIAL SIGN
+<Multi_key><dollar><dollar>                                                                    <o> : "⃄" U20C4 # OMANI RIAL SIGN
 <dead_currency><dead_currency>                                                                 <P> : "₱" U20B1 # PESO SIGN
 <Multi_key><dollar><dollar>                                                                    <P> : "₱" U20B1 # PESO SIGN
 <dead_currency><dead_currency>                                                                 <p> : "₱" U20B1 # PESO SIGN
 <Multi_key><dollar><dollar>                                                                    <p> : "₱" U20B1 # PESO SIGN
-<dead_currency><dead_currency>                                                                 <R> : "₹" U20B9 # INDIAN RUPEE SIGN
-<Multi_key><dollar><dollar>                                                                    <R> : "₹" U20B9 # INDIAN RUPEE SIGN
+<dead_currency><dead_currency>                                                                 <R> : "⃂" U20C2 # RUFIYAA SIGN
+<Multi_key><dollar><dollar>                                                                    <R> : "⃂" U20C2 # RUFIYAA SIGN
 <dead_currency><dead_currency>                                                                 <r> : "₽" U20BD # RUBLE SIGN
 <Multi_key><dollar><dollar>                                                                    <r> : "₽" U20BD # RUBLE SIGN
-<dead_currency><dead_currency>                                                                 <S> : "⃁" U20C1 # SAUDI RIYAL SIGN
-<Multi_key><dollar><dollar>                                                                    <S> : "⃁" U20C1 # SAUDI RIYAL SIGN
-<dead_currency><dead_currency>                                                                 <s> : "₷" U20B7 # SPESMILO SIGN
-<Multi_key><dollar><dollar>                                                                    <s> : "₷" U20B7 # SPESMILO SIGN
+<dead_currency><dead_currency>                                                                 <S> : "₷" U20B7 # SPESMILO SIGN
+<Multi_key><dollar><dollar>                                                                    <S> : "₷" U20B7 # SPESMILO SIGN
+<dead_currency><dead_currency>                                                                 <s> : "⃁" U20C1 # SAUDI RIYAL SIGN
+<Multi_key><dollar><dollar>                                                                    <s> : "⃁" U20C1 # SAUDI RIYAL SIGN
 <dead_currency><dead_currency>                                                                 <T> : "₸" U20B8 # TENGE SIGN
 <Multi_key><dollar><dollar>                                                                    <T> : "₸" U20B8 # TENGE SIGN
 <dead_currency><dead_currency>                                                                 <t> : "௹" U0BF9 # TAMIL RUPEE SIGN
@@ -12283,12 +12308,12 @@
 #   https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/commit/6d4acb0e3a6568a8faaa651d4e3d32f917b9067b
 #   https://web.archive.org/web/20250202063718/https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/commit/6d4acb0e3a6568a8faaa651d4e3d32f917b9067b
 #
-#   The use of dead_stroke for horizontal, rather than for diagonal while
-#   introducing *dead_bar to cover horizontal, appears to be fueled by the name
-#   of the combining diacritic and the character names containing WITH STROKE
-#   with the meaning of WITH BAR, or BARRED, like UAB33 LATIN SMALL LETTER
-#   BARRED E, or in the Unicode 1.0 name of U0197 LATIN CAPITAL LETTER I WITH
-#   STROKE, previously LATIN CAPITAL LETTER BARRED I.
+#   The legacy misuse of dead_stroke for horizontal, rather than for diagonal
+#   while introducing *dead_bar to cover horizontal, appears to be fueled by
+#   the name of the combining diacritic and the character names containing
+#   "WITH STROKE" with the meaning of "WITH BAR", or "BARRED" like in the name
+#   of UAB33 LATIN SMALL LETTER BARRED E, or in the Unicode 1.0 name LATIN
+#   CAPITAL LETTER BARRED I of U0197 LATIN CAPITAL LETTER I WITH STROKE.
 #   See # # Bar and stroke diacritics
 #
 #   But since dead_longsolidusoverlay was removed in 2023, dead_stroke is used
@@ -12304,11 +12329,11 @@
 #   of WITH BAR, and the trend persists in Unicode 18.0. There are only two
 #   casing pairs WITH BAR, plus the Unicode 18.0 modifier letter "𝿖" U1DFD6,
 #   a superscript "ƚ" U019A:
-#   See "ƚ" U019A # LATIN SMALL LETTER L WITH BAR
-#   See "Ƚ" U023D # LATIN CAPITAL LETTER L WITH BAR
 #   See "Ꞓ" UA792 # LATIN CAPITAL LETTER C WITH BAR
 #   See "ꞓ" UA793 # LATIN SMALL LETTER C WITH BAR
-#
+#   See "Ƚ" U023D # LATIN CAPITAL LETTER L WITH BAR
+#   See "ƚ" U019A # LATIN SMALL LETTER L WITH BAR
+#   See "𝿖" U1DFD6 # MODIFIER LETTER SMALL L WITH BAR
 #
 #   Letters in *dead_bar
 #
@@ -12343,9 +12368,8 @@
 #
 #   Arrows in *dead_bar
 #
-#   Simple arrows "←" U2190 and "→" U2192 have shortcuts by less and greater;
-#   the wide-headed arrow with a sharp tip "➔" U2794 is by equal, and the
-#   wide-headed round-tipped arrow "➜" U279C is by parenright.
+#   Simple arrows "←" U2190 and "→" U2192 have shortcuts by less and greater,
+#   while the wide-headed arrow with a sharp tip "➔" U2794 is by equal.
 #
 #
 #   Math symbols in *dead_bar
@@ -12392,12 +12416,14 @@
 #   Multikey conflicts with "˂" U02C2, "˃" U02C3, "˄" U02C4, "˅" U02C5, "̶" U0336, […]     <minus> : "−" U2212 # MINUS SIGN
 <UEFD8>                                                                                     <plus> : "‡" U2021 # DOUBLE DAGGER
 #   Multikey conflicts with "∓" U2213.                                                      <plus> : "‡" U2021 # DOUBLE DAGGER
-<UEFD8>                                                                               <parenright> : "➜" U279C # HEAVY ROUND-TIPPED RIGHTWARDS ARROW
-#   Multikey conflicts with "∡" U2221, "⦨" U29A8, "⧿" U29FF.                          <parenright> : "➜" U279C # HEAVY ROUND-TIPPED RIGHTWARDS ARROW
-<UEFD8>                                                                              <bracketleft> : "⁅" U2045 # LEFT SQUARE BRACKET WITH QUILL
-<Multi_key><minus>                                                                   <bracketleft> : "⁅" U2045 # LEFT SQUARE BRACKET WITH QUILL
-<UEFD8>                                                                             <bracketright> : "⁆" U2046 # RIGHT SQUARE BRACKET WITH QUILL
-<Multi_key><minus>                                                                  <bracketright> : "⁆" U2046 # RIGHT SQUARE BRACKET WITH QUILL
+<UEFD8>                                                                                <parenleft> : "⁅" U2045 # LEFT SQUARE BRACKET WITH QUILL
+#   Multikey conflicts with "⦫" U29AB, "⧿" U29FF.                                      <parenleft> : "⁅" U2045 # LEFT SQUARE BRACKET WITH QUILL
+<UEFD8>                                                                               <parenright> : "⁆" U2046 # RIGHT SQUARE BRACKET WITH QUILL
+#   Multikey conflicts with "∡" U2221, "⦨" U29A8, "⧿" U29FF.                          <parenright> : "⁆" U2046 # RIGHT SQUARE BRACKET WITH QUILL
+<UEFD8>                                                                              <bracketleft> : "⹕" U2E55 # LEFT SQUARE BRACKET WITH STROKE
+<Multi_key><minus>                                                                   <bracketleft> : "⹕" U2E55 # LEFT SQUARE BRACKET WITH STROKE
+<UEFD8>                                                                             <bracketright> : "⹖" U2E56 # RIGHT SQUARE BRACKET WITH STROKE
+<Multi_key><minus>                                                                  <bracketright> : "⹖" U2E56 # RIGHT SQUARE BRACKET WITH STROKE
 <UEFD8>                                                                                      <bar> : "⸠" U2E20 # LEFT VERTICAL BAR WITH QUILL
 #   Multikey conflicts with "⇻" U21FB, "⟛" U27DB, "⤁" U2901, "⫣" U2AE3.                      <bar> : "⸠" U2E20 # LEFT VERTICAL BAR WITH QUILL
 <UEFD8>                                                                                     <less> : "←" U2190 # LEFTWARDS ARROW
@@ -12796,6 +12822,10 @@
 <Multi_key><minus><minus>                                                                  <U202F> : "꞊" UA78A # MODIFIER LETTER SHORT EQUALS SIGN
 <UEFD8><UEFD8>                                                                               <bar> : "‡" U2021 # DOUBLE DAGGER
 #   Multikey conflicts with "⊣" U22A3.                                                       <bar> : "‡" U2021 # DOUBLE DAGGER
+<UEFD8><UEFD8>                                                                       <bracketleft> : "⹗" U2E57 # LEFT SQUARE BRACKET WITH DOUBLE STROKE
+<Multi_key><minus><minus>                                                            <bracketleft> : "⹗" U2E57 # LEFT SQUARE BRACKET WITH DOUBLE STROKE
+<UEFD8><UEFD8>                                                                      <bracketright> : "⹘" U2E58 # RIGHT SQUARE BRACKET WITH DOUBLE STROKE
+<Multi_key><minus><minus>                                                           <bracketright> : "⹘" U2E58 # RIGHT SQUARE BRACKET WITH DOUBLE STROKE
 <UEFD8><UEFD8>                                                                            <period> : "–" U2013 # EN DASH
 <Multi_key><minus><minus>                                                                 <period> : "–" U2013 # EN DASH
 <UEFD8><UEFD8>                                                                                 <D> : "Ꟈ" UA7C7 # LATIN CAPITAL LETTER D WITH SHORT STROKE OVERLAY
@@ -15656,12 +15686,11 @@
 #   See # # Bar and stroke diacritics
 #
 #   But since dead_longsolidusoverlay was removed in 2023, dead_stroke is used
-#   for slash-shaped diacritics again.
+#   for slash-shaped diacritics again, while missing *dead_bar gets a PUA code.
 #   https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/merge_requests/70
 #   https://web.archive.org/web/20240520104930/https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/merge_requests/70
 #   https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/commit/cb44799b72f611eb4c9d7cc185bc3b09e070be08
 #   https://web.archive.org/web/20250202064605/https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/commit/cb44799b72f611eb4c9d7cc185bc3b09e070be08
-#   See # # Bar and stroke diacritics
 #
 #
 #   Letters in dead_stroke

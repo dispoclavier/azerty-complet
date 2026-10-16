@@ -5,7 +5,7 @@
 # 2025-12-23T0450+0100
 # 2025-12-31T1259+0100
 # 2026-03-16T1433+0100
-# 2026-10-13T2213+0200
+# 2026-10-16T1928+0200
 # = last modified
 #
 # This “dead key converter” generates DEADTRANS macro calls for Windows and is
@@ -374,7 +374,7 @@ sub dekeysym {
 
 my @virtual_dead_characters = (
 
-	# Intermediate dead key chains (770).
+	# Intermediate dead key chains (772).
 	'<!abovedot><!abovedot>➔02C8',#<dead_abovedot><dead_abovedot>
 	'<!abovedot><!abovedot><!acute>➔02C7',#<dead_abovedot><dead_abovedot><dead_acute>
 	'<!abovedot><!abovedot><!acute><!grave>➔02B7',#<dead_abovedot><dead_abovedot><dead_acute><dead_grave>
@@ -1145,6 +1145,8 @@ my @virtual_dead_characters = (
 	'<!superscript><!turned><!retroflexhook>➔A7F2',
 	'<!turned><!retroflexhook><!superscript>➔A7F3',
 	'<!turned><!superscript><!retroflexhook>➔A7F4',
+	'<!abovedot><!group><8><%period>➔A7F7',
+	'<!abovedot><!group><8>➔A7FB',
 
 	# Polytonic and monotonic Greek (256).
 	'<!abovehook><!greek>➔1FBD',#<UEFD3><dead_greek>

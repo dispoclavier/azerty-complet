@@ -77,6 +77,7 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Indice-ou-petite-capitale et crochet palatal : Ajouter "𝼰" U+1DF30. compose-2.yml [faf42af](https://github.com/dispoclavier/azerty-complet/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f), [faf42af](https://github.com/dispoclavier/azerty-complet/commit/faf42afc24d1e89772b026fe55b94ccb27d7330f)
 		* Indice-ou-petite-capitale et rayé : Ajouter "𝽃" U+1DF43. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
 		* Indice-ou-petite-capitale et macron : Ajouter "ꭆ" U+AB46, qui était dans indice-ou-petite-capitale et crosse. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
+	* Point en chef groupe 8 : Ajouter "𝚤" U+1D6A4, "𝚥" U+1D6A5.
 	* Crosse :
 		* Ajouter "𝽨" U+1DF68, "𝽩" U+1DF69. compose-2.yml [8660a75](https://github.com/dispoclavier/nouvel-azerty/commit/8660a7560a67c84df765a25748ce4e11fd51b20d), [8026430](https://github.com/dispoclavier/azerty-complet/commit/8026430e22cee6ed650616e75a7316803ca2ce05), [e75719e](https://github.com/dispoclavier/azerty-complet/commit/e75719e314bfe0d115a6839986df89d5ba348abe), [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 		* Redonder "ɚ" U+025A à la place de "ɝ" U+025D, qui est dans les groupes 1 à 3. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
@@ -100,11 +101,15 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 	* Brève : Ajouter groupe 1 pour ajouter "𝽚" U+1DF5A par "a". compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 	* Rayé :
 		* Ajouter "⸠" U+2E20 à la place de "†" U+2020, qui va dans raie haute. compose-2.yml [5aede36](https://github.com/dispoclavier/azerty-complet/commit/5aede36579ef870a404988c80359e12ffec87ebb), [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
-		* Ajouter  "⸡" U+2E21 par "!". ibidem
+		* Ajouter "⸡" U+2E21 par "!". ibidem
+		* Ajouter "⹕" U+2E55 à la place de "⁅" U+2045, qui va par "(".
+		* Ajouter "⹖" U+2E56 à la place de "⁆" U+2046, qui va par ")" à la place de "➜" U+279C, qui est dans le groupe 2 de ")".
 		* Ajouter "𝽀" U+1DF40, "𝽁" U+1DF41 à la place de "Ꜻ", "ꜻ", qui sont en composition. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)
 		* Ajouter "𝼿" U+1DF3F, "𝽂" U+1DF42, "𝽄" U+1DF44, "𝽊" U+1DF4A, "𝽋" U+1DF4B, "𝽍" U+1DF4D, "𝽎" U+1DF4E, "𝽏" U+1DF4F, "𝽑" U+1DF51, "𝽒" U+1DF52, "𝽓" U+1DF53, "𝽔" U+1DF54. ibidem
 		* Rayé et crochet palatal : Ajouter "𝼲" U+1DF32, "𝽅" U+1DF45. compose-2.yml [0dc2d32](https://github.com/dispoclavier/azerty-complet/commit/0dc2d3214afd7c30a0a059926351260a6522646b), [9f8f564](https://github.com/dispoclavier/azerty-complet/commit/9f8f5640f6e25228381b546657e62f3a1ab00bd9), [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3)
-		* Double raie : Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)                            
+		* Double raie :
+			* Ajouter "⹗" U+2E57, "⹘" U+2E58.
+			* Ajouter "𝽆" U+1DF46, "𝽈" U+1DF48, "𝽉" U+1DF49, "𝽕" U+1DF55, "𝽖" U+1DF56. compose-2.yml [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218)                            
 		* Raie haute :
 			* Redonder "†" U+2020. compose-2.yml [5aede36](https://github.com/dispoclavier/azerty-complet/commit/5aede36579ef870a404988c80359e12ffec87ebb), [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
 			* Ajouter "𝽘" U+1DF58, "𝽙" U+1DF59. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
@@ -116,6 +121,11 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Ajouter "𝽡" U+1DF61 (dans le groupe 1). compose-2.yml [49de9f2](https://github.com/dispoclavier/azerty-complet/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
 		* Ajouter "𝾐" U+1DF90 (dans le groupe 1). compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-complet/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
+	* Symbole monétaire > Symbole monétaire étendu :
+		* Mouvoir "⃁" U+20C1 par "s" à la place de "₷" U+20B7, qui va par "S" à la place laissée par "⃁" U+20C1.
+		* Ajouter "⃂" U+20C2 par "R" à la place de "₹" U+20B9, qui va par "i" à la place de "₶" U+20B6, qui est par "I".
+		* Ajouter "⃃" U+20C3 par "D" à la place de "֏" U+058F, qui est par "d".
+		* Ajouter "⃄" U+20C4 par "o" et par "O".
 	* Cédille :
 		* Redonder "ꭙ" U+AB59. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
 		* Cédille et boucle : Ajouter "𝾑" U+1DF91. compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
@@ -125,7 +135,7 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Déboguer le transpilateur. dead-key-convert.pl [9f245c6](https://github.com/dispoclavier/azerty-complet/commit/9f245c6cf933865afc50f450e99201daa7b46218), [0dc2d32](https://github.com/dispoclavier/azerty-complet/commit/0dc2d3214afd7c30a0a059926351260a6522646b)
 		* Mouvoir le transpilateur de linux-chromeos/outils/ à windows/outils/. dead-key-convert.pl [d6924ec](https://github.com/dispoclavier/azerty-complet/commit/d6924ecc352f0f935ea22d57afd3c63a45dcabeb)
 * Documentation :
-	* Corriger la note de la préversion de l’AZERTY DCS. Note-de-version.md [e0d4748](https://github.com/dispoclavier/azerty-complet/commit/e0d4748bc41d2ec98522fc1c59af4bf64f5ac65b), [70fcf5b](https://github.com/dispoclavier/azerty-complet/commit/70fcf5bf730678e46365107fd15e40b5c56f67cf), [68e2be5](https://github.com/dispoclavier/azerty-complet/commit/68e2be512131b5a376f4510f21c84441a11767b9)
+	* Corriger la note de la préversion de l’AZERTY DCS. Note-de-version.md [e0d4748](https://github.com/dispoclavier/azerty-complet/commit/e0d4748bc41d2ec98522fc1c59af4bf64f5ac65b), [70fcf5b](https://github.com/dispoclavier/azerty-complet/commit/70fcf5bf730678e46365107fd15e40b5c56f67cf), [68e2be5](https://github.com/dispoclavier/azerty-complet/commit/68e2be512131b5a376f4510f21c84441a11767b9), [bcb61d0](https://github.com/dispoclavier/azerty-complet/commit/bcb61d04dfe356c0147ae9b355a811bba152e0b0)
 	* Raccourcir les descripteurs des dispositions de clavier sous Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Mouvoir le JSON dans un fichier. outils/settings.json [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f), [6958e94](https://github.com/dispoclavier/azerty-complet/commit/6958e94507d0d19547836e338adfd7ab9e9a0e73)
 	* Déboguer la taille de fichier. compose-2.yml, compose-3.yml [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3), generate-deadkey-tables.pl [8fd4f48](https://github.com/dispoclavier/azerty-complet/commit/8fd4f48e1029aae695ba34e278de587dc9c83feb)
