@@ -62,7 +62,7 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 	* Tourné :
 		* Ajouter "𝽶" U+1DF76, "𝽷" U+1DF77 (dans le groupe 4). compose-2.yml [9dc2c0e](https://github.com/dispoclavier/azerty-complet/commit/9dc2c0ee382dda6c9e61d65bc5fd58fc71265bf5)
 		* Tourné et rayé : Ajouter "𝼾" U+1DF3E, "𝽐" U+1DF50. compose-2.yml [38d1e63](https://github.com/dispoclavier/azerty-complet/commit/38d1e630ac6eeaa7d888a02d30b1aa48dda22dc6)
-	* Double accent aigu : Ajouter "᫯" U+1AEF par "_".
+	* Double accent aigu : Ajouter "᫯" U+1AEF par "_". compose-2.yml [5a35ff6](https://github.com/dispoclavier/azerty-complet/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
 	* Réfléchi :
 		* Ajouter "𝽪" U+1DF6A à la place de "⦥" U+29A5, qui va par "7". compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 		* Ajouter "𝽫" U+1DF6B à la place de "ꬱ" U+AB31, qui va en composition. ibidem
@@ -80,9 +80,9 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Indice-ou-petite-capitale et macron : Ajouter "ꭆ" U+AB46, qui était dans indice-ou-petite-capitale et crosse. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Point en chef :
 		* Groupe 8 : Ajouter "𝚤" U+1D6A4, "𝚥" U+1D6A5. compose-2.yml [4bafcb8](https://github.com/dispoclavier/azerty-complet/commit/4bafcb85dda96a66aee32d34d4fe873f2214425e)
-		* Point en chef et accent aigu : Ajouter "᫟" U+1ADF à la place de "᷁" U+1DC1, qui va par "%".
-		* Point en chef et accent grave : Ajouter "᫞" U+1ADE à la place de "᷀" U+1DC0, qui va par "%".
-		* Ligne verticale en chef et double accent aigu : Ajouter "᫭" U+1AED.
+		* Point en chef et accent aigu : Ajouter "᫟" U+1ADF à la place de "᷁" U+1DC1, qui va par "%". compose-2.yml [5a35ff6](https://github.com/dispoclavier/azerty-complet/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
+		* Point en chef et accent grave : Ajouter "᫞" U+1ADE à la place de "᷀" U+1DC0, qui va par "%". ibidem
+		* Ligne verticale en chef et double accent aigu : Ajouter "᫭" U+1AED. ibidem
 	* Crosse :
 		* Ajouter "𝽨" U+1DF68, "𝽩" U+1DF69. compose-2.yml [8660a75](https://github.com/dispoclavier/nouvel-azerty/commit/8660a7560a67c84df765a25748ce4e11fd51b20d), [8026430](https://github.com/dispoclavier/azerty-complet/commit/8026430e22cee6ed650616e75a7316803ca2ce05), [e75719e](https://github.com/dispoclavier/azerty-complet/commit/e75719e314bfe0d115a6839986df89d5ba348abe), [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
 		* Redonder "ɚ" U+025A à la place de "ɝ" U+025D, qui est dans les groupes 1 à 3. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
@@ -131,12 +131,12 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 		* Ajouter "𝽡" U+1DF61 (dans le groupe 1). compose-2.yml [49de9f2](https://github.com/dispoclavier/azerty-complet/commit/49de9f2a699de0ec7fe1890acecfec507c98865e)
 		* Ajouter "𝾐" U+1DF90 (dans le groupe 1). compose-2.yml [b96a178](https://github.com/dispoclavier/azerty-complet/commit/b96a178ca9f4e57ce3a8199815f3a2a8930e3206)
 	* Rond en chef : Ajouter "꭭" U+AB6D. compose-2.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
-	* Hatchek et accent aigu : Ajouter "᫬" U+1AEC.
-	* Accent grave > Double accent grave : Ajouter "᫮" U+1AEE par "_".
+	* Hatchek et accent aigu : Ajouter "᫬" U+1AEC. compose-2.yml [5a35ff6](https://github.com/dispoclavier/azerty-complet/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
+	* Accent grave > Double accent grave : Ajouter "᫮" U+1AEE par "_". ibidem
 	* Cédille :
 		* Redonder "ꭙ" U+AB59. compose-2.yml [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f)
 		* Cédille et boucle : Ajouter "𝾑" U+1DF91. compose-2.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
-	* Virgule souscrite > virgule en chef : Ajouter "᫰" U+1AF0 par "\"".
+	* Virgule souscrite > virgule en chef : Ajouter "᫰" U+1AF0 par "\"". compose-2.yml [5a35ff6](https://github.com/dispoclavier/azerty-complet/commit/5a35ff6105e9c00847d2f36547fe84c8aed09e82)
 	* Tréma :
 		* Corriger le caractère de base de "᫜" U+1ADC de "^" en "`". ibidem
 	* Sous Windows :
