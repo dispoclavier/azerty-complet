@@ -5138,6 +5138,9 @@
 <dead_doubleacute>                                                                         <U202F> : "˝" U02DD # DOUBLE ACUTE ACCENT
 <Multi_key><quotedbl>                                                                      <U202F> : "˝" U02DD # DOUBLE ACUTE ACCENT
 <Multi_key><EuroSign>                                                                      <U202F> : "˝" U02DD # DOUBLE ACUTE ACCENT
+<dead_doubleacute>                                                                    <underscore> : "᫯" U1AEF # COMBINING DOUBLE ACUTE ACCENT BELOW
+<Multi_key><quotedbl>                                                                 <underscore> : "᫯" U1AEF # COMBINING DOUBLE ACUTE ACCENT BELOW
+<Multi_key><EuroSign>                                                                 <underscore> : "᫯" U1AEF # COMBINING DOUBLE ACUTE ACCENT BELOW
 <dead_doubleacute>                                                                    <apostrophe> : "̎" U030E # COMBINING DOUBLE VERTICAL LINE ABOVE: Marshallese
 <Multi_key><quotedbl>                                                                 <apostrophe> : "̎" U030E # COMBINING DOUBLE VERTICAL LINE ABOVE: Marshallese
 <Multi_key><EuroSign>                                                                 <apostrophe> : "̎" U030E # COMBINING DOUBLE VERTICAL LINE ABOVE: Marshallese
@@ -9899,6 +9902,23 @@
 <Multi_key><period>                                              <numbersign><KP_8><KP_Decimal><j> : "𝚥" U1D6A5 # MATHEMATICAL ITALIC SMALL DOTLESS J
 #
 #
+# # DOT_ABOVE&DOUBLE_ACUTE
+#   Lenient dead key press
+#
+<dead_abovedot><dead_doubleacute>                                                          <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "⋵" U22F5.                                                     <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "⋵" U22F5.                                                     <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<dead_doubleacute><dead_abovedot>                                                          <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<Multi_key><quotedbl><period>                                                              <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<Multi_key><EuroSign><period>                                                              <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<dead_abovedot><dead_doubleacute>                                                          <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "⋵" U22F5.                                                     <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "⋵" U22F5.                                                     <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<dead_doubleacute><dead_abovedot>                                                          <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<Multi_key><quotedbl><period>                                                              <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<Multi_key><EuroSign><period>                                                              <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#
+#
 # # DOT_ABOVE&TILDE
 #
 <dead_abovedot><dead_tilde>                                                                    <E> : "Ė̃" # U0116 U0303 LATIN CAPITAL LETTER E WITH DOT ABOVE AND TILDE: Lithuanian
@@ -9917,14 +9937,18 @@
 #
 # # DOT_ABOVE&ACUTE
 #
-<dead_abovedot><dead_acute>                                                                <space> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
-<Multi_key><period><apostrophe>                                                            <space> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
-<dead_acute><dead_abovedot>                                                                <space> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
-<Multi_key><apostrophe><period>                                                            <space> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
-<dead_abovedot><dead_acute>                                                                <U200B> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
-<Multi_key><period><apostrophe>                                                            <U200B> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
-<dead_acute><dead_abovedot>                                                                <U200B> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
-<Multi_key><apostrophe><period>                                                            <U200B> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
+<dead_abovedot><dead_acute>                                                                <space> : "᫟" U1ADF # COMBINING DOT-ACUTE
+<Multi_key><period><apostrophe>                                                            <space> : "᫟" U1ADF # COMBINING DOT-ACUTE
+<dead_acute><dead_abovedot>                                                                <space> : "᫟" U1ADF # COMBINING DOT-ACUTE
+<Multi_key><apostrophe><period>                                                            <space> : "᫟" U1ADF # COMBINING DOT-ACUTE
+<dead_abovedot><dead_acute>                                                                <U200B> : "᫟" U1ADF # COMBINING DOT-ACUTE
+<Multi_key><period><apostrophe>                                                            <U200B> : "᫟" U1ADF # COMBINING DOT-ACUTE
+<dead_acute><dead_abovedot>                                                                <U200B> : "᫟" U1ADF # COMBINING DOT-ACUTE
+<Multi_key><apostrophe><period>                                                            <U200B> : "᫟" U1ADF # COMBINING DOT-ACUTE
+<dead_abovedot><dead_acute>                                                              <percent> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
+<Multi_key><period><apostrophe>                                                          <percent> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
+<dead_acute><dead_abovedot>                                                              <percent> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
+<Multi_key><apostrophe><period>                                                          <percent> : "᷁" U1DC1 # COMBINING DOTTED ACUTE ACCENT
 <dead_abovedot><dead_acute>                                                                    <E> : "Ė́" # U0116 U0301 LATIN CAPITAL LETTER E WITH DOT ABOVE AND ACUTE: Lithuanian
 <Multi_key><period><apostrophe>                                                                <E> : "Ė́" # U0116 U0301 LATIN CAPITAL LETTER E WITH DOT ABOVE AND ACUTE: Lithuanian
 <dead_acute><dead_abovedot>                                                                    <E> : "Ė́" # U0116 U0301 LATIN CAPITAL LETTER E WITH DOT ABOVE AND ACUTE: Lithuanian
@@ -9974,14 +9998,21 @@
 #
 # # DOT_ABOVE&GRAVE
 #
-<dead_abovedot><dead_grave>                                                                <space> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
-<Multi_key><period><grave>                                                                 <space> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
-<dead_grave><dead_abovedot>                                                                <space> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
-<Multi_key><grave><period>                                                                 <space> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
-<dead_abovedot><dead_grave>                                                                <U200B> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
-<Multi_key><period><grave>                                                                 <U200B> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
-<dead_grave><dead_abovedot>                                                                <U200B> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
-<Multi_key><grave><period>                                                                 <U200B> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
+#   The Unicode 18.0 "᫞" U1ADE is supported here, and so is "᷀" U1DC0, not in
+#   # # GRAVE&DOT_ABOVE, for the sake of Lithuanian "i̇̀" # U0069 U0307 U0300.
+#
+<dead_abovedot><dead_grave>                                                                <space> : "᫞" U1ADE # COMBINING GRAVE-DOT
+<Multi_key><period><grave>                                                                 <space> : "᫞" U1ADE # COMBINING GRAVE-DOT
+<dead_grave><dead_abovedot>                                                                <space> : "᫞" U1ADE # COMBINING GRAVE-DOT
+<Multi_key><grave><period>                                                                 <space> : "᫞" U1ADE # COMBINING GRAVE-DOT
+<dead_abovedot><dead_grave>                                                                <U200B> : "᫞" U1ADE # COMBINING GRAVE-DOT
+<Multi_key><period><grave>                                                                 <U200B> : "᫞" U1ADE # COMBINING GRAVE-DOT
+<dead_grave><dead_abovedot>                                                                <U200B> : "᫞" U1ADE # COMBINING GRAVE-DOT
+<Multi_key><grave><period>                                                                 <U200B> : "᫞" U1ADE # COMBINING GRAVE-DOT
+<dead_abovedot><dead_grave>                                                              <percent> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
+<Multi_key><period><grave>                                                               <percent> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
+<dead_grave><dead_abovedot>                                                              <percent> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
+<Multi_key><grave><period>                                                               <percent> : "᷀" U1DC0 # COMBINING DOTTED GRAVE ACCENT
 <dead_abovedot><dead_grave>                                                                    <i> : "i̇̀" # U0069 U0307 U0300 LATIN SMALL LETTER I WITH DOT ABOVE AND GRAVE: Lithuanian
 <Multi_key><period><grave>                                                                     <i> : "i̇̀" # U0069 U0307 U0300 LATIN SMALL LETTER I WITH DOT ABOVE AND GRAVE: Lithuanian
 <dead_grave><dead_abovedot>                                                                    <i> : "i̇̀" # U0069 U0307 U0300 LATIN SMALL LETTER I WITH DOT ABOVE AND GRAVE: Lithuanian
@@ -10033,6 +10064,28 @@
 <Multi_key><period><period>                                                                    <U> : "U̍" # U0055 U030D LATIN CAPITAL LETTER U WITH VERTICAL LINE ABOVE: Min Nan (Pe̍h-ōe-jī orthography)
 <dead_abovedot><dead_abovedot>                                                                 <u> : "u̍" # U0075 U030D LATIN SMALL LETTER U WITH VERTICAL LINE ABOVE: Min Nan (Pe̍h-ōe-jī orthography)
 <Multi_key><period><period>                                                                    <u> : "u̍" # U0075 U030D LATIN SMALL LETTER U WITH VERTICAL LINE ABOVE: Min Nan (Pe̍h-ōe-jī orthography)
+#
+#
+# # VERTICAL_LINE_ABOVE&DOUBLE_ACUTE
+#
+<dead_abovedot><dead_abovedot><dead_doubleacute>                                           <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "̎" U030E.                                                      <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "̎" U030E.                                                      <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<dead_abovedot><dead_doubleacute><dead_abovedot>                                           <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "⋵" U22F5.                                                     <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "⋵" U22F5.                                                     <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<dead_doubleacute><dead_abovedot><dead_abovedot>                                           <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<Multi_key><quotedbl><period><period>                                                      <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<Multi_key><EuroSign><period><period>                                                      <space> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<dead_abovedot><dead_abovedot><dead_doubleacute>                                           <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "̎" U030E.                                                      <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "̎" U030E.                                                      <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<dead_abovedot><dead_doubleacute><dead_abovedot>                                           <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "⋵" U22F5.                                                     <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+#   Multikey conflicts with "⋵" U22F5.                                                     <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<dead_doubleacute><dead_abovedot><dead_abovedot>                                           <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<Multi_key><quotedbl><period><period>                                                      <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
+<Multi_key><EuroSign><period><period>                                                      <U200B> : "᫭" U1AED # COMBINING VERTICAL-LINE-DOUBLE-ACUTE
 #
 #
 # # VERTICAL_LINE_ABOVE&ACUTE

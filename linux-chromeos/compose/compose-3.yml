@@ -1616,6 +1616,18 @@
 <Multi_key><period><greater>                                                                   <s> : "ṧ" U1E67 # LATIN SMALL LETTER S WITH CARON AND DOT ABOVE
 #
 #
+# # HACEK&ACUTE
+#
+<dead_caron><dead_acute>                                                                   <space> : "᫬" U1AEC # COMBINING CARON-ACUTE
+<Multi_key><greater><apostrophe>                                                           <space> : "᫬" U1AEC # COMBINING CARON-ACUTE
+<dead_acute><dead_caron>                                                                   <space> : "᫬" U1AEC # COMBINING CARON-ACUTE
+<Multi_key><apostrophe><greater>                                                           <space> : "᫬" U1AEC # COMBINING CARON-ACUTE
+<dead_caron><dead_acute>                                                                   <U200B> : "᫬" U1AEC # COMBINING CARON-ACUTE
+<Multi_key><greater><apostrophe>                                                           <U200B> : "᫬" U1AEC # COMBINING CARON-ACUTE
+<dead_acute><dead_caron>                                                                   <U200B> : "᫬" U1AEC # COMBINING CARON-ACUTE
+<Multi_key><apostrophe><greater>                                                           <U200B> : "᫬" U1AEC # COMBINING CARON-ACUTE
+#
+#
 #^# HACEK_BELOW
 #   dead_caron double press
 #   Multikey: ¦>>
@@ -3559,6 +3571,8 @@
 <Multi_key><grave><grave>                                                               <quotedbl> : "⹂" U2E42 # DOUBLE LOW-REVERSED-9 QUOTATION MARK
 <dead_grave><dead_grave>                                                                <EuroSign> : "⹂" U2E42 # DOUBLE LOW-REVERSED-9 QUOTATION MARK
 <Multi_key><grave><grave>                                                               <EuroSign> : "⹂" U2E42 # DOUBLE LOW-REVERSED-9 QUOTATION MARK
+<dead_grave><dead_grave>                                                              <underscore> : "᫮" U1AEE # COMBINING DOUBLE GRAVE ACCENT BELOW
+<Multi_key><grave><grave>                                                             <underscore> : "᫮" U1AEE # COMBINING DOUBLE GRAVE ACCENT BELOW
 <dead_grave><dead_grave>                                                                   <equal> : "˵" U02F5 # MODIFIER LETTER MIDDLE DOUBLE GRAVE ACCENT
 <Multi_key><grave><grave>                                                                  <equal> : "˵" U02F5 # MODIFIER LETTER MIDDLE DOUBLE GRAVE ACCENT
 <dead_grave><dead_grave>                                                                       <A> : "Ȁ" U0200 # LATIN CAPITAL LETTER A WITH DOUBLE GRAVE
@@ -4039,6 +4053,10 @@
 <Multi_key><semicolon><semicolon>                                                   <nobreakspace> : "ʼ" U02BC # MODIFIER LETTER APOSTROPHE
 <dead_belowcomma><dead_belowcomma>                                                         <U202F> : "ʼ" U02BC # MODIFIER LETTER APOSTROPHE
 <Multi_key><semicolon><semicolon>                                                          <U202F> : "ʼ" U02BC # MODIFIER LETTER APOSTROPHE
+<dead_belowcomma><dead_belowcomma>                                                      <quotedbl> : "᫰" U1AF0 # COMBINING DOUBLE COMMA ABOVE
+<Multi_key><semicolon><semicolon>                                                       <quotedbl> : "᫰" U1AF0 # COMBINING DOUBLE COMMA ABOVE
+<dead_belowcomma><dead_belowcomma>                                                      <EuroSign> : "᫰" U1AF0 # COMBINING DOUBLE COMMA ABOVE
+<Multi_key><semicolon><semicolon>                                                       <EuroSign> : "᫰" U1AF0 # COMBINING DOUBLE COMMA ABOVE
 <dead_belowcomma><dead_belowcomma>                                                         <minus> : "⨩" U2A29 # MINUS SIGN WITH COMMA ABOVE
 <Multi_key><semicolon><semicolon>                                                          <minus> : "⨩" U2A29 # MINUS SIGN WITH COMMA ABOVE
 <dead_belowcomma><dead_belowcomma>                                                         <comma> : "̕" U0315 # COMBINING COMMA ABOVE RIGHT
