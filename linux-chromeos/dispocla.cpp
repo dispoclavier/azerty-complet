@@ -1,4 +1,4 @@
-//                       Date: 2026-09-05T1059+0200
+//                       Date: 2026-10-20T0746+0200
 //        Operating file name: dispocla
 //                   Encoding: UTF-8
 //                       Type: text/XKB configuration
@@ -1363,13 +1363,13 @@ xkb_symbols "kbfrFRs" {
 	key <AB07> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[               comma,               UEF63,            question,            question,        dead_cedilla,            question,               U2063,              U1F499 ],
-		[               comma,               grave,            question,            question,        dead_cedilla,               UEF7B,          digitspace,              U1F49A ]
+		[               comma,               grave,            question,            question,        dead_cedilla,          digitspace,               UEF7B,              U1F49A ]
 	}; // UEF63 ' ?' spaced out with NBTSP; UEF7B '&#x'; U2063 INVISIBLE SEPARATOR; U1F499 💙 BLUE HEART 18th-ranking emoji; U1F49A 💚 GREEN HEART emoji
 
 	key <AB08> {
 		// Index:           1,                   2,                   3,                   4,                   5,                   6,                   7,                   8
 		[              period,               UEF62,           semicolon,           semicolon,     dead_belowcomma,           semicolon,              U1F631,              U1F4E3 ],
-		[              period,           backslash,           semicolon,           semicolon,     dead_belowcomma,               UEF7A,          punctspace,              U1F4E2 ]
+		[              period,           backslash,           semicolon,           semicolon,     dead_belowcomma,          punctspace,               UEF7A,              U1F4E2 ]
 	}; // UEF62 ' ;' spaced out with NBTSP; UEF7A '&#'; U1F631 😱 FACE SCREAMING IN FEAR 2nd-top sad face emoji; U1F4E3 📣 CHEERING MEGAPHONE emoji; U1F4E2 📢 PUBLIC ADDRESS LOUDSPEAKER emoji
 
 	key.type[Group1] = "EIGHT_LEVELS_PUNCTUATION_GROUP1";

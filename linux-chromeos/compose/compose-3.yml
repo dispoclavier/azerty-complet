@@ -214,7 +214,8 @@
 #   Followed by bracketleft or braceleft, dead_circumflex is a shortcut to the
 #   mathematical "⟨" U27E8, and by bracketright or braceright, to its "⟩" U27E9
 #   counterpart, so as to support both mnemonics by brackets, and ease of input
-#   by braces on the same row as the French-mode dead_circumflex instance.
+#   by braces on the same row as the French-mode easy-access level-1
+#   dead_circumflex instance.
 #
 #
 #   Diacritics in dead_circumflex
@@ -5069,9 +5070,9 @@
 #
 #   However, for clarification with respect to combining diacritics, the group
 #   number or its unity (as of group 11, for cross-platform compatibility) is
-#   output in the few empty instances in groups 3..5, 11, without mention in
-#   the documentation. To achieve this, the keyword "available" must be present
-#   in the EOL comment of these instances.
+#   output in the few empty instances in groups 3..5, 11, without any mention
+#   in the documentation. To achieve this, the keyword "available"/"Available"
+#   must be present in the EOL comment of these instances.
 #   See […] # Available.
 #   See # # Notes about documentation
 #   See # # Notes for maintenance
@@ -5401,7 +5402,7 @@
 #   Since FIGURE DASH occurs in single instances only, it is compatible with
 #   dead key input, unlike FIGURE SPACE and PUNCTUATION SPACE that are the
 #   tabular digit and punctuation spaces, respectively, and are mapped on live
-#   keys B07 (digitspace) and B08 (punctspace), level 7, in ASCII mode.
+#   keys B07 (digitspace) and B08 (punctspace), level 6, in ASCII mode.
 #
 #   FIGURE DASH is not supported on live key to prevent its misuse for interval
 #   notation, a use case that "–" U2013 EM DASH is recommended for, as vertical
@@ -7249,7 +7250,7 @@
 #   See #   Hyphens
 #   See # # B05 equal
 #
-#   In Unicode CLDR, "➖" U2796 HEAVY MINUS SIGN is the range syntax mark.
+#   In CLDR, "➖" U2796 HEAVY MINUS SIGN is the range syntax mark.
 #   https://github.com/unicode-org/cldr/blob/9f25bc73c08d43293a83b7699b73135ef3218769/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L72
 #   https://github.com/unicode-org/cldr/blob/main/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L72
 #   See C08 bracketleft
@@ -7541,7 +7542,7 @@
 #
 # # C09 bracketleft
 #
-#   In Unicode CLDR, "❰" U2770 is the escape start.
+#   In CLDR, "❰" U2770 is the escape start.
 #   https://github.com/unicode-org/cldr/blob/9f25bc73c08d43293a83b7699b73135ef3218769/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L73
 #   https://github.com/unicode-org/cldr/blob/main/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L73
 #
@@ -7597,7 +7598,7 @@
 #
 # # C10 bracketright
 #
-#   In Unicode CLDR, "❱" U2771 is the escape end.
+#   In CLDR, "❱" U2771 is the escape end.
 #   https://github.com/unicode-org/cldr/blob/9f25bc73c08d43293a83b7699b73135ef3218769/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L74
 #   https://github.com/unicode-org/cldr/blob/main/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L74
 #

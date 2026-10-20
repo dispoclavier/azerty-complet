@@ -5,7 +5,7 @@
 # 2025-05-26T2331+0200
 # 2025-11-30T2107+0100
 # 2026-01-12T1834+0100
-# 2026-10-03T1552+0200
+# 2026-10-19T2048+0200
 # = last modified.
 #
 # Generates HTML tables of dead keys from dead key sequences in Compose.yml.
@@ -171,14 +171,13 @@ while ( my $line = <INPUT> ) {
 			print OUTPUT "<!-- $1 -->\n";
 		}
 
-		unless ( $line =~ /<Multi_key>/        # Multikey equivalents are skipped.
+		unless ( $line =~ /<Multi_key>/                  # Multikey equivalents are skipped.
 			|| $line =~ /^#[^@]/                 # Annotations are not (yet) processed.
 			|| $line =~ /<KP_/                   # Keypad equivalents, a Linux feature.
 			|| $line =~ /<rightsinglequotemark>/ # Curly apostrophe alias of ASCII apostrophe.
 			|| $line =~ /high surrogate/         # High surrogates, a Windows feature.
 			|| $line =~ /# [Aa]vailable\.?$/     # Empty slots in letter groups.
 			|| $line =~ /<UEFD0><UEFD0><UEFD0>/  # Triple or quadruple group dead key press alternatives.
-			|| $line =~ / <ellipsis></           # skull and crossbones, black sun with rays or snowflake emoji.
 		) {
 			if ( $line =~ /<dead_abovedot>/
 				|| $line =~ /<dead_abovering>/

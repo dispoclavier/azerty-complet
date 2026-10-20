@@ -263,7 +263,7 @@
 #   in /usr/share/X11/symbols/fr(afnor), that explicitly supports "Ł" U0141 and
 #   "ł" U0142 as well as "Ƚ" U023D and "ƚ" U019A (another casing letter pair is
 #   less completely enumerated in the standard), Ghost User (@ghost) managed to
-#   toss it out of keysymdef.h.
+#   toss dead_longsolidusoverlay out of keysymdef.h.
 #   https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/merge_requests/70
 #   https://web.archive.org/web/20240520104930/https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/merge_requests/70
 #   https://gitlab.freedesktop.org/xorg/proto/xorgproto/-/commit/6d4acb0e3a6568a8faaa651d4e3d32f917b9067b
@@ -278,8 +278,8 @@
 #   ended up as a second instance of dead_stroke, and none of the two French
 #   standard layouts could be implemented anymore using XKB named keysyms only.
 #
-#   Fortunately, that was just a ghost in a mismanaged branch that did not make
-#   it into main, given that in 2024 versions, the new keysyms are still there.
+#   Fortunately, the mismanaged branch did not make it into main, given that
+#   in 2024 versions, the new keysyms are still there.
 #   https://fossies.org/linux/tk/xlib/X11/keysymdef.h
 #   https://web.archive.org/web/20241002235635/https://fossies.org/linux/tk/xlib/X11/keysymdef.h
 #
@@ -681,8 +681,8 @@
 #   Dead key combinations, called chained dead keys on Windows, are actionable
 #   both ways for two diacritics, except when order matters, for diacritics to
 #   be positioned above, stacked in one order or the other way around, as for
-#   "Ṻ" U1E7A and "ṻ" U1E7B versus "Ǖ" U01D5 and "ǖ" U01D6, the only case, for
-#   instance. All other dead key combinations are symmetric and are symmetrized
+#   "Ṻ" U1E7A and "ṻ" U1E7B versus "Ǖ" U01D5 and "ǖ" U01D6, the only case so
+#   far. All other dead key combinations are symmetric and are symmetrized
 #   consistently, multikey equivalents not withstanding.
 #   See # # Plus-minus
 #   See # # MACRON&DIAERESIS
@@ -943,8 +943,8 @@
 #       <dead_greek>                       "ε" U03B5 GREEK SMALL LETTER EPSILON
 #       But with respect to user-friendliness for people unfamiliar with the
 #       Greek script, who would be bothered by the presence of Greek letters on
-#       French keymaps (for instance as a dead character), a circle emoji is
-#       picked instead.
+#       French keymaps (be it as a dead character), a circle emoji is picked
+#       instead.
 #
 #   <dead_hook>                                         "ɱ" U0271 LATIN SMALL LETTER M WITH HOOK
 #   <dead_horn>                                         "ơ" U01A1 LATIN SMALL LETTER O WITH HORN
@@ -1240,7 +1240,7 @@
 #
 #   Letters
 #
-#   In Unicode CLDR, French has ordinal indicators ᵈ, ᵉ, ʳ, ˢ since v34 (2018).
+#   In CLDR, French has ordinal indicators "ᵈ", "ᵉ", "ʳ", "ˢ" since v34 (2018).
 #   https://github.com/unicode-org/cldr/blob/release-34/common/main/fr.xml#L1421
 #   https://github.com/unicode-org/cldr/blob/release-42/common/main/fr.xml#L1526
 #
@@ -6516,7 +6516,7 @@
 #   Heavy angle bracket ornaments "❰" U2770, "❱" U2771 are supported in
 #   dead_tilde by less and greater in two-handed synergy with the easy-access
 #   instance of dead_tilde, with respect to their use as escape delimiters in
-#   Unicode CLDR.
+#   CLDR.
 #   https://github.com/unicode-org/cldr/blob/9f25bc73c08d43293a83b7699b73135ef3218769/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L73
 #   https://github.com/unicode-org/cldr/blob/main/tools/cldr-code/src/main/java/org/unicode/cldr/util/CodePointEscaper.java#L73
 #
@@ -7106,12 +7106,12 @@
 #
 # # TILDE&BRACERIGHT
 #
-#   This new virtual dead key uses the synergy of the dead_tilde main instance,
-#   on key D11, level 3, with braceright on D10, level 3, according to the
-#   new ASCII symbol map on alphabetic keys.
+#   This new virtual dead key uses the synergy of the dead_tilde easy-access
+#   instance, on key D11, level 3, with braceright on D10, level 3, according
+#   to the new ASCII symbol map on alphabetic keys.
 #
-#   The TILDE&BRACERIGHT dead key is partly dedicated to African click letters,
-#   that hopefully come into the benefit of a consistent input method
+#   The TILDE&BRACERIGHT dead key is partly dedicated to African click letters
+#   thus hopefully coming into the benefit of a fairly consistent input method,
 #   additionally to their support in group 5 with another set of base letters.
 #   See #+# GROUP_5
 #
