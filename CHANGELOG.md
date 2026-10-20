@@ -23,17 +23,17 @@ Mise à niveau pour Unicode 18.0 par l’ajout de 241 caractères dont 161 le
 Contournement du bogue de Windows au niveau 7 en mode ASCII.
 
 * Disposition :
-	* Permuter les niveaux 6 et 7 en mode ASCII sur les touches B07 et B08.
+	* Permuter les niveaux 6 et 7 en mode ASCII sur les touches B07 et B08. dispocla.cpp, kbcomazerty.c, kbcomredispo.c [54bc0b9](https://github.com/dispoclavier/azerty-complet/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
 * Composition :
 	* Émulation de codes Alt :
 		* Déboguer « ¦+249␣ » en mettant "∙" U+2219 à la place de "·" U+00B7. compose-1.yml [5aede36](https://github.com/dispoclavier/azerty-complet/commit/5aede36579ef870a404988c80359e12ffec87ebb), [e1a60a1](https://github.com/dispoclavier/azerty-complet/commit/e1a60a1a8890e680af097e3ca7f4a988f04a4a85)
 		* Simplifier la saisie des codes à 3 chiffres. compose-1.yml [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
 	* Ajouter "ꬱ" U+AB31, qui était dans réfléchi. compose-1.yml [0f05e25](https://github.com/dispoclavier/azerty-complet/commit/0f05e25a64c4ce720762eb9517a92cea69e4474f)
-	* Ajouter "ﬀ" U+FB00, "ﬁ" U+FB01, "ﬂ" U+FB02, "ﬃ" U+FB03, "ﬄ" U+FB04, "ﬅ" U+FB05, "ﬆ" U+FB06.
-	* Corriger les séquences de "Ǳ" U+01F1, "ǲ" U+01F2, "ǳ" U+01F3. 
-	* Simplifier les séquences de "ʩ" U+02A9. 
-	* Compléter les séquences de "ʤ" U+02A4, "ʧ" U+02A7. 
-	* Redonder "ʥ" U+02A5. 
+	* Ajouter "ﬀ" U+FB00, "ﬁ" U+FB01, "ﬂ" U+FB02, "ﬃ" U+FB03, "ﬄ" U+FB04, "ﬅ" U+FB05, "ﬆ" U+FB06. compose-1.yml [54bc0b9](https://github.com/dispoclavier/azerty-complet/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
+	* Corriger les séquences de "Ǳ" U+01F1, "ǲ" U+01F2, "ǳ" U+01F3. ibidem
+	* Simplifier les séquences de "ʩ" U+02A9. ibidem
+	* Compléter les séquences de "ʤ" U+02A4, "ʧ" U+02A7. ibidem
+	* Redonder "ʥ" U+02A5. ibidem
 		* Ajouter "꟝" U+A7DD dans le groupe 4 de "V" à la place de "℣" U+2123, qui va dans le groupe 4 de "U" à la place de "Ɯ" U+019C, qui est dans le groupe 2 de "M". compose-3.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Ajouter "꭬" U+AB6C dans le groupe 5 de "R" à la place de "ꭅ" U+AB45, qui va dans le groupe 4 de "R" à la place de "℟" U+211F, qui va dans le groupe 4 de "I" à la place de "ℹ" U+2139, qui est dans le groupe 4 de "i". ibidem
 	* Exposant :
@@ -154,7 +154,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Raccourcir les descripteurs des dispositions de clavier sous Linux. compose-1.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 	* Mouvoir le JSON dans un fichier. outils/settings.json [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e), [3beeabb](https://github.com/dispoclavier/azerty-complet/commit/3beeabbe4c40ffcca213d447f0cf477673c4302f), [6958e94](https://github.com/dispoclavier/azerty-complet/commit/6958e94507d0d19547836e338adfd7ab9e9a0e73)
 	* Déboguer la taille de fichier. compose-2.yml, compose-3.yml [fb0a349](https://github.com/dispoclavier/azerty-complet/commit/fb0a34937cd9c038c089b0b786c547b87d6234e3), generate-deadkey-tables.pl [8fd4f48](https://github.com/dispoclavier/azerty-complet/commit/8fd4f48e1029aae695ba34e278de587dc9c83feb)
-	* Corriger des annotations.
+	* Corriger des annotations. compose-1.yml, compose-2.yml, compose-3.yml [54bc0b9](https://github.com/dispoclavier/azerty-complet/commit/54bc0b967dcdb71bc65b59ee060795c1a0758884)
 	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-complet/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
 * Builds :
 
