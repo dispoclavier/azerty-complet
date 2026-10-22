@@ -158,6 +158,12 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Corriger le journal des modifications. CHANGELOG.md [1f7e36d](https://github.com/dispoclavier/azerty-complet/commit/1f7e36dd0102d8939aa11c348b956208deabd94a), [bad275d](https://github.com/dispoclavier/azerty-complet/commit/bad275df45f67c5f0297155875b0b375267140f2)
 * Builds :
 
+## 7.0.1 (projet)
+
+Linux : Mise à jour de l’installation pour Wayland.
+
+* Installation : Sous Linux : Mettre à jour le script installer.sh.
+
 ## 7.0.0 (2026-09-18)
 
 ### Nouveautés
@@ -174,7 +180,7 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 
 ### ⚠ Changement important
 
-* Suspension de la prise en charge de Linux suite aux régressions d’XKB post-2016
+* Suspension de la prise en charge de Linux jusqu’à la mise à jour de l’installation pour Wayland
 
 ### Modifications
 
