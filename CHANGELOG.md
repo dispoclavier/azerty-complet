@@ -34,6 +34,8 @@ Contournement du bogue de Windows au niveau 7 en mode ASCII.
 	* Simplifier les séquences de "ʩ" U+02A9. ibidem
 	* Compléter les séquences de "ʤ" U+02A4, "ʧ" U+02A7. ibidem
 	* Redonder "ʥ" U+02A5. ibidem
+* Transformations :
+	* Groupes des lettres :
 		* Ajouter "꟝" U+A7DD dans le groupe 4 de "V" à la place de "℣" U+2123, qui va dans le groupe 4 de "U" à la place de "Ɯ" U+019C, qui est dans le groupe 2 de "M". compose-3.yml [dd95946](https://github.com/dispoclavier/azerty-complet/commit/dd95946c3292615e56863b0bf482df1a959d0b5e)
 		* Ajouter "꭬" U+AB6C dans le groupe 5 de "R" à la place de "ꭅ" U+AB45, qui va dans le groupe 4 de "R" à la place de "℟" U+211F, qui va dans le groupe 4 de "I" à la place de "ℹ" U+2139, qui est dans le groupe 4 de "i". ibidem
 	* Exposant :
